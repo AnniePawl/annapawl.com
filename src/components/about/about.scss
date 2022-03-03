@@ -1,0 +1,60 @@
+@import "../universal-styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap");
+
+$about-bkgd: #fffefa;
+$font: "Montserrat", sans-serif;
+$font-color: #1f1f1f;
+$h1-size: 45px;
+$link-hover-clr: red;
+$margin-top: 55px;
+$margin-left: 60px;
+
+.about {
+  height: 100vh;
+  width: 30vw;
+  overflow: hidden;
+  background-color: $about-bkgd;
+  font-family: $font;
+  color: $font-color;
+}
+
+.about > h1 {
+  font-weight: 800;
+  font-size: $h1-size;
+  font-family: "Montserrat", sans-serif;
+  // border: $test-border;
+  margin-top: $margin-top;
+  margin-left: $margin-left;
+}
+
+.about-me {
+  margin-left: $margin-left;
+  margin-right: $margin-left * 0.8;
+  margin-top: $margin-top;
+  // border: $test-border;
+  font-weight: 500;
+  font-size: $h1-size * 0.4;
+  line-height: 30px;
+}
+
+// LINKS
+.about > ul {
+  line-height: 25px;
+  padding: 0;
+  margin-left: $margin-left;
+  margin-top: $margin-top;
+  & > li {
+    // border: $test-border;
+    font-weight: 600;
+    list-style: none;
+    & > a {
+      text-decoration: none;
+    }
+    & > a:visited {
+      color: $font-color;
+    }
+    & > a:hover {
+      color: $link-hover-clr;
+    }
+  }
+}
