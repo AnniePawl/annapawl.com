@@ -1,10 +1,56 @@
-$wall-color: #dde4ff;
-$shelves-bkgd: lightyellow;
-$font-color: red;
 @import "../universal-styles.scss";
+
+$shelf-height: 20px;
+$shelf-width: 50vw;
+$wall-clr: #eaf4ff;
+$shelf-clr: #ba9c8f;
+$shelf-clr2: #a1877c;
+$bracket-clr: #3d3d3d;
+$bracket-clr2: #636363;
+$shelf-shadow-clr: #7e8394;
 
 .shelves {
   height: 100vh;
   width: 70vw;
-  background-color: $wall-color;
+  background-color: $wall-clr;
+  overflow: hidden;
+  @include center-flex();
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.shelf {
+  height: $shelf-height;
+  width: $shelf-width;
+  display: flex;
+  background-image: linear-gradient($shelf-clr 0 70%, $shelf-clr2 70% 100%);
+  justify-content: space-around;
+  box-shadow: 0 10px 15px -2px $shelf-shadow-clr;
+  border-radius: 2px;
+  // Bracket Styles
+  &::before {
+    content: "";
+    margin-top: 20px;
+    background-color: $bracket-clr;
+    background-image: linear-gradient(
+      $bracket-clr 0 70%,
+      $bracket-clr2 70% 100%
+    );
+    height: 20px;
+    width: 12px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  &::after {
+    content: "";
+    margin-top: 20px;
+    background-image: linear-gradient(
+      $bracket-clr 0 70%,
+      $bracket-clr2 70% 100%
+    );
+    height: 20px;
+    width: 12px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
 }

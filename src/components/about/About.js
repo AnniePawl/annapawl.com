@@ -11,11 +11,17 @@ function About() {
         I’m Anna, a software engineer with a focus on front-end development and
         a passion for design. I’m driven by curiosity and spend a lot of my free
         time learning new things and experimenting. I especially love creating
-        interactive experiences with code. The web should be fun ✨ <br />{" "}
+        interactive experiences with code. The web should be fun ✨ <br />
         <br /> Get to know me better by clicking objects on these shelves. I
-        created each item with pure CSS ( you can check out the source code on
-        my CodePen profile ).
+        created each item with pure CSS (source code can be found on my CodePen
+        profile). Check out my website,{" "}
+        <a href="Drawing with Code" target="blank">
+          Drawing with Code
+        </a>
+        , if you're interested in learning more about the process.
       </p>
+
+      <div class="pin"></div>
       <ul>
         <li>
           <a href="https://github.com/AnniePawl" target="blank">
