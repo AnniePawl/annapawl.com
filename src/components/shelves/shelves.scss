@@ -1,6 +1,6 @@
 @import "../universal-styles.scss";
 
-$shelf-height: 20px;
+$shelf-height: 15px;
 $shelf-width: 50vw;
 $wall-clr: #eaf4ff;
 $shelf-clr: #ba9c8f;
@@ -30,7 +30,7 @@ $shelf-shadow-clr: #7e8394;
   // Bracket Styles
   &::before {
     content: "";
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: $bracket-clr;
     background-image: linear-gradient(
       $bracket-clr 0 70%,
@@ -43,7 +43,7 @@ $shelf-shadow-clr: #7e8394;
   }
   &::after {
     content: "";
-    margin-top: 20px;
+    margin-top: 15px;
     background-image: linear-gradient(
       $bracket-clr 0 70%,
       $bracket-clr2 70% 100%
