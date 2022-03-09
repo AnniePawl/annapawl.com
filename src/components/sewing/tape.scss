@@ -1,0 +1,89 @@
+@import "../universal-styles.scss";
+
+// Colors
+$tape-clr: #fff5ab;
+$tape-clr2: #fcda85;
+$tape-ticks: #595959;
+$tape-btm-clr: #c2c2c2;
+
+// Measurements
+$tape-height: 13px;
+$tape-width: 34px;
+
+.tape {
+  position: absolute;
+  transform: translateY(-14px);
+}
+
+.tape-top {
+  height: $tape-height;
+  width: $tape-width;
+  border-radius: 2px 0 0 1px;
+  background-color: $tape-clr;
+  box-shadow: 0 $tape-height * 0.25 $tape-clr2;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+  // Ticks
+  &::before {
+    height: $tape-height * 0.45;
+    width: 100%;
+    background-image: repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 10%,
+      $tape-ticks 10%,
+      $tape-ticks 14%
+    );
+  }
+  // Tape Fold
+  &::after {
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: ($tape-height + $tape-height * 0.3) 0 0
+      ($tape-height + $tape-height * 0.3);
+    border-color: transparent transparent transparent $tape-clr2;
+    margin-left: $tape-width;
+  }
+}
+
+// Hanging Tape
+.tape-bottom {
+  height: $tape-width * 1.6;
+  width: $tape-height;
+  position: absolute;
+  background-color: $tape-clr;
+  margin-left: $tape-width;
+  margin-top: $tape-height * 0.3;
+  box-shadow: $tape-height * 0.25 0 $tape-clr2;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+  // Ticks
+  &::before {
+    height: $tape-width * 1.5;
+    width: 55%;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 10%,
+      $tape-ticks 10%,
+      $tape-ticks 12.5%
+    );
+  }
+  // Tape end
+  &::after {
+    height: $tape-height;
+    width: $tape-height;
+    margin-top: $tape-width * 1.6;
+    border-radius: 0 0 1px 1px;
+    box-shadow: $tape-height * 0.25 0 #a5a4a4;
+    background-color: #666666;
+    border: $tape-height * 0.3 solid $tape-btm-clr;
+  }
+}

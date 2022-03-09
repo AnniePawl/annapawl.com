@@ -4,6 +4,7 @@ import Shelf2 from "./Shelf2";
 import Shelf3 from "./Shelf2";
 import Books from "../books/Books";
 import Radio from "../radio/radio";
+import Tape from "../sewing/Tape";
 import "./shelves.scss";
 
 function Shelves() {
@@ -19,7 +20,10 @@ function Shelves() {
         <Shelf2 />
       </div>
 
-      <Shelf3 />
+      <div className="shelf-3">
+        <Tape />
+        <Shelf3 />
+      </div>
     </div>
   );
 }
