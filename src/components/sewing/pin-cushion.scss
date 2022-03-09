@@ -1,0 +1,94 @@
+// Colors
+$pc-color: #7d92c9;
+$pc-color2: #556ba3;
+$pc-base-clr: #a6a6a6;
+$pc-base-clr2: #757575;
+$pin-clr: #cfcfcf;
+$pin-top-clr: #ff6969;
+$pin-top-hover-clr: #ffe46b;
+
+// Measurements
+$pc-base-width: 50px;
+$pc-base-height: 6px;
+$pin-height: 20px;
+$pin-width: 1px;
+$pin-top-size: 4px;
+
+.pin-cushion-container {
+  transform: translate(70px);
+}
+
+// Pin cushion base
+.pin-cushion {
+  height: $pc-base-height;
+  width: $pc-base-width;
+  position: relative;
+  border-radius: 1px 1px 1px 1px;
+  background-color: $pc-base-clr;
+  box-shadow: 0 3px $pc-base-clr2;
+  // cushion
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    height: $pc-base-width * 0.45;
+    box-shadow: 0 $pc-base-width * 0.08 $pc-color2;
+    width: $pc-base-width * 0.9;
+    background-color: $pc-color;
+    border-radius: 10em 10em 0 0;
+    transform: translateY(-27px) translateX(2.4px);
+  }
+}
+// Pins
+.pin {
+  z-index: 5;
+  margin-right: 8.5px;
+  height: $pin-height;
+  width: $pin-width;
+  background-image: linear-gradient(to bottom, gray, $pin-clr);
+  &::before {
+    position: absolute;
+    display: flex;
+    content: "";
+    height: $pin-top-size;
+    width: $pin-top-size;
+    border-radius: 50%;
+    background-color: $pin-top-clr;
+    border: 0.1em solid #e86146;
+    transform: translateX(-$pin-width * 1.4) translateY(-$pin-width * 4);
+  }
+}
+
+.pins {
+  display: flex;
+  z-index: 5;
+  position: absolute;
+  justify-content: space-around;
+  transform: translateY(-$pin-height * 1.6);
+}
+
+// Rotating Pins
+.pin:nth-child(1) {
+  transform: rotate(-35deg) translateY(5px);
+}
+.pin:nth-child(2) {
+  transform: rotate(-20deg);
+}
+.pin:nth-child(3) {
+  transform: rotate(-9deg) translateY(-3px);
+}
+.pin:nth-child(4) {
+  transform: rotate(3deg) translateY(-3px);
+}
+.pin:nth-child(5) {
+  transform: rotate(20deg) translateY(-1px);
+}
+.pin:nth-child(6) {
+  transform: rotate(35deg) translateY(5px);
+}
+
+//
+.pin-cushion-container:hover > .pins > .pin::before {
+  background-color: $pin-top-hover-clr;
+  border: 1px solid goldenrod;
+}

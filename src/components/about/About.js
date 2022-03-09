@@ -15,7 +15,7 @@ function About() {
         <br />
         <br /> Get to know me better by hovering over the stuff on my bookshelf.
         Each item was made with love and pure CSS! Check out my website,{" "}
-        <a href="Drawing with Code" target="blank">
+        <a href="https://anniepawl.github.io/dwc/" target="blank">
           Drawing with Code
         </a>
         , if you're interested in learning more about the process.

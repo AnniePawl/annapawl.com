@@ -11,14 +11,19 @@ $shelf-shadow-clr: #7e8394;
 // Measurements
 $shelves-width: 73vw;
 $shelf-height: 15px;
-$shelf-width: 57vw;
+$shelf-width: 56vw;
 
-.shelves {
+.shelves-container {
   height: 100vh;
   width: $shelves-width;
+  @include center-flex();
   background-color: $wall-clr;
   overflow: hidden;
+}
+.shelves {
+  height: 108vh;
   @include center-flex();
+
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -26,6 +31,7 @@ $shelf-width: 57vw;
 .shelf {
   height: $shelf-height;
   width: $shelf-width;
+  margin-top: 0px;
   display: flex;
   background-image: linear-gradient($shelf-clr 0 70%, $shelf-clr2 70% 100%);
   justify-content: space-around;
