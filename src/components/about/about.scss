@@ -1,28 +1,37 @@
 @import "../universal-styles.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap");
 
+// Colors
 $about-bkgd: #fffefa;
-$font: "Montserrat", sans-serif;
-$font-color: #1f1f1f;
+$h1-clr: #405572;
+$font-clr: #1f1f1f;
+$link-hover-clr: #ff8d75;
+
+// Measurements
 $h1-size: 45px;
-$link-hover-clr: red;
+$about-width: 27vw;
+$about-font-size: $h1-size * 0.38;
+$line-height: 27px;
 $margin-top: 55px;
 $margin-left: 60px;
 
+// Font
+$about-font: "Montserrat", sans-serif;
+
 .about {
   height: 100vh;
-  width: 30vw;
+  width: $about-width;
   overflow: hidden;
   background-color: $about-bkgd;
-  font-family: $font;
-  color: $font-color;
+  font-family: $about-font;
+  color: $font-clr;
 }
 
 .about > h1 {
-  font-weight: 800;
-  font-size: $h1-size;
   font-family: "Montserrat", sans-serif;
-  // border: $test-border;
+  font-size: $h1-size;
+  font-weight: 800;
+  color: $h1-clr;
   margin-top: $margin-top;
   margin-left: $margin-left;
 }
@@ -31,31 +40,32 @@ $margin-left: 60px;
   margin-left: $margin-left;
   margin-right: $margin-left * 0.8;
   margin-top: $margin-top;
-  // border: $test-border;
-
   font-weight: 500;
-  font-size: $h1-size * 0.4;
-  line-height: 30px;
+  font-size: $about-font-size;
+  line-height: $line-height;
 }
 
-// LINKS
+// Links
+a {
+  color: $font-clr;
+  &:visited {
+    color: $font-clr;
+  }
+  &:hover {
+    color: $link-hover-clr;
+  }
+}
+
 .about > ul {
   line-height: 25px;
   padding: 0;
   margin-left: $margin-left;
   margin-top: $margin-top;
   & > li {
-    // border: $test-border;
     font-weight: 600;
     list-style: none;
-    & > a {
-      text-decoration: none;
-    }
-    & > a:visited {
-      color: $font-color;
-    }
-    & > a:hover {
-      color: $link-hover-clr;
-    }
+  }
+  & > li > a {
+    text-decoration: none;
   }
 }

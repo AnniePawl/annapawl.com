@@ -1,8 +1,6 @@
 import React from "react";
 import "./shelves.scss";
 
-function Shelf3() {
+export default function Shelf() {
   return <div className="shelf"></div>;
 }
-
-export default Shelf3;

@@ -8,13 +8,13 @@ function About() {
         Anna <br /> Pawl
       </h1>
       <p className="about-me">
-        I’m Anna, a software engineer with a focus on front-end development and
-        a passion for design. I’m driven by curiosity and spend a lot of my free
-        time learning new things and experimenting. I especially love creating
-        interactive experiences with code. The web should be fun ✨ <br />
-        <br /> Get to know me better by clicking objects on these shelves. I
-        created each item with pure CSS (source code can be found on my CodePen
-        profile). Check out my website,{" "}
+        I'm a software engineer with a focus on front-end development and an
+        interest in design. I'm curiosity-driven and spend a lot of my free time
+        learning new things and experimenting. I love using my creativity to
+        make satisfying little experiences with code. The web should be fun ✨{" "}
+        <br />
+        <br /> Get to know me better by hovering over the stuff on my bookshelf.
+        Each item was made with love and pure CSS! Check out my website,{" "}
         <a href="Drawing with Code" target="blank">
           Drawing with Code
         </a>
@@ -33,11 +33,11 @@ function About() {
             CodePen
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://medium.com/@annapawl" target="blank">
             Medium
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

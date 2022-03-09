@@ -1,44 +1,49 @@
 @import "../universal-styles.scss";
 
-$book-height: 22px;
-$book-border-radius: 2px;
-$book-width: $book-height * 4;
+// Colors
 $book-pages: #fffefa;
 $book1-clr: #5d758d;
-$book2-clr: #f0af9c;
+$book2-clr: #f3b09c;
 $book2-ribbon: #93b1cf;
 $book2-ribbon2: #5d758d;
-$book3-clr: #eed6b9;
-$book3-clr2: #d1af9a;
+$book3-clr: #ffefb8;
+$book3-clr2: #fadc79;
 $book3-clr3: #93b1cf;
 $book3-clr4: #5d758d;
 $book3-label: #93b1cf;
 $book3-label2: #5d758d;
 $book4-clr: #ffeee8;
-$book4-clr2: #fcddd2;
+$book4-clr2: #f7d4c9;
 $book4-border: #a0c0db;
 $book5-clr: #92b1dd;
 $book5-clr2: #7089ac;
 $book5-border: #eed6b9;
-$book5-label: #eed6b9;
-$book5-label2: #d1af9a;
-$font: "Open Sans", sans-serif;
+$book5-label: #ffeeb8;
+$book5-label2: #f5d56e;
 
+// Measurements
+$book-height: 22px;
+$book-border-radius: 2px;
+$book-width: $book-height * 4;
+$width: 12.5%;
 $delays: 0s, 0.2s, 0.4s, 0.6s, 0.8s, 1s;
 $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
 
-@for $i from 1 to 6 {
-  $delay: nth($delays, $i);
-  .book-#{$i} {
-    // animation: books-animation 1s $delay forwards;
+// Books animation
+.books-container:hover {
+  @for $i from 1 to 6 {
+    $delay: nth($delays, $i);
+    .book-#{$i} {
+      animation: books-animation 1s $delay forwards;
+    }
   }
 }
 
-$width: 12.5%;
-
 .books-container {
+  position: absolute;
   @include center-flex();
   flex-direction: column;
+  transform: translateY(-113px) translateX(200px);
 }
 
 .book {
@@ -59,7 +64,7 @@ $width: 12.5%;
 
   &::after {
     content: "";
-    height: $book-height * 0.55;
+    height: $book-height * 0.5;
     width: $book-width * 0.99;
     border-top-left-radius: $book-border-radius * 0.5;
     border-bottom-left-radius: $book-border-radius * 0.5;
@@ -164,5 +169,12 @@ $width: 12.5%;
       $book5-label 0 65%,
       $book5-label2 65% 100%
     );
+  }
+}
+
+// Keyframes
+@keyframes books-animation {
+  100% {
+    transform: translateY(-15px);
   }
 }

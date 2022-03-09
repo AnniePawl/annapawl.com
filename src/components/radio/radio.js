@@ -12,15 +12,14 @@ function Radio() {
           <div className="radio-buttons">
             <button
               className="radio-button1"
-              onClick={() => setStation(station + 0.5)}
+              onClick={() => setStation(station - 0.5)}
             >
               -
             </button>
-
             <button
               className="radio-button2"
               onClick={() => {
-                setStation(station - 0.5);
+                setStation(station + 0.5);
               }}
             >
               +

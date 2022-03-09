@@ -1,18 +1,18 @@
 @import "../universal-styles.scss";
 
 // Colors
-$tape-clr: #fff5ab;
-$tape-clr2: #fcda85;
+$tape-clr: #ffe9a1;
+$tape-clr2: #f2cf5a;
 $tape-ticks: #595959;
 $tape-btm-clr: #c2c2c2;
 
 // Measurements
-$tape-height: 13px;
+$tape-height: 11px;
 $tape-width: 34px;
 
 .tape {
   position: absolute;
-  transform: translateY(-14px);
+  transform: translateY(-14px) translateX(400px);
 }
 
 .tape-top {
@@ -28,17 +28,17 @@ $tape-width: 34px;
   }
   // Ticks
   &::before {
-    height: $tape-height * 0.45;
+    height: $tape-height * 0.5;
     width: 100%;
     background-image: repeating-linear-gradient(
       to right,
       transparent,
-      transparent 10%,
-      $tape-ticks 10%,
-      $tape-ticks 14%
+      transparent 11%,
+      $tape-ticks 11%,
+      $tape-ticks 16%
     );
   }
-  // Tape Fold
+  // Fold
   &::after {
     height: 0;
     width: 0;
@@ -50,9 +50,9 @@ $tape-width: 34px;
   }
 }
 
-// Hanging Tape
+// Hanging tape
 .tape-bottom {
-  height: $tape-width * 1.6;
+  height: $tape-width * 1.45;
   width: $tape-height;
   position: absolute;
   background-color: $tape-clr;
@@ -64,26 +64,64 @@ $tape-width: 34px;
     content: "";
     position: absolute;
   }
-  // Ticks
+  // Hanging tape ticks
   &::before {
-    height: $tape-width * 1.5;
+    height: $tape-width * 1.4;
     width: 55%;
     background-image: repeating-linear-gradient(
       to bottom,
       transparent,
       transparent 10%,
       $tape-ticks 10%,
-      $tape-ticks 12.5%
+      $tape-ticks 13%
     );
   }
-  // Tape end
+  // Haning tape end
   &::after {
     height: $tape-height;
     width: $tape-height;
-    margin-top: $tape-width * 1.6;
+    margin-top: $tape-width * 1.45;
     border-radius: 0 0 1px 1px;
     box-shadow: $tape-height * 0.25 0 #a5a4a4;
     background-color: #666666;
     border: $tape-height * 0.3 solid $tape-btm-clr;
+  }
+}
+
+// Animation -- extends hanging tape
+.tape:hover > .tape-bottom {
+  animation: tape-animation1 2s;
+}
+.tape:hover > .tape-bottom::before {
+  animation: tape-animation2 2s;
+}
+.tape:hover > .tape-bottom::after {
+  animation: tape-animation3 2s;
+}
+
+// Keyframes
+// Extends tape length
+@keyframes tape-animation1 {
+  50% {
+    height: $tape-width * 4;
+  }
+}
+// Extends tape ticks
+@keyframes tape-animation2 {
+  50% {
+    height: $tape-width * 4;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 6%,
+      $tape-ticks 6%,
+      $tape-ticks 7.5%
+    );
+  }
+}
+// Drops tape end
+@keyframes tape-animation3 {
+  50% {
+    transform: translateY($tape-width * 2.5);
   }
 }
