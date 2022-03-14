@@ -18,8 +18,10 @@ $border-radius: 3px;
 $radio-font: "Roboto Mono", monospace;
 
 .radio-container {
+  // border: $test-border;
+
   position: absolute;
-  transform: translateY(-87px) translateX(38px);
+  // transform: translateY(-87px) translateX(38px);
 }
 
 // Top Speaker
@@ -51,7 +53,7 @@ $radio-font: "Roboto Mono", monospace;
 .radio-top::before,
 .radio-top::after {
   content: "";
-  z-index: -10;
+  z-index: 0;
 }
 .radio-top::before {
   height: 2px;
@@ -212,6 +214,7 @@ $radio-font: "Roboto Mono", monospace;
 }
 
 // Animations -- expand speakers
+// Hover styles for desktop view
 .radio-container:hover
   > .radio-bottom
   > .radio-display
@@ -228,6 +231,44 @@ $radio-font: "Roboto Mono", monospace;
 
 .radio-container:hover > .radio-top {
   animation: speaker-animation1 1s ease infinite;
+}
+
+.radio-container:hover
+  > .radio-bottom
+  > .radio-display
+  > .radio-buttons::before {
+  animation: speaker-animation2 1s ease infinite;
+}
+
+.radio-container:hover
+  > .radio-bottom
+  > .radio-display
+  > .radio-buttons::after {
+  animation: speaker-animation2 1s ease infinite;
+}
+
+.radio-container:hover > .radio-top {
+  animation: speaker-animation1 1s ease infinite;
+}
+// Animations for mobile view (automatically start)
+
+.mobile-radio
+  > .radio-container
+  > .radio-bottom
+  > .radio-display
+  > .radio-buttons::before {
+  animation: speaker-animation2 2s ease infinite;
+}
+.mobile-radio
+  > .radio-container
+  > .radio-bottom
+  > .radio-display
+  > .radio-buttons::after {
+  animation: speaker-animation2 2s ease infinite;
+}
+
+.mobile-radio > .radio-container > .radio-top {
+  animation: speaker-animation1 2s ease infinite;
 }
 
 @keyframes speaker-animation1 {

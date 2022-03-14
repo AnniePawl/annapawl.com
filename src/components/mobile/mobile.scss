@@ -1,0 +1,79 @@
+@import "../universal-styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap");
+
+// Font
+$about-font: "Montserrat", sans-serif;
+
+// Measurements
+$mobile-about-height: 50vh;
+$mobile-container-height: 50vh;
+$p-font-size: 11px;
+$padding-size: 10vw;
+
+// Colors
+$mobile-about-bkg: #fffefa;
+$h1-clr: #405572;
+// CSS art container colors
+$css-container-clrs: #faf1cc, #eaf4ff, #fff0f6, #eaffea;
+
+@for $i from 1 to 5 {
+  $color: nth($css-container-clrs, $i);
+  .mobile-box-art-#{$i} {
+    background-color: $color;
+  }
+}
+
+// $background-colors
+.mobile {
+  font-family: $about-font;
+}
+
+// About section
+.mobile-about {
+  // border: $test-border;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: $mobile-about-height;
+  background-color: $mobile-about-bkg;
+  padding: $padding-size;
+  overflow: hidden;
+  > h1 {
+    // border: $test-border;
+    color: $h1-clr;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  > p {
+    // border: $test-border;
+    font-size: $p-font-size;
+    line-height: 20px;
+  }
+}
+
+// Css Art Container
+.mobile-box {
+  // border: $test-border;
+  height: $mobile-container-height;
+}
+.mobile-box-art {
+  // border: $test-border;
+  @include center-flex;
+  height: $mobile-container-height * 0.7;
+}
+
+.mobile-box-text {
+  // border: $test-border;
+  @include center-flex;
+  // text-align: center;
+  font-size: 10px;
+  line-height: 20px;
+  padding-left: $padding-size;
+  padding-right: $padding-size;
+  height: $mobile-container-height * 0.3;
+  background: $mobile-about-bkg;
+}
+
+// Mobile Radio
+.mobile-radio {
+}

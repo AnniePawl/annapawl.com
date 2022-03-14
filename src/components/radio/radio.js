@@ -16,10 +16,11 @@ function Radio() {
             >
               -
             </button>
+
             <button
               className="radio-button2"
               onClick={() => {
-                setStation(station + 0.5);
+                setStation(station - 0.5);
               }}
             >
               +

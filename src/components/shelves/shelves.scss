@@ -28,6 +28,12 @@ $shelf-width: 56vw;
   justify-content: space-evenly;
 }
 
+.shelf-1,
+.shelf-2,
+.shelf-3 {
+  border: 2px solid yellow;
+}
+
 .shelf {
   height: $shelf-height;
   width: $shelf-width;
