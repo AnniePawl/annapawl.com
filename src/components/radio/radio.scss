@@ -1,6 +1,9 @@
 @import "../universal-styles.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
 
+// Font
+$radio-font: "Roboto Mono", monospace;
+
 // Colors
 $wall-color: #eaf4ff;
 $radio-body-clr: #ffeeb8;
@@ -14,17 +17,12 @@ $radio-width: 145px;
 $border-width: 6px;
 $border-radius: 3px;
 
-// Font
-$radio-font: "Roboto Mono", monospace;
-
+// Radio styles
 .radio-container {
-  // border: $test-border;
-
   position: absolute;
-  // transform: translateY(-87px) translateX(38px);
 }
 
-// Top Speaker
+// Top speaker
 .radio-top {
   height: $radio-height;
   width: $radio-width;
@@ -53,7 +51,6 @@ $radio-font: "Roboto Mono", monospace;
 .radio-top::before,
 .radio-top::after {
   content: "";
-  z-index: 0;
 }
 .radio-top::before {
   height: 2px;
@@ -65,7 +62,7 @@ $radio-font: "Roboto Mono", monospace;
   transform: translateY(-$radio-height * 0.7) translateX($radio-height * 0.15)
     rotate(-15deg);
 }
-// Antena base
+// antena base
 .radio-top::after {
   height: 8px;
   width: 12px;
@@ -75,9 +72,10 @@ $radio-font: "Roboto Mono", monospace;
   transform: translateY(-$radio-height * 0.3) translateX($radio-height * 0.2);
 }
 
-// Bottom Half
+// Bottom half
 .radio-bottom {
   @include center-flex;
+  flex-direction: column;
   height: $radio-height * 1.7;
   width: $radio-width;
   background-color: $radio-body-clr;
@@ -85,61 +83,53 @@ $radio-font: "Roboto Mono", monospace;
   border-right: 6px solid $radio-outline-clr;
   border-left: 6px solid $radio-outline-clr;
   border-bottom: 6px solid $radio-outline-clr;
-}
-
-// Station display
-.radio-display {
-  @include center-flex;
-  flex-direction: column;
-}
-.radio-display-station {
-  @include center-flex;
-  border-radius: 1px;
-  height: $radio-height * 0.7;
-  width: $radio-width * 0.32;
-  background-color: $radio-display-clr;
-  color: $radio-font-clr;
-  font-family: $radio-font;
-  font-size: 0.65em;
-  margin-top: 3px;
-}
-
-.radio-buttons {
-  position: relative;
-  width: 60%;
-  display: flex;
-  justify-content: space-around;
-}
-.radio-button1,
-.radio-button2 {
-  color: $radio-display-clr;
-  margin-top: 3px;
-  padding: 0;
-  @include center-flex;
-  border: 1px solid $radio-outline-clr;
-  border-radius: 1px;
-  height: 10px;
-  width: 9px;
-  font-size: 7px;
-  background-color: $wall-color;
-  font-family: $radio-font;
-}
-
-.radio-button1:hover,
-.radio-button2:hover {
-  background-color: #7089ac;
-  color: $wall-color;
+  // station display
+  .radio-display-station {
+    @include center-flex;
+    border-radius: 1px;
+    height: $radio-height * 0.7;
+    width: $radio-width * 0.32;
+    background-color: $radio-display-clr;
+    color: $radio-font-clr;
+    font-family: $radio-font;
+    font-size: 0.65em;
+  }
+  // buttons
+  .radio-buttons {
+    @include center-flex;
+    justify-content: space-between;
+    transform: translateY(3px);
+    width: 30%;
+  }
+  .radio-button1,
+  .radio-button2 {
+    @include center-flex;
+    height: 8.5px;
+    font-size: 7px;
+    background-color: $wall-color;
+    font-family: $radio-font;
+    color: $radio-display-clr;
+    border-radius: 1px;
+    border: 1px solid $radio-outline-clr;
+  }
+  // button hover styles
+  .radio-button1:hover,
+  .radio-button2:hover {
+    background-color: #7089ac;
+    color: $wall-color;
+  }
 }
 
 // Circular speakers
 .radio-buttons::before,
 .radio-buttons::after {
-  position: absolute;
   content: "";
+  position: absolute;
   height: $radio-height * 1.1;
   width: $radio-width * 0.23;
   border: 2px solid $radio-outline-clr;
   border-radius: 50%;
+  bottom: $radio-width * 0.016;
   background-image: repeating-linear-gradient(
       45deg,
       $radio-outline-clr 0%,
@@ -154,16 +144,13 @@ $radio-font: "Roboto Mono", monospace;
       $wall-color 2.5%,
       $wall-color 10%
     );
-  bottom: $radio-width * 0.016;
 }
-
-// Circular speaker spacing
+// speaker spacing
 .radio-buttons::before {
-  margin-right: $radio-width * 0.65;
+  right: 50px;
 }
-
 .radio-buttons::after {
-  margin-left: $radio-width * 0.65;
+  left: 50px;
 }
 
 // Legs
@@ -171,10 +158,10 @@ $radio-font: "Roboto Mono", monospace;
 .radio-button2::before {
   content: "";
   position: absolute;
-  border-radius: 0 0 1px 1px;
-  margin-top: $radio-height * 1.2;
   height: $radio-height * 0.2;
   width: $radio-height * 0.45;
+  border-radius: 0 0 1px 1px;
+  bottom: -16.5px;
   background-image: linear-gradient(
     to right,
     $radio-outline-clr 0 80%,
@@ -182,95 +169,56 @@ $radio-font: "Roboto Mono", monospace;
   );
 }
 .radio-button1::before {
-  margin-right: $radio-width * 0.6;
+  left: -35px;
 }
-
 .radio-button2::before {
-  margin-left: $radio-width * 0.6;
+  right: -35px;
 }
 
 // Top button
 .radio-button1::after,
 .radio-button2::after {
   content: "";
-  bottom: $radio-height * 2.35;
   position: absolute;
-  border-radius: 1px 1px 0 0;
-  margin-top: $radio-height * 1.2;
   height: $radio-height * 0.15;
   width: $radio-height * 0.45;
+  border-radius: 1px 1px 0 0;
+  transform: translateY(-$radio-height * 2.25) translateX(30px);
   background-image: linear-gradient(
     to right,
     $radio-outline-clr 0 80%,
     $radio-display-clr 80%
   );
 }
-.radio-button1::after {
-  margin-left: $radio-width * 0.35;
-}
-
-.radio-button2::after {
-  margin-left: $radio-width * 0.4;
-}
 
 // Animations -- expand speakers
-// Hover styles for desktop view
-.radio-container:hover
-  > .radio-bottom
-  > .radio-display
-  > .radio-buttons::before {
-  animation: speaker-animation2 1s ease infinite;
-}
 
-.radio-container:hover
-  > .radio-bottom
-  > .radio-display
-  > .radio-buttons::after {
-  animation: speaker-animation2 1s ease infinite;
-}
-
-.radio-container:hover > .radio-top {
-  animation: speaker-animation1 1s ease infinite;
-}
-
-.radio-container:hover
-  > .radio-bottom
-  > .radio-display
-  > .radio-buttons::before {
-  animation: speaker-animation2 1s ease infinite;
-}
-
-.radio-container:hover
-  > .radio-bottom
-  > .radio-display
-  > .radio-buttons::after {
-  animation: speaker-animation2 1s ease infinite;
-}
-
-.radio-container:hover > .radio-top {
-  animation: speaker-animation1 1s ease infinite;
-}
-// Animations for mobile view (automatically start)
-
-.mobile-radio
-  > .radio-container
-  > .radio-bottom
-  > .radio-display
-  > .radio-buttons::before {
-  animation: speaker-animation2 2s ease infinite;
-}
-.mobile-radio
-  > .radio-container
-  > .radio-bottom
-  > .radio-display
-  > .radio-buttons::after {
-  animation: speaker-animation2 2s ease infinite;
-}
-
+// Mobile animations (start automatically)
 .mobile-radio > .radio-container > .radio-top {
   animation: speaker-animation1 2s ease infinite;
 }
+.mobile-radio > .radio-container > .radio-bottom > .radio-buttons::before {
+  animation: speaker-animation2 2s ease infinite;
+}
+.mobile-radio > .radio-container > .radio-bottom > .radio-buttons::after {
+  animation: speaker-animation2 2s ease infinite;
+}
 
+// Hover animations (for desktop view)
+.radio-container:hover > .radio-top {
+  animation: speaker-animation1 1s ease infinite;
+}
+
+.radio-container:hover > .radio-bottom > .radio-buttons::before {
+  animation: speaker-animation2 1s ease infinite;
+}
+
+.radio-container:hover > .radio-bottom > .radio-buttons::after {
+  animation: speaker-animation2 1s ease infinite;
+}
+
+// Key Frames
+//Top speaker animation
 @keyframes speaker-animation1 {
   50% {
     background-image: repeating-linear-gradient(
@@ -290,6 +238,7 @@ $radio-font: "Roboto Mono", monospace;
   }
 }
 
+// Circular speaker animation
 @keyframes speaker-animation2 {
   50% {
     background-image: repeating-linear-gradient(

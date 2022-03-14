@@ -7,25 +7,24 @@ function Radio() {
     <div className="radio-container">
       <div className="radio-top"></div>
       <div className="radio-bottom">
-        <div className="radio-display">
-          <div className="radio-display-station">{station}</div>
-          <div className="radio-buttons">
-            <button
-              className="radio-button1"
-              onClick={() => setStation(station - 0.5)}
-            >
-              -
-            </button>
+        <div className="radio-display-station">{station}</div>
 
-            <button
-              className="radio-button2"
-              onClick={() => {
-                setStation(station - 0.5);
-              }}
-            >
-              +
-            </button>
-          </div>
+        <div className="radio-buttons">
+          <button
+            className="radio-button1"
+            onClick={() => setStation(station - 0.5)}
+          >
+            -
+          </button>
+
+          <button
+            className="radio-button2"
+            onClick={() => {
+              setStation(station - 0.5);
+            }}
+          >
+            +
+          </button>
         </div>
       </div>
     </div>

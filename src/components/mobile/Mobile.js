@@ -16,31 +16,34 @@ function Mobile() {
         cn={"mobile-radio"}
         box_item={<Radio />}
         text={
-          "I love the radio blah blah blah blah I love the radio blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
+          "Before getting into tech, I studied politcal science and I'm especially interested in NYC politics. I tune into WNYC most mornings to gauge what's going on in the world. I'm a big fan of public radio 📻 "
         }
       />
       <MobileBox
         id={2}
-        cn={"mobile-books"}
-        box_item={<Books />}
-        text={
-          "I love the radio blah blah blah blah I love the radio blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
-        }
+        cn={"mobile-writing"}
+        box_item={<Writing />}
+        text={[
+          "I like writing about the things I'm learning. I've published a few articles in Hacker Noon and UX Collective. ",
+          <a href="https://medium.com/@annapawl" target="blank">
+            Check them out!
+          </a>,
+        ]}
       />
       <MobileBox
         id={3}
-        cn={"mobile-sewing"}
-        box_item={<Sewing />}
+        cn={"mobile-books"}
+        box_item={<Books />}
         text={
-          "I love the radio blah blah blah blah I love the radio blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
+          "I have a growing book collection and am always looking reccomendations. Some of my favorite authors include Kurt Vonnegut and Oliver Sacks. The last book I read was, 'What a Plant Knows,' by blank blank"
         }
       />
       <MobileBox
         id={4}
-        cn={"mobile-writingg"}
-        box_item={<Writing />}
+        cn={"mobile-sewing"}
+        box_item={<Sewing />}
         text={
-          "I love the radio blah blah blah blah I love the radio blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
+          "I really enjoy machine sewing and hand embroidery. Check out my embroidery patterns on Etsy! "
         }
       />
     </div>

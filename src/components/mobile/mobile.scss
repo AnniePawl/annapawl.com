@@ -5,16 +5,16 @@
 $about-font: "Montserrat", sans-serif;
 
 // Measurements
-$mobile-about-height: 50vh;
+$mobile-about-height: 70vh;
 $mobile-container-height: 50vh;
-$p-font-size: 11px;
+$p-font-size: 11.5px;
 $padding-size: 10vw;
 
 // Colors
 $mobile-about-bkg: #fffefa;
 $h1-clr: #405572;
 // CSS art container colors
-$css-container-clrs: #faf1cc, #eaf4ff, #fff0f6, #eaffea;
+$css-container-clrs: #eaf4ff, #fff6cc, #ffe6e6, #eaffea;
 
 @for $i from 1 to 5 {
   $color: nth($css-container-clrs, $i);
@@ -50,6 +50,44 @@ $css-container-clrs: #faf1cc, #eaf4ff, #fff0f6, #eaffea;
     line-height: 20px;
   }
 }
+
+// Links
+.mobile-links {
+  padding: 0;
+  display: flex;
+  font-size: 12px;
+  list-style-type: none;
+  & > li > a {
+    font-weight: 600;
+    color: $h1-clr;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+}
+
+// a {
+//   color: $font-clr;
+//   &:visited {
+//     color: $font-clr;
+//   }
+//   &:hover {
+//     color: $link-hover-clr;
+//   }
+// }
+
+// .about > ul {
+//   line-height: 25px;
+//   padding: 0;
+//   margin-left: $margin-left;
+//   margin-top: $margin-top;
+//   & > li {
+//     font-weight: 600;
+//     list-style: none;
+//   }
+//   & > li > a {
+//     text-decoration: none;
+//   }
+// }
 
 // Css Art Container
 .mobile-box {
