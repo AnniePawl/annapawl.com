@@ -1,7 +1,9 @@
 @import "../universal-styles.scss";
 
 .sewing {
-  // position: absolute;
-  border: $test-border;
-  // transform: translateX(46vw) translateY(-9px);
+  display: flex;
+  width: 350px;
+  align-items: flex-end;
+  justify-content: space-between;
+  // border: $test-border;
 }

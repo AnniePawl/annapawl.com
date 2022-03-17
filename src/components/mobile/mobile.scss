@@ -5,7 +5,7 @@
 $about-font: "Montserrat", sans-serif;
 
 // Measurements
-$mobile-about-height: 70vh;
+$mobile-about-height: 68vh;
 $mobile-container-height: 50vh;
 $p-font-size: 11.5px;
 $padding-size: 10vw;
@@ -14,8 +14,7 @@ $padding-size: 10vw;
 $mobile-about-bkg: #fffefa;
 $h1-clr: #405572;
 // CSS art container colors
-$css-container-clrs: #eaf4ff, #fff6cc, #ffe6e6, #eaffea;
-
+$css-container-clrs: #eaf4ff, #fff6cc, #eeeeee, #ffeee8;
 @for $i from 1 to 5 {
   $color: nth($css-container-clrs, $i);
   .mobile-box-art-#{$i} {

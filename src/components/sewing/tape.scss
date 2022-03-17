@@ -11,8 +11,6 @@ $tape-height: 11px;
 $tape-width: 34px;
 
 .tape {
-  position: absolute;
-  transform: translateY(-5px);
 }
 
 .tape-top {
@@ -29,7 +27,7 @@ $tape-width: 34px;
   // Ticks
   &::before {
     height: $tape-height * 0.5;
-    width: 100%;
+    width: $tape-width;
     background-image: repeating-linear-gradient(
       to right,
       transparent,
@@ -103,13 +101,13 @@ $tape-width: 34px;
 // Extends tape length
 @keyframes tape-animation1 {
   50% {
-    height: $tape-width * 4;
+    height: $tape-width * 3;
   }
 }
 // Extends tape ticks
 @keyframes tape-animation2 {
   50% {
-    height: $tape-width * 4;
+    height: $tape-width * 3;
     background-image: repeating-linear-gradient(
       to bottom,
       transparent,
@@ -122,6 +120,6 @@ $tape-width: 34px;
 // Drops tape end
 @keyframes tape-animation3 {
   50% {
-    transform: translateY($tape-width * 2.5);
+    transform: translateY($tape-width * 1.55);
   }
 }
