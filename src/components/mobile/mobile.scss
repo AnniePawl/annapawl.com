@@ -14,7 +14,7 @@ $padding-size: 10vw;
 $mobile-about-bkg: #fffefa;
 $h1-clr: #405572;
 // CSS art container colors
-$css-container-clrs: #eaf4ff, #fff6cc, #eeeeee, #ffeee8;
+$css-container-clrs: #eaf4ff, #fff6d6, #ffece6, rgb(226, 255, 248), #ffeee8;
 @for $i from 1 to 5 {
   $color: nth($css-container-clrs, $i);
   .mobile-box-art-#{$i} {
@@ -26,67 +26,6 @@ $css-container-clrs: #eaf4ff, #fff6cc, #eeeeee, #ffeee8;
 .mobile {
   font-family: $about-font;
 }
-
-// About section
-.mobile-about {
-  // border: $test-border;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: $mobile-about-height;
-  background-color: $mobile-about-bkg;
-  padding: $padding-size;
-  overflow: hidden;
-  > h1 {
-    // border: $test-border;
-    color: $h1-clr;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  > p {
-    // border: $test-border;
-    font-size: $p-font-size;
-    line-height: 20px;
-  }
-}
-
-// Links
-.mobile-links {
-  padding: 0;
-  display: flex;
-  font-size: 12px;
-  list-style-type: none;
-  & > li > a {
-    font-weight: 600;
-    color: $h1-clr;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-}
-
-// a {
-//   color: $font-clr;
-//   &:visited {
-//     color: $font-clr;
-//   }
-//   &:hover {
-//     color: $link-hover-clr;
-//   }
-// }
-
-// .about > ul {
-//   line-height: 25px;
-//   padding: 0;
-//   margin-left: $margin-left;
-//   margin-top: $margin-top;
-//   & > li {
-//     font-weight: 600;
-//     list-style: none;
-//   }
-//   & > li > a {
-//     text-decoration: none;
-//   }
-// }
 
 // Css Art Container
 .mobile-box {

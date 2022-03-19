@@ -1,6 +1,8 @@
 @import "../universal-styles.scss";
 
-.landing {
+.desktop {
   height: 100vh;
   display: flex;
+  overflow: hidden;
+  // flex-direction: row;
 }

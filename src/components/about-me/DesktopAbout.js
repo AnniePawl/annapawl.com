@@ -3,11 +3,11 @@ import "./about.scss";
 
 function About() {
   return (
-    <div className="about">
+    <div className="desktop-about">
       <h1>
         Anna <br /> Pawl
       </h1>
-      <p className="about-me">
+      <p>
         I'm a software engineer with a focus on front-end development and an
         interest in design. I'm curiosity-driven and spend a lot of my free time
         learning new things and experimenting. I love using my creativity to
@@ -21,7 +21,6 @@ function About() {
         , if you're interested in learning more about the process.
       </p>
 
-      <div class="pin"></div>
       <ul>
         <li>
           <a href="https://github.com/AnniePawl" target="blank">

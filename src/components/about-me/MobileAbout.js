@@ -1,5 +1,5 @@
 import React from "react";
-import "./mobile.scss";
+import "./about.scss";
 
 function MobileAbout() {
   return (
@@ -7,7 +7,7 @@ function MobileAbout() {
       <h1>
         Anna <br /> Pawl
       </h1>
-      <p className="mobile-about-me">
+      <p className="mobile-about">
         I'm a software engineer with a focus on front-end development and an
         interest in design. I love using my creativity to make satisfying little
         experiences with code. The web should be fun ✨ <br />

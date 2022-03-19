@@ -1,8 +1,9 @@
-@import "../universal-styles.scss";
+@import "../../universal-styles.scss";
 
 .sewing {
+  transform: scale(0.8);
   display: flex;
-  width: 350px;
+  width: 275px;
   align-items: flex-end;
   justify-content: space-between;
   // border: $test-border;

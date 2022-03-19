@@ -1,4 +1,4 @@
-@import "../universal-styles.scss";
+@import "../../universal-styles.scss";
 
 // Colors
 $book-pages: #fffefa;
@@ -44,10 +44,20 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
   @for $i from 1 to 6 {
     $delay: nth($delays, $i);
     .book-#{$i} {
-      // animation: books-animation 2s $delay infinite;
+      animation: books-animation 5s $delay infinite;
+      //   animation: books-animation2 2s $delay;
+      // }
     }
   }
 }
+// .mobile-books > .books-container {
+//   @for $i from 1 to 6 {
+//     $delay2: nth($delays2, $i);
+//     .book-#{$i} {
+//       animation: books-animation2 2s $delay2;
+//     }
+//   }
+// }
 
 // .mobile-books > .books-container {
 //   @for $i from 1 to 6 {
@@ -60,8 +70,8 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
 
 // Keyframes
 @keyframes books-animation {
-  100% {
-    transform: translateY(-18px);
+  50% {
+    transform: translateY(-20px);
   }
 }
 
@@ -90,6 +100,8 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
 }
 
 .book-1 {
+  position: relative;
+  z-index: 5;
   margin-left: -3px;
   background-color: $book1-clr;
   height: $book-height * 0.8;
@@ -118,6 +130,7 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
   border-bottom-left-radius: $book-border-radius;
   margin-right: $width * 0.1;
   position: relative;
+  z-index: 4;
 
   &::after {
     content: "";
@@ -143,6 +156,8 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
 }
 
 .book-3 {
+  position: relative;
+  z-index: 3;
   margin-left: $width * 0.08;
   width: $book-width * 1.1;
   justify-content: space-around;
@@ -168,6 +183,8 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
 }
 
 .book-4 {
+  position: relative;
+  z-index: 2;
   width: $book-width * 1.2;
   height: $book-height * 1.15;
   border-right: 9px double $book4-border;
@@ -206,4 +223,36 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
       $book5-label2 65% 100%
     );
   }
+}
+
+// Mobile specific styles
+
+$m-book-2-clr: #d8c5b3;
+$m-book-2-clr2: #afa190;
+// $m-book-2-clr: #e0e0e0;
+// $m-book-2-clr2: #c4c4c4;
+// $knob-clr: #cccccc;
+// $knob-clr2: #979696;
+
+.mobile-books > .books-container > .book-2 {
+  background-color: #7ca2db;
+  &::before {
+    border-left: 4px solid rgb(182, 131, 139);
+    border-right: 4px solid rgb(224, 178, 193);
+    border-bottom: 4px solid transparent;
+  }
+}
+
+.mobile-books > .books-container > .book-3 {
+  background-image: linear-gradient(
+    $m-book-2-clr 0 60%,
+    $m-book-2-clr2 60% 40%
+  );
+}
+
+.mobile-books > .books-container > .book-5::after {
+  background-image: linear-gradient(#ddd1bf 0 65%, #afa698 65% 100%);
+}
+.mobile-books > .books-container > .book-5::before {
+  border-right: 14px double #ddd1bf;
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import MobileAbout from "./MobileAbout";
+import MobileAbout from "../about-me/MobileAbout";
 import MobileBox from "./MobileBox";
 // CSS art components
-import Radio from "../radio/radio";
-import Books from "../books/Books";
-import Sewing from "../sewing/Sewing";
-import Writing from "../writing/writing";
+import Radio from "../css-items/radio/radio";
+import Books from "../css-items/books/Books";
+import Sewing from "../css-items/sewing/Sewing";
+import Writing from "../css-items/writing/writing";
 
 function Mobile() {
   return (
@@ -16,11 +16,27 @@ function Mobile() {
         cn={"mobile-radio"}
         box_item={<Radio />}
         text={
-          "Before getting into tech, I studied politcal science and I'm especially interested in NYC politics. I tune into WNYC most mornings to gauge what's going on in the world. I'm a big fan of public radio 📻 "
+          "I'm a big fan of public radio. I tune into WNYC most mornings to gague what's going on in the world. I'm especially interested in NYC politics. "
         }
       />
       <MobileBox
         id={2}
+        cn={"mobile-books"}
+        box_item={<Books />}
+        text={
+          "I have a growing book collection and am always looking reccomendations. Some of my favorite authors include Kurt Vonnegut and Oliver Sacks. The last book I read was, 'What a Plant Knows,' by blank blank"
+        }
+      />
+      <MobileBox
+        id={3}
+        cn={"mobile-sewing"}
+        box_item={<Sewing />}
+        text={
+          "I really enjoy machine sewing and hand embroidery. Check out my embroidery patterns on Etsy! "
+        }
+      />
+      <MobileBox
+        id={4}
         cn={"mobile-writing"}
         box_item={<Writing />}
         text={[
@@ -29,22 +45,6 @@ function Mobile() {
             Check them out!
           </a>,
         ]}
-      />
-      <MobileBox
-        id={3}
-        cn={"mobile-books"}
-        box_item={<Books />}
-        text={
-          "I have a growing book collection and am always looking reccomendations. Some of my favorite authors include Kurt Vonnegut and Oliver Sacks. The last book I read was, 'What a Plant Knows,' by blank blank"
-        }
-      />
-      <MobileBox
-        id={4}
-        cn={"mobile-sewing"}
-        box_item={<Sewing />}
-        text={
-          "I really enjoy machine sewing and hand embroidery. Check out my embroidery patterns on Etsy! "
-        }
       />
     </div>
   );
