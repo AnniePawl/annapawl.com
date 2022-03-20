@@ -16,16 +16,33 @@ $sm-left-arm-width: 45px;
 $sm-base-height: 40px;
 $needle-height: 20px;
 $sm-clr: white;
-$sm-clr2: #bdbdbd;
-$knob-clr: #cccccc;
-$knob-clr2: #979696;
-$spool-clr: #d4c4b6;
-$spool-clr2: #a79a8b;
+$sm-clr2: #707070;
+$knob-clr: #888888;
+$knob-clr2: #494949;
+$spool-clr: #8d8d8d;
+$spool-clr2: #525252;
 $thread-clr: rgb(148, 196, 173);
 $thread-clr2: rgb(193, 253, 225);
-$fabric-clr: rgba(255, 238, 140, 0.6);
-$fabric-clr2: rgba(117, 142, 189, 0.6);
-$fabric-clr3: rgba(247, 102, 102, 0.8);
+$d-thread-clr: rgb(255, 121, 103);
+$d-thread-clr2: rgb(255, 202, 198);
+$fabric-clr: rgba(255, 233, 111, 0.6);
+$fabric-clr2: rgba(73, 73, 73, 0.6);
+$fabric-clr3: rgb(253, 98, 98);
+
+// Desktop specific styles
+.desktop-sewing-container {
+  .thread {
+    background-image: repeating-linear-gradient(
+      35deg,
+      $d-thread-clr,
+      $d-thread-clr 0 5%,
+      $d-thread-clr2 5% 10%
+    );
+    &::after {
+      background-color: $d-thread-clr;
+    }
+  }
+}
 
 // Needle
 .needle {
@@ -222,9 +239,9 @@ $fabric-clr3: rgba(247, 102, 102, 0.8);
   50% {
     background-image: repeating-linear-gradient(
       35deg,
-      $thread-clr2,
-      $thread-clr2 0 5%,
-      $thread-clr 5% 10%
+      $d-thread-clr2,
+      $d-thread-clr2 0 5%,
+      $d-thread-clr 5% 10%
     );
   }
 }

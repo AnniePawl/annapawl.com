@@ -3,8 +3,16 @@
 .sewing {
   transform: scale(0.8);
   display: flex;
-  width: 275px;
+  width: 325px;
   align-items: flex-end;
   justify-content: space-between;
   // border: $test-border;
+}
+
+.desktop-sewing-container {
+  // display: flex;
+  // width: 275px;
+  // align-items: flex-end;
+  // justify-content: space-between;
+  transform: scale(0.95) translateY(-172px);
 }

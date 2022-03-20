@@ -1,8 +1,20 @@
 @import "../universal-styles.scss";
 
+// Colors
+$wall-clr: #ebf5ff;
+// $wall-clr: #507e68;
+
+// Measurements
+$shelves-width: 73vw;
+
 .desktop {
-  height: 100vh;
   display: flex;
   overflow: hidden;
-  // flex-direction: row;
+}
+.desktop-shelves-container {
+  height: 100vh;
+  width: $shelves-width;
+  @include center-flex();
+  background-color: $wall-clr;
+  overflow: hidden;
 }

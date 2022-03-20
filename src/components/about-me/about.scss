@@ -12,26 +12,25 @@ $font-clr: #1f1f1f;
 $link-hover-clr: #ff8d75;
 
 // Measurements
-// heights/ widths
-$desktop-about-height: 100vh;
-$desktop-about-width: 27vw;
 
-$mobile-about-height: 35vh;
-$mobile-about-width: 100vw;
 // heights / widths
+$mobile-about-height: 67vh;
+$mobile-about-width: 100vw;
 $desktop-about-height: 100vh;
 $desktop-about-width: 27vw;
-$tablet-about-height: 32vh;
+$tablet-about-height: 28vh;
 $tablet-about-width: 100vw;
 // H1 sizes
 $desktop-h1-size: 30px;
 $tablet-h1-size: 25px;
-$mobile-h1-size: 28px;
+$mobile-h1-size: 23px;
 // Font Sizes
 $desktop-font-size: 13px;
 $tablet-font-size: 14px;
+$mobile-font-size: 12px;
 // line heights
 $desktop-line-height: 25px;
+$mobile-line-height: 20px;
 // margins
 $margin-top: 45px;
 // $margin-left: 60px;
@@ -54,6 +53,21 @@ $margin-top: 45px;
 
 // MOBILE SPECIFIC STYLES
 .mobile-about {
+  display: flex;
+  padding: 13%;
+  margin-right: 12px;
+  flex-direction: column;
+  height: $mobile-about-height;
+  line-height: $mobile-line-height;
+  // border: $test-border;
+  justify-content: space-around;
+  font-size: $mobile-font-size;
+  h1 {
+    font-size: $mobile-h1-size;
+    color: $tablet-h1-clr;
+    font-weight: 800;
+    line-height: $mobile-line-height + 5px;
+  }
 }
 
 // DESKTOP SPECIFIC STYLES
@@ -114,8 +128,10 @@ a {
 }
 
 .desktop-about > ul,
+.mobile-about > ul,
 .tablet-about > div > ul {
   line-height: 22px;
+  font-size: 13px;
   padding: 0;
   & > li {
     font-weight: 600;
@@ -132,4 +148,9 @@ a {
     // margin-left: 15px;
     // margin-right: 20px;
   }
+}
+
+.mobile-about > ul {
+  font-size: 10px;
+  line-height: 16px;
 }

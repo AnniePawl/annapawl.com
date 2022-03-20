@@ -2,7 +2,7 @@ import React from "react";
 import MobileAbout from "../about-me/MobileAbout";
 import MobileBox from "./MobileBox";
 // CSS art components
-import Radio from "../css-items/radio/radio";
+import Radio from "../css-items/radio/Radio";
 import Books from "../css-items/books/Books";
 import Sewing from "../css-items/sewing/Sewing";
 import Writing from "../css-items/writing/writing";

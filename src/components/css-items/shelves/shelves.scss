@@ -1,42 +1,61 @@
 @import "../../universal-styles.scss";
 
 // Colors
-$wall-clr: #eaf4ff;
-$shelf-clr: #ba9c8f;
-$shelf-clr2: #a1877c;
-$bracket-clr: #3d3d3d;
-$bracket-clr2: #636363;
+// desktop shelf
+$shelf-clr: #b6a195;
+$shelf-clr2: #6e635c;
+$shelf-clr: #757575;
+$shelf-clr2: #4e4e4e;
+$bracket-clr: #686868;
+$bracket-clr2: #4e4e4e;
 $shelf-shadow-clr: #7e8394;
+// tablet shelf
+$t-shelf-clr: #af9893;
+$t-shelf-clr2: #7c6767;
+$t-bracket-clr: #414141;
+$t-bracket-clr2: #636363;
+$t-shelf-shadow-clr: #7e8394;
 
 // Measurements
-$shelves-width: 73vw;
+$desktop-shelves-width: 73vw;
+$tablet-shelves-width: 80vw;
+
 $shelf-height: 15px;
-$shelf-width: 56vw;
+$desktop-shelf-width: 55vw;
 
-.shelves-container {
-  height: 100vh;
-  width: $shelves-width;
-  @include center-flex();
-  background-color: $wall-clr;
+// Shares Styles
+.desktop-shelves,
+.tablet-shelves {
   overflow: hidden;
-}
-.shelves {
-  height: 108vh;
   @include center-flex();
-
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.shelf-1,
-.shelf-2,
-.shelf-3 {
-  border: 2px solid yellow;
+.shelf-contents {
+  // border: $test-border;
+  width: $desktop-shelf-width;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
 }
 
+// Desktop-specific styles
+.desktop-shelves {
+  height: 108vh;
+  width: $desktop-shelves-width;
+}
+
+// Tablet-specific styles
+.tablet-shelves {
+  height: 80vh;
+  width: $tablet-shelves-width;
+}
+
+// Shelf styles
 .shelf {
   height: $shelf-height;
-  width: $shelf-width;
+  width: $desktop-shelf-width;
   margin-top: 0px;
   display: flex;
   background-image: linear-gradient($shelf-clr 0 70%, $shelf-clr2 70% 100%);
@@ -47,7 +66,7 @@ $shelf-width: 56vw;
   &::before {
     content: "";
     margin-top: 15px;
-    background-color: $bracket-clr;
+    // background-color: $bracket-clr;
     background-image: linear-gradient(
       $bracket-clr 0 70%,
       $bracket-clr2 70% 100%
@@ -68,5 +87,24 @@ $shelf-width: 56vw;
     width: 12px;
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
+  }
+}
+
+// Tablet-specific shelf styles
+.tablet-shelf {
+  width: $tablet-shelves-width;
+  background-image: linear-gradient($t-shelf-clr 0 70%, $t-shelf-clr2 70% 100%);
+  box-shadow: none;
+  &::before {
+    background-image: linear-gradient(
+      $t-bracket-clr 0 70%,
+      $t-bracket-clr2 70% 100%
+    );
+  }
+  &::after {
+    background-image: linear-gradient(
+      $t-bracket-clr 0 70%,
+      $t-bracket-clr2 70% 100%
+    );
   }
 }

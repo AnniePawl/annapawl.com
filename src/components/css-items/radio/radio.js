@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./radio.scss";
 
-function Radio() {
+function Radio(props) {
+  const { cn } = props;
   const [station, setStation] = useState(105.9);
   const programs = [
     "NPR",
@@ -15,7 +16,7 @@ function Radio() {
   // automatically update radio station (mobile view only)
 
   return (
-    <div className="radio-container">
+    <div className={`radio-container ${cn}`}>
       <div className="radio-top"></div>
       <div className="radio-bottom">
         <div className="radio-display-station">{station}</div>

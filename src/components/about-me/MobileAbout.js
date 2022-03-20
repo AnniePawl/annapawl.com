@@ -7,12 +7,12 @@ function MobileAbout() {
       <h1>
         Anna <br /> Pawl
       </h1>
-      <p className="mobile-about">
+      <p>
         I'm a software engineer with a focus on front-end development and an
         interest in design. I love using my creativity to make satisfying little
         experiences with code. The web should be fun ✨ <br />
-        <br /> Scroll down to get to know me through some fun facts. I made each
-        item with pure CSS. Check out my website,{" "}
+        <br /> Scroll down for some fun facts about me. I made each item with
+        pure CSS. Check out my website,{" "}
         <a href="https://anniepawl.github.io/dwc/" target="blank">
           Drawing with Code
         </a>
