@@ -1,14 +1,19 @@
 // Colors
 // $thread-clr: rgb(148, 196, 173);
 // $thread-clr2: rgb(193, 253, 225);
-$pc-color: rgb(116, 156, 231);
-$pc-color2: rgb(43, 97, 197);
-$pc-base-clr: #dddddd;
-$pc-base-clr2: #929292;
+$desktop-radio-outline-clr: #7ab1fd;
+// background color
+$radio-body-clr: #ffeeb8;
+$pc-color: #e7ceff;
+$pc-color2: #c5a6f7;
+// $pc-border-clr: #7ab1fd;
+$pc-base-clr: #b8a0a0;
+$pc-base-clr2: #8f7e7e;
 
 $pin-clr: #cfcfcf;
-$pin-top-clr: #fc7878;
-$pin-top-hover-clr: #ffe46b;
+$pin-top-clr: #fc93d0;
+// $pin-top-clr: #fc7878;
+$pin-top-hover-clr: #ffe77b;
 
 // Measurements
 $pc-base-width: 50px;
@@ -18,7 +23,7 @@ $pin-width: 1px;
 $pin-top-size: 4px;
 
 .pin-cushion-container {
-  transform: scale(0.9);
+  transform: scale(0.85) translateY(1px);
 }
 
 // Pin cushion base
@@ -31,6 +36,7 @@ $pin-top-size: 4px;
   box-shadow: 0 3px $pc-base-clr2;
   // cushion
   &::before {
+    // border: 3px solid $pc-border-clr;
     content: "";
     position: absolute;
     z-index: 1;
@@ -57,7 +63,7 @@ $pin-top-size: 4px;
     width: $pin-top-size;
     border-radius: 50%;
     background-color: $pin-top-clr;
-    border: 0.1em solid #e86146;
+    border: 0.1em solid #ff7cc8;
     transform: translateX(-$pin-width * 1.4) translateY(-$pin-width * 4);
   }
 }
@@ -92,8 +98,7 @@ $pin-top-size: 4px;
 
 //
 .pin-cushion-container:hover > .pins > .pin::before {
-  background-color: $pin-top-hover-clr;
-  border: 1px solid goldenrod;
+  animation: desktop-pin-animation 1s infinite;
 }
 
 .mobile-sewing > .sewing > .pin-cushion-container > .pins > .pin::before {
@@ -104,5 +109,13 @@ $pin-top-size: 4px;
   50% {
     background-color: rgb(87, 114, 187);
     border: 0.1em solid rgb(64, 86, 146);
+  }
+}
+
+// Mobile Animations
+@keyframes desktop-pin-animation {
+  50% {
+    background-color: $pin-top-hover-clr;
+    border: 0.1em solid rgb(255, 226, 64);
   }
 }

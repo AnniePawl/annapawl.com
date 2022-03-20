@@ -1,9 +1,10 @@
 import React from "react";
 import "./writing.scss";
 
-function Writing() {
+function Writing(props) {
+  const { cn } = props;
   return (
-    <div className="writing-container">
+    <div className={`writing-container ${cn}`}>
       <div className="paper"></div>
       {/* <div className="notebook notebook1"></div>
       <div className="notebook notebook2"></div> */}

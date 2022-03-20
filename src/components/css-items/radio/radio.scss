@@ -13,12 +13,12 @@ $border-radius: 3px;
 // Colors
 // outline color
 $radio-outline-clr: #7089ac;
-$desktop-radio-outline-clr: #535353;
+$desktop-radio-outline-clr: #7ab1fd;
 // background color
 $radio-body-clr: #ffeeb8;
-$desktop-radio-body-clr: #ffefb8;
+$desktop-radio-body-clr: #ffdfe9;
 // display color
-$desktop-radio-display-clr: #1d1d1d;
+$desktop-radio-display-clr: #3568af;
 $radio-display-clr: #405572;
 
 $wall-color: #eaf4ff;
@@ -28,6 +28,7 @@ $radio-font-clr: white;
 .desktop-radio-container,
 .tablet-radio-container {
   transform: translateY(-86px);
+  // border: 1px solid yellow;
 }
 
 // Top speaker

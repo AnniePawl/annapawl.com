@@ -1,8 +1,7 @@
 @import "../universal-styles.scss";
 
 // Colors
-$wall-clr: #ebf5ff;
-// $wall-clr: #507e68;
+$wall-clr: #ddedff;
 
 // Measurements
 $shelves-width: 73vw;
@@ -12,6 +11,7 @@ $shelves-width: 73vw;
   overflow: hidden;
 }
 .desktop-shelves-container {
+  // border: $test-border;
   height: 100vh;
   width: $shelves-width;
   @include center-flex();

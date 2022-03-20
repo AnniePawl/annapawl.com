@@ -2,19 +2,19 @@
 
 // Colors
 // desktop shelf
-$shelf-clr: #b6a195;
-$shelf-clr2: #6e635c;
-$shelf-clr: #757575;
-$shelf-clr2: #4e4e4e;
-$bracket-clr: #686868;
-$bracket-clr2: #4e4e4e;
-$shelf-shadow-clr: #7e8394;
+$shelf-clr: #f0d9bf;
+$shelf-clr2: #7ab1fd;
+// $shelf-clr: #ac968e;
+// $shelf-clr2: #8f7e78;
+$bracket-clr: #ffe6ca;
+$bracket-clr2: #7ab1fd;
+$shelf-shadow-clr: #accaec;
 // tablet shelf
 $t-shelf-clr: #af9893;
 $t-shelf-clr2: #7c6767;
 $t-bracket-clr: #414141;
 $t-bracket-clr2: #636363;
-$t-shelf-shadow-clr: #7e8394;
+$t-shelf-shadow-clr: #dfedfd;
 
 // Measurements
 $desktop-shelves-width: 73vw;
@@ -42,7 +42,7 @@ $desktop-shelf-width: 55vw;
 
 // Desktop-specific styles
 .desktop-shelves {
-  height: 108vh;
+  height: 110vh;
   width: $desktop-shelves-width;
 }
 

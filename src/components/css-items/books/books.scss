@@ -67,9 +67,13 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
   }
 }
 
+.desktop-books-container {
+  // display: flex;
+}
+
 .tablet-books-container,
 .desktop-books-container {
-  transform: translateY(-113px);
+  transform: translateY(-119px) scale(1.1);
 }
 
 .books-container {
@@ -212,22 +216,22 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
 }
 
 // DESKTOP SPECIFIC STYLES
-$d-book1-clr: #3b3b3b;
-$d-book2-clr: #ff9b58;
-$d-book2-ribbon: #4972be;
-$d-book2-ribbon2: rgb(88, 130, 221);
-$d-book3-clr: #ffe6a0;
-$d-book3-clr2: #f8d04e;
-$d-book3-clr3: #6a9cf8;
-$d-book3-clr4: #406ed1;
-$d-book4-clr: #868686;
-$d-book4-clr2: #616060;
-$d-book4-border: #fff7b3;
-$d-book5-clr: #5d93f7;
-$d-book5-clr2: #406ed1;
-$d-book5-border: #ffc198;
-$d-book5-label: #ffc198;
-$d-book5-label2: #ffa365;
+$d-book1-clr: #aa90e7;
+$d-book2-clr: #7ab1fd;
+$d-book2-ribbon: #98f8db;
+$d-book2-ribbon2: #78ddbf;
+$d-book3-clr: #ffd1a6;
+$d-book3-clr2: #ffb87e;
+$d-book3-clr3: #c4c5ff;
+$d-book3-clr4: #9d9ee7;
+$d-book4-clr: #ffe6e6;
+$d-book4-clr2: #fdcccc;
+$d-book4-border: #9d9ee7;
+$d-book5-clr: #9dc6ff;
+$d-book5-clr2: #7ab1fd;
+$d-book5-border: #fff3d1;
+$d-book5-label: #fff3d1;
+$d-book5-label2: #f5da91;
 
 // MOBILE SPECIFIC STYLES
 $m-book-2-clr: #d8c5b3;

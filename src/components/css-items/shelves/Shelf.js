@@ -6,8 +6,8 @@ export default function Shelf(props) {
   return (
     <div>
       <div className="shelf-contents ">
-        {cssItem1}
-        {cssItem2}
+        <div> {cssItem1}</div>
+        <div> {cssItem2}</div>
       </div>
       <div className={`shelf ${cn}`}></div>
     </div>

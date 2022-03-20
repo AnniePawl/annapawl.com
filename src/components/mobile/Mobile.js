@@ -5,7 +5,7 @@ import MobileBox from "./MobileBox";
 import Radio from "../css-items/radio/Radio";
 import Books from "../css-items/books/Books";
 import Sewing from "../css-items/sewing/Sewing";
-import Writing from "../css-items/writing/writing";
+import Writing from "../css-items/writing/Writing";
 
 function Mobile() {
   return (

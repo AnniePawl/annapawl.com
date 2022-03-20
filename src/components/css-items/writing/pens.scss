@@ -1,42 +1,34 @@
 @import "../../universal-styles.scss";
 
 // Colors
-$wall-clr: #fff6cd;
-$paper-clr: rgba(255, 255, 255, 0.7);
-$paper-lines: rgb(140, 186, 255);
-$paper-lines2: rgba(255, 104, 104, 0.6);
-$notebook-clr: #5c5c5c;
-$notebook-clr2: #757575;
-$bookmark-clr: #83a7ca;
-$bookmark-clr2: #aacbee;
-$cup-clr: #afa190;
-$cup-clr2: #c5b5a6;
-
-$cup-rim-clr: #afa190;
-$cup-rim-clr2: #c5b5a6;
-$ruler-clr: #a02020;
-$ruler-clr2: #cfcfcf;
-$ruler-ticks: #696969;
-$pen-clr: #ec7781;
-$pen-clr2: rgb(253, 159, 159);
+$wall-clr: #d4e7ff;
+$cup-clr: #fff8fa;
+$cup-clr2: #ffe9f0;
+$cup-rim-clr: #ffe9f0;
+$cup-rim-clr2: #fdc4ec;
+$cup-border-clr: #fdc4ec;
+$ruler-clr: #ffc077;
+$ruler-clr2: #fad9b3;
+$ruler-ticks: #7ab1fd;
+$pen-clr: #ff92c9;
+$pen-clr2: #fcbfe9;
 $pen-clr3: #686868;
 $pen-clr4: #999999;
-$pencil-top-clr: rgb(145, 145, 145);
-$pencil-top-clr2: rgb(197, 197, 197);
-$eraser-clr: #ce79aa;
-$eraser-clr2: rgb(248, 169, 248);
+$pencil-top-clr: #7c7c7c;
+$pencil-top-clr2: #bbbbbb;
+$eraser-clr: #f080a1;
+$eraser-clr2: #ffb7e9;
 $pencil-clr: #f3d860;
 $pencil-clr2: rgb(255, 240, 167);
-$pencil2-clr: #6473a3;
-$pencil2-clr2: #7694c2;
+$pencil2-clr: #7ab1fd;
+$pencil2-clr2: #aed0ff;
 
 // Measurements
-$paper-height: 180px;
-$paper-width: 130px;
+
 $notebook-height: 150px;
 $notebook-width: 25px;
 $cup-height: 55px;
-$cup-width: 45px;
+$cup-width: 50px;
 $ruler-height: 95px;
 $ruler-width: 18px;
 $pen-height: 65px;
@@ -44,122 +36,11 @@ $pen-width: 8px;
 $pencil-height: 80px;
 $pencil-width: 3px;
 
-.desktop-writing-container {
-  border: $test-border;
+.desktop-pens-container {
+  transform: translateY(-149px) scale(0.9);
 }
-
-.writing-container {
-  // border: $test-border;
-  // transform: scale(0.9);
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-.paper {
-  height: $paper-height;
-  width: $paper-width;
-  box-shadow: 0.5px 0.5px 5px lightgray;
-  transform: translateX(-6px);
-  background-image: linear-gradient(
-      to right,
-      $paper-clr 0 15%,
-      $paper-lines2 15% 15.5%,
-      $paper-clr 15.5%
-    ),
-    repeating-linear-gradient($paper-clr 0 5%, $paper-lines 5% 5.5%);
-  &::before {
-    transform: translateY(31px) translateX(6px);
-    background-color: #fff6cd;
-
-    content: "";
-    display: flex;
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    box-shadow: inset 1px 1px 1px gray;
-  }
-  &::after {
-    transform: translateY(135px) translateX(6px);
-    background-color: #fff6cd;
-
-    content: "";
-    display: flex;
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    box-shadow: inset 1px 1px 1px gray;
-  }
-}
-
-// .notebook {
-//   height: $notebook-height;
-//   width: $notebook-width;
-//   border-radius: 2px;
-//   // margin-right: 25px;
-
-//   background-image: linear-gradient(
-//     to right,
-//     $notebook-clr 0 50%,
-//     $notebook-clr2 50%
-//   );
-//   // Book ribs
-//   &::before {
-//     content: "";
-//     display: flex;
-//     height: $notebook-height;
-//     width: $notebook-width * 1.05;
-//     transform: translateX(-0.5px) translateY(-5px);
-//     background: repeating-linear-gradient(
-//       transparent,
-//       transparent 25%,
-//       #585858 25%,
-//       #585858 28%
-//     );
-//   }
-// // Bookmark
-// &::after {
-//   content: "";
-//   display: flex;
-//   height: $notebook-height * 0.7;
-//   width: $notebook-width * 0.15;
-//   border-radius: 1px;
-//   transform: translateY(-$notebook-height - 1px) translateX(4px);
-//   background: linear-gradient(
-//     to right,
-//     $bookmark-clr 0 50%,
-//     $bookmark-clr2 50%
-//   );
-// }
-// }
-
-// .notebook1 {
-//   // margin-right: 9px;
-//   transform: translateX(-35px) rotate(12deg);
-//   &::after {
-//     content: "";
-//     display: flex;
-//     height: $notebook-height * 0.7;
-//     width: $notebook-width * 0.15;
-//     border-radius: 1px;
-//     transform: translateY(-$notebook-height - 1px) translateX(9px);
-//     background: linear-gradient(
-//       to right,
-//       $bookmark-clr 0 50%,
-//       $bookmark-clr2 50%
-//     );
-//   }
-// }
-// .notebook2 {
-//   // margin-right: 9px;
-//   transform: translateX(-20px);
-// }
-
 // Cup
 .cup-container {
-  position: absolute;
-  transform: translateY(-4px);
-  // border: $test-border;
 }
 
 .cup-contents {
@@ -171,10 +52,11 @@ $pencil-width: 3px;
 
 // Cup
 .cup {
+  border: 2.5px solid $cup-border-clr;
   position: relative;
   height: $cup-height;
   width: $cup-width;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 2px 2px;
   background-image: linear-gradient(to right, $cup-clr 0 50%, $cup-clr2 50%);
   // Rim
   &::before {
@@ -184,23 +66,27 @@ $pencil-width: 3px;
     width: $cup-width * 1.1;
     border-radius: 1.5px;
     background-image: linear-gradient($cup-rim-clr 0 50%, $cup-rim-clr2 50%);
-    transform: translateX(-2.5px);
+    transform: translateY(-4px) translateX(-5px);
   }
   // Cup bottom
   &::after {
     content: "";
     display: flex;
-    height: $cup-width * 0.13;
-    width: $cup-width * 0.75;
+    height: $cup-width * 0.2;
+    width: $cup-width * 0.8;
+    border-right: 2px solid $cup-border-clr;
+    border-left: 2px solid $cup-border-clr;
+    border-bottom: 2px solid $cup-border-clr;
     border-radius: 0 0 1px 1px;
     background-image: linear-gradient(to right, $cup-clr 0 50%, $cup-clr2 50%);
-    transform: translateY(49px) translateX(5.5px);
+    transform: translateY(46px) translateX(2px);
   }
 }
 
 // Ruler
 .ruler {
   // animation: ruler-animation 5s infinite;
+  // border: 2px solid #7ab1fd;
   display: flex;
   position: relative;
   z-index: 0;
@@ -226,7 +112,7 @@ $pencil-width: 3px;
       transparent,
       transparent 7%,
       $ruler-ticks 7%,
-      $ruler-ticks 8%
+      $ruler-ticks 8.5%
     );
   }
   // Ruler circle
@@ -319,7 +205,7 @@ $pencil-width: 3px;
   // animation: pencil2-animation 5s 0s infinite;
   background-color: $pencil2-clr;
   box-shadow: $pencil-width 0 $pencil2-clr2;
-  transform: rotate(5deg) translatex(0px);
+  transform: rotate(5deg) translatex(-1.5px);
 }
 
 // Keyframes
@@ -344,4 +230,18 @@ $pencil-width: 3px;
   70% {
     transform: rotate(5deg) translatex(2px) translateY(10px);
   }
+}
+
+// Desktop Animation
+.desktop-pens-container:hover > .cup-contents > .ruler {
+  animation: ruler-animation 5s infinite;
+}
+.desktop-pens-container:hover > .cup-contents > .pen {
+  animation: pen-animation 2s infinite;
+}
+.desktop-pens-container:hover > .cup-contents > .pencil-1 {
+  animation: pencil1-animation 2s infinite;
+}
+.desktop-pens-container:hover > .cup-contents > .pencil-2 {
+  animation: pencil2-animation 2s infinite;
 }
