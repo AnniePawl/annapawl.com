@@ -2,34 +2,62 @@
 
 // Colors
 // desktop shelf
-$shelf-clr: #f0d9bf;
+$shelf-clr: #f1dbc1;
 $shelf-clr2: #7ab1fd;
 // $shelf-clr: #ac968e;
 // $shelf-clr2: #8f7e78;
-$bracket-clr: #ffe6ca;
+$bracket-clr: #f1dbc1;
 $bracket-clr2: #7ab1fd;
-$shelf-shadow-clr: #accaec;
+$shelf-shadow-clr: #a6cefc;
 // tablet shelf
 $t-shelf-clr: #af9893;
 $t-shelf-clr2: #7c6767;
 $t-bracket-clr: #414141;
 $t-bracket-clr2: #636363;
-$t-shelf-shadow-clr: #dfedfd;
+// $t-shelf-shadow-clr: #f52323;
 
 // Measurements
+$mobile-shelves-height: 100vh;
+$mobile-shelf-width: 75vw;
 $desktop-shelves-width: 73vw;
-$tablet-shelves-width: 80vw;
+$tablet-shelves-width: 70vw;
 
 $shelf-height: 15px;
 $desktop-shelf-width: 55vw;
 
+.mobile-shelves {
+  // border: $test-border;
+  height: $mobile-shelves-height;
+  @include center-flex();
+  flex-direction: column;
+  justify-content: space-evenly;
+  .shelf {
+    width: $mobile-shelf-width;
+  }
+  > div > .shelf-contents {
+    // border: $test-border;
+    width: $mobile-shelf-width;
+    justify-content: space-evenly;
+  }
+}
+
 // Shares Styles
 .desktop-shelves,
 .tablet-shelves {
+  // border: $test-border;
   overflow: hidden;
   @include center-flex();
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.tablet-shelves {
+  justify-content: space-around;
+  h1 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
 .shelf-contents {
@@ -50,13 +78,15 @@ $desktop-shelf-width: 55vw;
 .tablet-shelves {
   height: 80vh;
   width: $tablet-shelves-width;
+  justify-content: space-around;
 }
 
 // Shelf styles
 .shelf {
   height: $shelf-height;
   width: $desktop-shelf-width;
-  margin-top: 0px;
+  // margin-top: 20px;
+  // margin-bottom: 20px;
   display: flex;
   background-image: linear-gradient($shelf-clr 0 70%, $shelf-clr2 70% 100%);
   justify-content: space-around;
@@ -93,18 +123,18 @@ $desktop-shelf-width: 55vw;
 // Tablet-specific shelf styles
 .tablet-shelf {
   width: $tablet-shelves-width;
-  background-image: linear-gradient($t-shelf-clr 0 70%, $t-shelf-clr2 70% 100%);
+  background-image: linear-gradient($shelf-clr 0 70%, $shelf-clr2 70% 100%);
   box-shadow: none;
   &::before {
     background-image: linear-gradient(
-      $t-bracket-clr 0 70%,
-      $t-bracket-clr2 70% 100%
+      $bracket-clr 0 70%,
+      $bracket-clr2 70% 100%
     );
   }
   &::after {
     background-image: linear-gradient(
-      $t-bracket-clr 0 70%,
-      $t-bracket-clr2 70% 100%
+      $bracket-clr 0 70%,
+      $bracket-clr2 70% 100%
     );
   }
 }

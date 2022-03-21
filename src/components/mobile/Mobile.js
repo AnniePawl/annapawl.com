@@ -1,17 +1,22 @@
 import React from "react";
 import MobileAbout from "../about-me/MobileAbout";
-import MobileBox from "./MobileBox";
-// CSS art components
-import Radio from "../css-items/radio/Radio";
-import Books from "../css-items/books/Books";
-import Sewing from "../css-items/sewing/Sewing";
-import Writing from "../css-items/writing/Writing";
+import MobileShelves from "../css-items/shelves/MobileShelves";
+import "./mobile.scss";
+// import MobileBox from "./MobileBox";
+// // CSS art components
+// import Radio from "../css-items/radio/Radio";
+// import Books from "../css-items/books/Books";
+// import Sewing from "../css-items/sewing/Sewing";
+// import Writing from "../css-items/writing/Writing";
 
 function Mobile() {
   return (
     <div className="mobile">
       <MobileAbout />
-      <MobileBox
+      <div className="mobile-shelves-container">
+        <MobileShelves />
+      </div>
+      {/* <MobileBox
         id={1}
         cn={"mobile-radio"}
         box_item={<Radio />}
@@ -45,7 +50,7 @@ function Mobile() {
             Check them out!
           </a>,
         ]}
-      />
+      /> */}
     </div>
   );
 }

@@ -44,7 +44,7 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
   @for $i from 1 to 6 {
     $delay: nth($delays, $i);
     .book-#{$i} {
-      animation: books-animation 5s $delay infinite;
+      // animation: books-animation 5s $delay infinite;
       //   animation: books-animation2 2s $delay;
       // }
     }
@@ -53,7 +53,7 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
 
 // Keyframes
 @keyframes books-animation {
-  50% {
+  100% {
     transform: translateY(-20px);
   }
 }
@@ -67,13 +67,13 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
   }
 }
 
-.desktop-books-container {
-  // display: flex;
-}
-
 .tablet-books-container,
 .desktop-books-container {
-  transform: translateY(-119px) scale(1.1);
+  transform: translateY(-114px);
+}
+
+.mobile-books-container {
+  transform: scale(0.9) translateY(-119px);
 }
 
 .books-container {
@@ -220,8 +220,8 @@ $d-book1-clr: #aa90e7;
 $d-book2-clr: #7ab1fd;
 $d-book2-ribbon: #98f8db;
 $d-book2-ribbon2: #78ddbf;
-$d-book3-clr: #ffd1a6;
-$d-book3-clr2: #ffb87e;
+$d-book3-clr: #ffd8a6;
+$d-book3-clr2: #ffc27c;
 $d-book3-clr3: #c4c5ff;
 $d-book3-clr4: #9d9ee7;
 $d-book4-clr: #ffe6e6;
@@ -239,11 +239,14 @@ $m-book-2-clr2: #afa190;
 
 // DESKTOP STYLES
 // D book1
+
+.mobile-books-container > .book-1,
 .desktop-books-container > .book-1 {
   background-color: $d-book1-clr;
 }
 // D book2
-.desktop-books-container > .book-2 {
+.desktop-books-container > .book-2,
+.mobile-books-container > .book-2 {
   background-color: $d-book2-clr;
   &::before {
     border-left: 4px solid $d-book2-ribbon;
@@ -252,7 +255,8 @@ $m-book-2-clr2: #afa190;
   }
 }
 // D book3
-.desktop-books-container > .book-3 {
+.desktop-books-container > .book-3,
+.mobile-books-container > .book-3 {
   background-image: linear-gradient($d-book3-clr 0 60%, $d-book3-clr2 60% 40%);
   &::before {
     content: "";
@@ -270,7 +274,8 @@ $m-book-2-clr2: #afa190;
   }
 }
 // D book4
-.desktop-books-container > .book-4 {
+.desktop-books-container > .book-4,
+.mobile-books-container > .book-4 {
   border-right: 9px double $d-book4-border;
   border-left: 9px double $d-book4-border;
   background-image: linear-gradient($d-book4-clr 0 60%, $d-book4-clr2 60% 100%);
@@ -282,7 +287,8 @@ $m-book-2-clr2: #afa190;
   }
 }
 // D book5
-.desktop-books-container > .book-5 {
+.desktop-books-container > .book-5,
+.mobile-books-container > .book-5 {
   background-image: linear-gradient($d-book5-clr 0 65%, $d-book5-clr2 65% 100%);
   &::before {
     border-right: 14px double $d-book5-border;

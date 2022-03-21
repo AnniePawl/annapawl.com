@@ -20,15 +20,23 @@ $desktop-radio-body-clr: #ffdfe9;
 // display color
 $desktop-radio-display-clr: #3568af;
 $radio-display-clr: #405572;
+// buttons color
+$d-radio-btn-clr: #fdf4a3;
 
 $wall-color: #eaf4ff;
 $radio-font-clr: white;
 
 // move radio up on bookshelf
-.desktop-radio-container,
-.tablet-radio-container {
-  transform: translateY(-86px);
-  // border: 1px solid yellow;
+// .desktop-radio-container,
+// .tablet-radio-container {
+//   transform: translateY(-86px);
+//   // border: 1px solid yellow;
+// }
+.desktop-radio-container {
+  transform: translateY(-88px) scale(1);
+}
+.mobile-radio-container {
+  transform: scale(0.9) translateY(-91px);
 }
 
 // Top speaker
@@ -200,7 +208,8 @@ $radio-font-clr: white;
 }
 
 // DESKTOP-SPECIFIC Styles
-.desktop-radio-container {
+.desktop-radio-container,
+.mobile-radio-container {
   .radio-top {
     // Top speakers
     border-right: $border-width solid $desktop-radio-outline-clr;
@@ -246,9 +255,12 @@ $radio-font-clr: white;
     .radio-button1,
     .radio-button2 {
       background-color: $desktop-radio-outline-clr;
+      background-color: $d-radio-btn-clr;
       font-family: $radio-font;
       color: white;
-      border: none;
+      font-weight: 900;
+      color: $desktop-radio-outline-clr;
+      border: 1px solid $desktop-radio-outline-clr;
       // border: 1.5px solid $desktop-radio-outline-clr;
     }
     // Button hover styles
@@ -303,17 +315,17 @@ $radio-font-clr: white;
 // Animations -- expand speakers
 
 // Mobile animations (start automatically)
-.mobile-radio > .radio-container > .radio-top {
-  animation: speaker-animation1 2s ease infinite;
+.mobile-radio-container > .radio-top {
+  animation: desktop-speaker-animation1 3s ease infinite;
 }
-.mobile-radio > .radio-container > .radio-bottom > .radio-buttons::before {
-  animation: speaker-animation2 2s ease infinite;
+.mobile-radio-container > .radio-bottom > .radio-buttons::before {
+  animation: desktop-speaker-animation2 3s ease infinite;
 }
-.mobile-radio > .radio-container > .radio-bottom > .radio-buttons::after {
-  animation: speaker-animation2 2s ease infinite;
+.mobile-radio-container > .radio-bottom > .radio-buttons::after {
+  animation: desktop-speaker-animation2 3s ease infinite;
 }
-.mobile-radio > .radio-container > .radio-top::before {
-  animation: antena-animation 4s infinite;
+.mobile-radio-container > .radio-top::before {
+  animation: antena-animation 5s infinite;
 }
 
 // for tablet view

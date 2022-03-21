@@ -6,7 +6,8 @@ $about-font: "Montserrat", sans-serif;
 
 // Colors
 $about-bkgd: #fdfeff;
-$desktop-h1-clr: #333333;
+$desktop-h1-clr: #7ab1fd;
+$mobile-h1-clr: #7ab1fd;
 $tablet-h1-clr: #333333;
 $font-clr: #1f1f1f;
 $link-hover-clr: #ff8d75;
@@ -14,7 +15,7 @@ $link-hover-clr: #ff8d75;
 // Measurements
 
 // heights / widths
-$mobile-about-height: 67vh;
+$mobile-about-height: 42vh;
 $mobile-about-width: 100vw;
 $desktop-about-height: 100vh;
 $desktop-about-width: 27vw;
@@ -23,7 +24,7 @@ $tablet-about-width: 100vw;
 // H1 sizes
 $desktop-h1-size: 30px;
 $tablet-h1-size: 25px;
-$mobile-h1-size: 23px;
+$mobile-h1-size: 24px;
 // Font Sizes
 $desktop-font-size: 13px;
 $tablet-font-size: 14px;
@@ -54,17 +55,20 @@ $margin-top: 45px;
 // MOBILE SPECIFIC STYLES
 .mobile-about {
   display: flex;
-  padding: 13%;
+  padding-top: 13%;
+  padding-left: 13%;
+  padding-right: 13%;
+  padding-bottom: 5%;
   margin-right: 12px;
   flex-direction: column;
   height: $mobile-about-height;
   line-height: $mobile-line-height;
   // border: $test-border;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: $mobile-font-size;
   h1 {
     font-size: $mobile-h1-size;
-    color: $tablet-h1-clr;
+    color: $mobile-h1-clr;
     font-weight: 800;
     line-height: $mobile-line-height + 5px;
   }
@@ -152,5 +156,5 @@ a {
 
 .mobile-about > ul {
   font-size: 10px;
-  line-height: 16px;
+  line-height: 17px;
 }

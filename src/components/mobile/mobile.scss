@@ -11,6 +11,9 @@ $p-font-size: 11.5px;
 $padding-size: 10vw;
 
 // Colors
+// $wall-clr: #d4e7ff;
+// $wall-clr: #ddedff;
+
 $mobile-about-bkg: #fffefa;
 $h1-clr: #405572;
 // CSS art container colors
@@ -20,6 +23,12 @@ $css-container-clrs: #eaf4ff, #fff6d6, #ffece6, rgb(226, 255, 248), #ffeee8;
   .mobile-box-art-#{$i} {
     background-color: $color;
   }
+}
+
+.mobile-shelves-container {
+  // border: $test-border;
+  background-color: $wall-clr;
+  // height: 100vh;
 }
 
 // $background-colors

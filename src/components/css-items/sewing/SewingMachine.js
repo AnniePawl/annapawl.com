@@ -1,9 +1,10 @@
 import React from "react";
 import "./sewing-machine.scss";
 
-function SewingMachine() {
+function SewingMachine(props) {
+  const { cn } = props;
   return (
-    <div className="sewing-machine">
+    <div className={`sewing-machine ${cn}`}>
       <div className="thread"></div>
       <div className="needle"></div>
       <div className="sewing-machine-top"></div>

@@ -3,12 +3,12 @@
 // Colors
 $wall-clr: #d4e7ff;
 $cup-clr: #fff8fa;
-$cup-clr2: #ffe9f0;
+$cup-clr2: #ffe4ed;
 $cup-rim-clr: #ffe9f0;
 $cup-rim-clr2: #fdc4ec;
 $cup-border-clr: #fdc4ec;
-$ruler-clr: #ffc077;
-$ruler-clr2: #fad9b3;
+$ruler-clr: #ffc061;
+$ruler-clr2: #ffd494;
 $ruler-ticks: #7ab1fd;
 $pen-clr: #ff92c9;
 $pen-clr2: #fcbfe9;
@@ -28,7 +28,7 @@ $pencil2-clr2: #aed0ff;
 $notebook-height: 150px;
 $notebook-width: 25px;
 $cup-height: 55px;
-$cup-width: 50px;
+$cup-width: 54px;
 $ruler-height: 95px;
 $ruler-width: 18px;
 $pen-height: 65px;
@@ -38,6 +38,9 @@ $pencil-width: 3px;
 
 .desktop-pens-container {
   transform: translateY(-149px) scale(0.9);
+}
+.mobile-pens-container {
+  transform: translateY(-142px) scale(0.83);
 }
 // Cup
 .cup-container {
@@ -52,7 +55,7 @@ $pencil-width: 3px;
 
 // Cup
 .cup {
-  border: 2.5px solid $cup-border-clr;
+  border: 3px solid $cup-border-clr;
   position: relative;
   height: $cup-height;
   width: $cup-width;
@@ -74,12 +77,12 @@ $pencil-width: 3px;
     display: flex;
     height: $cup-width * 0.2;
     width: $cup-width * 0.8;
-    border-right: 2px solid $cup-border-clr;
-    border-left: 2px solid $cup-border-clr;
-    border-bottom: 2px solid $cup-border-clr;
+    border-right: 3px solid $cup-border-clr;
+    border-left: 3px solid $cup-border-clr;
+    border-bottom: 3px solid $cup-border-clr;
     border-radius: 0 0 1px 1px;
     background-image: linear-gradient(to right, $cup-clr 0 50%, $cup-clr2 50%);
-    transform: translateY(46px) translateX(2px);
+    transform: translateY(44px) translateX(2.5px);
   }
 }
 
@@ -212,7 +215,7 @@ $pencil-width: 3px;
 
 @keyframes ruler-animation {
   50% {
-    transform: translateX(-5px) translateY(-7px) rotate(-8deg);
+    transform: translateX(-5px) translateY(-8px) rotate(-8deg);
   }
 }
 
@@ -222,19 +225,19 @@ $pencil-width: 3px;
   }
 }
 @keyframes pencil1-animation {
-  50% {
+  25% {
     transform: rotate(-3deg) translateX(-5px) translateY(7px);
   }
 }
 @keyframes pencil2-animation {
-  70% {
-    transform: rotate(5deg) translatex(2px) translateY(10px);
+  75% {
+    transform: rotate(5deg) translateX(-1px) translateY(10px);
   }
 }
 
 // Desktop Animation
 .desktop-pens-container:hover > .cup-contents > .ruler {
-  animation: ruler-animation 5s infinite;
+  animation: ruler-animation 3s infinite;
 }
 .desktop-pens-container:hover > .cup-contents > .pen {
   animation: pen-animation 2s infinite;

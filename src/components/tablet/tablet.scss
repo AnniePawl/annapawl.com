@@ -1,11 +1,11 @@
 @import "../universal-styles.scss";
 
 // Colors
-$tablet-wall-clr: #dffff4;
+// $tablet-wall-clr: #ddedff;
 // $tablet-wall-clr: #fff2db;
 
 // Measurements
-$tablet-shelves-height: 72vh;
+$tablet-shelves-height: 100vh;
 $tablet-shelves-width: 100vw;
 $tablet-shelf-height: 15px;
 $tablet-shelf-width: 56vw;
@@ -14,6 +14,6 @@ $tablet-shelf-width: 56vw;
   height: $tablet-shelves-height;
   width: $tablet-shelves-width;
   @include center-flex();
-  background-color: $tablet-wall-clr;
+  background-color: $wall-clr;
   overflow: hidden;
 }

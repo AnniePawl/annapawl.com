@@ -3,17 +3,16 @@
 // $thread-clr2: rgb(193, 253, 225);
 $desktop-radio-outline-clr: #7ab1fd;
 // background color
-$radio-body-clr: #ffeeb8;
-$pc-color: #e7ceff;
-$pc-color2: #c5a6f7;
+$pc-color: #ffcbe9;
+$pc-color2: #eea0cd;
 // $pc-border-clr: #7ab1fd;
-$pc-base-clr: #b8a0a0;
-$pc-base-clr2: #8f7e7e;
+$pc-base-clr: #fffefb;
+$pc-base-clr2: #7ab1fd;
 
 $pin-clr: #cfcfcf;
 $pin-top-clr: #fc93d0;
 // $pin-top-clr: #fc7878;
-$pin-top-hover-clr: #ffe77b;
+$pin-top-hover-clr: #7ab1fd;
 
 // Measurements
 $pc-base-width: 50px;
@@ -28,6 +27,7 @@ $pin-top-size: 4px;
 
 // Pin cushion base
 .pin-cushion {
+  // border: 1px solid #7ab1fd;
   height: $pc-base-height;
   width: $pc-base-width;
   position: relative;
@@ -98,7 +98,7 @@ $pin-top-size: 4px;
 
 //
 .pin-cushion-container:hover > .pins > .pin::before {
-  animation: desktop-pin-animation 1s infinite;
+  animation: desktop-pin-animation 0.5s infinite;
 }
 
 .mobile-sewing > .sewing > .pin-cushion-container > .pins > .pin::before {
@@ -116,6 +116,6 @@ $pin-top-size: 4px;
 @keyframes desktop-pin-animation {
   50% {
     background-color: $pin-top-hover-clr;
-    border: 0.1em solid rgb(255, 226, 64);
+    border: 0.1em solid #7ab1fd;
   }
 }

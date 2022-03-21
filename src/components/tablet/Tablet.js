@@ -1,13 +1,12 @@
 import React from "react";
-import TabletAbout from "../about-me/TabletAbout";
+// import TabletAbout from "../about-me/TabletAbout";
 import TabletShelves from "../css-items/shelves/TabletShelves";
-
 import "./tablet.scss";
 
 function Tablet() {
   return (
     <div className="tablet">
-      <TabletAbout />
+      {/* <TabletAbout /> */}
       <div className="tablet-shelf-container">
         <TabletShelves />
       </div>

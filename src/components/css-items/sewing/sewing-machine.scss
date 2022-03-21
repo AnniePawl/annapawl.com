@@ -1,10 +1,5 @@
 @import "../../universal-styles.scss";
 
-.sewing-machine-container {
-  // display: flex;
-  // justify-content: column;
-}
-
 $thread-height: 25px;
 $thread-width: 16px;
 $sm-top-height: 50px;
@@ -17,7 +12,7 @@ $sm-base-height: 40px;
 $needle-height: 20px;
 $sm-clr: white;
 $sm-clr2: #7ab1fd;
-$knob-clr: #d2c5ff;
+$knob-clr: #ffcbe9;
 $knob-clr2: #7ab1fd;
 $spool-clr: #b8a0a0;
 $spool-clr2: #8f7777;
@@ -25,9 +20,9 @@ $thread-clr: rgb(148, 196, 173);
 $thread-clr2: rgb(193, 253, 225);
 $d-thread-clr: #7ab1fd;
 $d-thread-clr2: rgb(255, 202, 198);
-$fabric-clr: rgba(255, 233, 111, 0.4);
-$fabric-clr2: rgba(222, 173, 255, 0.8);
-$fabric-clr3: rgb(255, 171, 168);
+$fabric-clr: rgba(255, 233, 111, 0.5);
+$fabric-clr2: rgba(229, 190, 255, 0.7);
+$fabric-clr3: rgba(255, 184, 223, 0.9);
 
 // Desktop specific styles
 .desktop-sewing-container {
@@ -35,8 +30,8 @@ $fabric-clr3: rgb(255, 171, 168);
     background-image: repeating-linear-gradient(
       35deg,
       $d-thread-clr,
-      $d-thread-clr 0 5%,
-      $d-thread-clr2 5% 10%
+      $d-thread-clr 0 10%,
+      $d-thread-clr2 10% 14%
     );
     &::after {
       background-color: $d-thread-clr;
@@ -123,7 +118,7 @@ $fabric-clr3: rgb(255, 171, 168);
   width: $sm-top-width;
   border-radius: 5px 5px 0 0px;
   background-color: $sm-clr;
-  box-shadow: 0 3px $sm-clr2, 0px 0px 2px $sm-clr2;
+  box-shadow: 0 4px $sm-clr2, 0px 0px 4px rgb(169, 194, 250);
   // left arm
   &::before {
     content: "";
@@ -152,7 +147,7 @@ $fabric-clr3: rgb(255, 171, 168);
   height: $sm-right-arm-height;
   width: $sm-right-arm-width;
   background-color: $sm-clr;
-  box-shadow: -3px 0px $sm-clr2, 0px 5px 2px $sm-clr2;
+  box-shadow: -4px 0px $sm-clr2, 0px 3px 2px $sm-clr2;
 
   transform: translateX(135px);
   // knob
@@ -165,8 +160,8 @@ $fabric-clr3: rgb(255, 171, 168);
     transform: translateY(-20px) translateX(50px);
     background-image: linear-gradient(
       to right,
-      $knob-clr 0 75%,
-      $knob-clr2 75%
+      $knob-clr 0 70%,
+      $knob-clr2 70%
     );
   }
   // buttons
@@ -217,16 +212,22 @@ $fabric-clr3: rgb(255, 171, 168);
   // transform: translateY($sm-height * 1.3) translateX(-$sm-width * 0.15);
 }
 
-// Mobile Animations
-
-.needle::after {
-  animation: needle-animation 2s infinite;
+// Desktop Specific Animations
+.desktop-sewing-container > .sewing-machine:hover > .needle::after {
+  animation: needle-animation 0.2s infinite;
 }
-.thread {
-  animation: thread-animation 2s infinite;
+
+.desktop-sewing-container > .sewing-machine:hover > .thread {
+  animation: thread-animation 1s infinite;
   &::after {
     animation: thread-animation2 2s infinite;
   }
+}
+
+.desktop-sewing-container
+  > .sewing-machine:hover
+  > .sewing-machine-bottom::before {
+  animation: fabric-animation 5s forwards;
 }
 
 @keyframes needle-animation {
@@ -235,13 +236,14 @@ $fabric-clr3: rgb(255, 171, 168);
     transform: translateY(-4.5px) translateX(1.2px);
   }
 }
+
 @keyframes thread-animation {
   50% {
     background-image: repeating-linear-gradient(
       35deg,
-      $d-thread-clr2,
-      $d-thread-clr2 0 5%,
-      $d-thread-clr 5% 10%
+      $d-thread-clr,
+      $d-thread-clr 2% 12%,
+      $d-thread-clr2 12% 16%
     );
   }
 }
@@ -251,5 +253,26 @@ $fabric-clr3: rgb(255, 171, 168);
     transform-origin: center left;
     transform: translateX(-105px) translateY(-1px) rotate(0deg);
     // width: 105px;
+  }
+}
+
+@keyframes fabric-animation {
+  100% {
+    content: "bob";
+    display: flex;
+    height: 200px;
+    width: 125px;
+    background-image: repeating-linear-gradient(
+        $fabric-clr,
+        $fabric-clr 5%,
+        $fabric-clr2 5% 10%
+      ),
+      repeating-linear-gradient(
+        90deg,
+        $fabric-clr3,
+        $fabric-clr3 5%,
+        transparent 5% 10%
+      );
+    clip-path: polygon(30% 0%, 90% 0%, 90% 20%, 30% 45%);
   }
 }
