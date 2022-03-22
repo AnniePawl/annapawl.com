@@ -15,10 +15,17 @@ function MobileShelves() {
         cssItem2={<Pens cn={"mobile-pens-container"} />}
       />
       <Shelf
-        cssItem1={<Books2 cn={"mobile-books2-container"} />}
-        cssItem2={<Books cn={"mobile-books-container"} />}
+        cssItem1={
+          <Sewing
+            cn={"mobile-sewing-container"}
+            tapecn="mobile-tape"
+            pincushioncn="mobile-pin-cushion"
+          />
+        }
       />
-      <Shelf cssItem1={<Sewing cn={"mobile-sewing-container"} />} />
+      <Shelf cssItem2={<Books cn={"mobile-books-container"} />} />
+
+      <Shelf cssItem1={<Books2 cn={"mobile-books2-container"} />} />
     </div>
   );
 }

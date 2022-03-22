@@ -32,7 +32,8 @@ $radio-font-clr: white;
 //   transform: translateY(-86px);
 //   // border: 1px solid yellow;
 // }
-.desktop-radio-container {
+.desktop-radio-container,
+.tablet-radio-container {
   transform: translateY(-88px) scale(1);
 }
 .mobile-radio-container {
@@ -209,6 +210,7 @@ $radio-font-clr: white;
 
 // DESKTOP-SPECIFIC Styles
 .desktop-radio-container,
+.tablet-radio-container,
 .mobile-radio-container {
   .radio-top {
     // Top speakers
@@ -329,19 +331,17 @@ $radio-font-clr: white;
 }
 
 // for tablet view
-.radio-container:hover > .radio-top {
-  animation: speaker-animation1 1s ease infinite;
+.tablet-radio-container > .radio-top {
+  animation: desktop-speaker-animation1 3s ease infinite;
 }
-
-.radio-container:hover > .radio-bottom > .radio-buttons::before {
-  animation: speaker-animation2 1s ease infinite;
+.tablet-radio-container > .radio-bottom > .radio-buttons::before {
+  animation: desktop-speaker-animation2 3s ease infinite;
 }
-
-.radio-container:hover > .radio-bottom > .radio-buttons::after {
-  animation: speaker-animation2 1s ease infinite;
+.tablet-radio-container > .radio-bottom > .radio-buttons::after {
+  animation: desktop-speaker-animation2 3s ease infinite;
 }
-.radio-container:hover > .radio-top::before {
-  animation: antena-animation 4s infinite;
+.tablet-radio-container > .radio-top::before {
+  animation: antena-animation 5s infinite;
 }
 
 // Hover animations (for desktop view)

@@ -11,9 +11,6 @@ $tape-btm-clr: #c2c2c2;
 $tape-height: 11px;
 $tape-width: 34px;
 
-.tape {
-}
-
 .tape-top {
   height: $tape-height;
   width: $tape-width;
@@ -87,7 +84,7 @@ $tape-width: 34px;
   }
 }
 
-// Animation -- extends hanging tape
+// Desktop Animation -- extends hanging tape, triggered on hover
 .tape:hover > .tape-bottom {
   animation: tape-animation1 2s;
 }
@@ -96,6 +93,20 @@ $tape-width: 34px;
 }
 .tape:hover > .tape-bottom::after {
   animation: tape-animation3 2s;
+}
+
+// Mobile & tablet animation- starts automatically
+.mobile-tape > .tape-bottom,
+.tablet-tape > .tape-bottom {
+  animation: tape-animation1 6s 1s infinite;
+}
+.mobile-tape > .tape-bottom::before,
+.tablet-tape > .tape-bottom::before {
+  animation: tape-animation2 6s 1s infinite;
+}
+.mobile-tape > .tape-bottom::after,
+.tablet-tape > .tape-bottom::after {
+  animation: tape-animation3 6s 1s infinite;
 }
 
 // Keyframes

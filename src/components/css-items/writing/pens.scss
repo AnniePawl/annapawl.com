@@ -36,16 +36,15 @@ $pen-width: 8px;
 $pencil-height: 80px;
 $pencil-width: 3px;
 
-.desktop-pens-container {
+.desktop-pens-container,
+.tablet-pens-container {
   transform: translateY(-149px) scale(0.9);
 }
 .mobile-pens-container {
   transform: translateY(-142px) scale(0.83);
 }
-// Cup
-.cup-container {
-}
 
+// Cup Styles
 .cup-contents {
   display: flex;
   flex-direction: row;
@@ -212,13 +211,11 @@ $pencil-width: 3px;
 }
 
 // Keyframes
-
 @keyframes ruler-animation {
   50% {
     transform: translateX(-5px) translateY(-8px) rotate(-8deg);
   }
 }
-
 @keyframes pen-animation {
   50% {
     transform: translateX(-6px) translateY(7px);
@@ -235,7 +232,7 @@ $pencil-width: 3px;
   }
 }
 
-// Desktop Animation
+// Desktop Animation - triggered on hover
 .desktop-pens-container:hover > .cup-contents > .ruler {
   animation: ruler-animation 3s infinite;
 }
@@ -247,4 +244,22 @@ $pencil-width: 3px;
 }
 .desktop-pens-container:hover > .cup-contents > .pencil-2 {
   animation: pencil2-animation 2s infinite;
+}
+
+// Mobile Animation - starts automatically
+.mobile-pens-container > .cup-contents > .ruler,
+.tablet-pens-container > .cup-contents > .ruler {
+  animation: ruler-animation 5.5s infinite;
+}
+.mobile-pens-container > .cup-contents > .pen,
+.tablet-pens-container > .cup-contents > .pen {
+  animation: pen-animation 4.5s infinite;
+}
+.mobile-pens-container > .cup-contents > .pencil-1,
+.tablet-pens-container > .cup-contents > .pencil-1 {
+  animation: pencil1-animation 4.5s infinite;
+}
+.mobile-pens-container > .cup-contents > .pencil-2,
+.tablet-pens-container > .cup-contents > .pencil-2 {
+  animation: pencil2-animation 4.5s infinite;
 }

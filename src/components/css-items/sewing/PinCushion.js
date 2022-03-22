@@ -2,9 +2,10 @@ import React from "react";
 import Pin from "./pin";
 import "./pin-cushion.scss";
 
-function PinCushion() {
+function PinCushion(props) {
+  const { cn } = props;
   return (
-    <div className="pin-cushion-container">
+    <div className={`pin-cushion-container ${cn}`}>
       <div className="pins">
         <Pin />
         <Pin />

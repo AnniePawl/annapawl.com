@@ -1,6 +1,7 @@
 @import "../../universal-styles.scss";
 
 // Colors
+
 $book-pages: #fffefa;
 $book1-clr: #5d758d;
 $book2-clr: #f3b09c;
@@ -39,14 +40,13 @@ $delays2: 2.2s, 2s, 1.8s 1.6s, 1.4s, 1.2s;
   }
 }
 
-// Books animation - mobile view (starts automatically)
-.mobile-books > .books-container {
+// Books animation - Mobile & tablet (starts automatically)
+.tablet-books-container,
+.mobile-books-container {
   @for $i from 1 to 6 {
     $delay: nth($delays, $i);
     .book-#{$i} {
       // animation: books-animation 5s $delay infinite;
-      //   animation: books-animation2 2s $delay;
-      // }
     }
   }
 }
@@ -241,12 +241,14 @@ $m-book-2-clr2: #afa190;
 // D book1
 
 .mobile-books-container > .book-1,
-.desktop-books-container > .book-1 {
+.desktop-books-container > .book-1,
+.tablet-books-container > .book-1 {
   background-color: $d-book1-clr;
 }
 // D book2
 .desktop-books-container > .book-2,
-.mobile-books-container > .book-2 {
+.mobile-books-container > .book-2,
+.tablet-books-container > .book-2 {
   background-color: $d-book2-clr;
   &::before {
     border-left: 4px solid $d-book2-ribbon;
@@ -256,7 +258,8 @@ $m-book-2-clr2: #afa190;
 }
 // D book3
 .desktop-books-container > .book-3,
-.mobile-books-container > .book-3 {
+.mobile-books-container > .book-3,
+.tablet-books-container > .book-3 {
   background-image: linear-gradient($d-book3-clr 0 60%, $d-book3-clr2 60% 40%);
   &::before {
     content: "";
@@ -275,7 +278,8 @@ $m-book-2-clr2: #afa190;
 }
 // D book4
 .desktop-books-container > .book-4,
-.mobile-books-container > .book-4 {
+.mobile-books-container > .book-4,
+.tablet-books-container > .book-4 {
   border-right: 9px double $d-book4-border;
   border-left: 9px double $d-book4-border;
   background-image: linear-gradient($d-book4-clr 0 60%, $d-book4-clr2 60% 100%);
@@ -288,7 +292,8 @@ $m-book-2-clr2: #afa190;
 }
 // D book5
 .desktop-books-container > .book-5,
-.mobile-books-container > .book-5 {
+.mobile-books-container > .book-5,
+.tablet-books-container > .book-5 {
   background-image: linear-gradient($d-book5-clr 0 65%, $d-book5-clr2 65% 100%);
   &::before {
     border-right: 14px double $d-book5-border;

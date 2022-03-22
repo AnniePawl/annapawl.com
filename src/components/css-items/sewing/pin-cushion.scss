@@ -96,24 +96,18 @@ $pin-top-size: 4px;
   transform: rotate(35deg) translateY(5px);
 }
 
-//
+//desktop animation
 .pin-cushion-container:hover > .pins > .pin::before {
-  animation: desktop-pin-animation 0.5s infinite;
+  animation: pin-animation 0.5s infinite;
 }
 
-.mobile-sewing > .sewing > .pin-cushion-container > .pins > .pin::before {
+// tablet and mobile animation
+.mobile-pin-cushion > .pins > .pin::before,
+.tablet-pin-cushion > .pins > .pin::before {
   animation: pin-animation 2s infinite;
 }
-// Mobile Animations
-@keyframes pin-animation {
-  50% {
-    background-color: rgb(87, 114, 187);
-    border: 0.1em solid rgb(64, 86, 146);
-  }
-}
 
-// Mobile Animations
-@keyframes desktop-pin-animation {
+@keyframes pin-animation {
   50% {
     background-color: $pin-top-hover-clr;
     border: 0.1em solid #7ab1fd;

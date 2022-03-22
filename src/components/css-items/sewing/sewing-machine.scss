@@ -230,6 +230,25 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
   animation: fabric-animation 5s forwards;
 }
 
+// Mobile/ Tablet Animations
+.mobile-sewing-container > .sewing-machine > .needle::after,
+.tablet-sewing-container > .sewing-machine > .needle::after {
+  animation: needle-animation 0.2s infinite;
+}
+.mobile-sewing-container > .sewing-machine > .thread,
+.tablet-sewing-container > .sewing-machine > .thread {
+  animation: thread-animation 2s infinite;
+  &::after {
+    animation: thread-animation2 2s infinite;
+  }
+}
+.mobile-sewing-container > .sewing-machine > .sewing-machine-bottom::before,
+.tablet-sewing-container > .sewing-machine > .sewing-machine-bottom::before {
+  animation: fabric-animation 7s infinite;
+}
+
+// Keyframes
+
 @keyframes needle-animation {
   50% {
     // height: 7px;
@@ -257,7 +276,7 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
 }
 
 @keyframes fabric-animation {
-  100% {
+  50% {
     content: "bob";
     display: flex;
     height: 200px;

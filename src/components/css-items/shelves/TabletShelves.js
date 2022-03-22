@@ -12,18 +12,24 @@ function TabletShelves() {
     <div className="tablet-shelves">
       <Shelf
         cn={"tablet-shelf"}
-        cssItem1={<Books2 cn={"tablet-books-container"} />}
+        cssItem1={<Books2 cn={"tablet-books2-container"} />}
       />
       <Shelf
         cn={"tablet-shelf"}
         // to do -- fix to desktop styles
-        cssItem1={<Radio cn={"desktop-radio-container"} />}
-        cssItem2={<Books cn={"desktop-books-container"} />}
-        cssItem3={<Pens cn={"desktop-pens-container"} />}
+        cssItem1={<Radio cn={"tablet-radio-container"} />}
+        cssItem2={<Books cn={"tablet-books-container"} />}
+        cssItem3={<Pens cn={"tablet-pens-container"} />}
       />
       <Shelf
         cn={"tablet-shelf"}
-        cssItem1={<Sewing cn={"desktop-sewing-container"} />}
+        cssItem1={
+          <Sewing
+            cn={"tablet-sewing-container"}
+            tapecn={"tablet-tape"}
+            pincushioncn={"tablet-pin-cushion"}
+          />
+        }
       />
     </div>
   );

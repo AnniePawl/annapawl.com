@@ -5,13 +5,13 @@ import "./sewing.scss";
 import SewingMachine from "./SewingMachine";
 
 function Sewing(props) {
-  const { cn } = props;
+  const { cn, tapecn, pincushioncn } = props;
 
   return (
     <div className={`sewing ${cn}`}>
+      <Tape cn={tapecn} />
+      <PinCushion cn={pincushioncn} />
       <SewingMachine />
-      <Tape />
-      <PinCushion />
     </div>
   );
 }
