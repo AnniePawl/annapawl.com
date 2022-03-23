@@ -1,0 +1,142 @@
+@import "../../universal-styles.scss";
+
+// Font
+$font-size: 8px;
+$font-family: menlo, monaco;
+
+// Colors
+$font-clr: white;
+$laptop-clr: #d1d1d1;
+$laptop-clr2: #ffffff;
+$laptop-clr3: #7ab1fd;
+$screen-clr: #ffd3f5;
+$screen-clr2: #ffeefb;
+$terminal-clr: rgba(17, 17, 17, 0.308);
+$terminal-clr2: #c1ffe0;
+
+// Measurements
+$terminal-height: 95px;
+$terminal-width: 110px;
+$camera-size: 7px;
+$laptop-height: 125px;
+$laptop-width: 175px;
+$keyboard-height: 16px;
+$keyboard-width: 230px;
+
+.desktop-laptop-container {
+  transform: scale(0.97) translateY(-144px);
+}
+.mobile-laptop-container {
+  transform: scale(0.8) translateY(-158px);
+}
+
+.tablet-laptop-container {
+  transform: scale(0.85) translateY(-154px);
+}
+
+// Top section includes screen and terminal divs
+.laptop-top {
+  @include center-flex;
+  height: $laptop-height;
+  width: $laptop-width;
+  border-radius: 5px 5px 0 0;
+  background-color: $laptop-clr;
+  box-shadow: 0 0 0 1.5px #7ab1fd, 0 0 0 6px $laptop-clr2, 0 0 10px black;
+  z-index: 0;
+  // Keyboard
+  &::before {
+    height: $keyboard-height;
+    width: $keyboard-width;
+    border-radius: 2px;
+    border-bottom: 3px solid $laptop-clr3;
+    content: "";
+    position: absolute;
+    background-color: $laptop-clr2;
+    transform: translateY(72px);
+    box-shadow: 0px 0px 1px rgb(178, 193, 212);
+  }
+  // keyboard divit thing
+  &::after {
+    content: " ";
+    position: absolute;
+    height: 4px;
+    width: 45px;
+    border-radius: 0 0 1.5px 1.5px;
+    background-image: linear-gradient(rgb(164, 206, 255) 35%, $laptop-clr3 10%);
+    transform: translateY(65px);
+  }
+  // Screen
+  .laptop_top__screen {
+    @include center-flex;
+    justify-content: space-around;
+    height: $laptop-height * 0.86;
+    width: $laptop-width * 0.94;
+    background-image: linear-gradient(45deg, $screen-clr 65%, $screen-clr2 65%);
+    // Camera
+    &::before {
+      content: "";
+      position: absolute;
+      height: $camera-size;
+      width: $camera-size;
+      border-radius: 50%;
+      background-image: radial-gradient(
+        #abebff 0 15%,
+        #808080 15% 50%,
+        rgb(58, 58, 58) 50% 90%
+      );
+      transform: translateX(-5px) translateY(-58.5px);
+    }
+    &::after {
+      content: " ";
+    }
+
+    &:first-child() {
+      border: $test-border;
+    }
+  }
+  // Terminal
+  .laptop_top__terminal {
+    transform: translateX(0px) translateY(-2px);
+    height: $terminal-height;
+    width: $terminal-width;
+    border-radius: 1.5px 1.5px 0 0;
+    background-color: $terminal-clr;
+    border-top: 7px solid $terminal-clr2;
+    &::before {
+      content: "🔴\00a0\00a0\00a0🟡\00a0\00a0\00a0🟢\00a0\00a0\00a0 \00a0\00a0\00a0📂 ~/ code / css-stuff";
+      position: absolute;
+      font-size: 2.5px;
+      // color: white;
+      transform: translateX(3px) translateY(-5.5px);
+    }
+    &::after {
+      content: " ";
+    }
+    p {
+      animation: blink 0.5s;
+      color: $font-clr;
+      font-size: $font-size;
+      font-family: $font-family;
+      border-right: 1px solid $font-clr;
+      margin: 0;
+      // width: 1ch;
+      // animation: typing-animation 2s steps(1), blink 0.5s infinite alternate;
+      animation: typing-animation 2s steps(1);
+      overflow: hidden;
+      text-align: left;
+      white-space: nowrap;
+    }
+  }
+}
+
+// Keyframes
+@keyframes typing-animation {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

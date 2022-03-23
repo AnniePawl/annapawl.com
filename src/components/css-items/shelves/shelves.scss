@@ -3,6 +3,7 @@
 // Colors
 // desktop shelf
 $shelf-clr: #f1dbc1;
+// $shelf-clr: #d7d3ff;
 $shelf-clr2: #7ab1fd;
 // $shelf-clr: #ac968e;
 // $shelf-clr2: #8f7e78;
@@ -17,7 +18,7 @@ $t-bracket-clr2: #636363;
 // $t-shelf-shadow-clr: #f52323;
 
 // Measurements
-$mobile-shelves-height: 130vh;
+$mobile-shelves-height: 150vh;
 $mobile-shelf-width: 75vw;
 $desktop-shelves-width: 73vw;
 $tablet-shelves-width: 70vw;
@@ -28,6 +29,7 @@ $desktop-shelf-width: 55vw;
 .mobile-shelves {
   // border: $test-border;
   height: $mobile-shelves-height;
+  transform: translateY(-50px);
   @include center-flex();
   flex-direction: column;
   justify-content: space-evenly;
