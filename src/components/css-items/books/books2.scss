@@ -26,6 +26,7 @@ $v-book-height: 83px;
 $book-border-radius: 1px;
 $v-book-width: $v-book-height * 0.27;
 $delays: 0s, 1s, 2s, 3s;
+$delays2: 0.2s, 0.4s, 0.6s, 0.8s;
 
 .v-books-container {
   // border: $test-border;
@@ -186,9 +187,9 @@ $delays: 0s, 1s, 2s, 3s;
 // Books animation - desktop view  (triggered by hover)
 .desktop-books2-container:hover {
   @for $i from 1 to 4 {
-    $delay: nth($delays, $i);
+    $delay: nth($delays2, $i);
     .v-book-#{$i} {
-      animation: v-books-animation 1.5s ease $delay forwards;
+      animation: v-books-animation 1s $delay forwards;
     }
   }
 }

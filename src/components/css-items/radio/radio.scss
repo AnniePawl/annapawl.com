@@ -11,36 +11,15 @@ $border-width: 6px;
 $border-radius: 3px;
 
 // Colors
-// outline color
-$radio-outline-clr: #7089ac;
-$desktop-radio-outline-clr: #7ab1fd;
-// background color
 $radio-body-clr: #ffeeb8;
 $desktop-radio-body-clr: #ffdfe9;
-// display color
+$radio-outline-clr: #7089ac;
+$desktop-radio-outline-clr: #7ab1fd;
 $desktop-radio-display-clr: #3568af;
 $radio-display-clr: #405572;
-// buttons color
 $d-radio-btn-clr: #fdf4a3;
-
 $wall-color: #eaf4ff;
 $radio-font-clr: white;
-
-// move radio up on bookshelf
-// .desktop-radio-container,
-// .tablet-radio-container {
-//   transform: translateY(-86px);
-//   // border: 1px solid yellow;
-// }
-.desktop-radio-container,
-.tablet-radio-container {
-  transform: translateY(-88px) scale(1.1);
-  // border: $test-border;
-}
-.mobile-radio-container {
-  transform: scale(0.95) translateY(-91px);
-  // border: $test-border;
-}
 
 // Top speaker
 .radio-top {
@@ -209,8 +188,16 @@ $radio-font-clr: white;
     $radio-display-clr 80%
   );
 }
+.desktop-radio-container,
+.tablet-radio-container {
+  transform: translateY(-88px) scale(1.1);
+  // border: $test-border;
+}
+.mobile-radio-container {
+  transform: scale(0.95) translateY(-91px);
+  // border: $test-border;
+}
 
-// DESKTOP-SPECIFIC Styles
 .desktop-radio-container,
 .tablet-radio-container,
 .mobile-radio-container {

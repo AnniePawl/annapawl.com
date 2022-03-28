@@ -8,7 +8,7 @@ function Laptop(props) {
       <div className="laptop-top">
         <div className="laptop_top__screen">
           <div className="laptop_top__terminal">
-            <p>$</p>
+            <p>$ You look great</p>
           </div>
         </div>
       </div>

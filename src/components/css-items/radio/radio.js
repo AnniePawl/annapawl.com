@@ -4,16 +4,15 @@ import "./radio.scss";
 function Radio(props) {
   const { cn } = props;
   const [station, setStation] = useState(105.9);
-  const programs = [
-    "NPR",
-    "Radio Lab",
-    "On Being",
-    "WQXR",
-    "Brian Lehrer",
-    "The Moth",
-    "All Things Considered",
-  ];
-  // automatically update radio station (mobile view only)
+  // const programs = [
+  //   "NPR",
+  //   "Radio Lab",
+  //   "On Being",
+  //   "WQXR",
+  //   "Brian Lehrer",
+  //   "The Moth",
+  //   "All Things Considered",
+  // ];
 
   return (
     <div className={`radio-container ${cn}`}>

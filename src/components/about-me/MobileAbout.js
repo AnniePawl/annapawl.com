@@ -9,8 +9,8 @@ function MobileAbout() {
       </h1>
       <p>
         I'm a software engineer with a focus on front-end development and an
-        interest in design. I love using my creativity to make satisfying little
-        experiences with code. The web should be fun ✨ <br />
+        interest in design. I like making satisfying little experiences with
+        code. The web should be fun ✨ <br />
       </p>
 
       <ul className="mobile-links">

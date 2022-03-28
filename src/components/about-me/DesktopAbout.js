@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.scss";
 
-function About() {
+function DesktopAbout() {
   return (
     <div className="desktop-about">
       <h1>
@@ -11,8 +11,9 @@ function About() {
         I'm a software engineer with a focus on front-end development and an
         interest in design. I like making satisfying little experiences with
         code. The web should be fun ✨ <br />
-        <br /> Hover over the stuff on the bookshelf for some mini surprises.
-        It's all made with pure CSS. Check out my website,{" "}
+        <br /> <span className="about-hover">Hover</span> over the things on the
+        bookshelf for some mini surprises. Everything is made with pure CSS.
+        Check out my project,{" "}
         <a href="https://anniepawl.github.io/dwc/" target="blank">
           Drawing with Code
         </a>
@@ -40,4 +41,4 @@ function About() {
   );
 }
 
-export default About;
+export default DesktopAbout;

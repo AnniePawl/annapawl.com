@@ -16,8 +16,8 @@ $knob-clr: #ffcbe9;
 $knob-clr2: #7ab1fd;
 $spool-clr: #b8a0a0;
 $spool-clr2: #8f7777;
-$thread-clr: rgb(148, 196, 173);
-$thread-clr2: rgb(193, 253, 225);
+// $d-thread-clr: rgb(148, 196, 173);
+// $d-thread-clr2: rgb(193, 253, 225);
 $d-thread-clr: #7ab1fd;
 $d-thread-clr2: rgb(255, 202, 198);
 $fabric-clr: rgba(255, 233, 111, 0.5);
@@ -78,9 +78,9 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
   transform: translateX(142px);
   background-image: repeating-linear-gradient(
     35deg,
-    $thread-clr,
-    $thread-clr 0 5%,
-    $thread-clr2 5% 10%
+    $d-thread-clr,
+    $d-thread-clr 0 5%,
+    $d-thread-clr2 5% 10%
   );
   // spool
   &::before {
@@ -106,7 +106,7 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
     display: flex;
     height: 1px;
     width: 105px;
-    background-color: $thread-clr;
+    background-color: $d-thread-clr;
     transform: translateX(-104px) translateY(-9.5px) rotate(-9.5deg);
   }
 }

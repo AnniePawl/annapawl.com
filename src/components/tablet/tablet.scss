@@ -1,14 +1,8 @@
 @import "../universal-styles.scss";
 
-// Colors
-// $tablet-wall-clr: #ddedff;
-// $tablet-wall-clr: #fff2db;
-
 // Measurements
 $tablet-shelves-height: 100vh;
 $tablet-shelves-width: 100vw;
-$tablet-shelf-height: 15px;
-$tablet-shelf-width: 56vw;
 
 .tablet-shelf-container {
   height: $tablet-shelves-height;

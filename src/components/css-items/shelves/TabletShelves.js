@@ -21,7 +21,13 @@ function TabletShelves() {
       />
       {/* Shelf 3 */}
       <Shelf
-        cssItem1={<Sewing cn={"tablet-sewing-container"} />}
+        cssItem1={
+          <Sewing
+            cn="tablet-sewing-container"
+            tapecn="tablet-tape"
+            pincushioncn="mobile-pin-cushion"
+          />
+        }
         cssItem2={<Books cn={"tablet-books-container"} />}
       />
     </div>

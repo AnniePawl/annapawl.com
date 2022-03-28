@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../about-me/DesktopAbout";
+import DesktopAbout from "../about-me/DesktopAbout";
 import DesktopShelves from "../css-items/shelves/DesktopShelves";
 
 import "./desktop.scss";
@@ -7,7 +7,7 @@ import "./desktop.scss";
 function Desktop() {
   return (
     <div className="desktop">
-      <About />
+      <DesktopAbout />
       <div className="desktop-shelves-container">
         <DesktopShelves />
       </div>

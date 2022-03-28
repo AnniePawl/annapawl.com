@@ -1,7 +1,7 @@
 @import "../../universal-styles.scss";
 
 // Font
-$font-size: 8px;
+$font-size: 12px;
 $font-family: menlo, monaco;
 
 // Colors
@@ -16,7 +16,7 @@ $terminal-clr2: #c1ffe0;
 
 // Measurements
 $terminal-height: 95px;
-$terminal-width: 110px;
+$terminal-width: 145px;
 $camera-size: 7px;
 $laptop-height: 125px;
 $laptop-width: 175px;
@@ -25,15 +25,25 @@ $keyboard-width: 230px;
 
 .desktop-laptop-container {
   transform: scale(0.97) translateY(-145px);
-  // border: $test-border;
+  &:hover > div > div > div > p {
+    animation: typing-animation 5s steps(15) forwards, blink 1s infinite;
+  }
 }
+
 .mobile-laptop-container {
   transform: scale(0.78) translateY(-161px);
-  // border: $test-border;
+  & > div > div > div > p {
+    // border: $test-border;
+    animation: typing-animation 4s steps(15) infinite, blink 1s infinite;
+  }
 }
 
 .tablet-laptop-container {
   transform: scale(0.85) translateY(-154px);
+  & > div > div > div > p {
+    // border: $test-border;
+    animation: typing-animation 4s steps(15) infinite, blink 1s infinite;
+  }
   // border: $test-border;
 }
 
@@ -83,8 +93,8 @@ $keyboard-width: 230px;
       width: $camera-size;
       border-radius: 50%;
       background-image: radial-gradient(
-        #abebff 0 15%,
-        #808080 15% 50%,
+        #abebff 0 20%,
+        #808080 20% 50%,
         rgb(58, 58, 58) 50% 90%
       );
       transform: translateX(-5px) translateY(-58.5px);
@@ -106,27 +116,25 @@ $keyboard-width: 230px;
     background-color: $terminal-clr;
     border-top: 7px solid $terminal-clr2;
     &::before {
-      content: "🔴\00a0\00a0\00a0🟡\00a0\00a0\00a0🟢\00a0\00a0\00a0 \00a0\00a0\00a0📂 ~/ code / css-stuff";
+      content: "🔴\00a0\00a0🟡\00a0\00a0🟢\00a0\00a0\00a0 \00a0\00a0\00a0📂 ~/ code / css-stuff";
       position: absolute;
-      font-size: 2.5px;
+      font-size: 3.5px;
       // color: white;
-      transform: translateX(3px) translateY(-5.5px);
+      transform: translateX(3px) translateY(-6.5px);
     }
     &::after {
       content: " ";
     }
     p {
-      animation: blink 0.5s;
+      // border: $test-border;
+      padding: 4px;
       color: $font-clr;
       font-size: $font-size;
       font-family: $font-family;
       border-right: 1px solid $font-clr;
       margin: 0;
-      // width: 1ch;
-      // animation: typing-animation 2s steps(1), blink 0.5s infinite alternate;
-      animation: typing-animation 2s steps(1);
+      width: 1.5ch;
       overflow: hidden;
-      text-align: left;
       white-space: nowrap;
     }
   }
@@ -134,8 +142,9 @@ $keyboard-width: 230px;
 
 // Keyframes
 @keyframes typing-animation {
-  from {
-    width: 0;
+  20%,
+  100% {
+    width: 85%;
   }
 }
 @keyframes blink {

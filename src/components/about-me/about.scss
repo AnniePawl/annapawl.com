@@ -1,19 +1,13 @@
 @import "../universal-styles.scss";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap");
-
-// Fonts
-$about-font: "Montserrat", sans-serif;
 
 // Colors
 $about-bkgd: #fdfeff;
 $desktop-h1-clr: #7ab1fd;
 $mobile-h1-clr: #7ab1fd;
-$tablet-h1-clr: #333333;
 $font-clr: #1f1f1f;
 $link-hover-clr: #ff8d75;
 
 // Measurements
-
 // heights / widths
 $mobile-about-height: 40vh;
 $mobile-about-width: 100vw;
@@ -34,7 +28,6 @@ $desktop-line-height: 25px;
 $mobile-line-height: 20px;
 // margins
 $margin-top: 45px;
-// $margin-left: 60px;
 
 // SHARED STYLES
 .desktop-about,
@@ -43,16 +36,26 @@ $margin-top: 45px;
   // border: $test-border;
   overflow: hidden;
   background-color: $about-bkgd;
-  font-family: $about-font;
+  font-family: $font;
   color: $font-clr;
   > h1 {
-    font-family: "Montserrat", sans-serif;
+    font-family: $font;
     color: $desktop-h1-clr;
     font-weight: 800;
   }
 }
 
-// MOBILE SPECIFIC STYLES
+span {
+  display: inline-block;
+  animation: abouthover 3s infinite;
+}
+@keyframes abouthover {
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+// Mobile-specific styles
 .mobile-about {
   display: flex;
   padding-top: 13%;
@@ -74,7 +77,7 @@ $margin-top: 45px;
   }
 }
 
-// DESKTOP SPECIFIC STYLES
+// Desktop-specific styles
 .desktop-about {
   display: flex;
   flex-direction: column;
@@ -89,35 +92,10 @@ $margin-top: 45px;
     line-height: $desktop-line-height + 10px;
   }
 }
-// TABLET SPECIFIC STYLES
+// Tablet-specific styles
 .tablet-about {
   height: $tablet-about-height;
   width: $tablet-about-width;
-  padding: 6%;
-  display: flex;
-  // flex-direction: column;
-  // justify-content: space-betwe;
-  font-size: $tablet-font-size;
-
-  h1 {
-    font-size: $tablet-h1-size;
-    color: $tablet-h1-clr;
-    font-weight: 800;
-  }
-  > div {
-    // border: $test-border;
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    // justify-content: space-between;
-  }
-  > p {
-    // display: flex;
-    // justify-content: column;
-    // align-items: center;
-    // width: 65vw;
-    // border: $test-border;
-  }
 }
 
 // Links
@@ -143,14 +121,6 @@ a {
   }
   & > li > a {
     text-decoration: none;
-  }
-}
-
-.tablet-about > div > ul {
-  // display: flex;
-  & > li {
-    // margin-left: 15px;
-    // margin-right: 20px;
   }
 }
 

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap");
+
 *,
 *::after,
 *::before {
@@ -5,20 +7,20 @@
   margin: 0;
 }
 
-$test-border: 2px solid blue;
-$wall-clr: #eaf3ff;
-$mobile-h1-size: 24px;
-$mobile-font-size: 12px;
-$mobile-line-height: 20px;
-
 @mixin center-flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-// Media Queries
+$test-border: 2px solid blue;
+$wall-clr: #eaf3ff;
+$mobile-h1-size: 24px;
+$mobile-font-size: 12px;
+$mobile-line-height: 20px;
+$font: "Montserrat", sans-serif;
 
+// Media Queries
 @media screen and (max-width: 481px) {
   .mobile-laptop-container {
     transform: scale(0.8) translateY(-158px);
