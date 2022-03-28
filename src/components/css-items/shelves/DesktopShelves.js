@@ -11,15 +11,18 @@ import "./shelves.scss";
 function DesktopShelves() {
   return (
     <div className="desktop-shelves">
-      <Shelf cssItem1={<Books2 cn={"desktop-books2-container"} />} />
+      {/* Shelf 1 */}
+      <Shelf cssItems={<Books2 cn={"desktop-books2-container"} />} />
+      {/* Shelf 2*/}
       <Shelf
-        cssItem1={<Radio cn={"desktop-radio-container"} />}
-        cssItem2={<Laptop cn={"desktop-laptop-container"} />}
-        cssItem3={<Pens cn={"desktop-pens-container"} />}
+        cssItems={<Laptop cn={"desktop-laptop-container"} />}
+        // cssItem={<Laptop cn={"desktop-laptop-container"} />}
+        // cssIte3={<Pens cn={"desktop-pens-container"} />}
       />
+      {/* Shelf 3 */}
       <Shelf
-        cssItem1={<Sewing cn={"desktop-sewing-container"} />}
-        cssItem2={<Books cn={"desktop-books-container"} />}
+        cssItems={<Sewing cn={"desktop-sewing-container"} />}
+        // cssItem={<Books cn={"desktop-books-container"} />}
       />
     </div>
   );

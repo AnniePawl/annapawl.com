@@ -1,3 +1,6 @@
+// @import "./about-me/about.scss";
+// heights / widths
+
 *,
 *::after,
 *::before {
@@ -7,9 +10,76 @@
 
 $test-border: 2px solid blue;
 $wall-clr: #eaf3ff;
+$mobile-h1-size: 24px;
+$mobile-font-size: 12px;
+$mobile-line-height: 20px;
 
 @mixin center-flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+// Media Queries
+
+@media screen and (max-width: 481px) {
+  .mobile-laptop-container {
+    transform: scale(0.8) translateY(-158px);
+  }
+  .mobile-books-container {
+    transform: scale(0.88) translateY(-128px);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .mobile-about {
+    font-size: $mobile-font-size * 0.9;
+    line-height: $mobile-line-height * 0.85;
+
+    h1 {
+      font-size: $mobile-h1-size * 0.7;
+    }
+  }
+  .mobile-radio-container {
+    transform: scale(0.84) translateY(-102px);
+  }
+  .mobile-pens-container {
+    transform: scale(0.8) translateY(-175px);
+  }
+  .sewing-machine {
+    transform: scale(0.85) translateY(16px);
+  }
+  .mobile-laptop-container {
+    transform: scale(0.65) translateY(-177px);
+  }
+  .pin-cushion-container {
+    transform: scale(0.7) translateY(2px);
+  }
+  .tape {
+    transform: scale(0.85) translateY(2px);
+  }
+  .mobile-books-container {
+    transform: scale(0.78) translateY(-137px);
+  }
+  .mobile-books2-container {
+    transform: scale(0.85) translateY(-105px);
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .mobile-radio-container {
+    transform: scale(0.75) translateY(-112px);
+  }
+  .mobile-pens-container {
+    transform: scale(0.72) translateY(-186px);
+  }
+  .mobile-laptop-container {
+    transform: scale(0.58) translateY(-188px);
+  }
+  .mobile-books-container {
+    transform: scale(0.65) translateY(-154px);
+  }
+  .mobile-books2-container {
+    transform: scale(0.78) translateY(-109px);
+  }
 }

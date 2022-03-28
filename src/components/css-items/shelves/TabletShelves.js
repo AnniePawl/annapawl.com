@@ -36,6 +36,13 @@ function TabletShelves() {
           />
         }
       />
+      <Shelf
+        cn={"tablet-shelf"}
+        // to do -- fix to desktop styles
+        cssItem1={<Radio cn={"tablet-radio-container"} />}
+        cssItem2={<Books cn={"tablet-books-container"} />}
+        cssItem3={<Pens cn={"tablet-pens-container"} />}
+      />
     </div>
   );
 }

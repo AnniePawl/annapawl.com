@@ -35,9 +35,11 @@ $radio-font-clr: white;
 .desktop-radio-container,
 .tablet-radio-container {
   transform: translateY(-88px) scale(1);
+  border: $test-border;
 }
 .mobile-radio-container {
-  transform: scale(0.9) translateY(-91px);
+  transform: scale(0.95) translateY(-91px);
+  // border: $test-border;
 }
 
 // Top speaker

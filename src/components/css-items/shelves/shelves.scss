@@ -18,77 +18,18 @@ $t-bracket-clr2: #636363;
 // $t-shelf-shadow-clr: #f52323;
 
 // Measurements
-$mobile-shelves-height: 150vh;
-$mobile-shelf-width: 75vw;
+$mobile-shelves-height: 1200px;
+$mobile-shelf-width: 85vw;
 $desktop-shelves-width: 73vw;
 $tablet-shelves-width: 70vw;
 
 $shelf-height: 15px;
 $desktop-shelf-width: 55vw;
 
-.mobile-shelves {
-  // border: $test-border;
-  height: $mobile-shelves-height;
-  transform: translateY(-50px);
-  @include center-flex();
-  flex-direction: column;
-  justify-content: space-evenly;
-  .shelf {
-    width: $mobile-shelf-width;
-  }
-  > div > .shelf-contents {
-    // border: $test-border;
-    width: $mobile-shelf-width;
-    justify-content: space-evenly;
-  }
-}
-
-// Shares Styles
-.desktop-shelves,
-.tablet-shelves {
-  // border: $test-border;
-  overflow: hidden;
-  @include center-flex();
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.tablet-shelves {
-  justify-content: space-around;
-  h1 {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-  }
-}
-
-.shelf-contents {
-  // border: $test-border;
-  width: $desktop-shelf-width;
-  position: absolute;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-// Desktop-specific styles
-.desktop-shelves {
-  height: 110vh;
-  width: $desktop-shelves-width;
-}
-
-// Tablet-specific styles
-.tablet-shelves {
-  height: 80vh;
-  width: $tablet-shelves-width;
-  justify-content: space-around;
-}
-
-// Shelf styles
+// Shelf styles (desktop default)
 .shelf {
   height: $shelf-height;
   width: $desktop-shelf-width;
-  // margin-top: 20px;
-  // margin-bottom: 20px;
   display: flex;
   background-image: linear-gradient($shelf-clr 0 70%, $shelf-clr2 70% 100%);
   justify-content: space-around;
@@ -98,7 +39,6 @@ $desktop-shelf-width: 55vw;
   &::before {
     content: "";
     margin-top: 15px;
-    // background-color: $bracket-clr;
     background-image: linear-gradient(
       $bracket-clr 0 70%,
       $bracket-clr2 70% 100%
@@ -120,6 +60,72 @@ $desktop-shelf-width: 55vw;
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
   }
+}
+
+// Mobile Shelves
+.mobile-shelves {
+  // border: 2px solid orange;
+  height: $mobile-shelves-height;
+  // transform: translateY(-50px);
+  @include center-flex();
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.mobile-shelf {
+  width: $mobile-shelf-width;
+}
+.mobile-shelf-contents {
+  width: $mobile-shelf-width;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  // transform: scale(0.9);
+}
+.mobile-shelf-container {
+}
+
+// Shared Styles
+.desktop-shelves,
+.tablet-shelves {
+  border: $test-border;
+  overflow: hidden;
+  @include center-flex();
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.shelf-contents {
+  border: 2px solid pink;
+  width: $desktop-shelf-width;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.desktop-shelves {
+  min-height: 780px;
+}
+
+.tablet-shelves {
+  justify-content: space-around;
+  h1 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+// Desktop-specific styles
+.desktop-shelves {
+  height: 110vh;
+  width: $desktop-shelves-width;
+}
+
+// Tablet-specific styles
+.tablet-shelves {
+  height: 80vh;
+  width: $tablet-shelves-width;
+  justify-content: space-around;
 }
 
 // Tablet-specific shelf styles

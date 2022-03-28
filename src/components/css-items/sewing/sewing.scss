@@ -10,11 +10,30 @@
 }
 
 .mobile-sewing-container {
-  width: 340px;
-  transform: scale(0.85) translateY(-182px);
+  // width: 340px;
+  transform: scale(0.88) translateY(-180px);
 }
 
 .desktop-sewing-container,
 .tablet-sewing-container {
   transform: scale(1) translateY(-168px);
 }
+
+@media screen and (max-width: 420px) {
+  .mobile-sewing-container {
+    // border: $test-border;
+    // width: 100vw;
+  }
+  // .mobile-sewing-container {
+  //   transform: scale(0.8) translateY(-189px);
+  // }
+}
+
+// @media screen and (max-width: 321px) {
+//   .mobile-radio-container {
+//     transform: scale(0.75) translateY(-112px);
+//   }
+//   .mobile-pens-container {
+//     transform: scale(0.72) translateY(-186px);
+//   }
+// }

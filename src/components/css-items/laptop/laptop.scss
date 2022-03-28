@@ -25,13 +25,16 @@ $keyboard-width: 230px;
 
 .desktop-laptop-container {
   transform: scale(0.97) translateY(-144px);
+  // border: $test-border;
 }
 .mobile-laptop-container {
-  transform: scale(0.8) translateY(-158px);
+  transform: scale(0.78) translateY(-161px);
+  // border: $test-border;
 }
 
 .tablet-laptop-container {
   transform: scale(0.85) translateY(-154px);
+  // border: $test-border;
 }
 
 // Top section includes screen and terminal divs

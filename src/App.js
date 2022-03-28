@@ -5,15 +5,15 @@ import Desktop from "./components/desktop/Desktop";
 import "./app.scss";
 
 function App() {
-  const [isMobile, setMobile] = useState(window.innerWidth < 540);
+  const [isMobile, setMobile] = useState(window.innerWidth < 768);
   const [isTablet, setTablet] = useState(
-    window.innerWidth > 540 && window.innerWidth < 1000
+    window.innerWidth > 600 && window.innerWidth < 1000
   );
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
 
   const updateMedia = () => {
-    setMobile(window.innerWidth < 540);
-    setTablet(window.innerWidth > 540 && window.innerWidth < 1000);
+    setMobile(window.innerWidth < 600);
+    setTablet(window.innerWidth > 600 && window.innerWidth < 1000);
     setDesktop(window.innerWidth > 1000);
     console.log(window.innerWidth);
   };

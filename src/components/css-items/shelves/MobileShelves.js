@@ -1,4 +1,5 @@
 import React from "react";
+import MobileShelf from "./MobileShelf";
 import Shelf from "./Shelf";
 import Radio from "../radio/Radio";
 import Books from "../books/Books";
@@ -11,14 +12,13 @@ import "./shelves.scss";
 function MobileShelves() {
   return (
     <div className="mobile-shelves">
-      {/* Shelf 1 */}
-      <Shelf
+      {/* MobileShelf 1 */}
+      <MobileShelf
         cssItem1={<Radio cn={"mobile-radio-container"} />}
         cssItem2={<Pens cn={"mobile-pens-container"} />}
       />
-      {/* Shelf 2 */}
-
-      <Shelf
+      {/* MobileShelf 2 */}
+      <MobileShelf
         cssItem1={
           <Sewing
             cn={"mobile-sewing-container"}
@@ -27,14 +27,13 @@ function MobileShelves() {
           />
         }
       />
-      {/* Shelf 3 */}
-      <Shelf
+      {/* MobileShelf 3 */}
+      <MobileShelf
         cssItem2={<Books cn={"mobile-books-container"} />}
         cssItem1={<Laptop cn={"mobile-laptop-container"} />}
       />
-
-      {/* Shelf 4 */}
-      <Shelf cssItem1={<Books2 cn={"mobile-books2-container"} />} />
+      {/* MobileShelf 4 */}
+      <MobileShelf cssItem1={<Books2 cn={"mobile-books2-container"} />} />
     </div>
   );
 }
