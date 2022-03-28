@@ -38,8 +38,8 @@ $pencil-width: 3px;
 
 .desktop-pens-container,
 .tablet-pens-container {
-  transform: translateY(-149px) scale(1);
-  border: $test-border;
+  transform: translateY(-155px) scale(0.98);
+  // border: $test-border;
 }
 .mobile-pens-container {
   transform: translateY(-150px) scale(0.93);

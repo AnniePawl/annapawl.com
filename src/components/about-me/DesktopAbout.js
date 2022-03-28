@@ -9,12 +9,10 @@ function About() {
       </h1>
       <p>
         I'm a software engineer with a focus on front-end development and an
-        interest in design. I'm curiosity-driven and spend a lot of my free time
-        learning new things and experimenting. I love using my creativity to
-        make satisfying little experiences with code. The web should be fun ✨{" "}
-        <br />
-        <br /> Get to know me better by hovering over the stuff on my bookshelf.
-        Each item was made with love and pure CSS! Check out my website,{" "}
+        interest in design. I like making satisfying little experiences with
+        code. The web should be fun ✨ <br />
+        <br /> Hover over the stuff on the bookshelf for some mini surprises.
+        It's all made with pure CSS. Check out my website,{" "}
         <a href="https://anniepawl.github.io/dwc/" target="blank">
           Drawing with Code
         </a>

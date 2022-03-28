@@ -1,30 +1,25 @@
 @import "../../universal-styles.scss";
 
 // Colors
-// desktop shelf
 $shelf-clr: #f1dbc1;
-// $shelf-clr: #d7d3ff;
 $shelf-clr2: #7ab1fd;
-// $shelf-clr: #ac968e;
-// $shelf-clr2: #8f7e78;
 $bracket-clr: #f1dbc1;
 $bracket-clr2: #7ab1fd;
 $shelf-shadow-clr: #a6cefc;
-// tablet shelf
-$t-shelf-clr: #af9893;
-$t-shelf-clr2: #7c6767;
-$t-bracket-clr: #414141;
-$t-bracket-clr2: #636363;
+
+// $t-shelf-clr: #af9893;
+// $t-shelf-clr2: #7c6767;
+// $t-bracket-clr: #414141;
+// $t-bracket-clr2: #636363;
 // $t-shelf-shadow-clr: #f52323;
 
 // Measurements
+$shelf-height: 15px;
+$desktop-shelf-width: 55vw;
+$tablet-shelf-width: 80vw;
 $mobile-shelves-height: 1200px;
 $mobile-shelf-width: 85vw;
 $desktop-shelves-width: 73vw;
-$tablet-shelves-width: 70vw;
-
-$shelf-height: 15px;
-$desktop-shelf-width: 55vw;
 
 // Shelf styles (desktop default)
 .shelf {
@@ -36,18 +31,7 @@ $desktop-shelf-width: 55vw;
   box-shadow: 0 10px 15px -2px $shelf-shadow-clr;
   border-radius: 2px;
   // Bracket Styles
-  &::before {
-    content: "";
-    margin-top: 15px;
-    background-image: linear-gradient(
-      $bracket-clr 0 70%,
-      $bracket-clr2 70% 100%
-    );
-    height: 20px;
-    width: 12px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-  }
+  &::before,
   &::after {
     content: "";
     margin-top: 15px;
@@ -59,6 +43,40 @@ $desktop-shelf-width: 55vw;
     width: 12px;
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
+  }
+}
+
+// Shared Styles
+.desktop-shelves,
+.tablet-shelves {
+  // border: $test-border;
+  overflow: hidden;
+  @include center-flex();
+  flex-direction: column;
+  justify-content: space-evenly;
+  .shelf-contents {
+    // border: 2px solid pink;
+    width: $desktop-shelf-width;
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+  }
+}
+
+// Desktop / Tablet specific styles
+.desktop-shelves,
+.tablet-shelves {
+  height: 110vh;
+  width: $desktop-shelves-width;
+  // border: $test-border;
+  min-height: 780px;
+}
+.tablet-shelves {
+  .shelf {
+    width: $tablet-shelf-width;
+  }
+  .shelf-contents {
+    width: $tablet-shelf-width;
   }
 }
 
@@ -66,83 +84,16 @@ $desktop-shelf-width: 55vw;
 .mobile-shelves {
   // border: 2px solid orange;
   height: $mobile-shelves-height;
-  // transform: translateY(-50px);
   @include center-flex();
   flex-direction: column;
   justify-content: space-evenly;
-}
-.mobile-shelf {
-  width: $mobile-shelf-width;
-}
-.mobile-shelf-contents {
-  width: $mobile-shelf-width;
-  position: absolute;
-  display: flex;
-  justify-content: space-evenly;
-  // transform: scale(0.9);
-}
-.mobile-shelf-container {
-}
-
-// Shared Styles
-.desktop-shelves,
-.tablet-shelves {
-  border: $test-border;
-  overflow: hidden;
-  @include center-flex();
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.shelf-contents {
-  border: 2px solid pink;
-  width: $desktop-shelf-width;
-  position: absolute;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.desktop-shelves {
-  min-height: 780px;
-}
-
-.tablet-shelves {
-  justify-content: space-around;
-  h1 {
+  .mobile-shelf {
+    width: $mobile-shelf-width;
+  }
+  .mobile-shelf-contents {
+    width: $mobile-shelf-width;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-  }
-}
-
-// Desktop-specific styles
-.desktop-shelves {
-  height: 110vh;
-  width: $desktop-shelves-width;
-}
-
-// Tablet-specific styles
-.tablet-shelves {
-  height: 80vh;
-  width: $tablet-shelves-width;
-  justify-content: space-around;
-}
-
-// Tablet-specific shelf styles
-.tablet-shelf {
-  width: $tablet-shelves-width;
-  background-image: linear-gradient($shelf-clr 0 70%, $shelf-clr2 70% 100%);
-  box-shadow: none;
-  &::before {
-    background-image: linear-gradient(
-      $bracket-clr 0 70%,
-      $bracket-clr2 70% 100%
-    );
-  }
-  &::after {
-    background-image: linear-gradient(
-      $bracket-clr 0 70%,
-      $bracket-clr2 70% 100%
-    );
+    display: flex;
+    justify-content: space-evenly;
   }
 }

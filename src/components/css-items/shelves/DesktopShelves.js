@@ -12,17 +12,17 @@ function DesktopShelves() {
   return (
     <div className="desktop-shelves">
       {/* Shelf 1 */}
-      <Shelf cssItems={<Books2 cn={"desktop-books2-container"} />} />
+      <Shelf cssItem1={<Books2 cn={"desktop-books2-container"} />} />
       {/* Shelf 2*/}
       <Shelf
-        cssItems={<Laptop cn={"desktop-laptop-container"} />}
-        // cssItem={<Laptop cn={"desktop-laptop-container"} />}
-        // cssIte3={<Pens cn={"desktop-pens-container"} />}
+        cssItem1={<Radio cn={"desktop-radio-container"} />}
+        cssItem2={<Pens cn={"desktop-pens-container"} />}
+        cssItem3={<Laptop cn={"desktop-laptop-container"} />}
       />
       {/* Shelf 3 */}
       <Shelf
-        cssItems={<Sewing cn={"desktop-sewing-container"} />}
-        // cssItem={<Books cn={"desktop-books-container"} />}
+        cssItem1={<Sewing cn={"desktop-sewing-container"} />}
+        cssItem2={<Books cn={"desktop-books-container"} />}
       />
     </div>
   );

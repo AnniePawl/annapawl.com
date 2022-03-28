@@ -12,36 +12,17 @@ function TabletShelves() {
   return (
     <div className="tablet-shelves">
       {/* Shelf 1 */}
+      <Shelf cssItem1={<Books2 cn={"tablet-books2-container"} />} />
+      {/* Shelf 2*/}
       <Shelf
-        cn={"tablet-shelf"}
-        cssItem1={<Books2 cn={"tablet-books2-container"} />}
-        cssItem2={<Laptop cn={"tablet-laptop-container"} />}
-      />
-      {/* Shelf 2 */}
-      <Shelf
-        cn={"tablet-shelf"}
-        // to do -- fix to desktop styles
         cssItem1={<Radio cn={"tablet-radio-container"} />}
-        cssItem2={<Books cn={"tablet-books-container"} />}
-        cssItem3={<Pens cn={"tablet-pens-container"} />}
+        cssItem2={<Pens cn={"tablet-pens-container"} />}
+        cssItem3={<Laptop cn={"tablet-laptop-container"} />}
       />
-      {/* Shelf 2 */}
+      {/* Shelf 3 */}
       <Shelf
-        cn={"tablet-shelf"}
-        cssItem1={
-          <Sewing
-            cn={"tablet-sewing-container"}
-            tapecn={"tablet-tape"}
-            pincushioncn={"tablet-pin-cushion"}
-          />
-        }
-      />
-      <Shelf
-        cn={"tablet-shelf"}
-        // to do -- fix to desktop styles
-        cssItem1={<Radio cn={"tablet-radio-container"} />}
+        cssItem1={<Sewing cn={"tablet-sewing-container"} />}
         cssItem2={<Books cn={"tablet-books-container"} />}
-        cssItem3={<Pens cn={"tablet-pens-container"} />}
       />
     </div>
   );
