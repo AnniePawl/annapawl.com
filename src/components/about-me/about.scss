@@ -5,7 +5,7 @@ $about-bkgd: #fdfeff;
 $desktop-h1-clr: #7ab1fd;
 $mobile-h1-clr: #7ab1fd;
 $font-clr: #1f1f1f;
-$link-hover-clr: #ff8d75;
+$link-hover-clr: #fd85bd;
 
 // Measurements
 // heights / widths
@@ -121,6 +121,12 @@ a {
   }
   & > li > a {
     text-decoration: none;
+  }
+  p {
+    // height: 20px;
+    // width: 35px;
+    // background-color: #7ab1fd;
+    // border: $test-border;
   }
 }
 
