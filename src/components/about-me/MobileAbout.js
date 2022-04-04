@@ -12,19 +12,6 @@ function MobileAbout() {
         interest in design. I like making satisfying little experiences with
         code. The web should be fun ✨ <br />
       </p>
-
-      <ul className="mobile-links">
-        <li>
-          <a href="https://github.com/AnniePawl" target="blank">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://codepen.io/annampawl" target="blank">
-            CodePen
-          </a>
-        </li>
-      </ul>
     </div>
   );
 }

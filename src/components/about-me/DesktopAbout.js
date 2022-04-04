@@ -1,13 +1,8 @@
 import React from "react";
+import Contact from "./Contact";
 import "./about.scss";
 
 function DesktopAbout() {
-  // onClick={() => {navigator.clipboard.writeText(this.state.textToCopy)}}
-
-  const handleContact = () => {
-    navigator.clipboard.writeText("annampawl@gmail.com");
-  };
-
   return (
     <div className="desktop-about">
       <h1>
@@ -28,7 +23,7 @@ function DesktopAbout() {
 
       <ul>
         <li>
-          <p onClick={handleContact}></p>
+          <Contact />
         </li>
         <li>
           <a href="https://github.com/AnniePawl" target="blank">

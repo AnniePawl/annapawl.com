@@ -1,0 +1,28 @@
+.MobileLinks {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+
+  // padding: 50px;
+}
+
+.mobile-links {
+  width: 100%;
+  display: flex;
+  line-height: 22px;
+  justify-content: space-between;
+  font-size: 13px;
+  list-style: none;
+  & > div {
+    display: flex;
+    margin-right: 8vw;
+  }
+  & > div > li {
+    font-weight: 600;
+
+    margin-right: 10px;
+  }
+  & > div > li > a {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,58 @@
+@import "../universal-styles.scss";
+
+$contact-height: 23px;
+$contact-width: 35px;
+$contact-clr: #7ab1fd;
+$contact-clr2: #fd85bd;
+
+.notClicked {
+  display: none;
+}
+
+.clicked {
+  animation: envelope-clicked 2s forwards;
+}
+
+.contact {
+  display: flex;
+  transform: translateX(-4px);
+  > p {
+    color: $contact-clr2;
+    font-size: 10px;
+  }
+  .envelope {
+    transform: scale(0.7);
+    margin-bottom: 5px;
+    height: $contact-height;
+    width: $contact-width;
+    border: 3px solid $contact-clr;
+    border-radius: 1.5px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border: 1.5px solid $contact-clr;
+      width: $contact-width * 0.59;
+    }
+    &::before {
+      transform: rotate(34deg) translateY(5px);
+    }
+    &::after {
+      transform: translateX(9px) rotate(-34deg) translateY(5px);
+    }
+    &:hover {
+      border: 3px solid $contact-clr2;
+    }
+    &:hover::before,
+    &:hover::after {
+      border: 1.5px solid $contact-clr2;
+    }
+  }
+}
+
+// 'Email copied!' animation
+@keyframes envelope-clicked {
+  100% {
+    opacity: 0%;
+  }
+}
