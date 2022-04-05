@@ -45,16 +45,6 @@ $margin-top: 45px;
   }
 }
 
-span {
-  display: inline-block;
-  animation: abouthover 3s infinite;
-}
-@keyframes abouthover {
-  50% {
-    transform: translateY(-5px);
-  }
-}
-
 // Mobile-specific styles
 .mobile-about {
   // border: $test-border;
@@ -71,11 +61,10 @@ span {
   justify-content: space-around;
   font-size: $mobile-font-size;
   h1 {
-    padding-bottom: 10px;
     font-size: $mobile-h1-size;
     color: $mobile-h1-clr;
     font-weight: 800;
-    line-height: $mobile-line-height + 5px;
+    line-height: $mobile-line-height + 3px;
   }
 }
 

@@ -17,3 +17,12 @@ $contact-clr2: #fd85bd;
   background-color: $wall-clr;
   overflow: hidden;
 }
+
+.info-button {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  &:hover > svg {
+    fill: #fd85bd;
+  }
+}

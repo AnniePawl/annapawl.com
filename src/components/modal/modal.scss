@@ -1,0 +1,92 @@
+@import "../universal-styles.scss";
+$background-color: #ffffff;
+$modal-font-clr: #65a5ff;
+$modal-hover-clr: #fd85bd;
+$overlay-color: #7cb2fd99;
+$modal-h1-clr: #31d9ff54;
+$heading-color: #ffdbe0;
+$font-color: #292929;
+
+.modal__overlay {
+  position: absolute;
+  // @include center-flex;
+  height: 100vh;
+  width: 73vw;
+  top: 0;
+  right: 0px;
+  background-color: $overlay-color;
+  z-index: 1000;
+}
+.modal {
+  // font-family: ;
+  position: absolute;
+  right: 35px;
+  top: 34px;
+  display: flex;
+  flex-direction: column;
+  color: $font-color;
+  height: 355px;
+  width: 350px;
+  border-radius: 5px;
+  background-color: $background-color;
+  box-shadow: rgba(0, 0, 0, 0.09) 1px 3px 12px;
+  z-index: 1000;
+  // overflow: hidden;
+}
+
+.modal__button {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fdf185;
+  color: $modal-hover-clr;
+  font-weight: 900;
+  height: 30px;
+  width: 30px;
+  // transform: translateY(-8px) translateX(5px);
+  &:hover {
+    animation: spin 0.5s;
+  }
+}
+
+.modal__content {
+  padding: 16%;
+  padding-right: 14%;
+  p {
+    font-size: 13px;
+    line-height: 22px;
+    color: $modal-font-clr;
+    span {
+      color: $modal-hover-clr;
+      display: inline-block;
+      animation: abouthover 3s infinite;
+    }
+  }
+  h1 {
+    color: $modal-h1-clr;
+  }
+}
+a {
+  color: $modal-font-clr;
+  &:visited {
+    color: $modal-font-clr;
+  }
+  &:hover {
+    color: $modal-hover-clr;
+  }
+}
+
+// Keyframes
+@keyframes spin {
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes abouthover {
+  50% {
+    transform: translateY(-5px);
+  }
+}
