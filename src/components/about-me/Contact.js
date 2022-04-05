@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { ReactComponent as Codepen } from "../../assets/codepen.svg";
+import { ReactComponent as GitHub } from "../../assets/github.svg";
+import { ReactComponent as Medium } from "../../assets/medium.svg";
 import "./contact.scss";
 
 function Contact() {
@@ -18,9 +21,34 @@ function Contact() {
   }, [clicked]);
 
   return (
-    <div className="contact">
-      <div className="envelope" onClick={handleContactClick}></div>
-      <p className={clicked ? "clicked" : "notClicked"}>Email copied!</p>
+    <div>
+      <div className="contact">
+        <div className="desktop-icons">
+          <a
+            className="github-icon"
+            href="https://github.com/AnniePawl"
+            target="blank"
+          >
+            <GitHub />
+          </a>
+          <a
+            className="codepen-icon"
+            href="https://codepen.io/annampawl"
+            target="blank"
+          >
+            <Codepen />
+          </a>
+          {/* <a
+            className="medium-icon"
+            href="https://medium.com/@annapawl"
+            target="blank"
+          >
+            <Medium />
+          </a> */}
+        </div>
+        <div className="envelope" onClick={handleContactClick}></div>
+        <p className={clicked ? "clicked" : "notClicked"}>Email copied!</p>
+      </div>
     </div>
   );
 }

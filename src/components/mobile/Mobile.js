@@ -1,7 +1,7 @@
 import React from "react";
 import MobileAbout from "../about-me/MobileAbout";
 import MobileShelves from "../css-items/shelves/MobileShelves";
-import MobileLinks from "./MobileLinks";
+import MobileFooter from "./MobileFooter";
 import "./mobile.scss";
 
 function Mobile() {
@@ -11,7 +11,7 @@ function Mobile() {
       <div className="mobile-shelves-container">
         <MobileShelves />
       </div>
-      <MobileLinks />
+      <MobileFooter />
     </div>
   );
 }

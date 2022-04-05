@@ -57,19 +57,21 @@ span {
 
 // Mobile-specific styles
 .mobile-about {
+  // border: $test-border;
   display: flex;
-  padding-top: 13%;
-  padding-left: 13%;
-  padding-right: 13%;
+  padding-top: 10%;
+  padding-left: 11%;
+  padding-right: 11%;
   padding-bottom: 5%;
   margin-right: 12px;
   flex-direction: column;
   height: $mobile-about-height;
   line-height: $mobile-line-height;
   // border: $test-border;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-size: $mobile-font-size;
   h1 {
+    padding-bottom: 10px;
     font-size: $mobile-h1-size;
     color: $mobile-h1-clr;
     font-weight: 800;
@@ -130,7 +132,12 @@ a {
   }
 }
 
-.mobile-about > ul {
-  font-size: 10px;
-  line-height: 17px;
+// .mobile-about > ul {
+//   font-size: 10px;
+//   line-height: 17px;
+// }
+
+// Mobile social icons
+.mobile-contact {
+  transform: scale(0.75) translateX(-20vw);
 }

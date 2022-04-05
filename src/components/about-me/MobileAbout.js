@@ -1,4 +1,5 @@
 import React from "react";
+import Contact from "./Contact";
 import "./about.scss";
 
 function MobileAbout() {
@@ -12,6 +13,9 @@ function MobileAbout() {
         interest in design. I like making satisfying little experiences with
         code. The web should be fun ✨ <br />
       </p>
+      <div className="mobile-contact">
+        <Contact />
+      </div>
     </div>
   );
 }
