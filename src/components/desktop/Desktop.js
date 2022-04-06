@@ -21,6 +21,7 @@ function Desktop() {
       <DesktopAbout />
       <div className="desktop-shelves-container">
         <Modal
+          cn={"desktop-modal"}
           isOpen={open}
           onClose={(e) => {
             setOpen(false);

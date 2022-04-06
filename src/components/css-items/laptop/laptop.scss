@@ -31,7 +31,7 @@ $keyboard-width: 230px;
 }
 
 .mobile-laptop-container {
-  transform: scale(0.78) translateY(-161px);
+  transform: scale(0.78) translateY(-160px);
   & > div > div > div > p {
     // border: $test-border;
     animation: typing-animation 4s steps(15) infinite, blink 1s infinite;

@@ -24,5 +24,12 @@ $contact-clr2: #fd85bd;
   top: 20px;
   &:hover > svg {
     fill: #fd85bd;
+    animation: info-spin 0.5s;
+  }
+}
+
+@keyframes info-spin {
+  100% {
+    transform: rotate(360deg);
   }
 }

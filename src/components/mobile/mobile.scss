@@ -16,3 +16,14 @@
   font-size: 12px;
   padding: 15px;
 }
+
+.mobile-info-btn {
+  position: absolute;
+  transform: scale(0.9);
+  right: 15px;
+  top: 37vh;
+  &:hover > svg {
+    fill: #fd85bd;
+    animation: info-spin 0.5s;
+  }
+}

@@ -7,9 +7,12 @@ $modal-h1-clr: #31d9ff54;
 $heading-color: #ffdbe0;
 $font-color: #292929;
 
+p.hide {
+  display: none;
+}
+
 .modal__overlay {
   position: absolute;
-  // @include center-flex;
   height: 100vh;
   width: 73vw;
   top: 0;
@@ -17,8 +20,40 @@ $font-color: #292929;
   background-color: $overlay-color;
   z-index: 1000;
 }
+
+// Tablet Specific Styles
+.tablet-modal {
+  width: 100vw;
+  > .modal {
+    height: 310px;
+    width: 300px;
+  }
+}
+
+// Mobile Specific Styles
+.mobile-modal {
+  top: 35vh;
+  height: 100vh;
+  width: 100vw;
+
+  > .modal {
+    top: 3.5vh;
+    right: 30px;
+    height: 315px;
+    width: 250px;
+    > .modal__content {
+      p {
+        line-height: 20px;
+      }
+    }
+    > .modal__button {
+      background-color: #ff7878;
+      color: #ffe59d;
+    }
+  }
+}
+
 .modal {
-  // font-family: ;
   position: absolute;
   right: 35px;
   top: 34px;
@@ -62,6 +97,9 @@ $font-color: #292929;
       color: $modal-hover-clr;
       display: inline-block;
       animation: abouthover 3s infinite;
+    }
+    p.hide {
+      display: none;
     }
   }
   h1 {

@@ -4,7 +4,7 @@ import "./mobile.scss";
 function MobileFooter() {
   return (
     <div className="mobile-footer">
-      <p> ♥ Made with CSS by Anna Pawl ♥</p>
+      <p> Made with ♥ by Anna Pawl </p>
     </div>
   );
 }
