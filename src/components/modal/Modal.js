@@ -5,14 +5,14 @@ import "./modal.scss";
 export default function Modal({ isOpen, onClose, cn }) {
   if (!isOpen) return null;
   return reactDom.createPortal(
-    <div className={`modal__overlay ${cn}`}>
+    <div className={`modal-overlay ${cn}`}>
       <div className="modal">
         <button className="modal__button" onClick={onClose}>
           X
         </button>
         <div className="modal__content">
           {/* Desktop Modal */}
-          <p className={cn === "desktop-modal" ? "show" : "hide"}>
+          <p className={cn === "desktop__modal" ? "show" : "hide"}>
             I've fallen for CSS and really enjoy exploring its potential through
             mini illustrations and animations. <br></br>
             <br></br>
@@ -23,7 +23,7 @@ export default function Modal({ isOpen, onClose, cn }) {
             the bookshelf items for some bite-sized surprises. I made everything
             with ♥ and pure CSS.
             <br></br>
-            cv wes>Check out my ongoing project,{" "}
+            Check out my ongoing project,{" "}
             <a href="https://anniepawl.github.io/dwc/" target="blank">
               Drawing with Code
             </a>
@@ -31,7 +31,7 @@ export default function Modal({ isOpen, onClose, cn }) {
           </p>
 
           {/* Tablet Modal */}
-          <p className={cn === "tablet-modal" ? "show" : "hide"}>
+          <p className={cn === "tablet__modal" ? "show" : "hide"}>
             I've fallen for CSS and really enjoy exploring its potential through
             mini illustrations and animations. I made this bookshelf with ♥ and
             pure CSS.
@@ -44,7 +44,7 @@ export default function Modal({ isOpen, onClose, cn }) {
           </p>
 
           {/* Mobile Modal */}
-          <p className={cn === "mobile-modal" ? "show" : "hide"}>
+          <p className={cn === "mobile__modal" ? "show" : "hide"}>
             I've fallen for CSS and really enjoy exploring its potential through
             mini illustrations and animations. <br></br>
             <br></br>Check out my growing CSS art gallery. I'm ever striving to

@@ -1,75 +1,40 @@
 @import "../universal-styles.scss";
+
+// Colors
+$overlay-clr: #aed0ff99;
 $background-color: #ffffff;
 $modal-font-clr: #65a5ff;
 $modal-hover-clr: #fd85bd;
-$overlay-color: #7cb2fd99;
-$modal-h1-clr: #31d9ff54;
-$heading-color: #ffdbe0;
-$font-color: #292929;
 
 p.hide {
   display: none;
 }
 
-.modal__overlay {
-  position: absolute;
+.modal-overlay {
   height: 100vh;
   width: 73vw;
+  position: absolute;
   top: 0;
   right: 0px;
-  background-color: $overlay-color;
-  z-index: 1000;
-}
-
-// Tablet Specific Styles
-.tablet-modal {
-  width: 100vw;
-  > .modal {
-    height: 310px;
-    width: 300px;
-  }
-}
-
-// Mobile Specific Styles
-.mobile-modal {
-  top: 35vh;
-  height: 100vh;
-  width: 100vw;
-
-  > .modal {
-    top: 3.5vh;
-    right: 30px;
-    height: 315px;
-    width: 250px;
-    > .modal__content {
-      p {
-        line-height: 20px;
-      }
-    }
-    > .modal__button {
-      background-color: #ff7878;
-      color: #ffe59d;
-    }
-  }
+  background-color: $overlay-clr;
 }
 
 .modal {
+  height: 355px;
+  width: 350px;
   position: absolute;
   right: 35px;
   top: 34px;
   display: flex;
   flex-direction: column;
-  color: $font-color;
-  height: 355px;
-  width: 350px;
   border-radius: 5px;
   background-color: $background-color;
   box-shadow: rgba(0, 0, 0, 0.09) 1px 3px 12px;
-  z-index: 1000;
-  // overflow: hidden;
 }
 
 .modal__button {
+  height: 30px;
+  width: 30px;
   position: absolute;
   right: -12px;
   top: -12px;
@@ -78,9 +43,6 @@ p.hide {
   background-color: #fdf185;
   color: $modal-hover-clr;
   font-weight: 900;
-  height: 30px;
-  width: 30px;
-  // transform: translateY(-8px) translateX(5px);
   &:hover {
     animation: spin 0.5s;
   }
@@ -102,17 +64,46 @@ p.hide {
       display: none;
     }
   }
-  h1 {
-    color: $modal-h1-clr;
+  a {
+    color: $modal-font-clr;
+    &:visited {
+      color: $modal-font-clr;
+    }
+    &:hover {
+      color: $modal-hover-clr;
+    }
   }
 }
-a {
-  color: $modal-font-clr;
-  &:visited {
-    color: $modal-font-clr;
+
+// Tablet Specific Styles
+.tablet__modal {
+  width: 100vw;
+  > .modal {
+    height: 310px;
+    width: 300px;
   }
-  &:hover {
-    color: $modal-hover-clr;
+}
+
+// Mobile Specific Styles
+.mobile__modal {
+  top: 35vh;
+  height: 100vh;
+  width: 100vw;
+
+  > .modal {
+    top: 3.5vh;
+    right: 30px;
+    height: 315px;
+    width: 250px;
+    > .modal__content {
+      p {
+        line-height: 20px;
+      }
+    }
+    > .modal__button {
+      background-color: #ff7878;
+      color: #ffe59d;
+    }
   }
 }
 

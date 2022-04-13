@@ -11,7 +11,7 @@ $tape-btm-clr: #c2c2c2;
 $tape-height: 11px;
 $tape-width: 34px;
 
-.tape-top {
+.tape__top {
   height: $tape-height;
   width: $tape-width;
   border-radius: 2px 0 0 1px;
@@ -22,7 +22,7 @@ $tape-width: 34px;
     content: "";
     position: absolute;
   }
-  // Ticks
+  // ticks
   &::before {
     height: $tape-height * 0.5;
     width: $tape-width;
@@ -34,7 +34,7 @@ $tape-width: 34px;
       $tape-ticks 16%
     );
   }
-  // Fold
+  // fold
   &::after {
     height: 0;
     width: 0;
@@ -47,7 +47,7 @@ $tape-width: 34px;
 }
 
 // Hanging tape
-.tape-bottom {
+.tape__bottom {
   height: $tape-width * 1.45;
   width: $tape-height;
   position: absolute;
@@ -60,7 +60,7 @@ $tape-width: 34px;
     content: "";
     position: absolute;
   }
-  // Hanging tape ticks
+  // hanging tape ticks
   &::before {
     height: $tape-width * 1.4;
     width: 55%;
@@ -72,7 +72,7 @@ $tape-width: 34px;
       $tape-ticks 13%
     );
   }
-  // Haning tape end
+  // hanging tape end
   &::after {
     height: $tape-height;
     width: $tape-height;
@@ -85,27 +85,27 @@ $tape-width: 34px;
 }
 
 // Desktop Animation -- extends hanging tape, triggered on hover
-.tape:hover > .tape-bottom {
+.tape:hover > .tape__bottom {
   animation: tape-animation1 2s;
 }
-.tape:hover > .tape-bottom::before {
+.tape:hover > .tape__bottom::before {
   animation: tape-animation2 2s;
 }
-.tape:hover > .tape-bottom::after {
+.tape:hover > .tape__bottom::after {
   animation: tape-animation3 2s;
 }
 
 // Mobile & tablet animation- starts automatically
-.mobile-tape > .tape-bottom,
-.tablet-tape > .tape-bottom {
+.mobile-tape > .tape__bottom,
+.tablet-tape > .tape__bottom {
   animation: tape-animation1 6s 1s infinite;
 }
-.mobile-tape > .tape-bottom::before,
-.tablet-tape > .tape-bottom::before {
+.mobile-tape > .tape__bottom::before,
+.tablet-tape > .tape__bottom::before {
   animation: tape-animation2 6s 1s infinite;
 }
-.mobile-tape > .tape-bottom::after,
-.tablet-tape > .tape-bottom::after {
+.mobile-tape > .tape__bottom::after,
+.tablet-tape > .tape__bottom::after {
   animation: tape-animation3 6s 1s infinite;
 }
 

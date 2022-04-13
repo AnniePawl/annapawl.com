@@ -6,10 +6,10 @@ function Dessert(props) {
 
   return (
     <div className={`dessert-container ${cn}`}>
-      <div className="dessert-stand-top"></div>
-      <div className="dessert-base"></div>
-      <div className="dessert-stand-base"></div>
-      <div className="dessert-spiral"></div>
+      <div className="dessert__stand-top"></div>
+      <div className="dessert__base"></div>
+      <div className="dessert__stand-base"></div>
+      <div className="dessert__spiral"></div>
     </div>
   );
 }

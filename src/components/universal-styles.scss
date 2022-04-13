@@ -21,6 +21,17 @@ $mobile-line-height: 20px;
 $font: "Montserrat", sans-serif;
 
 // Media Queries
+@media screen and (max-width: 755px) {
+  .tablet-dessert-container {
+    transform: scale(0.95) translateY(-129px);
+  }
+  .tablet-laptop-container {
+    transform: scale(0.8) translateY(-158px);
+  }
+  .tablet-radio-container {
+    transform: scale(0.93) translateY(-92px);
+  }
+}
 @media screen and (max-width: 481px) {
   .mobile-laptop-container {
     transform: scale(0.8) translateY(-158px);
@@ -31,7 +42,7 @@ $font: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 420px) {
-  .mobile-about {
+  .mobile__about {
     font-size: $mobile-font-size * 0.9;
     line-height: $mobile-line-height * 0.85;
 
@@ -61,7 +72,10 @@ $font: "Montserrat", sans-serif;
     transform: scale(0.78) translateY(-137px);
   }
   .mobile-books2-container {
-    transform: scale(0.85) translateY(-108px);
+    transform: scale(0.85) translateY(-109px);
+  }
+  .mobile-dessert-container {
+    transform: scale(0.85) translateY(-122px);
   }
 }
 
@@ -79,6 +93,6 @@ $font: "Montserrat", sans-serif;
     transform: scale(0.65) translateY(-154px);
   }
   .mobile-books2-container {
-    transform: scale(0.78) translateY(-109px);
+    transform: scale(0.78) translateY(-114px);
   }
 }

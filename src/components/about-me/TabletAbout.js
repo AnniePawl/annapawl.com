@@ -3,7 +3,7 @@ import "./about.scss";
 
 function TabletAbout() {
   return (
-    <div className="tablet-about">
+    <div className="tablet__about">
       <div>
         <h1>Anna Pawl</h1>
 

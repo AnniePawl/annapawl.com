@@ -4,7 +4,7 @@ import "./about.scss";
 
 function DesktopAbout() {
   return (
-    <div className="desktop-about">
+    <div className="desktop__about">
       <h1>
         Anna <br /> Pawl
       </h1>

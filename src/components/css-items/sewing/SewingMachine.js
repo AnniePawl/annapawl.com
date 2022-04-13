@@ -7,9 +7,9 @@ function SewingMachine(props) {
     <div className={`sewing-machine ${cn}`}>
       <div className="thread"></div>
       <div className="needle"></div>
-      <div className="sewing-machine-top"></div>
-      <div className="sewing-machine-right"></div>
-      <div className="sewing-machine-bottom"></div>
+      <div className="sewing-machine__top"></div>
+      <div className="sewing-machine__right"></div>
+      <div className="sewing-machine__bottom"></div>
     </div>
   );
 }

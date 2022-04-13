@@ -12,16 +12,16 @@ function Mobile() {
     <div className="mobile">
       <MobileAbout />
       <Modal
-        cn={"mobile-modal"}
+        cn={"mobile__modal"}
         isOpen={open}
         onClose={(e) => {
           setOpen(false);
           e.stopPropagation();
         }}
       />
-      <div className="mobile-shelves-container">
+      <div className="mobile__shelves-container">
         <div
-          className=" mobile-info-btn"
+          className=" mobile__info-btn"
           onClick={(e) => {
             setOpen(true);
           }}

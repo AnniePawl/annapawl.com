@@ -19,9 +19,9 @@ function Desktop() {
         <InfoIcon />
       </div>
       <DesktopAbout />
-      <div className="desktop-shelves-container">
+      <div className="desktop__shelves-container">
         <Modal
-          cn={"desktop-modal"}
+          cn={"desktop__modal"}
           isOpen={open}
           onClose={(e) => {
             setOpen(false);

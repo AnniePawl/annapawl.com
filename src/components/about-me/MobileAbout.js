@@ -4,7 +4,7 @@ import "./about.scss";
 
 function MobileAbout() {
   return (
-    <div className="mobile-about">
+    <div className="mobile__about">
       <h1>
         Anna <br /> Pawl
       </h1>
@@ -13,7 +13,7 @@ function MobileAbout() {
         development and design. I like making satisfying little experiences with
         code. The web should be fun ✨<br />
       </p>
-      <div className="mobile-contact">
+      <div className="mobile__contact">
         <Contact />
       </div>
     </div>

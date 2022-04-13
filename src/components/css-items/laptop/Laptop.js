@@ -5,9 +5,9 @@ function Laptop(props) {
   const { cn } = props;
   return (
     <div className={`laptop-container ${cn}`}>
-      <div className="laptop-top">
-        <div className="laptop_top__screen">
-          <div className="laptop_top__terminal">
+      <div className="laptop">
+        <div className="laptop__screen">
+          <div className="laptop__terminal">
             <p>$ You look great</p>
           </div>
         </div>

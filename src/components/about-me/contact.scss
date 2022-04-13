@@ -1,7 +1,10 @@
 @import "../universal-styles.scss";
 
+// Measurements
 $envelope-height: 25px;
 $envelope-width: 35px;
+
+// Colors
 $contact-clr: #7ab1fd;
 $contact-clr2: #fd85bd;
 
@@ -25,7 +28,7 @@ $contact-clr2: #fd85bd;
     margin-top: -6px;
     margin-left: 5px;
   }
-  .envelope {
+  .contact__envelope {
     transform: translateY(-3px);
     height: $envelope-height;
     width: $envelope-width;
@@ -56,26 +59,25 @@ $contact-clr2: #fd85bd;
 }
 
 // Social Media Icons
-.desktop-icons {
-  // border: $test-border;
-  .github-icon {
+.contact__icons {
+  .contact__github-icon {
     margin-right: 10px;
   }
-  .github-icon > svg:hover {
+  .contact__github-icon > svg:hover {
     fill: #fd85bd;
   }
-  .codepen-icon {
+  .contact__codepen-icon {
     margin-right: 15px;
   }
-  .codepen-icon > svg:hover {
+  .contact__codepen-icon > svg:hover {
     fill: #fd85bd;
   }
-  .medium-icon {
-    margin-right: 10px;
-  }
-  .medium-icon > svg:hover {
-    fill: #fd85bd;
-  }
+  // .medium-icon {
+  //   margin-right: 10px;
+  // }
+  // .medium-icon > svg:hover {
+  //   fill: #fd85bd;
+  // }
 }
 
 // 'Email copied!' animation

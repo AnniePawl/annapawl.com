@@ -194,7 +194,7 @@ $pencil-width: 3px;
 }
 
 // Pencil 1
-.pencil-1 {
+.pencil--1 {
   // animation: pencil1-animation 3s 1s infinite;
   z-index: 0;
   background-color: $pencil-clr;
@@ -203,7 +203,7 @@ $pencil-width: 3px;
 }
 
 // Pencil 2
-.pencil-2 {
+.pencil--2 {
   // animation: pencil2-animation 5s 0s infinite;
   background-color: $pencil2-clr;
   box-shadow: $pencil-width 0 $pencil2-clr2;
@@ -239,10 +239,10 @@ $pencil-width: 3px;
 .desktop-pens-container:hover > .cup-contents > .pen {
   animation: pen-animation 2s infinite;
 }
-.desktop-pens-container:hover > .cup-contents > .pencil-1 {
+.desktop-pens-container:hover > .cup-contents > .pencil--1 {
   animation: pencil1-animation 2s infinite;
 }
-.desktop-pens-container:hover > .cup-contents > .pencil-2 {
+.desktop-pens-container:hover > .cup-contents > .pencil--2 {
   animation: pencil2-animation 2s infinite;
 }
 
@@ -255,11 +255,11 @@ $pencil-width: 3px;
 .tablet-pens-container > .cup-contents > .pen {
   animation: pen-animation 4.5s infinite;
 }
-.mobile-pens-container > .cup-contents > .pencil-1,
-.tablet-pens-container > .cup-contents > .pencil-1 {
+.mobile-pens-container > .cup-contents > .pencil--1,
+.tablet-pens-container > .cup-contents > .penci-l-1 {
   animation: pencil1-animation 4.5s infinite;
 }
-.mobile-pens-container > .cup-contents > .pencil-2,
-.tablet-pens-container > .cup-contents > .pencil-2 {
+.mobile-pens-container > .cup-contents > .pencil--2,
+.tablet-pens-container > .cup-contents > .pencil--2 {
   animation: pencil2-animation 4.5s infinite;
 }

@@ -68,7 +68,7 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
   border-radius: 2px;
 }
 
-.v-book-1 {
+.v-book--1 {
   height: $v-book-height * 1.15;
   border-top-left-radius: $book-border-radius;
   border-bottom-left-radius: $book-border-radius;
@@ -93,7 +93,7 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
   }
 }
 
-.v-book-2 {
+.v-book--2 {
   width: $v-book-width * 0.8;
   background-image: linear-gradient(
     to right,
@@ -120,7 +120,7 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
   }
 }
 
-.v-book-3 {
+.v-book--3 {
   position: relative;
   z-index: 3;
   height: $v-book-height * 1.08;
@@ -141,8 +141,6 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
   &::after {
     content: "";
     display: flex;
-
-    // margin-right: $v-book-width * 0.45;
     border-top: 7px double $v-book3-border;
     border-bottom: 7px double $v-book3-border;
     height: $v-book-width * 0.5;
@@ -150,7 +148,7 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
   }
 }
 
-.v-book-4 {
+.v-book--4 {
   transform: rotate(-10deg) translate(7px);
   height: $v-book-height * 0.95;
   width: $v-book-width * 0.9;
@@ -188,7 +186,7 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
 .desktop-books2-container:hover {
   @for $i from 1 to 4 {
     $delay: nth($delays2, $i);
-    .v-book-#{$i} {
+    .v-book--#{$i} {
       animation: v-books-animation 1s $delay forwards;
     }
   }
@@ -199,7 +197,7 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
 .mobile-books2-container {
   @for $i from 1 to 4 {
     $delay: nth($delays, $i);
-    .v-book-#{$i} {
+    .v-book--#{$i} {
       animation: v-books-animation 5s $delay infinite;
       // }
     }

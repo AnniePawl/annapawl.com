@@ -3,7 +3,7 @@ import "./mobile.scss";
 
 function MobileFooter() {
   return (
-    <div className="mobile-footer">
+    <div className="mobile__footer">
       <p> Made with ♥ by Anna Pawl </p>
     </div>
   );

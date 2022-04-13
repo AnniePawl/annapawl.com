@@ -19,7 +19,7 @@ $tablet-about-width: 100vw;
 $desktop-h1-size: 30px;
 $tablet-h1-size: 25px;
 $mobile-h1-size: 24px;
-// Font Sizes
+// font Sizes
 $desktop-font-size: 13px;
 $tablet-font-size: 14px;
 $mobile-font-size: 12px;
@@ -30,9 +30,9 @@ $mobile-line-height: 20px;
 $margin-top: 45px;
 
 // SHARED STYLES
-.desktop-about,
-.tablet-about,
-.mobile-about {
+.desktop__about,
+.tablet__about,
+.mobile__about {
   // border: $test-border;
   overflow: hidden;
   background-color: $about-bkgd;
@@ -46,7 +46,7 @@ $margin-top: 45px;
 }
 
 // Mobile-specific styles
-.mobile-about {
+.mobile__about {
   // border: $test-border;
   display: flex;
   padding-top: 10%;
@@ -69,7 +69,7 @@ $margin-top: 45px;
 }
 
 // Desktop-specific styles
-.desktop-about {
+.desktop__about {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -84,7 +84,7 @@ $margin-top: 45px;
   }
 }
 // Tablet-specific styles
-.tablet-about {
+.tablet__about {
   height: $tablet-about-height;
   width: $tablet-about-width;
 }
@@ -100,9 +100,9 @@ a {
   }
 }
 
-.desktop-about > ul,
-.mobile-about > ul,
-.tablet-about > div > ul {
+.desktop__about > ul,
+.mobile__about > ul,
+.tablet__about > div > ul {
   line-height: 22px;
   font-size: 13px;
   padding: 0;
@@ -113,20 +113,9 @@ a {
   & > li > a {
     text-decoration: none;
   }
-  p {
-    // height: 20px;
-    // width: 35px;
-    // background-color: #7ab1fd;
-    // border: $test-border;
-  }
 }
 
-// .mobile-about > ul {
-//   font-size: 10px;
-//   line-height: 17px;
-// }
-
 // Mobile social icons
-.mobile-contact {
+.mobile__contact {
   transform: scale(0.75) translateX(-20vw);
 }

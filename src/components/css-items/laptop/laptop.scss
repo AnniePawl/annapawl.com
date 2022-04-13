@@ -48,7 +48,7 @@ $keyboard-width: 230px;
 }
 
 // Top section includes screen and terminal divs
-.laptop-top {
+.laptop {
   @include center-flex;
   height: $laptop-height;
   width: $laptop-width;
@@ -79,7 +79,7 @@ $keyboard-width: 230px;
     transform: translateY(65px);
   }
   // Screen
-  .laptop_top__screen {
+  .laptop__screen {
     @include center-flex;
     justify-content: space-around;
     height: $laptop-height * 0.86;
@@ -99,16 +99,9 @@ $keyboard-width: 230px;
       );
       transform: translateX(-5px) translateY(-58.5px);
     }
-    &::after {
-      content: " ";
-    }
-
-    &:first-child() {
-      border: $test-border;
-    }
   }
   // Terminal
-  .laptop_top__terminal {
+  .laptop__terminal {
     transform: translateX(0px) translateY(-2px);
     height: $terminal-height;
     width: $terminal-width;
@@ -119,7 +112,6 @@ $keyboard-width: 230px;
       content: "🔴\00a0\00a0🟡\00a0\00a0🟢\00a0\00a0\00a0 \00a0\00a0\00a0📂 ~/ code / css-stuff";
       position: absolute;
       font-size: 3.5px;
-      // color: white;
       transform: translateX(3px) translateY(-6.5px);
     }
     &::after {

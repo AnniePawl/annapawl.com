@@ -112,7 +112,7 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
 }
 
 // Sewing Machine
-.sewing-machine-top {
+.sewing-machine__top {
   display: flex;
   height: $sm-top-height;
   width: $sm-top-width;
@@ -142,7 +142,7 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
 }
 
 // Right arm
-.sewing-machine-right {
+.sewing-machine__right {
   content: "";
   height: $sm-right-arm-height;
   width: $sm-right-arm-width;
@@ -181,7 +181,7 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
 }
 
 // Bottom Half
-.sewing-machine-bottom {
+.sewing-machine__bottom {
   height: $sm-base-height;
   width: $sm-top-width + 15px;
   border-radius: 5px 0 0 0px;
@@ -226,7 +226,7 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
 
 .desktop-sewing-container
   > .sewing-machine:hover
-  > .sewing-machine-bottom::before {
+  > .sewing-machine__bottom::before {
   animation: fabric-animation 5s forwards;
 }
 
@@ -242,8 +242,8 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
     animation: thread-animation2 2s infinite;
   }
 }
-.mobile-sewing-container > .sewing-machine > .sewing-machine-bottom::before,
-.tablet-sewing-container > .sewing-machine > .sewing-machine-bottom::before {
+.mobile-sewing-container > .sewing-machine > .sewing-machine__bottom::before,
+.tablet-sewing-container > .sewing-machine > .sewing-machine__bottom::before {
   animation: fabric-animation 7s infinite;
 }
 

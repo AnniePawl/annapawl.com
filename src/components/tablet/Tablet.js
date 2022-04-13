@@ -17,11 +17,11 @@ function Tablet() {
       >
         <InfoIcon />
       </div>
-      <div className="tablet-contact">
+      <div className="tablet__contact">
         <Contact />
       </div>
       <Modal
-        cn={"tablet-modal"}
+        cn={"tablet__modal"}
         isOpen={open}
         onClose={(e) => {
           setOpen(false);

@@ -5,8 +5,8 @@ function Tape(props) {
   const { cn } = props;
   return (
     <div className={`tape ${cn}`}>
-      <div className="tape-top"></div>
-      <div className="tape-bottom"></div>
+      <div className="tape__top"></div>
+      <div className="tape__bottom"></div>
     </div>
   );
 }

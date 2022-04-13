@@ -3,21 +3,19 @@
 .mobile {
   display: flex;
   flex-direction: column;
-  // align-items: center;
 }
-.mobile-shelves-container {
+.mobile__shelves-container {
   background-color: $wall-clr;
 }
 
-.mobile-footer {
+.mobile__footer {
   @include center-flex;
-  color: #fd85bd;
   color: #7ab1fd;
   font-size: 12px;
   padding: 15px;
 }
 
-.mobile-info-btn {
+.mobile__info-btn {
   position: absolute;
   transform: scale(0.9);
   right: 15px;
