@@ -1,0 +1,187 @@
+@import "../../universal-styles.scss";
+
+// Measurements
+$glass-height: 80px;
+$glass-width: 95px;
+$stand-base-height: 20px;
+$stand-base-width: 15px;
+$cake-height: 27px;
+$cake-width: 55px;
+
+// Colors
+$wall-clr: #eaf4ff;
+$cake-clr: #ffddf4;
+$cake-clr2: #a08383;
+$cake-clr3: #ffddf4;
+$frosting-clr: #ffffff;
+$stand-clr: #ffffff;
+$stand-clr2: #ffffff;
+$spiral-clr: #ffffff;
+$spiral-clr2: #93c0ff;
+$glass-outline: 2px solid #ffffff;
+$glass-clr: radial-gradient(transparent 0 55%, #ffffffb6);
+
+.dessert-container {
+  // border: $test-border;
+  @include center-flex;
+  flex-direction: column;
+  // desktop transform
+  transform: scale(1.15) translateY(-117px);
+}
+
+.mobile-dessert-container {
+  transform: translateY(-113px);
+}
+
+// GLASS CASE
+.dessert-stand-top {
+  display: flex;
+  position: relative;
+  z-index: 5;
+  justify-content: center;
+  height: $glass-height;
+  width: $glass-width;
+  background: $glass-clr;
+  border-top: $glass-outline;
+  border-left: $glass-outline;
+  border-right: $glass-outline;
+  border-radius: 45% 45% 0 0;
+  // glass knob
+  &::before {
+    content: "";
+    border-radius: 50%;
+    height: $glass-width * 0.25;
+    width: $glass-width * 0.25;
+    border-top: $glass-outline;
+    border-left: $glass-outline;
+    border: $glass-outline;
+    background: $glass-clr;
+    transform: translateY(-$glass-height * 0.3);
+  }
+  &::after {
+    // TODO
+  }
+}
+
+// STAND
+.dessert-stand-base {
+  z-index: 10;
+  display: flex;
+  align-content: center;
+  height: $stand-base-height;
+  width: $stand-base-width;
+  background: linear-gradient(to right, $stand-clr 0 50%, $stand-clr2 50%);
+  transform: translateY(7px);
+  &::before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 30px;
+    background: linear-gradient(to right, $stand-clr 0 50%, $stand-clr2 50%);
+    transform: translateY($stand-base-height) translateX(-$stand-base-width / 2);
+    border-radius: 25px 25px 0 0;
+  }
+  // stand tray
+  &::after {
+    content: "";
+    position: absolute;
+    width: $glass-width * 1.25;
+    height: $glass-width * 0.12;
+    // tray scallop
+    background: radial-gradient(
+      circle at 50% 100%,
+      $stand-clr 75%,
+      transparent 35%
+    );
+    background-size: $cake-width/4;
+    transform: translateY(-11px) translateX(-$glass-width * 0.55);
+  }
+}
+
+// CAKE
+.dessert-base {
+  z-index: 4;
+  border: px solid $cake-clr2;
+  transform: scale(0.9) translateY($cake-height/1.4);
+  position: absolute;
+  height: $cake-height;
+  width: $cake-width;
+  // checker pattern
+  background: linear-gradient(
+      45deg,
+      $cake-clr 0 25%,
+      transparent 0 75%,
+      $cake-clr 75%
+    ),
+    linear-gradient(45deg, $cake-clr 0 25%, transparent 0 75%, $cake-clr 75%);
+  background-color: $cake-clr2;
+  background-size: $cake-width/2 $cake-width/2;
+  background-position: 0 0, $cake-width/4 $cake-width/4;
+  // striped pattern
+  &::before {
+    content: "";
+    display: flex;
+    // border-radius: 20% 20% 0 0;
+    width: $cake-width;
+    height: $cake-height/2;
+    background: linear-gradient(
+      $cake-clr3 0 20%,
+      $cake-clr2 0 40%,
+      $cake-clr3 0 60%,
+      $cake-clr2 0 80%,
+      $cake-clr3 0 80%
+    );
+    transform: translateY(-$cake-height/2.2);
+  }
+  // scalloped pattern
+  &::after {
+    content: "";
+    display: flex;
+    // border-radius: 20% 20% 0 0;
+    width: $cake-width;
+    height: $cake-height/2;
+    background: radial-gradient(
+      circle at 50% 0%,
+      $frosting-clr 35%,
+      $cake-clr2 35%
+    );
+    background-size: $cake-width/6;
+    transform: translateY(-$cake-height * 1.45);
+  }
+}
+
+.dessert-spiral {
+  visibility: hidden;
+  animation: spiral 8s linear infinite;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: $cake-height * 4.7;
+  width: $cake-height * 4.7;
+  z-index: 1;
+  background: radial-gradient(transparent, $wall-clr 65%),
+    conic-gradient(
+      $spiral-clr 0 10%,
+      $spiral-clr2 0 20%,
+      $spiral-clr 0 30%,
+      $spiral-clr2 0 40%,
+      $spiral-clr 0 50%,
+      $spiral-clr2 0 60%,
+      $spiral-clr 0 70%,
+      $spiral-clr2 0 80%,
+      $spiral-clr 0 90%,
+      $spiral-clr2 0 100%
+    );
+}
+
+// Keyframes
+@keyframes spiral {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Desktop hover styles
+.dessert-container:hover > .dessert-spiral {
+  visibility: visible;
+}

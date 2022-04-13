@@ -8,14 +8,15 @@ import Pens from "../writing/Pens";
 import Books2 from "../books/Books2";
 import Laptop from "../laptop/Laptop";
 import "./shelves.scss";
+import Dessert from "../dessert/Dessert";
 
 function MobileShelves() {
   return (
     <div className="mobile-shelves">
       {/* MobileShelf 1 */}
       <MobileShelf
-        cssItem1={<Radio cn={"mobile-radio-container"} />}
         cssItem2={<Pens cn={"mobile-pens-container"} />}
+        cssItem1={<Radio cn={"mobile-radio-container"} />}
       />
       {/* MobileShelf 2 */}
       <MobileShelf
@@ -33,7 +34,10 @@ function MobileShelves() {
         cssItem1={<Laptop cn={"mobile-laptop-container"} />}
       />
       {/* MobileShelf 4 */}
-      <MobileShelf cssItem1={<Books2 cn={"mobile-books2-container"} />} />
+      <MobileShelf
+        cssItem1={<Books2 cn={"mobile-books2-container"} />}
+        cssItem2={<Dessert cn={"mobile-dessert-container"} />}
+      />
     </div>
   );
 }

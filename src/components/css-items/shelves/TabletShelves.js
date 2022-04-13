@@ -7,16 +7,21 @@ import Pens from "../writing/Pens";
 import "./shelves.scss";
 import Sewing from "../sewing/Sewing";
 import Laptop from "../laptop/Laptop";
+import Dessert from "../dessert/Dessert";
 
 function TabletShelves() {
   return (
     <div className="tablet-shelves">
       {/* Shelf 1 */}
-      <Shelf cssItem1={<Books2 cn={"tablet-books2-container"} />} />
-      {/* Shelf 2*/}
+      <Shelf
+        cssItem1={<Pens cn={"tablet-pens-container"} />}
+        cssItem2={<Books2 cn={"tablet-books2-container"} />}
+      />
+
+      {/* Shelf 2 */}
       <Shelf
         cssItem1={<Radio cn={"tablet-radio-container"} />}
-        cssItem2={<Pens cn={"tablet-pens-container"} />}
+        cssItem2={<Dessert cn={"tablet-dessert-container"} />}
         cssItem3={<Laptop cn={"tablet-laptop-container"} />}
       />
       {/* Shelf 3 */}

@@ -23,7 +23,7 @@ export default function Modal({ isOpen, onClose, cn }) {
             the bookshelf items for some bite-sized surprises. I made everything
             with ♥ and pure CSS.
             <br></br>
-            <br></br>Check out my ongoing project,{" "}
+            cv wes>Check out my ongoing project,{" "}
             <a href="https://anniepawl.github.io/dwc/" target="blank">
               Drawing with Code
             </a>
