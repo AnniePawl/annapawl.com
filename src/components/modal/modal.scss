@@ -114,6 +114,8 @@ p.hide {
 			}
     }
     > .modal__button {
+			position: absolute;
+			z-index: 2;
       background-color: $modal-btn-clr;
       color: $modal-btn-clr2;
     }

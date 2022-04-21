@@ -17,6 +17,7 @@
 
 .mobile__info-btn {
   position: absolute;
+	z-index: 1;
   transform: scale(0.9);
   right: 15px;
   top: 42vh;
