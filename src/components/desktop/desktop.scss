@@ -22,6 +22,9 @@ $contact-clr2: #fd85bd;
   position: absolute;
   right: 25px;
   top: 20px;
+	&:hover {
+		cursor: pointer;
+	}
   &:hover > svg {
     fill: #fd85bd;
     animation: info-spin 0.5s;

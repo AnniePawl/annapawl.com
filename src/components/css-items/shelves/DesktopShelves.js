@@ -14,13 +14,13 @@ function DesktopShelves() {
     <div className="desktop-shelves">
       {/* Shelf 1 */}
       <Shelf
-        cssItem1={<Pens cn={"desktop-pens-container"} />}
+        cssItem1={<Dessert cn={"desktop-dessert-container"} />}
         cssItem2={<Books2 cn={"desktop-books2-container"} />}
       />
       {/* Shelf 2*/}
       <Shelf
         cssItem1={<Radio cn={"desktop-radio-container"} />}
-        cssItem2={<Dessert cn={"desktop-dessert-container"} />}
+        cssItem2={<Pens cn={"desktop-pens-container"} />}
         cssItem3={<Laptop cn={"desktop-laptop-container"} />}
       />
       {/* Shelf 3 */}

@@ -76,7 +76,7 @@ $radio-font-clr: white;
   flex-direction: column;
   height: $radio-height * 1.7;
   width: $radio-width;
-  background-color: $radio-body-clr;
+  // background: linear-gradient(45deg, $radio-body-clr 0%, pink);
   border-radius: 0 0 2px 2px;
   border-right: 6px solid $radio-outline-clr;
   border-left: 6px solid $radio-outline-clr;
@@ -234,6 +234,7 @@ $radio-font-clr: white;
 
   .radio-bottom {
     background-color: $desktop-radio-body-clr;
+
     border-right: 6px solid $desktop-radio-outline-clr;
     border-left: 6px solid $desktop-radio-outline-clr;
     border-bottom: 6px solid $desktop-radio-outline-clr;

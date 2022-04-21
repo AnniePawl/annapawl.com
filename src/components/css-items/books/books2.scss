@@ -32,7 +32,7 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
   // border: $test-border;
   display: flex;
   align-items: flex-end;
-  transform: translateY(-157px) scale(1.1);
+  transform: translateY(-105px) scale(1.1);
 }
 
 // mobile view- position on shelf
@@ -40,6 +40,9 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
   transform: translateY(-100px);
 }
 
+.tablet-books2-container {
+  transform: translateY(-158px) scale(1.1);
+}
 // Bookend
 .v-book-end {
   height: $book-end-height;

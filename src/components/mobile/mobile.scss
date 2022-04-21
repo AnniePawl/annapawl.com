@@ -19,9 +19,10 @@
   position: absolute;
   transform: scale(0.9);
   right: 15px;
-  top: 37vh;
+  top: 42vh;
   &:hover > svg {
     fill: #fd85bd;
     animation: info-spin 0.5s;
+		cursor: pointer;
   }
 }

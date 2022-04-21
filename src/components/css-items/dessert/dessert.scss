@@ -10,12 +10,12 @@ $cake-width: 55px;
 
 // Colors
 $wall-clr: #eaf4ff;
-$cake-clr: #fffac8;
+$cake-clr: #fff4b7;
 $cake-clr2: #a08383;
-$cake-clr3: #ffddf4;
+$cake-clr3: #fee0ff;
 $frosting-clr: #ffffff;
-$stand-clr: #d6cbff;
-$stand-clr2: #c7baf7;
+$stand-clr: #d6ceff;
+$stand-clr2: #cfc3fa;
 $spiral-clr: #ffffff;
 $spiral-clr2: #93c0ff;
 $glass-outline: 2px solid #ffffff;
@@ -27,7 +27,11 @@ $stand-border: 1px solid #93c0ff;
   @include center-flex;
   flex-direction: column;
   // desktop transform
-  transform: scale(1.15) translateY(-117px);
+  transform: scale(1.15) translateY(-106px);
+}
+
+.tablet-dessert-container{
+  transform: scale(1.15) translateY(-116px);
 }
 
 .mobile-dessert-container {
@@ -49,7 +53,9 @@ $stand-border: 1px solid #93c0ff;
   justify-content: center;
   height: $glass-height;
   width: $glass-width;
-  background: $glass-clr;
+  background: linear-gradient(45deg, transparent 65%, #ffffffb6 80%),
+    radial-gradient(transparent 0 55%, #ffffffb6);
+  // background-color: $glass-clr;
   border-top: $glass-outline;
   border-left: $glass-outline;
   border-right: $glass-outline;
@@ -63,7 +69,7 @@ $stand-border: 1px solid #93c0ff;
     border-top: $glass-outline;
     border-left: $glass-outline;
     border: $glass-outline;
-    background: $glass-clr;
+    background: linear-gradient(45deg, transparent 35%, #ffffffb6 60%);
     transform: translateY(-$glass-height * 0.3);
   }
   &::after {
@@ -116,7 +122,6 @@ $stand-border: 1px solid #93c0ff;
   position: absolute;
   height: $cake-height;
   width: $cake-width;
-
   // checker pattern
   background: linear-gradient(
       45deg,
@@ -126,8 +131,8 @@ $stand-border: 1px solid #93c0ff;
     ),
     linear-gradient(45deg, $cake-clr 0 25%, transparent 0 75%, $cake-clr 75%);
   background-color: $cake-clr2;
-  background-size: $cake-width/2 $cake-width/2;
-  background-position: 0 0, $cake-width/4 $cake-width/4;
+  background-size: $cake-width/3 $cake-width/3;
+  background-position: 0 0, $cake-width/6 $cake-width/6;
   // striped pattern
   &::before {
     content: "";

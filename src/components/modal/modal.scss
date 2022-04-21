@@ -5,6 +5,8 @@ $overlay-clr: #aed0ff99;
 $background-color: #ffffff;
 $modal-font-clr: #65a5ff;
 $modal-hover-clr: #fd85bd;
+$modal-btn-clr: #fd85bd;
+$modal-btn-clr2: #fff6a1;
 
 p.hide {
   display: none;
@@ -20,7 +22,7 @@ p.hide {
 }
 
 .modal {
-  height: 355px;
+  height: 370px;
   width: 350px;
   position: absolute;
   right: 35px;
@@ -40,11 +42,12 @@ p.hide {
   top: -12px;
   border: none;
   border-radius: 50%;
-  background-color: #fdf185;
-  color: $modal-hover-clr;
+  background-color: $modal-btn-clr;
+  color: $modal-btn-clr2;
   font-weight: 900;
   &:hover {
     animation: spin 0.5s;
+		cursor:pointer;
   }
 }
 
@@ -79,30 +82,40 @@ p.hide {
 .tablet__modal {
   width: 100vw;
   > .modal {
-    height: 310px;
+    height: 330px;
     width: 300px;
+		> .modal__content {
+  
+			a {
+				color: $modal-hover-clr;
+			}
+    }
   }
 }
 
 // Mobile Specific Styles
 .mobile__modal {
-  top: 35vh;
+  top: 39.9vh;
   height: 100vh;
   width: 100vw;
 
   > .modal {
     top: 3.5vh;
     right: 30px;
-    height: 315px;
+    height: 260px;
     width: 250px;
     > .modal__content {
       p {
-        line-height: 20px;
+        line-height: 18px;
+				font-size: 11px;
       }
+			a {
+				color: $modal-hover-clr;
+			}
     }
     > .modal__button {
-      background-color: #ff7878;
-      color: #ffe59d;
+      background-color: $modal-btn-clr;
+      color: $modal-btn-clr2;
     }
   }
 }

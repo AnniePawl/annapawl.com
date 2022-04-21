@@ -9,9 +9,9 @@ function DesktopAbout() {
         Anna <br /> Pawl
       </h1>
       <p>
-        I'm a front-end engineer interested in bridging the gap between
-        development and design. I like making satisfying little experiences with
-        code. The web should be fun ✨
+        I'm a front-end engineer bridging the gap between development and
+        design. I like making satisfying little experiences with code. The web
+        should be fun ✨
         {/* <br />
         <br /> <span className="about-hover">Hover</span> over the things on the
         bookshelf for some mini surprises. Everything is made with pure CSS.

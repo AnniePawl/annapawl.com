@@ -9,7 +9,7 @@ $link-hover-clr: #fd85bd;
 
 // Measurements
 // heights / widths
-$mobile-about-height: 35vh;
+$mobile-about-height: 40vh;
 $mobile-about-width: 100vw;
 $desktop-about-height: 100vh;
 $desktop-about-width: 27vw;
@@ -58,7 +58,7 @@ $margin-top: 45px;
   height: $mobile-about-height;
   line-height: $mobile-line-height;
   // border: $test-border;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: $mobile-font-size;
   h1 {
     font-size: $mobile-h1-size;

@@ -15,14 +15,15 @@ $shelf-shadow-clr: #a6cefc;
 
 // Measurements
 $shelf-height: 15px;
-$desktop-shelf-width: 55vw;
+$desktop-shelf-width: 63vw;
 $tablet-shelf-width: 80vw;
 $mobile-shelves-height: 1200px;
 $mobile-shelf-width: 85vw;
-$desktop-shelves-width: 73vw;
+$desktop-shelves-width: 70vw;
 
 // Shelf styles (desktop default)
 .shelf {
+	// border:$test-border;
   height: $shelf-height;
   width: $desktop-shelf-width;
   display: flex;
@@ -55,7 +56,6 @@ $desktop-shelves-width: 73vw;
   flex-direction: column;
   justify-content: space-evenly;
   .shelf-contents {
-    // border: 2px solid pink;
     width: $desktop-shelf-width;
     display: flex;
     position: absolute;
@@ -64,14 +64,22 @@ $desktop-shelves-width: 73vw;
 }
 
 // Desktop / Tablet specific styles
+
 .desktop-shelves,
 .tablet-shelves {
-  height: 110vh;
-  width: $desktop-shelves-width;
+  height: 120vh;
+	transform: scale(.9); 
   // border: $test-border;
   min-height: 780px;
 }
+
+.desktop-shelves{
+	transform: scale(.9); 
+	cursor: url("../../../assets/star-cursor.svg"), auto;
+}
+
 .tablet-shelves {
+	// width: $tablet-shelves-width;
   .shelf {
     width: $tablet-shelf-width;
   }
@@ -82,6 +90,7 @@ $desktop-shelves-width: 73vw;
 
 // Mobile Shelves
 .mobile-shelves {
+	// transform: scale(.97) translateY(-20px);
   // border: 2px solid orange;
   height: $mobile-shelves-height;
   @include center-flex();
@@ -97,3 +106,17 @@ $desktop-shelves-width: 73vw;
     justify-content: space-evenly;
   }
 }
+
+
+// Star cursor on item hover 
+.desktop-dessert-container:hover, 
+.desktop-books2-container:hover, 
+.desktop-radio-container:hover, 
+.desktop-pens-container:hover, 
+.desktop-laptop-container:hover, 
+.desktop-sewing-container:hover, 
+.desktop-books-container:hover {
+		// cursor: url("../../../assets/star-cursor.svg"), auto;
+
+}
+

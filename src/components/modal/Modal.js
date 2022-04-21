@@ -5,7 +5,7 @@ import "./modal.scss";
 export default function Modal({ isOpen, onClose, cn }) {
   if (!isOpen) return null;
   return reactDom.createPortal(
-    <div className={`modal-overlay ${cn}`}>
+    <div className={`modal-overlay ${cn}`} onClick={onClose}>
       <div className="modal">
         <button className="modal__button" onClick={onClose}>
           X
@@ -20,14 +20,18 @@ export default function Modal({ isOpen, onClose, cn }) {
               {" "}
               <b>Hover over</b>
             </span>{" "}
-            the bookshelf items for some bite-sized surprises. I made everything
-            with ♥ and pure CSS.
-            <br></br>
+            the stuff on my bookshelf for some bite-sized surprises. I made
+            everything with ♥ and pure CSS.
+            <br></br> <br></br>
             Check out my ongoing project,{" "}
             <a href="https://anniepawl.github.io/dwc/" target="blank">
-              Drawing with Code
+              <b>Drawing with Code</b>
             </a>
-            , if you're interested in learning more about the process.
+            , and my{" "}
+            <a href="https://codepen.io/annampawl" target="blank">
+              <b>CodePen</b>
+            </a>{" "}
+            profile if you're interested in learning more about the process.
           </p>
 
           {/* Tablet Modal */}
@@ -36,20 +40,32 @@ export default function Modal({ isOpen, onClose, cn }) {
             mini illustrations and animations. I made this bookshelf with ♥ and
             pure CSS.
             <br></br>
-            <br></br>Check out my ongoing project,{" "}
+            <br></br>
+            Check out my ongoing project,{" "}
             <a href="https://anniepawl.github.io/dwc/" target="blank">
               Drawing with Code
             </a>
-            , if you're interested in learning more about the process.
+            , and my{" "}
+            <a href="https://codepen.io/annampawl" target="blank">
+              CodePen
+            </a>{" "}
+            profile if you're interested in learning more about the process.
           </p>
 
           {/* Mobile Modal */}
           <p className={cn === "mobile__modal" ? "show" : "hide"}>
             I've fallen for CSS and really enjoy exploring its potential through
             mini illustrations and animations. <br></br>
-            <br></br>Check out my growing CSS art gallery. I'm ever striving to
-            learn new techniques and create positive experiences. I like
-            sprinkling user interfaces with a little extra flavor 🌶️
+            <br></br>
+            Check out my ongoing project,{" "}
+            <a href="https://anniepawl.github.io/dwc/" target="blank">
+              Drawing with Code
+            </a>
+            , and my{" "}
+            <a href="https://codepen.io/annampawl" target="blank">
+              CodePen
+            </a>{" "}
+            profile if you're interested in learning more about the process.
           </p>
         </div>
       </div>
