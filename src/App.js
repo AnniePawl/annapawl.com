@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Mobile from "./components/mobile/Mobile";
 import Tablet from "./components/tablet/Tablet";
 import Desktop from "./components/desktop/Desktop";
@@ -24,11 +25,15 @@ function App() {
   });
 
   return (
-    <div className="app">
-      {isMobile && <Mobile />}
-      {isTablet && <Tablet />}
-      {isDesktop && <Desktop />}
-    </div>
+    <Router>
+      <div className="app">
+        <Link to="/">
+          {isMobile && <Mobile />}
+          {isTablet && <Tablet />}
+          {isDesktop && <Desktop />}
+        </Link>
+      </div>
+    </Router>
   );
 }
 

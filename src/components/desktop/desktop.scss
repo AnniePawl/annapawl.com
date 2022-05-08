@@ -5,34 +5,17 @@ $shelves-width: 73vw;
 $contact-clr: #7ab1fd;
 $contact-clr2: #fd85bd;
 
-.desktop {
-  display: flex;
-  overflow: hidden;
-}
-.desktop__shelves-container {
-  // border: $test-border;
-  height: 100vh;
-  width: $shelves-width;
-  @include center-flex();
-  background-color: $wall-clr;
-  overflow: hidden;
+
+.desktop{
+	display: flex;
 }
 
-.info-button {
-  position: absolute;
-  right: 25px;
-  top: 20px;
-	&:hover {
-		cursor: pointer;
-	}
-  &:hover > svg {
-    fill: #fd85bd;
-    animation: info-spin 0.5s;
-  }
+.desktop-content {
+	display: flex;
+	flex-direction: column;
+	width:73vw;
+	position:absolute;
+	right:0;
 }
 
-@keyframes info-spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
+

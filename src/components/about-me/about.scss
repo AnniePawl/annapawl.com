@@ -34,6 +34,7 @@ $margin-top: 45px;
 .tablet__about,
 .mobile__about {
   // border: $test-border;
+	cursor: default;
   overflow: hidden;
   background-color: $about-bkgd;
   font-family: $font;
@@ -68,8 +69,35 @@ $margin-top: 45px;
   }
 }
 
+
+// Home Icon
+.desktop__about__icon {
+//  position: absolute;
+//  top:20px;
+//  left:25px;
+}
+.desktop__about__icon  svg:hover {
+	& .cls-2 {
+		fill:$link-hover-clr;
+	}
+}
+
+.desktop-nav  a{
+	text-decoration: none;
+}
+.desktop-nav p {
+	// border:$test-border;
+	color:$desktop-h1-clr;
+	font-weight: 600;
+	text-decoration: none;
+
+	&:hover{
+		color:$link-hover-clr;
+	}
+}
 // Desktop-specific styles
 .desktop__about {
+	position:fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -91,6 +119,7 @@ $margin-top: 45px;
 
 // Links
 a {
+	
   color: $font-clr;
   &:visited {
     color: $font-clr;
@@ -103,6 +132,8 @@ a {
 .desktop__about > ul,
 .mobile__about > ul,
 .tablet__about > div > ul {
+
+
   line-height: 22px;
   font-size: 13px;
   padding: 0;
@@ -117,5 +148,6 @@ a {
 
 // Mobile social icons
 .mobile__contact {
+
   transform: scale(0.75) translateX(-20vw);
 }
