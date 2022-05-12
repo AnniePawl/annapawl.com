@@ -8,6 +8,12 @@ function DesktopNav() {
       <HashLink smooth to="#code-snippets">
         <p>Code Snippets</p>
       </HashLink>
+      <HashLink smooth to="#creative-projects">
+        <p>Creative Projects</p>
+      </HashLink>
+      <HashLink smooth to="#writing">
+        <p>Writing</p>
+      </HashLink>
     </div>
   );
 }

@@ -1,5 +1,8 @@
+@import "../universal-styles.scss";
 
 .codeSnippets-container {
+	@include center-flex;
 	height:100vh;
-	background-image: linear-gradient(#E9F3FF , #FFF2FE 50% );
+	background-image: linear-gradient(#E9F3FF , #fce8f6 55% );
 }
+

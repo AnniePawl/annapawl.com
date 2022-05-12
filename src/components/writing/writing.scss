@@ -1,0 +1,147 @@
+@import "../universal-styles.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+
+$paper-clr: #ffffff80;
+$paper-lines: #7ab1fd;
+$paper-lines2: #fd85bd;
+$writing-font-clr:#383838;
+$paper-font2:'Reenie Beanie', cursive;
+$paper-font: 'Grape Nuts', cursive;
+$writing-bkgd-clr:#E9F3FF;
+$pencil-top-clr: #8a8a8a;
+$pencil-top-clr2: #b5b4b4;
+$eraser-clr: #f080a1;
+$eraser-clr2: #ffa5c0;
+$pencil-clr: #f3d860;
+$pencil-clr2: #fcec98;
+
+
+$pencil-height: 250px;
+$pencil-width:8px;
+
+
+
+// Measurements
+$paper-height: 600px;
+$paper-width: 450px;
+
+.writing-container{
+	@include center-flex;
+	height:100vh;
+	background-image: linear-gradient(#ffe3c4, #fff0c4);
+	background:$writing-bkgd-clr ;
+}
+
+.paper {
+	font-family: $paper-font;
+	transform:rotate(2deg) scale(.8);
+  height: $paper-height;
+  width: $paper-width;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+  background-image: repeating-linear-gradient($paper-clr 0 6.1%, $paper-lines 6.1% 6.4%),linear-gradient(
+      to right,
+      $paper-clr 0 15%,
+      $paper-lines2 15% 15.5%,
+      $paper-clr 15.5%
+    );
+
+   
+		// first hole
+  &::before {
+    transform: translateY(85px) translateX(20px);
+    background-color: $writing-bkgd-clr ;
+    content: "";
+    display: flex;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 1px rgb(180, 180, 180);
+  }
+	// second hole
+  &::after {
+    transform: translateY(331px) translateX(20px);
+    background-color: $writing-bkgd-clr ;
+    content: "";
+    display: flex;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 1px rgb(175, 175, 175);
+  }
+}
+.paper h1 {
+	font-size: 42px;
+	font-weight: 500;
+	color:#454545;
+	font-family: $paper-font2;
+	transform: translateX(80px) translateY(23px);
+}
+
+
+.paper ul li {
+	font-family: $paper-font2;
+	font-size: 26px;
+	color:$writing-font-clr;
+	list-style: none;
+	transform: translateX(40px) translateY(63px);
+	line-height: 38px;
+	&:hover{
+		color: $paper-lines2;
+	}
+}
+
+
+.writing-container__pencil{
+
+		height: $pencil-height;
+		width: $pencil-width;
+		background-color: $pencil-clr;
+		box-shadow: $pencil-width 0 $pencil-clr2;
+		// Eraser
+		&::before {
+			content: "";
+			display: flex;
+			height: $pencil-width * 2;
+			width: $pencil-width * 2;
+			border-radius: 1.5px 1.5px 0 0;
+			transform: translateY(-10px);
+			background-image: linear-gradient(
+				to right,
+				$eraser-clr 0 50%,
+				$eraser-clr2 50%
+			);
+		}
+		// Silver top
+		&::after {
+			content: "";
+			display: flex;
+			height: $pencil-width * 2;
+			width: $pencil-width;
+			background-color: $pencil-top-clr;
+			box-shadow: $pencil-width 0px $pencil-top-clr2;
+			transform: translateY(-10px);
+		}
+}
+
+.pencil-tip {
+  display:block;
+  position: absolute;
+	transform:translateY($pencil-height *.935);
+  border-top:$pencil-width * 2.4 solid rgb(217, 203, 170);
+  border-left:$pencil-width   solid transparent;
+  border-right:$pencil-width  solid transparent;
+	&::before{
+		content:"";
+		display:block;
+		position: absolute;
+		transform:translateY(-8px) translateX(-3.2px);
+		border-top:$pencil-width  solid #383838;
+		border-left:$pencil-width *.42   solid transparent;
+		border-right:$pencil-width *.42  solid transparent;
+
+	}
+}

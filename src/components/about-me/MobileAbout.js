@@ -9,9 +9,9 @@ function MobileAbout() {
         Anna <br /> Pawl
       </h1>
       <p>
-        I'm a front-end engineer bridging the gap between development and
-        design. I like making satisfying little experiences with code. The web
-        should be fun ✨<br />
+        Hi! Welcome to my little corner of the internet. I'm a front-end
+        engineer bridging the gap between development and design. I like making
+        satisfying little experiences with code. The web should be fun ✨<br />
       </p>
       <div className="mobile__contact">
         <Contact />

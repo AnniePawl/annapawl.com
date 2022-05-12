@@ -27,6 +27,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        {/* <Route path="/" component={Desktop} /> */}
         <Link to="/">
           {isMobile && <Mobile />}
           {isTablet && <Tablet />}
