@@ -7,6 +7,7 @@ import Pens from "../writing/Pens";
 import Books2 from "../books/Books2";
 import Laptop from "../laptop/Laptop";
 import Dessert from "../dessert/Dessert";
+import NewtonsCradle from "../newtonsCradle/NewtonsCradle";
 import "./shelves.scss";
 
 function DesktopShelves() {
@@ -14,8 +15,9 @@ function DesktopShelves() {
     <div className="desktop-shelves">
       {/* Shelf 1 */}
       <Shelf
-        cssItem1={<Dessert cn={"desktop-dessert-container"} />}
-        cssItem2={<Books2 cn={"desktop-books2-container"} />}
+        cssItem1={<NewtonsCradle cn={"desktop-newtonsCradle-container"} />}
+        cssItem2={<Dessert cn={"desktop-dessert-container"} />}
+        cssItem3={<Books2 cn={"desktop-books2-container"} />}
       />
       {/* Shelf 2*/}
       <Shelf

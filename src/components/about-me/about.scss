@@ -3,6 +3,7 @@
 // Colors
 $about-bkgd: #fdfeff;
 $desktop-h1-clr: #7ab1fd;
+$desktop-h1-clr: #5796e9;
 $mobile-h1-clr: #7ab1fd;
 $font-clr: #1f1f1f;
 $link-hover-clr: #fd85bd;
@@ -20,10 +21,10 @@ $desktop-h1-size: 30px;
 $tablet-h1-size: 25px;
 $mobile-h1-size: 24px;
 // font Sizes
-$desktop-font-size: 13px;
+$desktop-font-size: 14px;
 $tablet-font-size: 14px;
 $mobile-font-size: 12px;
-// line heights
+// line height
 $desktop-line-height: 25px;
 $mobile-line-height: 20px;
 // margins
@@ -107,7 +108,7 @@ $margin-top: 45px;
 	// border:$test-border;
 	color:$desktop-h1-clr;
 	font-weight: 600;
-	font-size: 13px ;
+	font-size: 14px ;
 
 	&:hover{
 		color:$link-hover-clr;
@@ -167,6 +168,5 @@ a {
 
 // Mobile social icons
 .mobile__contact {
-
   transform: scale(0.75) translateX(-20vw);
 }

@@ -11,12 +11,12 @@ $writing-font-clr:#383838;
 $paper-font2:'Reenie Beanie', cursive;
 $paper-font: 'Grape Nuts', cursive;
 $writing-bkgd-clr:#E9F3FF;
-$pencil-top-clr: #8a8a8a;
-$pencil-top-clr2: #b5b4b4;
-$eraser-clr: #f080a1;
-$eraser-clr2: #ffa5c0;
-$pencil-clr: #f3d860;
-$pencil-clr2: #fcec98;
+$pencil-top-clr: #b1afcf;
+$pencil-top-clr2: #ccc9eb;
+$eraser-clr: #ff9adf;
+$eraser-clr2: #ffb1e6;
+$pencil-clr: #fbe890;
+$pencil-clr2: #fff5c3;
 
 
 $pencil-height: 250px;
@@ -28,12 +28,24 @@ $pencil-width:8px;
 $paper-height: 600px;
 $paper-width: 450px;
 
-.writing-container{
+.writing-container, .mobile-writing-container{
+	cursor: auto;
 	@include center-flex;
 	height:100vh;
-	background-image: linear-gradient(#ffe3c4, #fff0c4);
-	background:$writing-bkgd-clr ;
 }
+
+.writing-container{
+	background:$writing-bkgd-clr ;
+	// background-image: linear-gradient( #fff1ff,#E9F3FF );
+	background-color:rgb(255, 240, 245);
+
+}
+
+.mobile-writing-container{
+	background-image: linear-gradient(#E9F3FF, #fce8f6 50%);
+}
+
+
 
 .paper {
 	font-family: $paper-font;
@@ -49,11 +61,11 @@ $paper-width: 450px;
       $paper-clr 15.5%
     );
 
-   
+  
 		// first hole
   &::before {
     transform: translateY(85px) translateX(20px);
-    background-color: $writing-bkgd-clr ;
+    background-color: rgb(247, 243, 255) ;
     content: "";
     display: flex;
     height: 20px;
@@ -87,20 +99,29 @@ $paper-width: 450px;
 	font-size: 26px;
 	color:$writing-font-clr;
 	list-style: none;
-	transform: translateX(40px) translateY(63px);
+	transform: translateX(40px) translateY(55px);
 	line-height: 38px;
 	&:hover{
 		color: $paper-lines2;
 	}
 }
 
+.mobile-paper{
+	transform: rotate(3deg) scale(.7);
+	&::before{
+		background-color: rgb(243,235,347);
+	}
+	&::after{
+		background-color: #fce8f6 ;
+	}
+}
+
 
 .writing-container__pencil{
-
 		height: $pencil-height;
 		width: $pencil-width;
 		background-color: $pencil-clr;
-		box-shadow: $pencil-width 0 $pencil-clr2;
+		box-shadow: $pencil-width*.8 0 $pencil-clr2, $pencil-width 0 $pencil-clr;
 		// Eraser
 		&::before {
 			content: "";
@@ -139,9 +160,14 @@ $paper-width: 450px;
 		display:block;
 		position: absolute;
 		transform:translateY(-8px) translateX(-3.2px);
-		border-top:$pencil-width  solid #383838;
-		border-left:$pencil-width *.42   solid transparent;
-		border-right:$pencil-width *.42  solid transparent;
+		border-top:$pencil-width  solid #585858;
+		border-left:$pencil-width *.4   solid transparent;
+		border-right:$pencil-width *.4  solid transparent;
 
 	}
+}
+
+
+.mobile-writing-container__pencil {
+	transform: rotate(220deg) translateX(135px) translateY(-170px) scale(.8);
 }

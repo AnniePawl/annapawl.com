@@ -1,23 +1,25 @@
 @import "../../universal-styles.scss";
 
 // Colors
-$v-book1-clr: #ffe1fa;
-$v-book1-clr2: #ffcbf5;
-$v-book1-border: #9dc6ff;
-$v-book2-clr: #ffc291;
-$v-book2-clr2: #ffac67;
-$v-book2-ribbon: #feffb9;
-$v-book2-ribbon2: #f6f883;
-$v-book3-clr: #8efcdb;
-$v-book3-clr2: #84eccd;
-$v-book3-border: #e8fff6;
-$v-book4-clr: #9cc5fd;
-$v-book4-clr2: #7ab1fd;
+$v-book1-clr: #ffcbf5;
+$v-book1-clr2: #ffe1fa;
+$v-book1-border: #ff92c9;
+$v-book2-clr: #ffd787;;
+$v-book2-clr2: #ffef91;
+$v-book2-ribbon: #7ab1fd;
+$ruler-clr: #ffc061;
+$ruler-clr2: #ffd494;
+$v-book2-ribbon2: #ffeeb8;
+$v-book3-clr: #c9b6ff;
+$v-book3-clr2: #dcd0ff;
+$v-book3-border: #ffffff;
+$v-book4-clr: #7ab1fd;
+$v-book4-clr2: #a3c9ff;
 $v-book4-border: #ffcbf6;
 $v-book4-label: #ffd4f8;
 $v-book4-label2: #fdbaf2;
 $book-end-clr: #7ab1fd;
-$book-end-clr2: #5b9ffd;
+$book-end-clr2: #5796e9;
 
 // Measurements
 $book-end-height: 55px;
@@ -32,7 +34,7 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
   // border: $test-border;
   display: flex;
   align-items: flex-end;
-  transform: translateY(-105px) scale(1.1);
+  transform: translateY(-121px) scale(1.1);
 }
 
 // mobile view- position on shelf
@@ -105,21 +107,26 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
   );
   // Bookmark
   &::before {
-    content: "";
-    margin-right: 50%;
-    height: $v-book-height * 0.45;
-    position: absolute;
-    border-left: 3px solid $v-book2-ribbon;
-    border-right: 3px solid $v-book2-ribbon2;
-    border-bottom: 3px solid transparent;
-    transform: translateX(6px);
+		content: "";
+    display: flex;
+    border-top: 14px double $v-book2-ribbon;
+    height: $v-book-width * 0.2;
+    transform: translateY(61.5px) translateX(0px);
+		
+    // margin-right: 50%;
+    // height: $v-book-height * 0.45;
+    // position: absolute;
+    // border-left: 3px solid $v-book2-ribbon;
+    // border-right: 3px solid $v-book2-ribbon;
+    // border-bottom: 3px solid transparent;
+    // transform: translateX(6px);
   }
   &::after {
     content: "";
     display: flex;
-    border-top: 13px double $v-book2-ribbon;
+    border-top: 14px double $v-book2-ribbon;
     height: $v-book-width * 0.2;
-    transform: translateY(62px);
+    transform: translateY(-6px) translateX(0);
   }
 }
 
@@ -136,18 +143,18 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
   &::before {
     content: "";
     display: flex;
-    border-top: 7px double $v-book3-border;
-    border-bottom: 7px double $v-book3-border;
+    border-top: 6.5px double $v-book3-border;
+    border-bottom: 6.5px double $v-book3-border;
     height: $v-book-width * 0.5;
-    transform: translateY(10px);
+    transform: translateY(8px);
   }
   &::after {
     content: "";
     display: flex;
-    border-top: 7px double $v-book3-border;
-    border-bottom: 7px double $v-book3-border;
+    border-top: 6.5px double $v-book3-border;
+    border-bottom: 6.5px double $v-book3-border;
     height: $v-book-width * 0.5;
-    transform: translateY(48px);
+    transform: translateY(55px);
   }
 }
 
@@ -179,8 +186,8 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
     display: flex;
     background-image: linear-gradient(
       to right,
-      $v-book4-label 0 50%,
-      $v-book4-label2 50%
+      $v-book4-label2 0 50%,
+      $v-book4-label 50%
     );
   }
 }
@@ -211,5 +218,12 @@ $delays2: 0.2s, 0.4s, 0.6s, 0.8s;
 @keyframes v-books-animation {
   50% {
     transform: translateY(-10px);
+  }
+}
+
+
+@keyframes v-books-animation-bookmark {
+  50% {
+    transform:translateX(6px) translateY(-10px);
   }
 }

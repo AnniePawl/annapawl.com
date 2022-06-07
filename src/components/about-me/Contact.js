@@ -8,10 +8,6 @@ import "./contact.scss";
 function Contact() {
   const [clicked, setClicked] = useState(false);
 
-  const handleClick = () => {
-    console.log("clicked");
-  };
-
   const handleContactClick = () => {
     navigator.clipboard.writeText("annampawl@gmail.com");
     setClicked(true);
@@ -28,14 +24,20 @@ function Contact() {
   return (
     <div className="contact">
       <div className="contact__icons">
-        {" "}
         <a
+          className="contact__github-icon"
+          href="https://github.com/AnniePawl"
+          target="_blank"
+        >
+          <GitHub />
+        </a>
+        {/* <a
           className="contact__github-icon"
           href="https://github.com/AnniePawl"
           target="blank"
         >
           <GitHub />
-        </a>
+        </a> */}
         <a
           className="contact__codepen-icon"
           href="https://codepen.io/annampawl"

@@ -14,10 +14,11 @@ $border-radius: 3px;
 $radio-body-clr: #ffeeb8;
 $desktop-radio-body-clr: #ffdfe9;
 $radio-outline-clr: #7089ac;
+$desktop-radio-outline-clr2: #5796e9;
 $desktop-radio-outline-clr: #7ab1fd;
-$desktop-radio-display-clr: #3568af;
+$desktop-radio-display-clr: #3575ce;
 $radio-display-clr: #405572;
-$d-radio-btn-clr: #fdf4a3;
+$d-radio-btn-clr: #ffef91;
 $wall-color: #eaf4ff;
 $radio-font-clr: white;
 
@@ -87,7 +88,7 @@ $radio-font-clr: white;
     border-radius: 1px;
     height: $radio-height * 0.7;
     width: $radio-width * 0.32;
-    background-color: $radio-display-clr;
+    background-color: $desktop-radio-outline-clr2;
     color: $radio-font-clr;
     font-family: $radio-font;
     font-size: 0.65em;
@@ -241,7 +242,7 @@ $radio-font-clr: white;
     // Station Display
     .radio-display-station {
       @include center-flex;
-      background-color: $desktop-radio-outline-clr;
+      background-color: $desktop-radio-outline-clr2;
     }
     // Station buttons
     .radio-button1,
