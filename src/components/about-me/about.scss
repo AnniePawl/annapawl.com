@@ -3,15 +3,15 @@
 // Colors
 $about-bkgd: #fdfeff;
 
-$desktop-h1-clr: #5796e9;
+$hover-clr:#5796e9;
 $desktop-h1-clr: $black;
 $mobile-h1-clr: $black;
 $font-clr: #1f1f1f;
-$link-hover-clr: #fd85bd;
+$link-hover-clr: #5796e9;
 
 // Measurements
 // heights / widths
-$mobile-about-height: 40vh;
+$mobile-about-height: 45vh;
 $mobile-about-width: 100vw;
 $desktop-about-height: 100vh;
 $desktop-about-width: 27vw;
@@ -50,6 +50,11 @@ $margin-top: 45px;
 
 // Mobile-specific styles
 .mobile__about {
+	 span {
+		text-decoration: underline;
+		// color:#5796e9;
+		// text-decoration-color: #5796e9;
+	}
   // border: $test-border;
   display: flex;
   padding-top: 10%;
@@ -95,7 +100,7 @@ $margin-top: 45px;
 
 .desktop__about__icon  svg:hover {
 	& .cls-2 {
-		fill:$link-hover-clr;
+		fill: $hover-clr;
 	}
 }
 
@@ -112,7 +117,7 @@ $margin-top: 45px;
 	font-size: 14px ;
 
 	&:hover{
-		color:$link-hover-clr;
+		color:$hover-clr;
 	}
 }
 // Desktop-specific styles

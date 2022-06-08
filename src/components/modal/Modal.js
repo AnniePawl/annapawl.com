@@ -20,7 +20,7 @@ export default function Modal({ isOpen, onClose, cn }) {
               {" "}
               <b>Hover over</b>
             </span>{" "}
-            the stuff on my bookshelf for some bite-sized surprises. I made
+            the stuff on the shelves for some itty bitty surprises. I made
             everything with ♥ and pure CSS.
             <br></br> <br></br>
             Check out my ongoing project,{" "}
@@ -55,17 +55,14 @@ export default function Modal({ isOpen, onClose, cn }) {
           {/* Mobile Modal */}
           <p className={cn === "mobile__modal" ? "show" : "hide"}>
             I've fallen for CSS and really enjoy exploring its potential through
-            mini illustrations and animations. <br></br>
+            mini illustrations and animations like the ones here 😎 <br></br>
             <br></br>
-            Check out my ongoing project,{" "}
-            <a href="https://anniepawl.github.io/dwc/" target="blank">
-              Drawing with Code
-            </a>
-            , and my{" "}
+            Check out my{" "}
             <a href="https://codepen.io/annampawl" target="blank">
               CodePen
             </a>{" "}
-            profile if you're interested in learning more about the process.
+            profile if you're interested in seeing the source code or learning
+            more about the process.
           </p>
         </div>
       </div>

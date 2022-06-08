@@ -1,9 +1,10 @@
 import React from "react";
 import "./newtons-cradle.scss";
 
-function NewtonsCradle() {
+function NewtonsCradle(props) {
+  const { cn } = props;
   return (
-    <div className="newtonsCradle">
+    <div className={`newtonsCradle ${cn}`}>
       <div className="frame">
         <div className="sphere"></div>
         <div className="sphere"></div>

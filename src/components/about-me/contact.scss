@@ -6,8 +6,8 @@ $envelope-width: 35px;
 
 // Colors
 $contact-clr: #7ab1fd;
-$contact-clr: #5796e9;
-$contact-clr2: #fd85bd;
+$contact-clr: $black;
+$contact-clr2: #5796e9;
 
 .notClicked {
   display: none;
@@ -65,13 +65,13 @@ $contact-clr2: #fd85bd;
     margin-right: 10px;
   }
   .contact__github-icon > svg:hover {
-    fill: #fd85bd;
+    fill: $contact-clr2;
   }
   .contact__codepen-icon {
     margin-right: 15px;
   }
   .contact__codepen-icon > svg:hover {
-    fill: #fd85bd;
+    fill: $contact-clr2;
   }
   // .medium-icon {
   //   margin-right: 10px;

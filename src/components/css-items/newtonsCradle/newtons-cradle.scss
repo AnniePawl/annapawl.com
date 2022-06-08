@@ -10,7 +10,13 @@ $sphere-clr2:#f9e155;
 $frame-height:100px;
 $frame-width: 150px;
 
-.newtonsCradle{
+
+.tablet-newtonsCradle-container {
+	transform: scale(.7) translateY(-165px);
+
+}
+
+.desktop-newtonsCradle-container{
 	transform: scale(.7) translateY(-140px);
 	&:hover>.frame> div:first-child {
 		animation: swing1 2s  ease infinite;
