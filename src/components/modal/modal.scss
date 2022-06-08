@@ -5,8 +5,8 @@ $overlay-clr: #aed0ff99;
 $background-color: #ffffff;
 $modal-font-clr: #65a5ff;
 $modal-font-clr: #252525;
-$modal-hover-clr: #fd85bd;
-$modal-btn-clr: #fd85bd;
+$modal-hover-clr: #5796e9;
+$modal-btn-clr: #ffef91;
 $modal-btn-clr2: $black;
 
 p.hide {
@@ -96,14 +96,14 @@ p.hide {
 
 // Mobile Specific Styles
 .mobile__modal {
-  top: 39.9vh;
-  height: 100vh;
+  top:45vh;
+  height: 120vh;
   width: 100vw;
 
   > .modal {
-    top: 3.5vh;
+    top: 3vh;
     right: 30px;
-    height: 260px;
+    height: 240px;
     width: 250px;
     > .modal__content {
       p {

@@ -2,7 +2,7 @@
 
 $shelves-width: 73vw;
 
-$contact-clr: #7ab1fd;
+$contact-clr: #5796e9;
 $contact-clr2: #fd85bd;
 
 .desktop-home{
@@ -28,7 +28,7 @@ $contact-clr2: #fd85bd;
 		cursor: pointer;
 	}
   &:hover > svg {
-    fill: #fd85bd;
+    fill: $contact-clr;
     animation: info-spin 0.5s;
   }
 }

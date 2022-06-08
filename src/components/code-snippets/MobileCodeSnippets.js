@@ -5,21 +5,35 @@ function MobileCodeSnippets() {
   return (
     <div className="mobileCodeSnippets-container" id="code-snippets">
       <div className="codeSnippets__lists">
-        <h1 className="codeSnippets__h1">Code Snippets</h1>
-        <p>
-          Click on the links below to see the source code for my little CSS
-          animations
-        </p>
+        <h1 className="codeSnippets__h1">Code Snippets </h1>
+        <p>Click on the links below to see the source code for my CSS stuff</p>
         <div>
           <h3 className="codeSnippets__h3">Pure CSS</h3>
 
           <ul>
             <li>
-              <a
-                href="https://codepen.io/annampawl/full/yLvoGQY"
-                target="blank"
-              >
-                My Shelf
+              <a href="https://codepen.io/annampawl/pen/yLvoGQY" target="blank">
+                Knick-Knack Shelves
+              </a>
+            </li>
+            <li>
+              <a href="https://codepen.io/annampawl/pen/jOZmboO">
+                Sewing Station
+              </a>
+            </li>
+            <li>
+              <a href="https://codepen.io/annampawl/pen/rNJjowd" target="blank">
+                Stack of Books
+              </a>
+            </li>
+            <li>
+              <a href="https://codepen.io/annampawl/pen/xxYgMXb" target="blank">
+                More Books
+              </a>
+            </li>
+            <li>
+              <a href="https://codepen.io/annampawl/pen/BaYpxBy" target="blank">
+                Pen Holder
               </a>
             </li>
             <li>
@@ -32,26 +46,7 @@ function MobileCodeSnippets() {
                 Laptop
               </a>
             </li>
-            <li>
-              <a href="https://codepen.io/annampawl/pen/BaYpxBy" target="blank">
-                Pen Holder
-              </a>
-            </li>
-            <li>
-              <a href="https://codepen.io/annampawl/pen/jOZmboO">
-                Sewing Station
-              </a>
-            </li>
-            <li>
-              <a href="https://codepen.io/annampawl/pen/rNJjowd" target="blank">
-                Book Stack
-              </a>
-            </li>
-            <li>
-              <a href="https://codepen.io/annampawl/pen/xxYgMXb" target="blank">
-                Books
-              </a>
-            </li>
+
             <li>
               <a href="https://codepen.io/annampawl/pen/BaJqmab" target="blank">
                 Rainbow

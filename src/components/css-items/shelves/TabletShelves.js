@@ -1,5 +1,6 @@
 import React from "react";
 import Shelf from "./Shelf";
+import NewtonsCradle from "../newtonsCradle/NewtonsCradle";
 import Books2 from "../books/Books2";
 import Radio from "../radio/Radio";
 import Books from "../books/Books";
@@ -14,8 +15,9 @@ function TabletShelves() {
     <div className="tablet-shelves">
       {/* Shelf 1 */}
       <Shelf
-        cssItem1={<Pens cn={"tablet-pens-container"} />}
-        cssItem2={<Books2 cn={"tablet-books2-container"} />}
+        cssItem1={<NewtonsCradle cn={"tablet-newtonsCradle-container"} />}
+        cssItem2={<Pens cn={"tablet-pens-container"} />}
+        cssItem3={<Books2 cn={"tablet-books2-container"} />}
       />
 
       {/* Shelf 2 */}

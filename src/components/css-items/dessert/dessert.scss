@@ -38,7 +38,8 @@ $stand-border: 1px solid #93c0ff;
   transform: translateY(-113px);
 }
 .mobile-dessert-container > .dessert__spiral {
-  visibility: visible;
+	//TODO looks weirdly dark on mobile
+  // visibility: visible;
 }
 
 .tablet-dessert-container > .dessert__spiral {

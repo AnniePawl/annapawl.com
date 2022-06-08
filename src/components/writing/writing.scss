@@ -43,10 +43,12 @@ $paper-width: 450px;
 }
 
 .mobile-writing-container{
-	height:70vh;
-	background-image: linear-gradient(#fce8f6 ,#E9F3FF 50%);
->.paper::after{
-	background-color: #E9F3FF;
+	height:600px;
+	// background-image: linear-gradient(#fce8f6 ,#E9F3FF 50%);
+	background-color: $writing-bkgd-clr;
+
+>.paper h1 {
+	font-weight: bold;
 
 }
 }
@@ -71,8 +73,7 @@ $paper-width: 450px;
 		// first hole
   &::before {
     transform: translateY(85px) translateX(20px);
-    background-color: rgb(247, 243, 255) ;
-    background-color:$writing-bkgd-clr ;
+    background-color:$writing-bkgd-clr;
     content: "";
     display: flex;
     height: 20px;
@@ -116,10 +117,10 @@ $paper-width: 450px;
 .mobile-paper{
 	transform: rotate(3deg) scale(.7);
 	&::before{
-		background-color: rgb(243,235,347);
+		// background-color: rgb(243,235,347);
 	}
 	&::after{
-		background-color: #fce8f6 ;
+		// background-color: #fce8f6 ;
 	}
 }
 
