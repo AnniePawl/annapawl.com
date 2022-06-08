@@ -6,13 +6,13 @@ $font-family: menlo, monaco;
 
 // Colors
 $font-clr: white;
-$laptop-clr: #d1d1d1;
+$laptop-clr: #c8c8c8;
 $laptop-clr2: #ffffff;
-$laptop-clr3: #7ab1fd;
-$screen-clr: #ffd3f5;
+$laptop-clr3: $black;
+$screen-clr: #ffdbf2;
 $screen-clr2: #ffeefb;
-$terminal-clr: rgba(17, 17, 17, 0.308);
-$terminal-clr2: #c1ffe0;
+$terminal-clr: #1111114f;
+$terminal-clr2: #c0fdff;
 
 // Measurements
 $terminal-height: 95px;
@@ -54,7 +54,7 @@ $keyboard-width: 230px;
   width: $laptop-width;
   border-radius: 5px 5px 0 0;
   background-color: $laptop-clr;
-  box-shadow: 0 0 0 1.5px #7ab1fd, 0 0 0 6px $laptop-clr2, 0 0 10px black;
+  box-shadow: 0 0 0 1.5px $black, 0 0 0 6px $laptop-clr2, 0 0 10px black;
   z-index: 0;
   // Keyboard
   &::before {
@@ -75,7 +75,7 @@ $keyboard-width: 230px;
     height: 4px;
     width: 45px;
     border-radius: 0 0 1.5px 1.5px;
-    background-image: linear-gradient(rgb(164, 206, 255) 35%, $laptop-clr3 10%);
+    background-image: linear-gradient(#b3b3b3 35%, $laptop-clr3 10%);
     transform: translateY(65px);
   }
   // Screen

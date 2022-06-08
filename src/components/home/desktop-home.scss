@@ -1,0 +1,40 @@
+@import "../universal-styles.scss";
+
+$shelves-width: 73vw;
+
+$contact-clr: #7ab1fd;
+$contact-clr2: #fd85bd;
+
+.desktop-home{
+	cursor:default;
+}
+.desktop__shelves-container {
+  // border: $test-border;
+	cursor:default;
+	display: relative;
+	right:0;
+  height: 100vh;
+  width: $shelves-width;
+  @include center-flex();
+  background-color: $wall-clr;
+  overflow: hidden;
+}
+
+.info-button {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+	&:hover {
+		cursor: pointer;
+	}
+  &:hover > svg {
+    fill: #fd85bd;
+    animation: info-spin 0.5s;
+  }
+}
+
+@keyframes info-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -6,18 +6,18 @@ $glass-width: 95px;
 $stand-base-height: 20px;
 $stand-base-width: 15px;
 $cake-height: 27px;
-$cake-width: 55px;
+$cake-width: 60px;
 
 // Colors
 $wall-clr: #eaf4ff;
-$cake-clr: #fff4b7;
-$cake-clr2: #a08383;
-$cake-clr3: #fee0ff;
-$frosting-clr: #ffffff;
-$stand-clr: #d6ceff;
-$stand-clr2: #cfc3fa;
+$cake-clr:#9d8d83;
+$cake-clr2: #fcf6ce;
+$cake-clr3: #9d8d83;
+$frosting-clr: white;
+$stand-clr: #5899f4;
+$stand-clr2: #5899f4;
 $spiral-clr: #ffffff;
-$spiral-clr2: #93c0ff;
+$spiral-clr2: #7ab1fd;
 $glass-outline: 2px solid #ffffff;
 $glass-clr: radial-gradient(transparent 0 55%, #ffffffb6);
 $stand-border: 1px solid #93c0ff;
@@ -27,7 +27,7 @@ $stand-border: 1px solid #93c0ff;
   @include center-flex;
   flex-direction: column;
   // desktop transform
-  transform: scale(1.15) translateY(-106px);
+  transform: scale(1.15) translateY(-113px);
 }
 
 .tablet-dessert-container{
@@ -118,18 +118,26 @@ $stand-border: 1px solid #93c0ff;
 .dessert__base {
   z-index: 4;
   border: px solid $cake-clr2;
-  transform: scale(0.9) translateY($cake-height/1.4);
+  transform: scale(0.9) translateY($cake-height/1.3);
   position: absolute;
   height: $cake-height;
   width: $cake-width;
+	border-radius:2px 2px 0 0 ;
   // checker pattern
+	// background: linear-gradient(
+	// 	$cake-clr3 0 20%,
+	// 	$cake-clr 0 40%,
+	// 	$cake-clr3 0 60%,
+	// 	$cake-clr 0 80%,
+	// 	$cake-clr3 0 100%
+	// );
   background: linear-gradient(
       45deg,
-      $cake-clr 0 25%,
+      $cake-clr3 0 25%,
       transparent 0 75%,
-      $cake-clr 75%
+      $cake-clr3 75%
     ),
-    linear-gradient(45deg, $cake-clr 0 25%, transparent 0 75%, $cake-clr 75%);
+    linear-gradient(45deg, $cake-clr3 0 25%, transparent 0 75%, $cake-clr3 75%);
   background-color: $cake-clr2;
   background-size: $cake-width/3 $cake-width/3;
   background-position: 0 0, $cake-width/6 $cake-width/6;
@@ -138,31 +146,32 @@ $stand-border: 1px solid #93c0ff;
     content: "";
     display: flex;
     // border-radius: 20% 20% 0 0;
-    width: $cake-width;
+    width: $cake-width * .8;
     height: $cake-height/2;
     background: linear-gradient(
-      $cake-clr3 0 20%,
-      $cake-clr2 0 40%,
-      $cake-clr3 0 60%,
-      $cake-clr2 0 80%,
-      $cake-clr3 0 80%
+      $cake-clr 0 20%,
+      $frosting-clr 0 40%,
+      $cake-clr 0 60%,
+      $frosting-clr 0 80%,
+      $cake-clr 0 80%
     );
-    transform: translateY(-$cake-height/2.2);
+    transform: translateX($cake-width*.09)translateY(-$cake-height/2);
   }
   // scalloped pattern
   &::after {
     content: "";
     display: flex;
+		border-radius:2px 2px 0 0 ;
     // border-radius: 20% 20% 0 0;
-    width: $cake-width;
+    width: $cake-width   * .8;
     height: $cake-height/2;
     background: radial-gradient(
       circle at 50% 0%,
       $frosting-clr 35%,
-      $cake-clr2 35%
+      $cake-clr 35%
     );
     background-size: $cake-width/6;
-    transform: translateY(-$cake-height * 1.45);
+    transform: translateX($cake-width*.09)translateY(-$cake-height /.67);
   }
 }
 

@@ -1,34 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import DesktopAbout from "../about-me/DesktopAbout";
-import DesktopShelves from "../css-items/shelves/DesktopShelves";
+import DesktopHome from "../home/DesktopHome";
+import DesktopCodeSnippets from "../code-snippets/DesktopCodeSnippets";
+// import CreativeProjects from "../creative-projects/CreativeProjects";
+import Writing from "../writing/writing";
+
 import "./desktop.scss";
-import { ReactComponent as InfoIcon } from "../../assets/info.svg";
-import Modal from "../modal/Modal";
 
 function Desktop() {
-  const [open, setOpen] = useState(false);
-
   return (
     <div className="desktop">
-      <div
-        className="info-button"
-        onClick={(e) => {
-          setOpen(true);
-        }}
-      >
-        <InfoIcon />
-      </div>
       <DesktopAbout />
-      <div className="desktop__shelves-container">
-        <Modal
-          cn={"desktop__modal"}
-          isOpen={open}
-          onClose={(e) => {
-            setOpen(false);
-            e.stopPropagation();
-          }}
-        />
-        <DesktopShelves />
+
+      <div className="desktop-content">
+        <DesktopHome />
+        <DesktopCodeSnippets />
+        {/* <CreativeProjects /> */}
+        <Writing />
       </div>
     </div>
   );

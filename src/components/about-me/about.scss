@@ -2,8 +2,10 @@
 
 // Colors
 $about-bkgd: #fdfeff;
-$desktop-h1-clr: #7ab1fd;
-$mobile-h1-clr: #7ab1fd;
+
+$desktop-h1-clr: #5796e9;
+$desktop-h1-clr: $black;
+$mobile-h1-clr: $black;
 $font-clr: #1f1f1f;
 $link-hover-clr: #fd85bd;
 
@@ -20,10 +22,10 @@ $desktop-h1-size: 30px;
 $tablet-h1-size: 25px;
 $mobile-h1-size: 24px;
 // font Sizes
-$desktop-font-size: 13px;
+$desktop-font-size: 14px;
 $tablet-font-size: 14px;
 $mobile-font-size: 12px;
-// line heights
+// line height
 $desktop-line-height: 25px;
 $mobile-line-height: 20px;
 // margins
@@ -34,6 +36,7 @@ $margin-top: 45px;
 .tablet__about,
 .mobile__about {
   // border: $test-border;
+	cursor: default;
   overflow: hidden;
   background-color: $about-bkgd;
   font-family: $font;
@@ -68,8 +71,53 @@ $margin-top: 45px;
   }
 }
 
+
+// Home Icon
+.desktop__about__icon {
+// @include center-flex;
+// 	border-radius: 50%;
+// 	height:10px;
+// 	width:10px;
+// 	background-image: repeating-conic-gradient(white 0 5%, $desktop-h1-clr 5% 11%);
+//  position: absolute;
+//  top:20px;
+//  left:25px;
+}
+
+.desktop__about__icon:hover {
+
+	// height:40px;
+	// width:40px;
+	
+
+
+}
+
+.desktop__about__icon  svg:hover {
+	& .cls-2 {
+		fill:$link-hover-clr;
+	}
+}
+
+.desktop-nav  a{
+	text-decoration: none;
+}
+.desktop-nav  a:active{
+//  color:palegoldenrod;
+}
+.desktop-nav p {
+	// border:$test-border;
+	color:$desktop-h1-clr;
+	font-weight: 600;
+	font-size: 14px ;
+
+	&:hover{
+		color:$link-hover-clr;
+	}
+}
 // Desktop-specific styles
 .desktop__about {
+	position:fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -91,6 +139,8 @@ $margin-top: 45px;
 
 // Links
 a {
+	text-decoration: none;
+	
   color: $font-clr;
   &:visited {
     color: $font-clr;
@@ -103,6 +153,8 @@ a {
 .desktop__about > ul,
 .mobile__about > ul,
 .tablet__about > div > ul {
+
+
   line-height: 22px;
   font-size: 13px;
   padding: 0;

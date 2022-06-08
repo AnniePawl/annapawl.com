@@ -6,6 +6,7 @@ $envelope-width: 35px;
 
 // Colors
 $contact-clr: #7ab1fd;
+$contact-clr: #5796e9;
 $contact-clr2: #fd85bd;
 
 .notClicked {
@@ -17,10 +18,10 @@ $contact-clr2: #fd85bd;
 
 .contact {
   // border: $test-border;
+	margin-left:-12px;
   margin-right: -60px;
   display: flex;
   align-items: center;
-  left: 2%;
   transform: scale(0.75) translateX(-3vw);
   > p {
     color: $contact-clr2;

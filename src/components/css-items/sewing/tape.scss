@@ -4,7 +4,8 @@
 $tape-clr: #fdf4a3;
 $tape-clr2: #fdde51;
 $tape-ticks: #595959;
-$tape-ticks: #7ab1fd;
+$tape-ticks: #5796e9;
+$tape-ticks: $black;
 $tape-btm-clr: #c2c2c2;
 
 // Measurements
@@ -78,8 +79,8 @@ $tape-width: 34px;
     width: $tape-height;
     margin-top: $tape-width * 1.45;
     border-radius: 0 0 1px 1px;
-    box-shadow: $tape-height * 0.25 0 #a5a4a4;
-    background-color: #666666;
+    box-shadow: $tape-height * 0.25 0 $black;
+    background-color: $black;
     border: $tape-height * 0.3 solid $tape-btm-clr;
   }
 }

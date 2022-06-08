@@ -12,16 +12,19 @@ $sm-base-height: 40px;
 $needle-height: 20px;
 $sm-clr: white;
 $sm-clr2: #7ab1fd;
+$sm-clr2: #5796e9;
+// $sm-clr2: $black;
 $knob-clr: #ffcbe9;
 $knob-clr2: #7ab1fd;
+$knob-clr2: #5796e9;
 $spool-clr: #b8a0a0;
 $spool-clr2: #8f7777;
 // $d-thread-clr: rgb(148, 196, 173);
 // $d-thread-clr2: rgb(193, 253, 225);
-$d-thread-clr: #7ab1fd;
+$d-thread-clr: #5796e9;
 $d-thread-clr2: rgb(255, 202, 198);
 $fabric-clr: rgba(255, 233, 111, 0.5);
-$fabric-clr2: rgba(229, 190, 255, 0.7);
+$fabric-clr2: #5796e980;
 $fabric-clr3: rgba(255, 184, 223, 0.9);
 
 // Desktop specific styles
@@ -56,9 +59,9 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
     transform: translateX(-2px) translateY(3px);
     background-image: linear-gradient(
       to bottom,
-      $knob-clr2 0 20%,
+      $black 0 20%,
       transparent 20% 85%,
-      $knob-clr2 85%
+      $black 85%
     );
   }
   &::after {
@@ -66,7 +69,7 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
     display: flex;
     height: 15px;
     width: 1px;
-    background-color: $knob-clr2;
+    background-color: $black;
     transform: translateY(2px) translateX(1.2px);
     border-radius: 0 0 50% 50%;
   }
@@ -131,10 +134,10 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
 
     background-color: $sm-clr;
   }
-  // screen
+  // screen display
   &::after {
     content: "";
-    background-image: linear-gradient($knob-clr 0 80%, $knob-clr2 80%);
+    background-image: linear-gradient($knob-clr 0 80%, $black 80%);
     height: $sm-top-height * 0.3;
     width: $sm-top-height * 0.8;
     transform: translateX($sm-top-height * 1.5) translateY($sm-top-height / 2.5);
@@ -161,7 +164,7 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
     background-image: linear-gradient(
       to right,
       $knob-clr 0 70%,
-      $knob-clr2 70%
+      $black 70%
     );
   }
   // buttons
@@ -172,8 +175,8 @@ $fabric-clr3: rgba(255, 184, 223, 0.9);
     width: $sm-right-arm-width * 0.2;
     background-image: repeating-linear-gradient(
       to bottom,
-      #ffe6e6 0 10%,
-      $knob-clr2 10% 20%,
+      $knob-clr 0 10%,
+      $black 10% 20%,
       transparent 20% 40%
     );
     transform: translateX(18px) translateY(10px);
