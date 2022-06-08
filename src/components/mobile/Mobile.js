@@ -4,6 +4,7 @@ import MobileAbout from "../about-me/MobileAbout";
 import MobileShelves from "../css-items/shelves/MobileShelves";
 import MobileFooter from "./MobileFooter";
 import MobileWriting from "../writing/MobileWriting";
+import MobileCodeSnippets from "../code-snippets/MobileCodeSnippets";
 import "./mobile.scss";
 import { ReactComponent as InfoIcon } from "../../assets/info.svg";
 
@@ -31,6 +32,7 @@ function Mobile() {
         </div>
         <MobileShelves />
       </div>
+      <MobileCodeSnippets />
       <MobileWriting />
       <MobileFooter />
     </div>

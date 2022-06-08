@@ -3,7 +3,7 @@
 $frame-clr:#5796e9;
 $frame-clr2:#ffdfe9;
 $frame-clr3:#7cb5ff;
-$frame-clr4:#4b8adb;
+$frame-clr4:$black;
 $sphere-clr:#fff7cc;
 $sphere-clr2:#f9e155;
 
@@ -68,7 +68,7 @@ $frame-width: 150px;
 .sphere {
 	height:$frame-width *.15;
 	width:$frame-width *.15;
-	border:2px solid $frame-clr;
+	border:2px solid $frame-clr4;
 	background-image:linear-gradient(to right,$sphere-clr 0 50%, $sphere-clr2 0 100%);
 	border-radius: 50%;
 	transform: translateY(-15px);
@@ -78,7 +78,7 @@ $frame-width: 150px;
 		display: flex;
 		height:$frame-height*.64;
 		width:1.5px;
-		background-color: $frame-clr;
+		background-color: $frame-clr4;
 		transform: translateX($frame-width *.055) translateY(-$frame-height*.65);
 	}
 

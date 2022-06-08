@@ -7,7 +7,7 @@ $modal-font-clr: #65a5ff;
 $modal-font-clr: #252525;
 $modal-hover-clr: #fd85bd;
 $modal-btn-clr: #fd85bd;
-$modal-btn-clr2: #fff6a1;
+$modal-btn-clr2: $black;
 
 p.hide {
   display: none;
@@ -45,7 +45,7 @@ p.hide {
   border-radius: 50%;
   background-color: $modal-btn-clr;
   color: $modal-btn-clr2;
-  font-weight: 900;
+  font-weight:600;
   &:hover {
     animation: spin 0.5s;
 		cursor:pointer;

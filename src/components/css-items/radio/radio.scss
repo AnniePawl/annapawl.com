@@ -16,8 +16,8 @@ $desktop-radio-body-clr: #ffdfe9;
 $radio-outline-clr: #7089ac;
 $desktop-radio-outline-clr2: #5796e9;
 $desktop-radio-outline-clr: #7ab1fd;
-$desktop-radio-display-clr: #3575ce;
-$radio-display-clr: #405572;
+$desktop-radio-display-clr: #5796e9;
+$radio-display-clr: $black;
 $d-radio-btn-clr: #ffef91;
 $wall-color: #eaf4ff;
 $radio-font-clr: white;
@@ -57,7 +57,7 @@ $radio-font-clr: white;
   width: $radio-width * 0.8;
   border-radius: 30%;
   background-color: $radio-outline-clr;
-  box-shadow: 0px 1px $radio-display-clr;
+  box-shadow: 0px 1px $black;
   transform: translateY(-$radio-height * 0.7) translateX($radio-height * 0.15)
     rotate(-14deg);
 }
@@ -107,7 +107,7 @@ $radio-font-clr: white;
     font-size: 7px;
     background-color: $wall-color;
     font-family: $radio-font;
-    color: $radio-display-clr;
+    color: $black;
     border-radius: 1px;
     border: 1px solid $radio-outline-clr;
   }
@@ -164,7 +164,7 @@ $radio-font-clr: white;
   background-image: linear-gradient(
     to right,
     $radio-outline-clr 0 80%,
-    $radio-display-clr 80%
+    $black 80%
   );
 }
 .radio-button1::before {
@@ -210,15 +210,15 @@ $radio-font-clr: white;
     border-bottom: $border-width * 0.5 solid $desktop-radio-outline-clr;
     background-image: repeating-linear-gradient(
         45deg,
-        $desktop-radio-outline-clr 0%,
-        $desktop-radio-outline-clr 1%,
+        $black 0%,
+        $black 1%,
         transparent 1%,
         transparent 5%
       ),
       repeating-linear-gradient(
         -45deg,
-        $desktop-radio-outline-clr 0%,
-        $desktop-radio-outline-clr 1%,
+        $black 0%,
+        $black 1%,
         $wall-color 1%,
         $wall-color 5%
       );
@@ -226,7 +226,7 @@ $radio-font-clr: white;
   // Antena
   .radio-top::before {
     background-color: $desktop-radio-outline-clr;
-    box-shadow: 0px 1px $desktop-radio-display-clr;
+    box-shadow: 0px 1px $black;
   }
   // antena base
   .radio-top::after {
@@ -242,7 +242,10 @@ $radio-font-clr: white;
     // Station Display
     .radio-display-station {
       @include center-flex;
-      background-color: $desktop-radio-outline-clr2;
+      background-color: 
+			$desktop-radio-outline-clr2;
+			background-color: 
+		$desktop-radio-display-clr;
     }
     // Station buttons
     .radio-button1,
@@ -250,11 +253,11 @@ $radio-font-clr: white;
       background-color: $desktop-radio-outline-clr;
       background-color: $d-radio-btn-clr;
       font-family: $radio-font;
-      color: white;
+    
       font-weight: 900;
       color: $desktop-radio-outline-clr;
-      border: 1px solid $desktop-radio-outline-clr;
-      // border: 1.5px solid $desktop-radio-outline-clr;
+      border: 1px solid $black;
+      border: 1.5px solid $desktop-radio-outline-clr;
     }
     // Button hover styles
     .radio-button1:hover,
@@ -270,7 +273,7 @@ $radio-font-clr: white;
       background-image: linear-gradient(
         to right,
         $desktop-radio-outline-clr 0 80%,
-        $desktop-radio-display-clr 80%
+        $black 80%
       );
     }
 
@@ -280,15 +283,15 @@ $radio-font-clr: white;
       border: 2px solid $desktop-radio-outline-clr;
       background-image: repeating-linear-gradient(
           45deg,
-          $desktop-radio-outline-clr 0%,
-          $desktop-radio-outline-clr 2.5%,
+          $black 0%,
+          $black 2.5%,
           transparent 2.5%,
           transparent 10%
         ),
         repeating-linear-gradient(
           -45deg,
-          $desktop-radio-outline-clr 0%,
-          $desktop-radio-outline-clr 2.5%,
+          $black 0%,
+          $black 2.5%,
           $wall-color 2.5%,
           $wall-color 10%
         );
@@ -299,7 +302,7 @@ $radio-font-clr: white;
       background-image: linear-gradient(
         to right,
         $desktop-radio-outline-clr 0 80%,
-        $desktop-radio-display-clr 80%
+        $black 80%
       );
     }
   }

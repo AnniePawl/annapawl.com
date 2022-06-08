@@ -17,9 +17,7 @@ function Tablet() {
       >
         <InfoIcon />
       </div>
-      <div className="tablet__contact">
-        <Contact />
-      </div>
+
       <Modal
         cn={"tablet__modal"}
         isOpen={open}
@@ -30,6 +28,9 @@ function Tablet() {
       />
 
       <TabletShelves />
+      <div className="tablet__contact">
+        <Contact />
+      </div>
     </div>
   );
 }
