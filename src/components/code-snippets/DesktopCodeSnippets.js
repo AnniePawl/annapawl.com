@@ -9,7 +9,7 @@ function DesktopCodeSnippets() {
         <h1 className="codeSnippets__h1">Code Snippets</h1>
         <p>
           A collection of bite-sized projects I made in pursuit of learning and
-          fun 🌶{" "}
+          fun.
         </p>
 
         <div className="codeSnippets__lists">
@@ -102,6 +102,14 @@ function DesktopCodeSnippets() {
             <ul>
               <li>
                 <a
+                  href="https://codepen.io/annampawl/pen/yLKLbaY"
+                  target="blank"
+                >
+                  Digital Clock
+                </a>
+              </li>
+              <li>
+                <a
                   href="	https://codepen.io/annampawl/pen/QWQwYYB"
                   target="blank"
                 >
@@ -109,7 +117,6 @@ function DesktopCodeSnippets() {
                 </a>
               </li>
               <li>Strobe Light Party</li>
-              <li>Digital Clock</li>
             </ul>
           </div>
         </div>

@@ -8,6 +8,7 @@ import Books2 from "../books/Books2";
 import Laptop from "../laptop/Laptop";
 import Dessert from "../dessert/Dessert";
 import NewtonsCradle from "../newtonsCradle/NewtonsCradle";
+import DigitalClock from "../digitalClock/DigitalClock";
 import "./shelves.scss";
 
 function DesktopShelves() {
@@ -29,6 +30,7 @@ function DesktopShelves() {
       <Shelf
         cssItem1={<Sewing cn={"desktop-sewing-container"} />}
         cssItem2={<Books cn={"desktop-books-container"} />}
+        cssItem3={<DigitalClock />}
       />
     </div>
   );

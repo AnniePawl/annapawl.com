@@ -1,11 +1,11 @@
 @import '../../universal-styles.scss';
 
 $frame-clr:#5796e9;
-$frame-clr2:#ffdfe9;
+$frame-clr2:#bbffd2;
 $frame-clr3:#7cb5ff;
 $frame-clr4:$black;
-$sphere-clr:#fff7cc;
-$sphere-clr2:#f9e155;
+$sphere-clr:#fcff9e;
+$sphere-clr2:#ffe366;
 
 $frame-height:100px;
 $frame-width: 150px;
@@ -49,7 +49,7 @@ $frame-width: 150px;
 	height:$frame-height;
 	width: $frame-width;
 	border-radius:10px 10px 0 0 ;
-	box-shadow:0 0 0 1.5px $frame-clr, 0 0 0 7px $frame-clr2, 0 0 0 9px $frame-clr;
+	box-shadow:0 0 0 2px $frame-clr, 0 0 0 8px $frame-clr2, 0 0 0 10px $frame-clr;
 	
 	&::before, &::after{
 		content:"";

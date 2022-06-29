@@ -8,12 +8,15 @@ function MobileCodeSnippets() {
         <h1 className="codeSnippets__h1">Code Snippets </h1>
         <p>Click on the links below to see the source code for my CSS stuff</p>
         <div className="codeSnippets__lists">
-          <h3 className="codeSnippets__h3">Pure CSS</h3>
-
           <ul>
             <li>
               <a href="https://codepen.io/annampawl/pen/yLvoGQY" target="blank">
                 Knick-Knack Shelves
+              </a>
+            </li>
+            <li>
+              <a href="https://codepen.io/annampawl/pen/yLKLbaY" target="blank">
+                Digital Clock
               </a>
             </li>
             <li>

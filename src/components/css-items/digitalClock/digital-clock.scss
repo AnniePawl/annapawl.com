@@ -1,0 +1,73 @@
+@import '../../universal-styles.scss';
+
+$clock-clr:#fff896;
+$clock-clr2:#9b9b9b;
+$clock-clr3:#4d4d4d;
+$clock-clr4:#292929;
+$clock-clr5:#5796e9;
+$clock-height:55px;
+$clock-width:110px;
+
+
+.clock {
+	transform: translateY(-61px);
+  &:hover{
+    animation:alarm .1s infinite;
+  }
+  height:$clock-height;
+  width:$clock-width;
+	border:2px solid $clock-clr5;
+	font-family: monospace;
+	color:white;
+	font-size: 1.15em;
+	font-weight: bold;
+  background-color:$clock-clr;
+  @include center-flex;
+  border-radius:2px;
+	//side button
+  &::before{
+    content:"";
+    position:absolute;
+    transform:translateX($clock-width/1.9);
+    background-image: repeating-linear-gradient($clock-clr5 0 10%, $clock-clr 0 15%);
+    height:$clock-height/2;
+    width:$clock-height/9;
+    border-radius:0 2px 2px 0;
+  }
+	//top buttons
+  &::after{
+    content:"";
+    position:absolute;
+    height:$clock-height/  15;
+    background-image:linear-gradient(to right, $clock-clr5 0 40%, transparent 0 60%,  $clock-clr5 0 100%);
+    width:$clock-height/ 2;
+    transform:translateY(-$clock-height/1.88) translateX(-$clock-height/2);
+  }
+  p{
+    @include center-flex;
+    width:$clock-width/1.15;
+    border:5px solid $clock-clr4;
+    border-radius:2px;
+    padding:5%;
+    background: linear-gradient(to right, transparent 0 64%, $clock-clr4 0 67%, transparent 0 100%), linear-gradient($clock-clr2 0 50%, $clock-clr3 0 100%);
+     //base
+      &::before{
+        content:"";
+        position:absolute;
+        height:$clock-height/ 9;
+        width:$clock-width/ 1.2;
+        background-color:$clock-clr5;
+        transform:translateY($clock-height/1.8)
+        } 
+  }
+  
+}
+
+@keyframes alarm {
+  35%{
+    transform: translateY(-61px) rotate(10deg)
+}
+ 65%{
+    transform: translateY(-61px) rotate(-10deg)
+  }
+}

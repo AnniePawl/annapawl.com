@@ -9,6 +9,7 @@ import "./shelves.scss";
 import Sewing from "../sewing/Sewing";
 import Laptop from "../laptop/Laptop";
 import Dessert from "../dessert/Dessert";
+import DigitalClock from "../digitalClock/DigitalClock";
 
 function TabletShelves() {
   return (
@@ -36,6 +37,7 @@ function TabletShelves() {
           />
         }
         cssItem2={<Books cn={"tablet-books-container"} />}
+        cssItem3={<DigitalClock cn={"tablet-digitalClock-container"} />}
       />
     </div>
   );

@@ -2,11 +2,11 @@
 
 // Colors
 $overlay-clr: #aed0ff99;
-$background-color: #ffffff;
+$background-color: #f9fbb9;
 $modal-font-clr: #65a5ff;
 $modal-font-clr: #252525;
-$modal-hover-clr: #5796e9;
-$modal-btn-clr: #ffef91;
+$modal-hover-clr: #2279eb;
+$modal-btn-clr: #5796e9;
 $modal-btn-clr2: $black;
 
 p.hide {
@@ -23,8 +23,8 @@ p.hide {
 }
 
 .modal {
-  height: 370px;
-  width: 350px;
+  height: 300px;
+  width: 375px;
   position: absolute;
   right: 35px;
   top: 34px;
@@ -39,12 +39,12 @@ p.hide {
   height: 30px;
   width: 30px;
   position: absolute;
-  right: -12px;
-  top: -12px;
+  right: -10px;
+  top: -14px;
   border: none;
   border-radius: 50%;
   background-color: $modal-btn-clr;
-  color: $modal-btn-clr2;
+  color: white;
   font-weight:600;
   &:hover {
     animation: spin 0.5s;
@@ -53,8 +53,9 @@ p.hide {
 }
 
 .modal__content {
-  padding: 16%;
+  padding: 12%;
   padding-right: 14%;
+	padding-top: 16%;
   p {
     font-size: 13px;
     line-height: 22px;
@@ -83,8 +84,8 @@ p.hide {
 .tablet__modal {
   width: 100vw;
   > .modal {
-    height: 330px;
-    width: 300px;
+    height: 260px;
+    width: 350px;
 		> .modal__content {
   
 			a {
@@ -96,14 +97,14 @@ p.hide {
 
 // Mobile Specific Styles
 .mobile__modal {
-  top:45vh;
-  height: 120vh;
+  top:50vh;
+  height: 120.5vh;
   width: 100vw;
 
   > .modal {
-    top: 3vh;
-    right: 30px;
-    height: 240px;
+    top: 3.4vh;
+    right: 25px;
+    height:210px;
     width: 250px;
     > .modal__content {
       p {
@@ -118,7 +119,7 @@ p.hide {
 			position: absolute;
 			z-index: 2;
       background-color: $modal-btn-clr;
-      color: $modal-btn-clr2;
+      color: white;
     }
   }
 }

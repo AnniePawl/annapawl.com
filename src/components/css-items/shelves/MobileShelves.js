@@ -9,6 +9,7 @@ import Books2 from "../books/Books2";
 import Laptop from "../laptop/Laptop";
 import "./shelves.scss";
 import Dessert from "../dessert/Dessert";
+import DigitalClock from "../digitalClock/DigitalClock";
 
 function MobileShelves() {
   return (
@@ -36,7 +37,7 @@ function MobileShelves() {
       {/* MobileShelf 4 */}
       <MobileShelf
         cssItem1={<Books2 cn={"mobile-books2-container"} />}
-        cssItem2={<Dessert cn={"mobile-dessert-container"} />}
+        cssItem2={<DigitalClock cn={"mobile-digitalClock-container"} />}
       />
     </div>
   );

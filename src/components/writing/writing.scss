@@ -17,17 +17,13 @@ $eraser-clr: #ff9adf;
 $eraser-clr2: #ffb1e6;
 $pencil-clr: #fbe890;
 $pencil-clr2: #fff5c3;
-
-
-$pencil-height: 250px;
-$pencil-width:8px;
-
-$writing-bkgd-clr:#fff0f5;
-
+$writing-bkgd-clr:#ffeff9;
 
 // Measurements
 $paper-height: 600px;
 $paper-width: 450px;
+$pencil-height: 250px;
+$pencil-width:8px;
 
 .writing-container, .mobile-writing-container{
 	cursor: auto;
@@ -54,11 +50,10 @@ $paper-width: 450px;
 }
 
 
-
 .paper {
 	font-family: $paper-font;
 	transform:rotate(2deg) scale(.8);
-  height: $paper-height;
+  height: $paper-height * 1.2;
   width: $paper-width;
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
@@ -107,8 +102,8 @@ $paper-width: 450px;
 	font-size: 26px;
 	color:$writing-font-clr;
 	list-style: none;
-	transform: translateX(40px) translateY(55px);
-	line-height: 38px;
+	transform: translateX(40px) translateY(43px);
+	line-height: 45px;
 	&:hover{
 		color: $paper-lines2;
 	}

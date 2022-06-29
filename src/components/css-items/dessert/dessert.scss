@@ -11,7 +11,7 @@ $cake-width: 60px;
 // Colors
 $wall-clr: #eaf4ff;
 $cake-clr:#9d8d83;
-$cake-clr2: #fcf6ce;
+$cake-clr2: #fcffab;
 $cake-clr3: #9d8d83;
 $frosting-clr: white;
 $stand-clr: #5899f4;
@@ -156,7 +156,7 @@ $stand-border: 1px solid #93c0ff;
       $frosting-clr 0 80%,
       $cake-clr 0 80%
     );
-    transform: translateX($cake-width*.09)translateY(-$cake-height/2);
+    transform: translateX($cake-width*.09)translateY(-$cake-height/1.9);
   }
   // scalloped pattern
   &::after {

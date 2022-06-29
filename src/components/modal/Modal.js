@@ -13,16 +13,15 @@ export default function Modal({ isOpen, onClose, cn }) {
         <div className="modal__content">
           {/* Desktop Modal */}
           <p className={cn === "desktop__modal" ? "show" : "hide"}>
-            I've fallen for CSS and really enjoy exploring its potential through
-            mini illustrations and animations. <br></br>
+            I've fallen for CSS and love exploring its potential through
+            illustrations and animations. <br></br>
             <br></br>
             <span>
               {" "}
               <b>Hover over</b>
             </span>{" "}
-            the stuff on the shelves for some itty bitty surprises. I made
-            everything with ♥ and pure CSS.
-            <br></br> <br></br>
+            the knick knacks for some mini surprises. I made everything pure CSS
+            ♥<br></br> <br></br>
             Check out my ongoing project,{" "}
             <a href="https://anniepawl.github.io/dwc/" target="blank">
               <b>Drawing with Code</b>
@@ -31,15 +30,13 @@ export default function Modal({ isOpen, onClose, cn }) {
             <a href="https://codepen.io/annampawl" target="blank">
               <b>CodePen</b>
             </a>{" "}
-            profile if you're interested in learning more about the process.
+            profile for more info.
           </p>
 
           {/* Tablet Modal */}
           <p className={cn === "tablet__modal" ? "show" : "hide"}>
-            I've fallen for CSS and really enjoy exploring its potential through
-            mini illustrations and animations. I made this bookshelf with ♥ and
-            pure CSS.
-            <br></br>
+            I've fallen for CSS and love exploring its potential through
+            illustrations and animations like these ♥ <br></br>
             <br></br>
             Check out my ongoing project,{" "}
             <a href="https://anniepawl.github.io/dwc/" target="blank">
@@ -49,20 +46,19 @@ export default function Modal({ isOpen, onClose, cn }) {
             <a href="https://codepen.io/annampawl" target="blank">
               CodePen
             </a>{" "}
-            profile if you're interested in learning more about the process.
+            for more info.
           </p>
 
           {/* Mobile Modal */}
           <p className={cn === "mobile__modal" ? "show" : "hide"}>
-            I've fallen for CSS and really enjoy exploring its potential through
-            mini illustrations and animations like the ones here 😎 <br></br>
+            I've fallen for CSS and love exploring its potential through mini
+            illustrations and animations like these 😎 <br></br>
             <br></br>
             Check out my{" "}
             <a href="https://codepen.io/annampawl" target="blank">
-              CodePen
+              CodePen Profile
             </a>{" "}
-            profile if you're interested in seeing the source code or learning
-            more about the process.
+            for more info ♥
           </p>
         </div>
       </div>
