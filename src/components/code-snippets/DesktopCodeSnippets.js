@@ -3,14 +3,12 @@ import "./code-snippets.scss";
 import "./color-slider.scss";
 
 function DesktopCodeSnippets() {
-  const [rangeVal, setRangeVal] = useState(133);
-  const [bkgdClr, setBkgdClr] = useState(`hsl(200,60%, 100%)`);
-  console.log(`default bg ${bkgdClr}`);
-
+  const [rangeVal, setRangeVal] = useState(160);
+  const [bkgdClr, setBkgdClr] = useState("hsl(160, 100%, 92%)");
+  // console.log(`default bg ${bkgdClr}`);
   useEffect(() => {
     // console.log("value chagned");
-    setBkgdClr(`hsl(${rangeVal}, 80%, 90%`);
-    console.log(bkgdClr);
+    setBkgdClr(`hsl(${rangeVal}, 100%, 92%`);
   }, [rangeVal]);
 
   return (
@@ -21,14 +19,14 @@ function DesktopCodeSnippets() {
     >
       <div className="codeSnippets__contents">
         <h1 className="codeSnippets__h1">Code Snippets</h1>
-        <p>
+        <h4>
           A collection of bite-sized projects I made in pursuit of learning and
           fun
-        </p>
+        </h4>
 
         <div className="codeSnippets__lists">
           <div>
-            <h3 className="codeSnippets__h3">Just CSS</h3>
+            <h3 className="codeSnippets__h3">just css</h3>
 
             <ul>
               <li>
@@ -112,7 +110,7 @@ function DesktopCodeSnippets() {
           </div>
 
           <div>
-            <h3 className="codeSnippets__h3">CSS & JS</h3>
+            <h3 className="codeSnippets__h3">css & js</h3>
             <ul>
               <li>
                 <a
@@ -128,6 +126,14 @@ function DesktopCodeSnippets() {
                   target="blank"
                 >
                   RGB Sliders
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://codepen.io/annampawl/pen/yLKNNvL"
+                  target="blank"
+                >
+                  Hue Slider
                 </a>
               </li>
               <li>

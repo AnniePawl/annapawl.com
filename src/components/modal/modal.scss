@@ -2,12 +2,12 @@
 
 // Colors
 $overlay-clr: #aed0ff9d;
-$background-color: #fff9b3;
+$background-color: #ffe9f1;
 $modal-font-clr: #65a5ff;
 $modal-font-clr: #252525;
 $modal-hover-clr: #2279eb;
-$modal-btn-clr: #5796e9;
-$modal-btn-clr2: $black;
+$modal-btn-clr: #b3ffed;
+$modal-btn-clr2:#2279eb;
 
 p.hide {
   display: none;
@@ -44,8 +44,8 @@ p.hide {
   border: none;
   border-radius: 50%;
   background-color: $modal-btn-clr;
-  color: white;
-  font-weight:600;
+  color: $modal-btn-clr2;
+  font-weight:800;
   &:hover {
     animation: spin 0.5s;
 		cursor:pointer;
@@ -84,8 +84,8 @@ p.hide {
 .tablet__modal {
   width: 100vw;
   > .modal {
-    height: 260px;
-    width: 350px;
+    height: 250px;
+    width: 355px;
 		> .modal__content {
   
 			a {
@@ -97,18 +97,18 @@ p.hide {
 
 // Mobile Specific Styles
 .mobile__modal {
-  top:50vh;
+  top:60vh;
   height: 120.5vh;
   width: 100vw;
 
   > .modal {
     top: 3.4vh;
     right: 25px;
-    height:210px;
-    width: 250px;
+    height:145px;
+    width: 265px;
     > .modal__content {
       p {
-        line-height: 18px;
+        line-height: 20px;
 				font-size: 11px;
       }
 			a {
@@ -119,7 +119,8 @@ p.hide {
 			position: absolute;
 			z-index: 2;
       background-color: $modal-btn-clr;
-      color: white;
+      color: $modal-btn-clr2;
+			top: -12px;
     }
   }
 }

@@ -40,11 +40,11 @@ export default function Modal({ isOpen, onClose, cn }) {
             <br></br>
             Check out my ongoing project,{" "}
             <a href="https://anniepawl.github.io/dwc/" target="blank">
-              Drawing with Code
+              <b>Drawing with Code</b>
             </a>
             , and my{" "}
             <a href="https://codepen.io/annampawl" target="blank">
-              CodePen
+              <b>CodePen</b>
             </a>{" "}
             for more info.
           </p>
@@ -52,13 +52,7 @@ export default function Modal({ isOpen, onClose, cn }) {
           {/* Mobile Modal */}
           <p className={cn === "mobile__modal" ? "show" : "hide"}>
             I've fallen for CSS and love exploring its potential through mini
-            illustrations and animations like these 😎 <br></br>
-            <br></br>
-            Check out my{" "}
-            <a href="https://codepen.io/annampawl" target="blank">
-              CodePen Profile
-            </a>{" "}
-            for more info ♥
+            illustrations and animations like these ♥
           </p>
         </div>
       </div>

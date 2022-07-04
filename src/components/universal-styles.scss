@@ -25,6 +25,10 @@ $font: "Montserrat", sans-serif;
 
 // Media Queries
 @media screen and (max-width: 755px) {
+	.tablet-digitalClock-container{
+		transform: scale(0.85) translateY(-66px);
+
+	}
   .tablet-dessert-container {
     transform: scale(0.95) translateY(-129px);
   }
@@ -37,6 +41,10 @@ $font: "Montserrat", sans-serif;
 
 }
 @media screen and (max-width: 481px) {
+	.mobile-digitalClock-container{
+		transform: scale(0.8) translateY(-68px);
+
+	}
   .mobile-laptop-container {
     transform: scale(0.8) translateY(-158px);
   }

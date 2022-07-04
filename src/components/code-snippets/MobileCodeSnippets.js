@@ -1,9 +1,21 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import "./code-snippets.scss";
+import "./color-slider.scss";
 
 function MobileCodeSnippets() {
+  const [bkgdClr, setBkgdClr] = useState("hsl(160, 100%, 92%)");
+  const [rangeVal, setRangeVal] = useState(160);
+
+  useEffect(() => {
+    setBkgdClr(`hsl(${rangeVal}, 100%, 92%)`);
+  }, [rangeVal]);
+
   return (
-    <div className="mobileCodeSnippets-container" id="code-snippets">
+    <div
+      className="mobileCodeSnippets-container"
+      id="code-snippets"
+      style={{ backgroundColor: `${bkgdClr}` }}
+    >
       <div className="codeSnippets__contents">
         <h1 className="codeSnippets__h1">Code Snippets </h1>
         <p>Click on the links below to see the source code for my CSS stuff</p>
@@ -79,6 +91,14 @@ function MobileCodeSnippets() {
           </ul>
         </div> */}
       </div>
+      <input
+        className="mobileColorSlider"
+        type="range"
+        onChange={(event) => setRangeVal(event.target.value)}
+        value={rangeVal}
+        min="0"
+        max="360"
+      ></input>
     </div>
   );
 }

@@ -1,4 +1,6 @@
 @import "../universal-styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap");
+
 
 $blue:#5796e9;
 // $codeSnippets-bkgd-clr:#c9ffef ;
@@ -10,43 +12,99 @@ $blue:#5796e9;
 	align-items: center;
 	flex-direction: column;
 	// border:$test-border;
-
 	// background-color:$codeSnippets-bkgd-clr;
 	.codeSnippets__contents {
 		align-self: self-start;
 		// border:$test-border;
 		padding-top:10%;
 		padding-left:10%;
-		& > p{
+		& > h4{
 			font-size:18px;
+			font-weight: 500;
+		}
+		.codeSnippets__h1:nth-of-type(n) {
+			background-repeat: no-repeat;
+			background-clip: text;
 		}
 		.codeSnippets__h1{
-			color:$black;
+			font-weight: 800;
+			font-size:40px;
+			// font-family: "Source Code Pro", monospace;
+			width: fit-content;
+			letter-spacing:2px;
+			color: rgb(0 0 0 / 0);
+			text-shadow: 2px 2px $black;
+		
+			background: linear-gradient(
+    90deg,
+		#ff8989 0 1ch,
+		#ffed65 0 2ch,
+		#5afb87 0 3ch,
+		#6fa9ff 0 4ch,
+		#9ca3ff 0 5.4ch,
+		#ffbaeb 0 6.4ch,
+		#ff7d8a  0 6.8ch,
+		#ffe667 0 7.8ch,
+		#6aff94 0 8.8ch,
+		#6fa9ff 0 9.7ch,
+		#9ca3ff 0 10.3ch,
+		#ffbaeb 0 12ch,
+	
+  );
 			padding-bottom: 25px;
 	
 			&::after{
-				content:"";
-				position: absolute;
-				display:flex;
-				height:2.5px;
-				width:40vw;
-				background-color: $black;	
-				transform: translateY(10px);
+				// content:"";
+				// position: absolute;
+				// display:flex;
+				// height:2.5px;
+				// width:40vw;
+				// background-color: $black;	
+				// transform: translateY(10px);
 			}
 			&::before{
 				content:"</>";
+				font-size: 30px;
 				position: absolute;
-				transform: translate(245px);
-				color:#ffb535;
+				transform: translateX(325px) translateY(5px);
+				color:#ffc663;
 			}
 		}
 		.codeSnippets__lists {
+		
 			display:flex;
 			padding-top:40px;
 			.codeSnippets__h3 {
+				font-size:20px;
+				font-weight:800;
+				width: fit-content;
+				letter-spacing:2px;
+				color: rgb(0 0 0 / 0);
+				text-shadow: 1.5px 1.5px $black;
+			
+				background: linear-gradient(
+			90deg,
+			#ff8989 0 .9ch,
+			#ffed65 0 2ch,
+			#5afb87 0 2.7ch,
+			#6fa9ff 0 4ch,
+			#9ca3ff 0 5.4ch,
+			#ffbaeb 0 6.4ch,
+			#ff7d8a  0 6.8ch,
+			#ffe667 0 7.8ch,
+			#6aff94 0 8.8ch,
+			#6fa9ff 0 9.7ch,
+			#9ca3ff 0 10.3ch,
+			#ffbaeb 0 12ch);
+				
+
 				padding-bottom: 20px;
 				padding-top:25px;
-				color:$black;
+				// color:$black;
+			}
+			.codeSnippets__h3:nth-of-type(n) {
+				background-repeat: no-repeat;
+				background-clip: text;
 			}
 			ul {
 				list-style-type: none;
@@ -73,9 +131,14 @@ $blue:#5796e9;
 }
 
 
+// Mobile Styles
 .mobileCodeSnippets-container {
-	@include center-flex;
-	height:480px;
+	// @include center-flex;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	height:550px;
 	div{
 		width:80vw;
 	} 
@@ -84,15 +147,36 @@ $blue:#5796e9;
 	font-family: $font;
 	// background-color:$codeSnippets-bkgd-clr ;
 	h1{
-		padding-top:25px;
 		padding-bottom: 20px;
-		font-size:20px;
-		color:$black;
+		padding-top:15px;
+		font-size:25px;
+		font-weight:800;
+		width: fit-content;
+		letter-spacing:2px;
+		color: rgb(0 0 0 / 0);
+		text-shadow: 1.5px 1.5px $black;
+	
+		background: linear-gradient(
+	90deg,
+	#ff8989 0 1.2ch,
+	#ffed65 0 2.3ch,
+	#5afb87 0 3.5ch,
+	#6fa9ff 0 4.5ch,
+	#9ca3ff 0 6.2ch,
+	#ffbaeb 0 7.3ch,
+	#ff7d8a  0 6.8ch,
+	#ffe667 0 7.8ch,
+	#6aff94 0 8.9ch,
+	#6fa9ff 0 9.8ch,
+	#9ca3ff 0 11ch,
+	#ffbaeb 0 12ch, 
+	#ff8989 0 13ch);
+		
 		&::before{
 			content:"</>";
 			color:#ffb535;
 			position: absolute;
-			transform: translateX(160px);
+			transform: translateX(230px);
 		}
 		&::after{
 				content:"";
@@ -101,8 +185,13 @@ $blue:#5796e9;
 				height:2px;
 				width:80vw;
 				background-color: $black;	
+				transform: translateY(10px);
 		}
 	
+	}
+	h1:nth-of-type(n) {
+		background-repeat: no-repeat;
+		background-clip: text;
 	}
 	h3{
 		font-size: 16px;
@@ -113,7 +202,8 @@ $blue:#5796e9;
 	}
 	p{
 		padding-bottom:18px;
-		font-size:13px;
+		font-size:12px;
+		font-weight: 600;
 	}
 	ul{
 		font-size:13px;
