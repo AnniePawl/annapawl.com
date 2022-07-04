@@ -20,8 +20,8 @@ export default function Modal({ isOpen, onClose, cn }) {
               {" "}
               <b>Hover over</b>
             </span>{" "}
-            the knick knacks for some mini surprises. I made everything pure CSS
-            ♥<br></br> <br></br>
+            the knick knacks for some mini surprises. I made everything with
+            pure CSS ♥<br></br> <br></br>
             Check out my ongoing project,{" "}
             <a href="https://anniepawl.github.io/dwc/" target="blank">
               <b>Drawing with Code</b>

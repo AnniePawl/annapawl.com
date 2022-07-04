@@ -1,15 +1,20 @@
 @import "../universal-styles.scss";
 
 $blue:#5796e9;
-$codeSnippets-bkgd-clr:#c9ffef ;
+// $codeSnippets-bkgd-clr:#c9ffef ;
 
 .codeSnippets-container {
 	height:100vh;
 	color:$black;
 	display:flex;
+	align-items: center;
 	flex-direction: column;
-	background-color:$codeSnippets-bkgd-clr;
+	// border:$test-border;
+
+	// background-color:$codeSnippets-bkgd-clr;
 	.codeSnippets__contents {
+		align-self: self-start;
+		// border:$test-border;
 		padding-top:10%;
 		padding-left:10%;
 		& > p{
@@ -18,12 +23,13 @@ $codeSnippets-bkgd-clr:#c9ffef ;
 		.codeSnippets__h1{
 			color:$black;
 			padding-bottom: 25px;
+	
 			&::after{
 				content:"";
 				position: absolute;
 				display:flex;
 				height:2.5px;
-				width:60vw;
+				width:40vw;
 				background-color: $black;	
 				transform: translateY(10px);
 			}
@@ -76,7 +82,7 @@ $codeSnippets-bkgd-clr:#c9ffef ;
 
 	color:$black;
 	font-family: $font;
-	background-color:$codeSnippets-bkgd-clr ;
+	// background-color:$codeSnippets-bkgd-clr ;
 	h1{
 		padding-top:25px;
 		padding-bottom: 20px;

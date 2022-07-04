@@ -1,8 +1,8 @@
 @import "../universal-styles.scss";
 
 // Colors
-$overlay-clr: #aed0ff99;
-$background-color: #f9fbb9;
+$overlay-clr: #aed0ff9d;
+$background-color: #fff9b3;
 $modal-font-clr: #65a5ff;
 $modal-font-clr: #252525;
 $modal-hover-clr: #2279eb;
@@ -32,7 +32,7 @@ p.hide {
   flex-direction: column;
   border-radius: 5px;
   background-color: $background-color;
-  box-shadow: rgba(0, 0, 0, 0.09) 1px 3px 12px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px, rgba(0, 0, 0, 0.1) 0px 0px 15px;
 }
 
 .modal__button {

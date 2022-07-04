@@ -1,20 +1,34 @@
-import React from "react";
-import SnippetCard from "./SnippetCard";
+import { React, useState, useEffect } from "react";
 import "./code-snippets.scss";
+import "./color-slider.scss";
 
 function DesktopCodeSnippets() {
+  const [rangeVal, setRangeVal] = useState(133);
+  const [bkgdClr, setBkgdClr] = useState(`hsl(200,60%, 100%)`);
+  console.log(`default bg ${bkgdClr}`);
+
+  useEffect(() => {
+    // console.log("value chagned");
+    setBkgdClr(`hsl(${rangeVal}, 80%, 90%`);
+    console.log(bkgdClr);
+  }, [rangeVal]);
+
   return (
-    <div className="codeSnippets-container" id="code-snippets">
+    <div
+      className="codeSnippets-container"
+      id="code-snippets"
+      style={{ backgroundColor: `${bkgdClr}` }}
+    >
       <div className="codeSnippets__contents">
         <h1 className="codeSnippets__h1">Code Snippets</h1>
         <p>
           A collection of bite-sized projects I made in pursuit of learning and
-          fun.
+          fun
         </p>
 
         <div className="codeSnippets__lists">
           <div>
-            <h3 className="codeSnippets__h3">Pure CSS</h3>
+            <h3 className="codeSnippets__h3">Just CSS</h3>
 
             <ul>
               <li>
@@ -110,17 +124,34 @@ function DesktopCodeSnippets() {
               </li>
               <li>
                 <a
+                  href="https://codepen.io/annampawl/pen/jOzPeLJ"
+                  target="blank"
+                >
+                  RGB Sliders
+                </a>
+              </li>
+              <li>
+                <a
                   href="	https://codepen.io/annampawl/pen/QWQwYYB"
                   target="blank"
                 >
-                  Random Color Generator
+                  Color Generator
                 </a>
               </li>
-              <li>Strobe Light Party</li>
+              {/* <li>Strobe Light Party</li> */}
             </ul>
           </div>
         </div>
       </div>
+
+      <input
+        className="colorSlider"
+        type="range"
+        onChange={(event) => setRangeVal(event.target.value)}
+        value={rangeVal}
+        min="0"
+        max="360"
+      ></input>
     </div>
   );
 }
