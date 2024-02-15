@@ -23,37 +23,25 @@ function Contact() {
 
   return (
     <div className="contact">
-      <div className="contact__icons">
+      <div class='flex items-center' >
         <a
-          className="contact__github-icon"
+          className="mr-4 contact__github-icon"
           href="https://github.com/AnniePawl"
           target="_blank"
         >
           <GitHub />
         </a>
-        {/* <a
-          className="contact__github-icon"
-          href="https://github.com/AnniePawl"
-          target="blank"
-        >
-          <GitHub />
-        </a> */}
+    
         <a
-          className="contact__codepen-icon"
+          className="mr-4 contact__codepen-icon"
           href="https://codepen.io/annampawl"
           target="blank"
         >
           <Codepen />
         </a>
-        {/* <a
-            className="medium-icon"
-            href="https://medium.com/@annapawl"
-            target="blank"
-          >
-            <Medium />
-          </a> */}
+      
       </div>
-      <div className="contact__envelope" onClick={handleContactClick}></div>
+      <div className="mr-4 contact__envelope" onClick={handleContactClick}></div>
       <p className={clicked ? "clicked" : "notClicked"}>Email copied!</p>
     </div>
   );

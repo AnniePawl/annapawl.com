@@ -14,9 +14,9 @@ function Desktop() {
 
       <div className="desktop-content">
         <DesktopHome />
-        <DesktopCodeSnippets />
+        {/* <DesktopCodeSnippets /> */}
         {/* <CreativeProjects /> */}
-        <Writing />
+        {/* <Writing /> */}
       </div>
     </div>
   );

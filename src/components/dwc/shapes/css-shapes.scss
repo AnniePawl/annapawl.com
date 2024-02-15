@@ -1,0 +1,391 @@
+$bkgd-hover-color: #292929;
+$shape-hover-color: #fcfcfc;
+
+// Shape Colors
+$circle: #56a7fc;
+$square: #ffb1cf;
+$triangle: #ffe984;
+$pentagon: #c39eff;
+$oval: #d1fff8;
+$trapazoid: #536fb8;
+$octagon: #ff8080;
+$octagon-border: #e7c9ff;
+$parallelogram: #e9ffab;
+$rectangle: #ff9666;
+$hexagon: #ffc2ef;
+$star: #ed79ce;
+$heart: #a6ffbe;
+
+// Circle
+.circle {
+  background-color: $circle;
+  border-radius: 50%;
+  height: 65%;
+  width: 65%;
+}
+
+// Square
+.square {
+  height: 60%;
+  width: 60%;
+  background-color: $square;
+}
+
+// Triangle
+.triangle {
+  border: 3em solid transparent;
+  border-bottom: 5em solid $triangle;
+  transform: scale(1.25) translateY(-23px);
+}
+
+// Pentagon
+.pentagon {
+  background-color: transparent;
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 51px 18px 0;
+  border-style: solid;
+  border-color: $pentagon transparent;
+  transform: scale(1.3) translateY(18px);
+}
+.pentagon::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent $pentagon;
+}
+
+// Oval
+.oval {
+  width: 50%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: $oval;
+}
+
+// Rectangle
+.rectangle {
+  width: 45%;
+  height: 65%;
+  background-color: $rectangle;
+}
+
+// Trapazoid
+.trapezoid {
+  background-color: transparent;
+  border-bottom: 80px solid $trapazoid;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 75px;
+}
+
+// Parallelogram
+.parallelogram {
+  width: 53%;
+  height: 53%;
+  transform: skew(20deg);
+  background-color: $parallelogram;
+}
+
+// Hexagon
+.hexagon {
+  margin-top: 30px;
+  width: 104px;
+  height: 62px;
+  background-color: $hexagon;
+  position: relative;
+  transform: translateY(-10px);
+}
+.hexagon::before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-bottom: 30.5px solid $hexagon;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  position: absolute;
+  top: -30px;
+}
+.hexagon::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -29.5px;
+  border-top: 30px solid $hexagon;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+// Octagon
+.octagon {
+  width: 99px;
+  height: 100px;
+  background: $octagon;
+  position: relative;
+  transform: scale(1.1);
+}
+.octagon:before {
+  content: "";
+  width: 42px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 29px solid $octagon;
+  border-left: 29px solid $octagon-border;
+  border-right: 29px solid $octagon-border;
+}
+.octagon:after {
+  content: "";
+  width: 42px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 29px solid $octagon;
+  border-left: 29px solid $octagon-border;
+  border-right: 29px solid $octagon-border;
+}
+
+// Star
+.star {
+  background-color: transparent;
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: white;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid $star;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg) scale(0.65);
+}
+.star::before {
+  border-bottom: 80px solid $star;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.star::after {
+  position: absolute;
+  display: block;
+  color: white;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid $star;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+// Heart
+.heart {
+  background-color: $heart;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: translateY(10px) rotate(-45deg) scale(2.15);
+  width: 30px;
+}
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: $heart;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+.heart:before {
+  top: -17px;
+  left: 0;
+}
+.heart:after {
+  left: 17px;
+  top: 0;
+}
+
+// Hover Styles
+.shapebox-1:hover,
+.shapebox-2:hover,
+.shapebox-3:hover,
+.shapebox-4:hover,
+.shapebox-5:hover,
+.shapebox-6:hover,
+.shapebox-7:hover,
+.shapebox-8:hover,
+.shapebox-9:hover,
+.shapebox-10:hover,
+.shapebox-11:hover,
+.shapebox-12:hover {
+  background-color: $bkgd-hover-color;
+}
+.shapebox-1:hover,
+.shapebox-2:hover,
+.shapebox-5:hover,
+.shapebox-8:hover,
+.shapebox-9:hover {
+  .circle,
+  .square,
+  .oval,
+  .parallelogram,
+  .rectangle {
+    background-color: $shape-hover-color;
+  }
+}
+.shapebox-3:hover {
+  .triangle {
+    border-bottom: 5em solid $shape-hover-color;
+  }
+}
+.shapebox-4:hover {
+  .pentagon {
+    border-color: $shape-hover-color transparent;
+  }
+  .pentagon::before {
+    border-color: transparent transparent $shape-hover-color;
+  }
+}
+.shapebox-6:hover {
+  .trapezoid {
+    border-bottom: 80px solid $shape-hover-color;
+  }
+}
+.shapebox-7:hover {
+  .octagon {
+    background-color: $shape-hover-color;
+  }
+  .octagon:before {
+    border-bottom: 29px solid $shape-hover-color;
+    border-left: 29px solid $bkgd-hover-color;
+    border-right: 29px solid $bkgd-hover-color;
+  }
+  .octagon:after {
+    border-top: 29px solid $shape-hover-color;
+    border-left: 29px solid $bkgd-hover-color;
+    border-right: 29px solid $bkgd-hover-color;
+  }
+}
+.shapebox-10:hover {
+  .hexagon {
+    background-color: $shape-hover-color;
+  }
+  .hexagon::before {
+    border-bottom: 30px solid $shape-hover-color;
+  }
+  .hexagon::after {
+    border-top: 30px solid $shape-hover-color;
+  }
+}
+.shapebox-11:hover {
+  .star {
+    border-bottom: 70px solid $shape-hover-color;
+  }
+  .star::before {
+    border-bottom: 80px solid $shape-hover-color;
+  }
+  .star::after {
+    border-bottom: 70px solid $shape-hover-color;
+  }
+}
+.shapebox-12:hover {
+  .heart,
+  .heart::before,
+  .heart:after {
+    background-color: $shape-hover-color;
+  }
+}
+
+// Media Queries
+@media (min-width: 642px) and (max-width: 999px) {
+  .triangle {
+    transform: scale(1) translateY(-20px);
+  }
+  .pentagon {
+    transform: scale(1.1) translateY(18px);
+  }
+  .trapezoid {
+    transform: scale(0.8);
+  }
+  .octagon {
+    transform: scale(0.92);
+  }
+  .hexagon {
+    transform: scale(0.85) translateY(-13px);
+  }
+  .star {
+    transform: rotate(35deg) scale(0.55);
+  }
+  .heart {
+    transform: translateY(10px) rotate(-45deg) scale(1.9);
+  }
+}
+
+@media (min-width: 536px) and (max-width: 642px) {
+  .triangle {
+    transform: scale(0.85) translateY(-20px);
+  }
+  .pentagon {
+    transform: scale(0.9) translateY(18px);
+  }
+  .trapezoid {
+    transform: scale(0.7);
+  }
+  .octagon {
+    transform: scale(0.8);
+  }
+  .hexagon {
+    transform: scale(0.7) translateY(-18px);
+  }
+  .star {
+    transform: rotate(35deg) scale(0.48);
+  }
+  .heart {
+    transform: translateY(10px) rotate(-45deg) scale(1.55);
+  }
+}
+
+@media (max-width: 536px) {
+  .triangle {
+    transform: scale(0.75) translateY(-25px);
+  }
+  .pentagon {
+    transform: scale(0.8) translateY(18px);
+  }
+  .trapezoid {
+    // border-bottom: 65px solid $trapazoid;
+    transform: scale(0.7);
+  }
+  .octagon {
+    transform: scale(0.7);
+  }
+  .hexagon {
+    transform: scale(0.62) translateY(-22px);
+  }
+  .star {
+    transform: rotate(35deg) scale(0.4);
+  }
+  .heart {
+    transform: translateY(10px) rotate(-45deg) scale(1.35);
+  }
+}

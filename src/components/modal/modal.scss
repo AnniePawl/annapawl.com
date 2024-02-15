@@ -14,6 +14,7 @@ p.hide {
 }
 
 .modal-overlay {
+  transition: all 1s ease-out;
   height: 100vh;
   width: 73vw;
   position: absolute;
@@ -23,8 +24,8 @@ p.hide {
 }
 
 .modal {
-  height: 300px;
-  width: 375px;
+  // height: 230px;
+  // width: 375px;
   position: absolute;
   right: 35px;
   top: 34px;

@@ -1,6 +1,6 @@
 import React from "react";
 import Shelf from "./Shelf";
-import Radio from "../radio/Radio";
+import Radio from "../radio/radio";
 import Books from "../books/Books";
 import Sewing from "../sewing/Sewing";
 import Pens from "../writing/Pens";

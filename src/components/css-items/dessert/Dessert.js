@@ -10,8 +10,11 @@ function Dessert(props) {
       <div className="dessert__base"></div>
       <div className="dessert__stand-base"></div>
       <div className="dessert__spiral"></div>
+
     </div>
   );
 }
 
 export default Dessert;
+
+

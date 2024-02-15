@@ -1,5 +1,6 @@
 import React from "react";
 import reactDom from "react-dom";
+import { Link } from 'react-router-dom';
 import "./modal.scss";
 
 export default function Modal({ isOpen, onClose, cn }) {
@@ -22,16 +23,10 @@ export default function Modal({ isOpen, onClose, cn }) {
             </span>{" "}
             the knick knacks for some mini surprises. I made everything with
             pure CSS ♥<br></br> <br></br>
-            Check out my ongoing project,{" "}
-            <a href="https://anniepawl.github.io/dwc/" target="blank">
-              <b>Drawing with Code</b>
-            </a>
-            , and my{" "}
-            <a href="https://codepen.io/annampawl" target="blank">
-              <b>CodePen</b>
-            </a>{" "}
-            profile for more info.
           </p>
+          <Link to="/dwc"> <p className='underline'>Want to learn more about Drawing with code?</p></Link>
+         
+
 
           {/* Tablet Modal */}
           <p className={cn === "tablet__modal" ? "show" : "hide"}>

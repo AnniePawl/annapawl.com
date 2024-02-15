@@ -2,7 +2,7 @@ import React from "react";
 import Shelf from "./Shelf";
 import NewtonsCradle from "../newtonsCradle/NewtonsCradle";
 import Books2 from "../books/Books2";
-import Radio from "../radio/Radio";
+import Radio from "../radio/radio";
 import Books from "../books/Books";
 import Pens from "../writing/Pens";
 import "./shelves.scss";

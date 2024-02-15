@@ -1,0 +1,7 @@
+$desktopAnimationSpeed:100s;
+@keyframes move-text {
+    50% {transform: translateX(-50%)}
+}
+.text {
+    animation:move-text $desktopAnimationSpeed linear infinite;
+}
