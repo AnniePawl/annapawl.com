@@ -83,7 +83,7 @@ $heart: #a6ffbe;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   height: 0;
-  width: 75px;
+  width: 125px;
 }
 
 // Parallelogram
@@ -125,7 +125,7 @@ $heart: #a6ffbe;
 
 // Octagon
 .octagon {
-  width: 99px;
+  width: 100px;
   height: 100px;
   background: $octagon;
   position: relative;
@@ -133,7 +133,7 @@ $heart: #a6ffbe;
 }
 .octagon:before {
   content: "";
-  width: 42px;
+  width: 100px;
   height: 0;
   position: absolute;
   top: 0;
@@ -144,7 +144,7 @@ $heart: #a6ffbe;
 }
 .octagon:after {
   content: "";
-  width: 42px;
+  width: 100px;
   height: 0;
   position: absolute;
   bottom: 0;
@@ -239,26 +239,31 @@ $heart: #a6ffbe;
 .shapebox-11:hover,
 .shapebox-12:hover {
   background-color: $bkgd-hover-color;
+  transition: background-color 1s ease;
 }
 .shapebox-1:hover,
 .shapebox-2:hover,
 .shapebox-5:hover,
 .shapebox-8:hover,
 .shapebox-9:hover {
+  transition: background-color 1s ease;
   .circle,
   .square,
   .oval,
   .parallelogram,
   .rectangle {
     background-color: $shape-hover-color;
+    transition: background-color 1s ease;
   }
 }
 .shapebox-3:hover {
+  transition: background-color 1s ease;
   .triangle {
     border-bottom: 5em solid $shape-hover-color;
   }
 }
 .shapebox-4:hover {
+  transition: background-color 1s ease;
   .pentagon {
     border-color: $shape-hover-color transparent;
   }
@@ -267,11 +272,13 @@ $heart: #a6ffbe;
   }
 }
 .shapebox-6:hover {
+  transition: background-color 1s ease;
   .trapezoid {
     border-bottom: 80px solid $shape-hover-color;
   }
 }
 .shapebox-7:hover {
+  transition: background-color 1s ease;
   .octagon {
     background-color: $shape-hover-color;
   }
@@ -287,6 +294,7 @@ $heart: #a6ffbe;
   }
 }
 .shapebox-10:hover {
+  transition: background-color 1s ease;
   .hexagon {
     background-color: $shape-hover-color;
   }
@@ -298,6 +306,7 @@ $heart: #a6ffbe;
   }
 }
 .shapebox-11:hover {
+  transition: background-color 1s ease;
   .star {
     border-bottom: 70px solid $shape-hover-color;
   }
@@ -309,10 +318,12 @@ $heart: #a6ffbe;
   }
 }
 .shapebox-12:hover {
+  transition: background-color 1s ease;
   .heart,
   .heart::before,
   .heart:after {
     background-color: $shape-hover-color;
+    
   }
 }
 
@@ -373,7 +384,7 @@ $heart: #a6ffbe;
     transform: scale(0.8) translateY(18px);
   }
   .trapezoid {
-    // border-bottom: 65px solid $trapazoid;
+    border-bottom: 65px solid $trapazoid;
     transform: scale(0.7);
   }
   .octagon {

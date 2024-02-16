@@ -1,11 +1,17 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { ReactComponent as StarIcon } from "../../assets/star-icon.svg";
 import ShapesGrid from './ShapesGrid';
-import "./dwc.scss";
+import './dwc.scss'
+import Editor from './editor/Editor';
+
 
 export default function DWC(){
     return(
         <div class='w-screen flex flex-col justify-center items-center bg-zinc-50'>
+            <Link to="/">
+                <div class='absolute top-5 left-5 scale-[.7] '><StarIcon /></div>
+            </Link>
             <div class='h-fit w-screen overflow-hidden px-4 pt-16 bg-zinc-50 flex justify-center'>
                 <div class='text flex w-full flex justify-center '>
                     <h1 class='mr-5 whitespace-nowrap text-zinc-300 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
@@ -17,6 +23,7 @@ export default function DWC(){
                 </div>
             </div>
             <ShapesGrid/>
+            {/* <Editor/> */}
             <div class='flex flex-col w-full max-w-5xl px-4 lg:px-0 mb-10'>
                 <h1 class='font-black text-blue-300 text-lg md:text-xl uppercase tracking-widest pb-2'>What is drawing with code?</h1>
                 <p className='text-sm md:text-base tracking-wide text-zinc-600'>CSS art lies at the intersection of vector illustration and front-end development. It involves manipulating &lt;div&gt; HTML elements with CSS to render shapes in the browser. These shapes are customized by assigning values to various properties like height, border-radius, box-shadow and background-color. With countless CSS properties to work with, it’s possible to create intricate pieces without a vector illustration software like Illustrator.</p>

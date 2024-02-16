@@ -21,9 +21,7 @@ function DesktopAbout() {
         engineer bridging the gap between development and design. I like making
         satisfying little experiences with code. The web should be fun ✨
       </p>
-
       <DesktopNav />
-
       <Contact />
     </div>
   );

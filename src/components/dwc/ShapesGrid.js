@@ -20,7 +20,7 @@ export default function ShapesGrid() {
             <div className="grid grid-cols-4 lg:grid-cols-6 w-full max-w-5xl">
                 {/* Circle */}
                 <div className="shapebox shapebox-1">
-                    <Circle cname="circle shape-1" />
+                    <Circle cname="circle shape-1 transition-colors" />
                 </div>
                  {/* Square */}
                 <div className="shapebox shapebox-2">

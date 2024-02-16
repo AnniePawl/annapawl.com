@@ -24,15 +24,13 @@ p.hide {
 }
 
 .modal {
-  // height: 230px;
-  // width: 375px;
   position: absolute;
   right: 35px;
   top: 34px;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  background-color: $background-color;
+  // background-color: $background-color;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px, rgba(0, 0, 0, 0.1) 0px 0px 15px;
 }
 
@@ -54,13 +52,17 @@ p.hide {
 }
 
 .modal__content {
-  padding: 12%;
-  padding-right: 14%;
-	padding-top: 16%;
+  // padding: 12%;
+  // padding-right: 14%;
+	// padding-top: 16%;
+
+  .btn{
+    font-size:10px;
+  }
   p {
     font-size: 13px;
     line-height: 22px;
-    color: $modal-font-clr;
+    // color: $modal-font-clr;
     span {
       color: $modal-hover-clr;
       display: inline-block;

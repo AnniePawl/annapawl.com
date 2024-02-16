@@ -7,11 +7,11 @@ export default function Modal({ isOpen, onClose, cn }) {
   if (!isOpen) return null;
   return reactDom.createPortal(
     <div className={`modal-overlay ${cn}`} onClick={onClose}>
-      <div className="modal">
+      <div className="modal bg-pink-100 px-8 py-12 max-w-sm">
         <button className="modal__button" onClick={onClose}>
           X
         </button>
-        <div className="modal__content">
+        <div className="modal__content flex flex-col">
           {/* Desktop Modal */}
           <p className={cn === "desktop__modal" ? "show" : "hide"}>
             I've fallen for CSS and love exploring its potential through
@@ -24,7 +24,7 @@ export default function Modal({ isOpen, onClose, cn }) {
             the knick knacks for some mini surprises. I made everything with
             pure CSS ♥<br></br> <br></br>
           </p>
-          <Link to="/dwc"> <p className='underline'>Want to learn more about Drawing with code?</p></Link>
+          <Link to="/dwc"> <p className='btn  tracking-wide font-medium uppercase w-fit px-3  shadow-sm py-1 rounded-md bg-[#b3ffed]'>Learn More</p></Link>
          
 
 
