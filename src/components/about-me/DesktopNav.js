@@ -7,10 +7,10 @@ function DesktopNav() {
   return (
     <div >
       <Link to="/dwc">
-        <p class='text-xs mb-1 text-blue-400 hover:text-blue-600 transition-colors tracking-wide'>Drawing with Code</p>
+        <p class='text-xs mb-1 text-blue-400 hover:text-blue-600 transition-colors tracking-wide'>CSS Art</p>
       </Link> 
       <Link to="/codesnippets">
-        <p class='text-xs mb-1 text-blue-400 hover:text-blue6500 transition-colors tracking-wide'>Mini Coding Projects</p>
+        <p class='text-xs mb-1 text-blue-400 hover:text-blue6500 transition-colors tracking-wide'>Code Snippets</p>
       </Link> 
       <Link to="/embroidery">
         <p class='text-xs mb-1 text-blue-400 hover:text-blue-600 transition-colors tracking-wide'>Embroidery</p>

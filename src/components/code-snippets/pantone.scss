@@ -1,0 +1,97 @@
+:root {
+	--height:210px;
+	--width:225px;
+	--black:#2d2d2d;
+}
+
+*, *::before, *::after {
+	margin:0;
+	box-sizing: border-box;
+}
+
+
+.color-card {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
+.color-card__top{
+	height:var(--height);
+	width:var(--width);
+	border-radius:3px 3px 0 0 ;
+  	background-color:#bde1ff;
+}
+
+.color-card__top:hover{
+	cursor:pointer;
+}
+
+.color-card__bottom{
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	height:calc(var(--height)* .35);
+	width:var(--width);
+	background-color: white;
+	border-radius: 0 0 3px 3px;
+}
+
+p.instructions {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	font-size:18px;
+	color:var(--black);
+}
+
+p#hexNum {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size:28px;
+	color:var(--black);
+	letter-spacing: 1px;
+}
+
+.copy:hover {
+	cursor: pointer;
+}
+
+.copy:active{
+	transform: scale(.9);
+}
+
+.copy, .copy::after { 
+	height:calc(var(--height)* .08);
+	width:calc(var(--width)* .07);
+	border-radius: 2px;
+	border:2px solid var(--black);
+	background-color: white;
+}
+
+.copy::after {
+	content:"";
+	position: absolute;
+	transform: translateX(3px) translateY(3px) translateZ(-1px);
+}
+
+/* Tooltip */
+.tooltip{
+	content:"copy hex";
+	flex: 0 0 100%;
+	display:none;
+	position:absolute;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	font-size: 10px;
+	color:var(--black);
+	height:calc(var(--height)* .09);
+	width:calc(var(--width)* .25);
+	transform: translateX(91px) translateY(27px) ;
+}
+
+.copy:hover + .tooltip {
+	display: inline;
+}
+
+
+
+
+

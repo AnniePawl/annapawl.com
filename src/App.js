@@ -2,6 +2,7 @@
 import Main from "./components/Main";
 import DWC from "./components/dwc/dwc";
 import Embroidery from "./components/embroidery/Embroidery";
+import CodeSnippets from "./components/code-snippets/CodeSnippets";
 import "./app.scss";
 
 
@@ -22,6 +23,7 @@ function App() {
             {/* Graphic Design */}
             <Route path="/dwc" element={<DWC/>} />
             <Route path="/embroidery" element={<Embroidery/>} />
+            <Route path="/codesnippets" element={<CodeSnippets/>} />
         </Routes>
     </Router>
     

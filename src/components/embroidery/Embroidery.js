@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../footer/Footer';
 import ToTop from '../ToTop';
 import sew1 from '../../assets/embroidery/sew1.png'
 import sew2 from '../../assets/embroidery/sew2.png'
@@ -29,25 +30,27 @@ import sew25 from '../../assets/embroidery/sew25.png'
 import sew26 from '../../assets/embroidery/sew26.png'
 import sew27 from '../../assets/embroidery/sew27.png'
 import sew28 from '../../assets/embroidery/sew28.png'
+import sew29 from '../../assets/embroidery/sew29.png'
+import sew30 from '../../assets/embroidery/sew30.png'
 import { ReactComponent as StarIcon } from "../../assets/star-icon.svg";
 
 export default function Embroidery(){
     return(
-        <div class='bg-zinc-50 h-fit w-screen flex flex-col justify-center items-center py-16 md:pt-16'>
+        <div class='bg-zinc-50 h-fit w-screen flex flex-col justify-center items-center pt-16'>
              <Link to="/">
                 <div class='absolute top-5 left-5 scale-[.7] '><StarIcon /></div>
             </Link>
             <div class='h-fit w-screen overflow-hidden px-4 bg-zinc-50 flex justify-center'>
-                <div class='text flex w-full flex justify-center pb-10 '>
-                    <h1 class='mr-5 whitespace-nowrap text-emerald-200 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Embroidery</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-emerald-200 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Embroidery</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-emerald-200 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Embroidery</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-emerald-200 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Embroidery</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-emerald-200 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Embroidery</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-emerald-200 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Embroidery</h1>
+                <div class='text flex w-full flex justify-center pb-6 md:pb-10 '>
+                    <h1 class='mr-3 md:mr-5 whitespace-nowrap text-emerald-200 text-2xl md:text-6xl font-black tracking-wider md:tracking-widest text-emerald-200 uppercase'>Embroidery</h1>
+                    <h1 class='mr-3 md:mr-5 whitespace-nowrap text-emerald-200 text-2xl md:text-6xl font-black tracking-wider md:tracking-widest text-emerald-200 uppercase'>Embroidery</h1>
+                    <h1 class='mr-3 md:mr-5 whitespace-nowrap text-emerald-200 text-2xl md:text-6xl font-black tracking-wider md:tracking-widest text-emerald-200 uppercase'>Embroidery</h1>
+                    <h1 class='mr-3 md:mr-5 whitespace-nowrap text-emerald-200 text-2xl md:text-6xl font-black tracking-wider md:tracking-widest text-emerald-200 uppercase'>Embroidery</h1>
+                    <h1 class='mr-3 md:mr-5 whitespace-nowrap text-emerald-200 text-2xl md:text-6xl font-black tracking-wider md:tracking-widest text-emerald-200 uppercase'>Embroidery</h1>
+                    <h1 class='mr-3 md:mr-5 whitespace-nowrap text-emerald-200 text-2xl md:text-6xl font-black tracking-wider md:tracking-widest text-emerald-200 uppercase'>Embroidery</h1>
                 </div>
             </div>
-            <div className="px-4 md:px-0 flex grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
+            <div className="flex grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
                 <div class='rounded-sm h-fit w-fit bg-blue-400 flex items-center justify-center '>
                     <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew1})` }}></div>
                 </div>
@@ -70,36 +73,33 @@ export default function Embroidery(){
                     <div class='scale-[] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew13})` }}></div>
                 </div>
                 <div class='rounded-sm h-fit w-fit bg-emerald-200 flex items-center justify-center '>
-                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew5})` }}></div>
+                    <div class='scale-[] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew5})` }}></div>
                 </div>
-                <div class='rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
-                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew6})` }}></div>
-                </div>
-                <div class='rounded-sm h-fit w-fit bg-blue-400 flex items-center justify-center '>
-                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew8})` }}></div>
-                </div>
-                <div class='rounded-sm h-fit w-fit bg-blue-200 flex items-center justify-center '>
-                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew9})` }}></div>
-                </div>
-                <div class='rounded-sm h-fit w-fit bg-emerald-500 flex items-center justify-center '>
-                    <div class='scale-[] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew11})` }}></div>
+                <div class='rounded-sm h-fit w-fit bg-amber-200 flex items-center justify-center '>
+                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew27})` }}></div>
                 </div>
                 <div class='rounded-sm h-fit w-fit bg-lime-200 flex items-center justify-center '>
-                    <div class='scale-[] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew12})` }}></div>
+                    <div class='scale-[1.1]  h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew12})` }}></div>
                 </div>
                 <div class='rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
                     <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew4})` }}></div>
                 </div>
-                <div class='rounded-sm h-fit w-fit bg-teal-600 flex items-center justify-center '>
+                <div class='rounded-sm h-fit w-fit bg-blue-200 flex items-center justify-center '>
+                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew9})` }}></div>
+                </div>
+                <div class='rounded-sm h-fit w-fit bg-indigo-300 flex items-center justify-center '>
+                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew23})` }}></div>
+                </div>
+                <div class='rounded-sm h-fit w-fit bg-teal-500 flex items-center justify-center '>
                     <div class='scale-[1.2] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew15})` }}></div>
                 </div>
-                <div class='rounded-sm h-fit w-fit bg-red-500 flex items-center justify-center '>
+                <div class='rounded-sm h-fit w-fit bg-red-400 flex items-center justify-center '>
                     <div class='scale-[] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew16})` }}></div>
                 </div>
-                <div class='rounded-sm h-fit w-fit bg-sky-700 flex items-center justify-center '>
+                <div class='rounded-sm h-fit w-fit bg-sky-600 flex items-center justify-center '>
                     <div class='scale-[] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew17})` }}></div>
                 </div>
-                <div class='rounded-sm h-fit w-fit bg-amber-300 flex items-center justify-center '>
+                <div class='rounded-sm h-fit w-fit bg-amber-200 flex items-center justify-center '>
                     <div class='scale-[.9] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew18})` }}></div>
                 </div>
                 <div class='rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
@@ -108,32 +108,44 @@ export default function Embroidery(){
                 <div class='rounded-sm h-fit w-fit bg-violet-300 flex items-center justify-center '>
                     <div class='scale-[1.2] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew20})` }}></div>
                 </div>
-                <div class='rounded-sm h-fit w-fit bg-cyan-300 flex items-center justify-center '>
-                    <div class='scale-[] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew21})` }}></div>
-                </div>
-                <div class='rounded-sm h-fit w-fit bg-orange-400 flex items-center justify-center '>
+                <div class='rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
                     <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew22})` }}></div>
                 </div>
-                <div class='rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
-                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew23})` }}></div>
+                <div class='rounded-sm h-fit w-fit bg-cyan-200 flex items-center justify-center '>
+                    <div class='scale-[] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew21})` }}></div>
                 </div>
-                <div class='rounded-sm h-fit w-fit bg-orange-400 flex items-center justify-center '>
-                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew24})` }}></div>
-                </div>
-                <div class='rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+
+
+                <div class='rounded-sm h-fit w-fit bg-indigo-300 flex items-center justify-center '>
                     <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew25})` }}></div>
                 </div>
-                <div class='rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+                <div class='rounded-sm h-fit w-fit bg-green-300 flex items-center justify-center '>
+                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew24})` }}></div>
+                </div>
+                <div class='rounded-sm h-fit w-fit bg-violet-300 flex items-center justify-center '>
                     <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew26})` }}></div>
                 </div>
-                <div class='rounded-sm h-fit w-fit bg-orange-400 flex items-center justify-center '>
-                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew27})` }}></div>
+                <div class='rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
+                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew6})` }}></div>
+                </div>
+                <div class='rounded-sm h-fit w-fit bg-blue-400 flex items-center justify-center '>
+                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew8})` }}></div>
                 </div>
                 <div class='rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
                     <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew28})` }}></div>
                 </div>
+                <div class='rounded-sm h-fit w-fit bg-emerald-500 flex items-center justify-center '>
+                    <div class='scale-[] h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew11})` }}></div>
+                </div>
+                <div class='rounded-sm h-fit w-fit bg-yellow-950 flex items-center justify-center '>
+                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew29})` }}></div>
+                </div>
+                <div class='rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+                    <div class='h-44 w-44 sm:h-48 sm:w-48 md:h-96 md:w-96 bg-center bg-cover '  style={{ backgroundImage:`url(${sew30})` }}></div>
+                </div>
             </div>
-            <ToTop bgColor='#0891b2' color='#FFFFFF'/>
+            <ToTop bgColor='#2563eb' color='#FFFFFF'/>
+            <Footer/>
     </div>
     )
 }

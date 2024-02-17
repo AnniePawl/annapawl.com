@@ -1,0 +1,88 @@
+* {
+        margin:0;
+      }
+      
+      :root {
+        --clr1:#ffc7f1; 
+        --clr2:#ff59d0;
+        --clr3:#88dbc9; 
+        --clr4:#fff9c4;
+        --clr5:#3c965f; 
+        --clr6:#ffc9d4; 
+        --clr7:#abcfff;
+        --clr8:#a085c7; 
+        --clr9:#ffbf5e;
+        --clr10:#d0f2ae; 
+        --clr11:#ff7385;
+        --clr12:#4f69b3; 
+      }
+      
+ 
+      .checkerboards {
+        height:400px;
+        width:600px;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        // border: 40px solid #f0e6cc;
+      }
+      
+      .checkerboard:nth-child(1){
+        background-color:var(--clr2);
+        background-image:linear-gradient(45deg, var(--clr1) 25%, transparent 25%), 
+          linear-gradient(135deg, var(--clr1) 25%, transparent 25%), 
+          linear-gradient(45deg, transparent 75%, var(--clr1)75%), 
+          linear-gradient(135deg, transparent 75%, var(--clr1) 75%);
+          background-size:80px 80px; /* square */
+          background-position:0 0, 40px 0, 40px -40px, 0px 40px; /* half of square height */
+      }
+      
+      .checkerboard:nth-child(2){
+        background-color:var(--clr3);
+        background-image:linear-gradient(45deg, var(--clr4) 25%, transparent 25%), 
+          linear-gradient(135deg, var(--clr4) 25%, transparent 25%), 
+          linear-gradient(45deg, transparent 75%, var(--clr4)75%), 
+          linear-gradient(135deg, transparent 75%, var(--clr4) 75%);
+          background-size:80px 80px; 
+          background-position:0 0, 40px 0, 40px -40px, 0px 40px; 
+      }
+      
+      .checkerboard:nth-child(3){
+        background-color:var(--clr5);
+        background-image:linear-gradient(45deg, var(--clr6) 25%, transparent 25%), 
+          linear-gradient(135deg, var(--clr6) 25%, transparent 25%), 
+          linear-gradient(45deg, transparent 75%, var(--clr6)75%), 
+          linear-gradient(135deg, transparent 75%, var(--clr6) 75%);
+          background-size:80px 80px; 
+          background-position:0 0, 40px 0, 40px -40px, 0px 40px; 
+      }
+      
+      .checkerboard:nth-child(4){
+        background-color:var(--clr7);
+        background-image:linear-gradient(45deg, var(--clr8) 25%, transparent 25%), 
+          linear-gradient(135deg, var(--clr8) 25%, transparent 25%), 
+          linear-gradient(45deg, transparent 75%, var(--clr8)75%), 
+          linear-gradient(135deg, transparent 75%, var(--clr8) 75%);
+          background-size:80px 80px; 
+          background-position:0 0, 40px 0, 40px -40px, 0px 40px; 
+      }
+      
+      .checkerboard:nth-child(5){
+        background-color:var(--clr9);
+        background-image:linear-gradient(45deg, var(--clr10) 25%, transparent 25%), 
+          linear-gradient(135deg, var(--clr10) 25%, transparent 25%), 
+          linear-gradient(45deg, transparent 75%, var(--clr10)75%), 
+          linear-gradient(135deg, transparent 75%, var(--clr10) 75%);
+          background-size:80px 80px; 
+          background-position:0 0, 40px 0, 40px -40px, 0px 40px; 
+      }
+      
+      .checkerboard:nth-child(6){
+        background-color:var(--clr11);
+        background-image:linear-gradient(45deg, var(--clr12) 25%, transparent 25%), 
+          linear-gradient(135deg, var(--clr12) 25%, transparent 25%), 
+          linear-gradient(45deg, transparent 75%, var(--clr12)75%), 
+          linear-gradient(135deg, transparent 75%, var(--clr12) 75%);
+          background-size:80px 80px; 
+          background-position:0 0, 40px 0, 40px -40px, 0px 40px; 
+        
+      }

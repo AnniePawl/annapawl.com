@@ -2,8 +2,8 @@
 
 input.mobileColorSlider{
 	position: relative;
-	bottom:-5px;
-	width:80vw;
+	// bottom:-5px;
+	// width:80vw;
 }
 
 input.mobileColorSlider::-moz-range-track {
@@ -14,12 +14,12 @@ input.mobileColorSlider::-webkit-slider-runnable-track{
 }
 
 input {
-	width: 60vw;
+	// width: 50vw;
   padding:15px;
   border-radius:25px;
   -webkit-appearance: none;
-	position:relative;
-	bottom:-25vh;
+	// position:relative;
+	// bottom:-25vh;
 	background-color: transparent;
 
 }
