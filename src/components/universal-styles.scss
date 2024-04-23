@@ -22,9 +22,14 @@ $mobile-font-size: 12px;
 $mobile-line-height: 20px;
 $font: "Montserrat", sans-serif;
 
+.teacup-container{
+  transform: scale(.95) translateY(-64px);
+  
+}
 
 // Media Queries
 @media screen and (max-width: 755px) {
+
 	.tablet-digitalClock-container{
 		transform: scale(0.85) translateY(-66px);
 

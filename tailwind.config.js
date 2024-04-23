@@ -5,7 +5,8 @@ module.exports = {
         ],
         theme: {
           fontFamily: {
-            'mono': ['Space Mono', 'monospace'],
+            // 'mono': ['Space Mono', 'monospace'],
+            'montserrat': ['Montserrat', 'sans serif']
             
           }
         },

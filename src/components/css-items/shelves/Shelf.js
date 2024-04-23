@@ -3,7 +3,7 @@ import "./shelves.scss";
 
 // CSS items on shelf
 export default function Shelf(props) {
-  const { cn, cssItem1, cssItem2, cssItem3 } = props;
+  const { cn, cssItem1, cssItem2, cssItem3, cssItem4 } = props;
 
   return (
     <div>
@@ -11,6 +11,7 @@ export default function Shelf(props) {
         {cssItem1}
         {cssItem2}
         {cssItem3}
+        {cssItem4}
       </div>
       <div className={`shelf ${cn}`}></div>
     </div>

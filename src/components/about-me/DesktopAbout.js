@@ -17,7 +17,7 @@ function DesktopAbout() {
         Anna <br /> Pawl
       </h1>
       <p class='tracking-wide'>
-        Hi! Welcome to my little corner of the internet. I'm a front-end
+        Hi! Welcome to my little corner of the internet. I'm a front end
         engineer bridging the gap between development and design. I like making
         satisfying little experiences with code. The web should be fun ✨
       </p>

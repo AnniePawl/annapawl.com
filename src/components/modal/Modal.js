@@ -24,7 +24,7 @@ export default function Modal({ isOpen, onClose, cn }) {
             the knick knacks for some mini surprises. I made everything with
             pure CSS ♥<br></br> <br></br>
           </p>
-          <Link to="/dwc"> <p className='btn  tracking-wide font-medium uppercase w-fit px-3  shadow-sm py-1 rounded-md bg-[#b3ffed]'>Learn More</p></Link>
+          <Link to="/dwc"> <p className='btn  tracking-wide font-medium uppercase w-fit px-3  shadow-md py-1 rounded-md bg-[#b3ffed]'>Learn More</p></Link>
          
 
 

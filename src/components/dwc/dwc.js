@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ToTop from '../ToTop';
 import { ReactComponent as StarIcon } from "../../assets/star-icon.svg";
 import ShapesGrid from './ShapesGrid';
 import './dwc.scss'
@@ -74,7 +75,7 @@ export default function DWC(){
                         <p className='text-sm md:text-base tracking-wide text-zinc-600'>This property repositions your div vertically/ horizontally along a 2D plane. Positioning elements is an essential part of creating more complex designs. Use px values to start moving components around your canvas.</p>
                     </div>
                 </div>
-               
+                <ToTop bgColor='#60a5fa' color='#ffffff'/>
             </div>
         </div>
         

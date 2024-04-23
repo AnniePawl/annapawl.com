@@ -9,6 +9,7 @@ import Laptop from "../laptop/Laptop";
 import Dessert from "../dessert/Dessert";
 import NewtonsCradle from "../newtonsCradle/NewtonsCradle";
 import DigitalClock from "../digitalClock/DigitalClock";
+import TeaCup from "../teacup/teacup";
 import "./shelves.scss";
 
 function DesktopShelves() {
@@ -25,6 +26,7 @@ function DesktopShelves() {
         cssItem1={<Radio cn={"desktop-radio-container"} />}
         cssItem2={<Pens cn={"desktop-pens-container"} />}
         cssItem3={<Laptop cn={"desktop-laptop-container"} />}
+        cssItem4={<TeaCup />}
       />
       {/* Shelf 3 */}
       <Shelf
