@@ -4,8 +4,10 @@ import "codemirror/theme/material.css";
 import "codemirror/mode/xml/xml";
 import "codemirror/mode/css/css";
 import "./practice.scss";
+import CodeMirror from 'react-codemirror2';
 import { Controlled as ControlledEditor } from "react-codemirror2";
-// import {Controlled as CodeMirror} from 'react-codemirror2'
+require('codemirror/mode/xml/xml');
+require('codemirror/mode/javascript/javascript');
 
 function Editor(props) {
   const { displayName, language, value, onChange } = props;

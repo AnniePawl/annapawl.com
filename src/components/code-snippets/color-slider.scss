@@ -59,8 +59,8 @@ input::-webkit-slider-thumb {
   border-radius:50%;
   border:none;
   background-color:white;
-	background-color:$black;
-  box-shadow:inset 3px 3px 3px black; 
+	// background-color:$black;
+  box-shadow:inset 3px 3px 3px rgb(191, 191, 191); 
   transform:translateY(-5px)
 }
 

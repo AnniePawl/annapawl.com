@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import ToTop from '../ToTop';
 import { ReactComponent as StarIcon } from "../../assets/star-icon.svg";
 import ShapesGrid from './ShapesGrid';
@@ -7,6 +8,7 @@ import './dwc.scss'
 import circleSnippet from '../../assets/dwc/circle-snippet.jpeg'
 import cssRule from '../../assets/dwc/css-rule.jpeg'
 import Editor from './editor/Editor';
+import Practice from './editor/Practice';
 
 
 export default function DWC(){
@@ -15,17 +17,23 @@ export default function DWC(){
             <Link to="/">
                 <div class='absolute top-5 left-5 scale-[.7] '><StarIcon /></div>
             </Link>
-            <div class='h-fit w-screen overflow-hidden px-4 pt-16  flex justify-center'>
+            <div class='h-fit w-screen overflow-hidden px-4 pt-16 flex justify-center'>
                 <div class='text flex w-full flex justify-center '>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-300 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-300 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-300 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-300 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-300 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-300 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
+                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
+                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
+                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
+                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
+                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
+                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
                 </div>
             </div>
+            <div class='absolute top-4 right-6'>
+                <HashLink class='z-100' smooth to="/dwc/#practice">
+                    <div class=' z-100 bg-lime-200 border-2 border-blue-300 shadow-sm hover:bg-lime-300 hover:text-black rounded-full px-4 py-2 text-xs font-bold uppercase '>Try it out!</div>
+                </HashLink>
+            </div>
             <ShapesGrid/>
+           
             <div class='flex flex-col w-full max-w-5xl px-4 lg:px-0'>
                 <h1 class='font-black text-blue-300 text-lg md:text-xl uppercase tracking-widest pb-2'>What is drawing with code?</h1>
                 <p className='text-sm md:text-base tracking-wide text-zinc-600'>CSS art lies at the intersection of vector illustration and front-end development. It involves manipulating &lt;div&gt; HTML elements with CSS to render shapes in the browser. These shapes are customized by assigning values to various properties like height, border-radius, box-shadow and background-color. With countless CSS properties to work with, it’s possible to create intricate pieces without a vector illustration software like Illustrator.</p>
@@ -75,7 +83,15 @@ export default function DWC(){
                         <p className='text-sm md:text-base tracking-wide text-zinc-600'>This property repositions your div vertically/ horizontally along a 2D plane. Positioning elements is an essential part of creating more complex designs. Use px values to start moving components around your canvas.</p>
                     </div>
                 </div>
-                <ToTop bgColor='#60a5fa' color='#ffffff'/>
+                {/* Code Editor/Practice */}
+                <div id='practice' class='w-full max-w-5xl bg-zinc-700 h-[2px] my-12'></div>
+                <div class='flex flex-col w-full max-w-6xl px-4 lg:px-0'>
+                    <h1 class='font-black text-zinc-800 text-lg md:text-xl uppercase tracking-widest pb-2 text-center'>Try it out</h1>
+                    <p className='text-center text-sm md:text-base tracking-wide text-zinc-600'>Mess around with the CSS in the code editor below to see how you can manipulate the output.</p>
+                </div>
+          
+                <Practice/>
+                <ToTop bgColor='#60fac7' />
             </div>
         </div>
         

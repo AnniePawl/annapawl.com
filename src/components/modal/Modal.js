@@ -1,13 +1,14 @@
 import React from "react";
 import reactDom from "react-dom";
 import { Link } from 'react-router-dom';
+import { ReactComponent as Codepen } from "../../assets/codepen.svg";
 import "./modal.scss";
 
 export default function Modal({ isOpen, onClose, cn }) {
   if (!isOpen) return null;
   return reactDom.createPortal(
     <div className={`modal-overlay ${cn}`} onClick={onClose}>
-      <div className="modal bg-pink-100 px-8 py-12 max-w-sm">
+      <div className="modal bg-[#fffebf] px-8 py-12 max-w-sm">
         <button className="modal__button" onClick={onClose}>
           X
         </button>
@@ -16,15 +17,17 @@ export default function Modal({ isOpen, onClose, cn }) {
           <p className={cn === "desktop__modal" ? "show" : "hide"}>
             I've fallen for CSS and love exploring its potential through
             illustrations and animations. <br></br>
-            <br></br>
-            <span>
+            <span class='pt-4'> 
               {" "}
-              <b>Hover over</b>
+              <b class='text-xs'>Hover over</b>
             </span>{" "}
             the knick knacks for some mini surprises. I made everything with
             pure CSS ♥<br></br> <br></br>
           </p>
-          <Link to="/dwc"> <p className='btn  tracking-wide font-medium uppercase w-fit px-3  shadow-md py-1 rounded-md bg-[#b3ffed]'>Learn More</p></Link>
+          <div class='flex items-center'>
+            <Link to="/dwc"> <p className='hover:scale-[.98] transition-all btn tracking-wide font-medium uppercase w-fit px-3 shadow-md py-1 rounded-full bg-[#b3ffed] mr-2 '>More about CSS Art</p></Link>
+            <a  href='https://codepen.io/annampawl' target='blank' className='hover:scale-[.98] transition-all btn tracking-wide font-medium uppercase w-fit px-3 shadow-md py-1 rounded-full bg-[#b3ffed] mr-2'>source code</a>
+          </div>
          
 
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import Heading from "./heading";
 import Editor from "./Editor";
 import "./practice.scss";
 
@@ -38,7 +39,7 @@ export default function Practice() {
   }, [html, css]);
 
   return (
-    <div className="practice-container" id="practice">
+    <div className="practice-container ml-5" id="practice">
       {/* <div className="practice-heading">Experiment</div> */}
       {/* <Heading /> */}
       <div className="workspace">

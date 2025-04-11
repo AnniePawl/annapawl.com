@@ -1,9 +1,12 @@
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
+import Main2 from './components/Main2'
+import Home2 from './components/home/Home2'
 import AboutMe from "./components/about-me/AboutMe";
 import DWC from "./components/dwc/dwc";
 import Embroidery from "./components/embroidery/Embroidery";
 import CodeSnippets from "./components/code-snippets/CodeSnippets";
+import NewHome from "./NewHome";
 import "./app.scss";
 
 

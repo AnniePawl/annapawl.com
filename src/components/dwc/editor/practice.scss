@@ -13,7 +13,7 @@ $heading-clr: #cff6ff;
 .practice-container {
   @include center-flex();
   flex-direction: column;
-  height: 100vh;
+  height: 87vh;
   background-color: $practice-bkgd-clr;
 }
 
@@ -67,9 +67,10 @@ $heading-clr: #cff6ff;
   display: flex;
   // justify-content: space-between;
   font: 900 18px "Source Code Pro", monospace;
-  height: 1em;
+  height: 2em;
   background-color: $heading-clr;
   color: $editor-black;
+  
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   // border-top-left-radius: 0.5rem;
   // border-top-left-radius: 0.5rem;

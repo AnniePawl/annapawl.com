@@ -5,6 +5,11 @@ $shelves-width: 73vw;
 $contact-clr: #5796e9;
 $contact-clr2: #fd85bd;
 
+.vertical-text{
+  writing-mode: sideways-lr;
+  text-orientation: mixed;
+}
+
 .desktop-home{
 	cursor:default;
 }

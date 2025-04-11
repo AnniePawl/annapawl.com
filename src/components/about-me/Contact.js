@@ -22,7 +22,7 @@ function Contact() {
   }, [clicked]);
 
   return (
-    <div className="contact">
+    <div className="contact pt-10">
       <div class='flex items-center' >
         <a
           className="mr-4 contact__github-icon"

@@ -17,7 +17,7 @@ function DesktopHome() {
       >
         <InfoIcon />
       </div>
-      <div className="desktop__shelves-container">
+      <div className="desktop__shelves-container pt-20">
         <Modal
           cn={"desktop__modal"}
           isOpen={open}

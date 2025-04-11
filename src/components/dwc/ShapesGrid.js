@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 import Circle from "./shapes/Circle";
 import Square from "./shapes/Square";
 import Triangle from "./shapes/Triangle";
@@ -16,11 +17,12 @@ import "./shapes/css-shapes.scss"
 
 export default function ShapesGrid() {
         return (
-          <div className="shapesgrid__container px-4 md:px-0 py-10 md:py-16">
+          <div className="shapesgrid__container relative px-4 md:px-0 py-10 md:my-3">
             <div className="grid grid-cols-4 lg:grid-cols-6 w-full max-w-5xl">
+               
                 {/* Circle */}
                 <div className="shapebox shapebox-1">
-                    <Circle cname="circle shape-1 transition-colors" />
+                    <Circle cname="circle shape-1  " />
                 </div>
                  {/* Square */}
                 <div className="shapebox shapebox-2">

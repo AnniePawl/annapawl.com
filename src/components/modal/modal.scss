@@ -61,9 +61,10 @@ p.hide {
   }
   p {
     font-size: 13px;
-    line-height: 22px;
+    line-height: 21px;
     // color: $modal-font-clr;
     span {
+      font-family:Montserrat;
       color: $modal-hover-clr;
       display: inline-block;
       animation: abouthover 3s infinite;
@@ -78,7 +79,7 @@ p.hide {
       color: $modal-font-clr;
     }
     &:hover {
-      color: $modal-hover-clr;
+      // color: $modal-hover-clr;
     }
   }
 }
@@ -115,7 +116,7 @@ p.hide {
 				font-size: 11px;
       }
 			a {
-				color: $modal-hover-clr;
+				// color: $modal-hover-clr;
 			}
     }
     > .modal__button {
