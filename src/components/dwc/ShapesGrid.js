@@ -17,9 +17,8 @@ import "./shapes/css-shapes.scss"
 
 export default function ShapesGrid() {
         return (
-          <div className="shapesgrid__container relative px-4 md:px-0 py-10 md:my-3">
+          <div className="shapesgrid__container relative px-4 md:px-0 pb-10 pt-6 md:py-10 md:my-3">
             <div className="grid grid-cols-4 lg:grid-cols-6 w-full max-w-5xl">
-               
                 {/* Circle */}
                 <div className="shapebox shapebox-1">
                     <Circle cname="circle shape-1  " />

@@ -14,78 +14,100 @@ $e-thread-clr2: #525252;
 	justify-content:space-between;
 }
 .e-thread {
-	// position:absolute;
 	right:75px;
-  height: $e-thread-height;
-  width: $e-thread-width;
-  background-image: repeating-linear-gradient(
-    35deg,
-    $e-thread-clr,
-    $e-thread-clr 0 5%,
-    $e-thread-clr2 5% 8%
-  );
-  // spool
-  &::before {
-    content: "";
-    display: flex;
-    height: $e-thread-height;
-    width: $e-thread-width * 1.2;
-    border-radius: 0.5px;
-    transform: translateX(-3px);
-    border-radius: 2px;
-    background-image: linear-gradient(
-      to bottom,
-      $e-spool-clr 0 8%,
-      $e-spool-clr2 8% 16%,
-      transparent 16% 86%,
-      $e-spool-clr 86% 92%,
-      $e-spool-clr2 92%
-    );
-  }
- 
+	height: $e-thread-height;
+	width: $e-thread-width;
+	background-image: repeating-linear-gradient(
+		35deg,
+		$e-thread-clr,
+		$e-thread-clr 0 5%,
+		$e-thread-clr2 5% 8%
+	);
+	// spool
+	&::before {
+		content: "";
+		display: flex;
+		height: $e-thread-height;
+		width: $e-thread-width * 1.2;
+		border-radius: 0.5px;
+		transform: translateX(-3px);
+		border-radius: 2px;
+		background-image: linear-gradient(
+		to bottom,
+		$e-spool-clr 0 8%,
+		$e-spool-clr2 8% 16%,
+		transparent 16% 86%,
+		$e-spool-clr 86% 92%,
+		$e-spool-clr2 92%
+		);
+	}
 }
 
 .mobile-embroidery-container{
 	.mobile-embroider-content{
 		width:80vw;
 	}
-a {
-	color:rgb(253, 255, 156);
-
-}
-a:hover{
-	color:$black;
-}
-
-
-	font-family: $font;
-	color:$black;
-	height:345px;
-	background-color:#e4fbff;
-	background-color:#ddd8ff;
-	padding-top:10%;
-	padding-left:10%;
-	
-	h1{
-		padding-top:25px;
-		padding-bottom: 20px;
-
-		font-size:20px;
+	a {
+		color:rgb(253, 255, 156);
+	}
+	a:hover{
 		color:$black;
-		&::after{
-			content:"";
-			position: absolute;
-			display:flex;
-			height:2px;
-			width:80vw;
-			background-color: $black;	
-	
 	}
-	}
-	p{
-		font-size:14px;
-		margin-bottom:15px;
-	}
-	
+		font-family: $font;
+		color:$black;
+		height:345px;
+		background-color:#e4fbff;
+		background-color:#ddd8ff;
+		padding-top:10%;
+		padding-left:10%;
+		h1{
+			padding-top:25px;
+			padding-bottom: 20px;
 
+			font-size:20px;
+			color:$black;
+			&::after{
+				content:"";
+				position: absolute;
+				display:flex;
+				height:2px;
+				width:80vw;
+				background-color: $black;	
+			}
+		}
+		p{
+			font-size:14px;
+			margin-bottom:15px;
+		}
+	}
+
+// Rotating image animation 
+$desktopAnimationSpeed:150s;
+$mobileAnimationSpeed:75s;
+@keyframes move-text {
+	50% {transform: translateX(-175%)}
+}
+@keyframes move-text2 {
+	50% {transform: translateX(175%)}
+}
+@keyframes move-text3 {
+	50% {transform: translateX(-175%)}
+}
+.text {
+	animation:move-text $desktopAnimationSpeed linear infinite;
+	@media screen and (max-width: 400px) {
+		animation:move-text $mobileAnimationSpeed linear infinite;
+	}
+}
+.text2 {
+	animation:move-text2 $desktopAnimationSpeed linear infinite;
+	@media screen and (max-width: 400px) {
+		animation:move-text2 $mobileAnimationSpeed linear infinite;
+	}
+}
+.text3 {
+	animation:move-text3 $desktopAnimationSpeed linear infinite;
+	@media screen and (max-width: 400px) {
+		animation:move-text3 $mobileAnimationSpeed linear infinite;
+	}
 }

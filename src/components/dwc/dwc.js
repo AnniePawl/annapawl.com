@@ -1,37 +1,33 @@
+// import './dwc.scss'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import ToTop from '../ToTop';
 import { ReactComponent as StarIcon } from "../../assets/star-icon.svg";
 import ShapesGrid from './ShapesGrid';
-import './dwc.scss'
 import circleSnippet from '../../assets/dwc/circle-snippet.jpeg'
 import cssRule from '../../assets/dwc/css-rule.jpeg'
-import Editor from './editor/Editor';
 import Practice from './editor/Practice';
-
 
 export default function DWC(){
     return(
         <div class='w-screen flex flex-col justify-center items-center bg-white'>
-            <Link to="/">
-                <div class='absolute top-5 left-5 scale-[.7] '><StarIcon /></div>
-            </Link>
-            <div class='h-fit w-screen overflow-hidden px-4 pt-16 flex justify-center'>
-                <div class='text flex w-full flex justify-center '>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
-                    <h1 class='mr-5 whitespace-nowrap text-zinc-700 text-4xl md:text-6xl font-black tracking-wider md:tracking-widest text-transparent bg-clip-text w-fit bg-gradient-to-r from-blue-300 to-pink-300 uppercase'>Drawing with Code</h1>
+            {/* Header */}
+            <div class='w-full pt-5 px-6 flex justify-between fixed top-0 left-0'>
+                <Link to="/">
+                    <div class=''><StarIcon /></div>
+                </Link>
+                <div class=''>
+                    <HashLink class='z-100' smooth to="/dwc/#practice">
+                        <div class=' z-100 bg-lime-200 border-2 border-blue-300 shadow-sm hover:bg-lime-300 hover:text-black rounded-full px-4 py-2 text-xs font-bold uppercase '>Try it out!</div>
+                    </HashLink>
                 </div>
             </div>
-            <div class='absolute top-4 right-6'>
-                <HashLink class='z-100' smooth to="/dwc/#practice">
-                    <div class=' z-100 bg-lime-200 border-2 border-blue-300 shadow-sm hover:bg-lime-300 hover:text-black rounded-full px-4 py-2 text-xs font-bold uppercase '>Try it out!</div>
-                </HashLink>
+          
+            <div class='h-fit w-screen overflow-hidden px-4 pt-16 flex justify-center'>
+                <h1 class='uppercase font-black text-[#56a7fc] text-2xl md:text-4xl lg:text-6xl tracking-wider'>Drawing with Code</h1>
             </div>
+          
             <ShapesGrid/>
            
             <div class='flex flex-col w-full max-w-5xl px-4 lg:px-0'>
@@ -39,7 +35,7 @@ export default function DWC(){
                 <p className='text-sm md:text-base tracking-wide text-zinc-600'>CSS art lies at the intersection of vector illustration and front-end development. It involves manipulating &lt;div&gt; HTML elements with CSS to render shapes in the browser. These shapes are customized by assigning values to various properties like height, border-radius, box-shadow and background-color. With countless CSS properties to work with, it’s possible to create intricate pieces without a vector illustration software like Illustrator.</p>
             </div>
             {/* Cirlce Snippet */}
-            <div class='my-5 md:my-10 w-full max-w-3xl h-44 w-44 sm:h-48 sm:w-48 md:h-56 md:w-full bg-center bg-cover '  style={{ backgroundImage:`url(${circleSnippet})` }}></div>
+            <div class='my-5 md:my-10 w-full max-w-3xl h-36 w-44 md:w-full md:h-56 md:w-full bg-center bg-cover '  style={{ backgroundImage:`url(${circleSnippet})` }}></div>
             <div class='flex flex-col w-full max-w-5xl px-4 lg:px-0 mb-10'>
                 <h1 class='font-black text-blue-300 text-lg md:text-xl uppercase tracking-widest pb-2'>It's all about the <span className='font-mono lowercase'> &lt;div&gt;</span> </h1>
                 <p className='text-sm md:text-base tracking-wide text-zinc-600'>The &lt;div&gt;element is the building block of every pure CSS composition. A div is simply an empty container, often used to house other elements and create structure on a web page. It does not affect content or layout unless it’s styled with CSS or manipulated with scripts, making it extremely versatile. Take a look at the example below. Let’s break down the HTML portion of CSS art.</p>
