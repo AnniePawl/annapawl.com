@@ -13,6 +13,14 @@ body{
   margin: 0;
 }
 
+.invert-wrapper {
+  filter: invert(1) hue-rotate(360deg) contrast(1) saturate(2);
+}
+
+.invert-wrapper2 {
+  filter: invert(1) hue-rotate(290deg) contrast(1) saturate(2);
+}
+
 @mixin center-flex {
   display: flex;
   justify-content: center;

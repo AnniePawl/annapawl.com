@@ -10,11 +10,13 @@ import Dessert from "../dessert/Dessert";
 import NewtonsCradle from "../newtonsCradle/NewtonsCradle";
 import DigitalClock from "../digitalClock/DigitalClock";
 import TeaCup from "../teacup/teacup";
+
 import "./shelves.scss";
 
 function DesktopShelves() {
   return (
     <div className="desktop-shelves">
+     
       {/* Shelf 1 */}
       <Shelf
         cssItem1={<NewtonsCradle cn={"desktop-newtonsCradle-container"} />}

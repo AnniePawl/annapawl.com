@@ -49,12 +49,12 @@ $contact-clr2: #5796e9;
       transform: translateX(9px) rotate(-34deg) translateY(5px);
     }
     &:hover {
-      border: 3px solid $contact-clr2;
+      // border: 3px solid $contact-clr2;
       cursor: pointer;
     }
     &:hover::before,
     &:hover::after {
-      border: 1.5px solid $contact-clr2;
+      // border: 1.5px solid $contact-clr2;
     }
   }
 }
@@ -65,13 +65,13 @@ $contact-clr2: #5796e9;
     margin-right: 10px;
   }
   .contact__github-icon > svg:hover {
-    fill: $contact-clr2;
+    // fill: $contact-clr2;
   }
   .contact__codepen-icon {
-    margin-right: 15px;
+    // margin-right: 15px;
   }
   .contact__codepen-icon > svg:hover {
-    fill: $contact-clr2;
+    // fill: $contact-clr2;
   }
   // .medium-icon {
   //   margin-right: 10px;

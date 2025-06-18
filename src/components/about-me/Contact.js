@@ -25,7 +25,7 @@ function Contact() {
     <div className="contact pt-10">
       <div className='flex items-center' >
         <a
-          className="mr-4 contact__github-icon"
+          className="mr-4 contact__github-icon transition-all"
           href="https://github.com/AnniePawl"
           target="_blank"
         >
@@ -33,7 +33,7 @@ function Contact() {
         </a>
     
         <a
-          className="mr-4 contact__codepen-icon"
+          className="mr-5 contact__codepen-icon transition-all"
           href="https://codepen.io/annampawl"
           target="blank"
         >
@@ -41,7 +41,7 @@ function Contact() {
         </a>
       
       </div>
-      <div className="mr-4 contact__envelope" onClick={handleContactClick}></div>
+      <div className="mr-4 contact__envelope mt-1 transition-all" onClick={handleContactClick}></div>
       <p className={clicked ? "clicked" : "notClicked"}>Email copied!</p>
     </div>
   );

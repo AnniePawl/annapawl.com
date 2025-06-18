@@ -5,25 +5,15 @@ $shelves-width: 73vw;
 $contact-clr: #5796e9;
 $contact-clr2: #fd85bd;
 
-// .invert-wrapper {
-//   filter: invert(1) hue-rotate(160deg);
-// }
 
-// .invert-wrapper2 {
-//   filter: invert(1) hue-rotate(360deg);
-// }
 
 .vertical-text{
   writing-mode: sideways-lr;
   text-orientation: mixed;
 }
 
-.desktop-home{
-	cursor:default;
-}
 .desktop__shelves-container {
-  // border: $test-border;
-	cursor:default;
+   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='8' fill='%235796e9'/></svg>") 16 16, auto;
 	display: relative;
 	right:0;
   height: 100vh;

@@ -1,4 +1,3 @@
-import headshot from '../../assets/anna.png'
 import SkillsBtn from './SkillsBtn';
 import { React, useState, useEffect } from "react";
 import "./aboutme.scss";
