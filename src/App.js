@@ -7,8 +7,8 @@ import DWC from "./components/dwc/dwc";
 import Embroidery from "./components/embroidery/Embroidery";
 import CodeSnippets from "./components/code-snippets/CodeSnippets";
 import NewHome from "./NewHome";
+import FoodBlog from "./components/food-blog/FoodBlog";
 import "./app.scss";
-
 
 import {
  
@@ -29,6 +29,7 @@ function App() {
             <Route path="/about" element={<AboutMe/>} />
             <Route path="/embroidery" element={<Embroidery/>} />
             <Route path="/codesnippets" element={<CodeSnippets/>} />
+            <Route path="/foodblog" element={<FoodBlog/>} />
         </Routes>
     </Router>
     

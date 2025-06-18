@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import Heading from "./heading";
 import Editor from "./Editor";
 import "./practice.scss";
 
@@ -9,7 +8,7 @@ export default function Practice() {
     `body {
 	display:flex;
 	overflow:hidden;
-	background-color: #cff6ff;
+	background-color: #d6f1ff;
 	justify-content: center;
 	transform:translateY(90vh)
 }
@@ -18,7 +17,7 @@ export default function Practice() {
 	width: 20vh;
 	height: 20vh;
 	border-radius: 50%;
-	background-color: #cff6ff;
+	background-color: #d6f1ff;
 	box-shadow: 0 0 0 1.5em #e7c9ff, 0 0 0 3.5em #9ea5ff, 0 0 0 5.5em #7dc7ff, 0 0 0 7.5em #c9ffb8, 0 0 0 9.5em #fffca3, 0 0 0 11.5em #ffc791, 0 0 0 13.5em #ff9191
 }
 		`
@@ -40,7 +39,6 @@ export default function Practice() {
 
   return (
     <div className="practice-container ml-5" id="practice">
-      {/* <div className="practice-heading">Experiment</div> */}
       {/* <Heading /> */}
       <div className="workspace">
         <div className="pane top-pane">

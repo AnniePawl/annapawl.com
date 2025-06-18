@@ -5,7 +5,7 @@
 $desktop-radio-outline-clr: #7ab1fd;
 // background color
 $pc-color: #ffcbe9;
-$pc-color2: #eea0cd;
+$pc-color2: #ff6e6e;
 // $pc-border-clr: #7ab1fd;
 $pc-base-clr: #fffefb;
 $pc-base-clr2: $black;
@@ -110,6 +110,6 @@ $pin-top-size: 4px;
 @keyframes pin-animation {
   50% {
     background-color: $pin-top-hover-clr;
-    border: 0.1em solid #7ab1fd;
+    border: 0.1em solid #2165c6;
   }
 }

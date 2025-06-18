@@ -10,10 +10,10 @@ $cake-width: 60px;
 
 // Colors
 $wall-clr: #eaf4ff;
-$cake-clr:#9d8d83;
-$cake-clr2: #fcffab;
+$cake-clr:#a9fff6;
+$cake-clr2: #fffaa1;
 $cake-clr3: #9d8d83;
-$frosting-clr: white;
+$frosting-clr: rgb(255, 149, 141);
 $stand-clr: #5899f4;
 $stand-clr2: #5899f4;
 $spiral-clr: #ffffff;
@@ -123,15 +123,11 @@ $stand-border: 1px solid #93c0ff;
   position: absolute;
   height: $cake-height;
   width: $cake-width;
+  border-right:2px solid $cake-clr3;
+  border-left:2px solid $cake-clr3;
+  border-top:2px solid $cake-clr3;
 	border-radius:2px 2px 0 0 ;
   // checker pattern
-	// background: linear-gradient(
-	// 	$cake-clr3 0 20%,
-	// 	$cake-clr 0 40%,
-	// 	$cake-clr3 0 60%,
-	// 	$cake-clr 0 80%,
-	// 	$cake-clr3 0 100%
-	// );
   background: linear-gradient(
       45deg,
       $cake-clr3 0 25%,
@@ -142,6 +138,7 @@ $stand-border: 1px solid #93c0ff;
   background-color: $cake-clr2;
   background-size: $cake-width/3 $cake-width/3;
   background-position: 0 0, $cake-width/6 $cake-width/6;
+  
   // striped pattern
   &::before {
     content: "";
@@ -149,6 +146,8 @@ $stand-border: 1px solid #93c0ff;
     // border-radius: 20% 20% 0 0;
     width: $cake-width * .8;
     height: $cake-height/2;
+    border-right:2px solid $cake-clr3;
+    border-left:2px solid $cake-clr3;
     background: linear-gradient(
       $cake-clr 0 20%,
       $frosting-clr 0 40%,
@@ -156,23 +155,25 @@ $stand-border: 1px solid #93c0ff;
       $frosting-clr 0 80%,
       $cake-clr 0 80%
     );
-    transform: translateX($cake-width*.09)translateY(-$cake-height/1.9);
+    transform: translateX($cake-width*.06)translateY(-$cake-height/1.75);
   }
   // scalloped pattern
   &::after {
     content: "";
     display: flex;
-		border-radius:2px 2px 0 0 ;
-    // border-radius: 20% 20% 0 0;
+    border-right:2px solid $cake-clr3;
+    border-left:2px solid $cake-clr3;
+    border-top:2px solid $cake-clr3;
+		border-radius:4px 4px 0 0 ;
     width: $cake-width   * .8;
-    height: $cake-height/2;
+    height: $cake-height/1.8;
     background: radial-gradient(
       circle at 50% 0%,
-      $frosting-clr 35%,
-      $cake-clr 35%
+      $frosting-clr 36%,
+      $cake-clr 3%
     );
     background-size: $cake-width/6;
-    transform: translateX($cake-width*.09)translateY(-$cake-height /.67);
+    transform: translateX($cake-width*.06)translateY(-$cake-height /.66);
   }
 }
 

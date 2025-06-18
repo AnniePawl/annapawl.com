@@ -65,6 +65,9 @@ $desktop-shelves-width: 70vw;
 }
 
 // Desktop / Tablet specific styles
+#home{
+  cursor: url("../../../assets/star-icon.svg"), auto;
+}
 
 .desktop-shelves,
 .tablet-shelves {
@@ -76,7 +79,7 @@ $desktop-shelves-width: 70vw;
 
 .desktop-shelves{
 	transform: scale(.9); 
-	cursor: url("../../../assets/star-cursor.svg"), auto;
+	// cursor: url("../../../assets/star-icon.svg"), auto;
 }
 
 .tablet-shelves {

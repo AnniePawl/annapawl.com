@@ -8,32 +8,35 @@ import "./about.scss";
 
 function DesktopAbout() {
   return (
-    <div className="desktop__about flex flex-col ">
+    <div className="desktop__about flex flex-col invert-wrapper2 ">
       <div className="desktop__about__icon">
         <HashLink smooth to="#home">
           <StarIcon />
         </HashLink>
       </div>
-      <h1 class='pb-1 pt-14 text-3xl '>Anna Pawl</h1>
-      <h2 class=' pb-1 text-lg '>UX Engineer</h2>
-      <p class='text-blue-500 font-[500] mb-8'>Seattle, WA | New York, NY</p>
-      <p class='tracking-wide'>
-        Hi! Welcome to my little corner of the internet. I’m a software engineer that appreciates delightful UX and a designer who sees creativity in code. I specialize in ensuring that aesthetic concepts translate seamlessly into functional interfaces. My goal is to connect development and design to make intuitive little enchanting digital experiences.  ✨
+      <h1 className='pt-8 text-3xl tracking-wide'>Anna Pawl</h1>
+      <h2 className='text-lg font-[500] '>UX Engineer</h2>
+      <p className='text-blue-500 font-[500] mb-6'>Seattle, WA | New York, NY</p>
+      <p className='tracking-wide'>
+        Hi! Welcome to my little corner of the internet. I’m a software engineer that appreciates delightful UX and a designer who sees creativity in code. I specialize in ensuring that aesthetic concepts translate seamlessly into functional interfaces. I bridge design and development to craft charming, functional digital experiences. ✨
         <br />
         <br />
-        {/* <b>General nerdery:</b> Roller skating, dessert making, cello playing, language learning, {""}
+        <b>General nerdery:</b> Roller skating, 
+        <Link to="/foodblog">
+          <span className='text-blue-500 underline'> forkplay</span>,
+        </Link>{" "}cello, {""}
         <Link to="/dwc">
-          <span class='text-blue-500 underline'>code drawing</span>
+          <span className='text-blue-500 underline'>css art</span>
         </Link>{" "}
-    
+      , hoarding postage stamps,
         <Link to="/embroidery">
-        , <span class='text-blue-500 underline'>fiber crafting,</span>
+        <span className='text-blue-500 underline'> emboirdery,</span>
         </Link>{" "}
       
-        <a target='blank' href='https://medium.com/@annapawl'>
-          <span class='text-blue-500 underline'> writing</span>
-        </a>
-        , fantasy reading, rabbit hole exploring 🐰 */}
+        {/* <a target='blank' href='https://medium.com/@annapawl'>
+          <span className='text-blue-500 underline'> writing</span>
+        </a> */}
+          rabbit holes 🐰
       </p>
       {/* <DesktopNav /> */}
       <Contact />

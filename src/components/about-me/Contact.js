@@ -23,7 +23,7 @@ function Contact() {
 
   return (
     <div className="contact pt-10">
-      <div class='flex items-center' >
+      <div className='flex items-center' >
         <a
           className="mr-4 contact__github-icon"
           href="https://github.com/AnniePawl"

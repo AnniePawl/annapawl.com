@@ -12,15 +12,15 @@ $border-radius: 3px;
 
 // Colors
 $radio-body-clr: #ffeeb8;
-$desktop-radio-body-clr: #ffdfe9;
+$desktop-radio-body-clr:#ffdfe9;
 $radio-outline-clr: #7089ac;
 $desktop-radio-outline-clr2: #7ab1fd;
 $desktop-radio-outline-clr: #7ab1fd;
 $desktop-radio-outline-clr: #5796e9;
-$desktop-radio-display-clr: #757575;
+$desktop-radio-display-clr: #8f8f8f;
 $desktop-radio-display-clr2: #414141;
 $radio-display-clr: $black;
-$d-radio-btn-clr: #fff67f;
+$d-radio-btn-clr: #fff67e;
 $wall-color: #eaf4ff;
 $radio-font-clr: white;
 
@@ -100,18 +100,19 @@ $radio-font-clr: white;
     @include center-flex;
     justify-content: space-between;
     transform: translateY(3px);
-    width: 30%;
+    width: 33%;
   }
   .radio-button1,
   .radio-button2 {
     @include center-flex;
     height: 8.5px;
-    font-size: 7px;
+    font-size: 6px;
     background-color: $wall-color;
     font-family: $radio-font;
     color: $black;
     border-radius: 1px;
-    padding:2px;
+    padding:3px;
+    width:15px;
     border: 1px solid $radio-outline-clr;
   }
   // Button hover styles

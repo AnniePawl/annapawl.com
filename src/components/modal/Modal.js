@@ -8,7 +8,7 @@ export default function Modal({ isOpen, onClose, cn }) {
   if (!isOpen) return null;
   return reactDom.createPortal(
     <div className={`modal-overlay ${cn}`} onClick={onClose}>
-      <div className="modal bg-[#fff9a0] px-8 py-12 max-w-sm">
+      <div className="modal bg-[#ffed8d] px-8 py-12 max-w-sm">
         <button className="modal__button" onClick={onClose}>
           X
         </button>
@@ -17,16 +17,16 @@ export default function Modal({ isOpen, onClose, cn }) {
           <p className={cn === "desktop__modal" ? "show" : "hide"}>
             I've fallen for CSS and love exploring its potential through
             illustrations and animations. <br></br>
-            <span class='pt-4'> 
+            <span className='pt-4'> 
               {" "}
-              <b class='text-xs'>Hover over</b>
+              <b className='text-xs'>Hover over</b>
             </span>{" "}
             the knick knacks for some mini surprises. I made everything with
             pure CSS ♥<br></br> <br></br>
           </p>
-          <div class='flex items-center'>
-            <Link to="/dwc"> <p className='hover:scale-[.98] transition-all btn tracking-wide font-medium uppercase w-fit py-[1.5px] px-3 shadow-md rounded-full bg-[#b0d3ff] font-[700] mr-3 '>Read my css art post</p></Link>
-            <a  href='https://codepen.io/annampawl' target='blank' className='flex hover:scale-[.98] transition-all py-[4px] btn tracking-wide font-medium uppercase w-fit px-3 shadow-sm rounded-full bg-[#b0d3ff] font-[700]'>source code <Codepen class='h-4 w-4 ml-2'/></a>
+          <div className='flex items-center'>
+            <Link to="/dwc"> <p className='hover:scale-[.98] transition-all btn tracking-wide font-medium uppercase w-fit py-[1.5px] px-3 shadow-md rounded-full bg-[#b0d3ff] font-[700] mr-3 '>More on css art</p></Link>
+            <a  href='https://codepen.io/annampawl' target='blank' className='flex hover:scale-[.98] transition-all py-[4px] btn tracking-wide font-medium uppercase w-fit px-3 shadow-md rounded-full bg-[#b0d3ff] font-[700]'>source code <Codepen className='h-4 w-4 ml-2'/></a>
           </div>
          
 

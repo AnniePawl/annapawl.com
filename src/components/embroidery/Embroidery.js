@@ -47,117 +47,117 @@ export default function Embroidery(){
             </Link>
             {/* Heading */}
             <div className='flex w-full flex justify-center pt-6 md:pt-0 pb-6 md:pb-8'>
-                <h1 className='text-lg md:text-[20px] font-[900] tracking-[7.5px] md:tracking-[10px] text-zinc-800 uppercase'>Embroidery</h1>
+                <h1 className='text-lg md:text-[20px] font-[900] tracking-[7px] md:tracking-[9px] text-zinc-800 uppercase'>Embroidery</h1>
             </div>
             {/* Row 1 */}
             <div className='h-fit w-screen overflow-hidden px-4 bg-zinc-50 flex justify-center mb-0 md:mb-4'>
                 <div className='text flex w-full flex justify-center mb-2 md:mb-0 gap-2 md:gap-4'>
-                    <div className=' rounded-sm h-fit w-fit bg-red-400 flex items-center justify-center '>
+                    <div className=' rounded-2xl h-fit w-fit bg-red-400 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew16})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-600 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-600 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew17})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-amber-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-amber-200 flex items-center justify-center '>
                         <div className='scale-[.9] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew18})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew19})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-cyan-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-cyan-200 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew21})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-indigo-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-indigo-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew25})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-green-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-green-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew24})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-violet-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-violet-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew26})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-orange-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew6})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-blue-400 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-blue-400 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew8})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew28})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-emerald-500 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-emerald-500 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew11})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-yellow-950 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-yellow-950 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew29})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew30})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#edc0cb] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#edc0cb] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew31})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#a9e3fc] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#a9e3fc] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew32})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-blue-400 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-blue-400 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew1})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-violet-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-violet-300 flex items-center justify-center '>
                         <div className='scale-[1.2] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew20})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-emerald-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-emerald-300 flex items-center justify-center '>
                         <div className='scale-[1.1] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew2})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-yellow-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-yellow-200 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew3})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-lime-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-lime-200 flex items-center justify-center '>
                         <div className='scale-[1.1]  h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew12})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-orange-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew22})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#d0ffcc] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#d0ffcc] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew34})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#c6b4fa] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#c6b4fa] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew33})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#ad41b5] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#ad41b5] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew35})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-rose-400 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-rose-400 flex items-center justify-center '>
                         <div className=' h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew10})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-indigo-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-indigo-300 flex items-center justify-center '>
                         <div className='md:scale-[1.25] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew7})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#fc6293] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#fc6293] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew36})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-cyan-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-cyan-200 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew13})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-amber-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-amber-200 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew27})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-zinc-800 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-zinc-800 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew5})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-yellow-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-yellow-200 flex items-center justify-center '>
                         <div className='scale-[1.25] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew14})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-orange-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew4})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-blue-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-blue-200 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew9})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-indigo-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-indigo-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew23})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-teal-500 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-teal-500 flex items-center justify-center '>
                         <div className='scale-[1.2] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew15})` }}></div>
                     </div>
                 </div>
@@ -165,225 +165,228 @@ export default function Embroidery(){
             {/* Row 2 */}
             <div className='h-fit w-screen overflow-hidden px-4 bg-zinc-50 flex justify-center'>
                 <div className='text2 flex w-full flex justify-center mb-2 md:mb-6 gap-2 md:gap-4 '>
-                    <div className='  rounded-sm h-fit w-fit bg-blue-400 flex items-center justify-center '>
-                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew1})` }}></div>
+                <div className='  rounded-2xl h-fit w-fit bg-[#fc6293] flex items-center justify-center '>
+                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew36})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-emerald-300 flex items-center justify-center '>
-                        <div className='scale-[1.1] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew2})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-yellow-200 flex items-center justify-center '>
-                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew3})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-lime-200 flex items-center justify-center '>
-                        <div className='scale-[1.1]  h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew12})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
-                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew22})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-violet-300 flex items-center justify-center '>
-                        <div className='scale-[1.2] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew20})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-rose-400 flex items-center justify-center '>
-                        <div className=' h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew10})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-indigo-300 flex items-center justify-center '>
-                        <div className='md:scale-[1.25] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew7})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-cyan-200 flex items-center justify-center '>
-                        <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew13})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-amber-200 flex items-center justify-center '>
-                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew27})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-zinc-800 flex items-center justify-center '>
-                        <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew5})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-yellow-200 flex items-center justify-center '>
-                        <div className='scale-[1.25] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew14})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
-                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew4})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-blue-200 flex items-center justify-center '>
-                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew9})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-indigo-300 flex items-center justify-center '>
-                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew23})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-teal-500 flex items-center justify-center '>
-                        <div className='scale-[1.2] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew15})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-red-400 flex items-center justify-center '>
-                        <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew16})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-600 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-600 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew17})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-amber-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-amber-200 flex items-center justify-center '>
                         <div className='scale-[.9] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew18})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew19})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-cyan-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-cyan-200 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew21})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-indigo-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-indigo-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew25})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-green-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-orange-300 flex items-center justify-center '>
+                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew22})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-violet-300 flex items-center justify-center '>
+                        <div className='scale-[1.2] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew20})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-rose-400 flex items-center justify-center '>
+                        <div className=' h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew10})` }}></div>
+                    </div>
+
+                    <div className='  rounded-2xl h-fit w-fit bg-indigo-300 flex items-center justify-center '>
+                        <div className='md:scale-[1.25] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew7})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-cyan-200 flex items-center justify-center '>
+                        <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew13})` }}></div>
+                    </div>
+              
+                    <div className='  rounded-2xl h-fit w-fit bg-emerald-300 flex items-center justify-center '>
+                        <div className='scale-[1.1] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew2})` }}></div>
+                    </div>
+                          <div className='  rounded-2xl h-fit w-fit bg-amber-200 flex items-center justify-center '>
+                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew27})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-zinc-800 flex items-center justify-center '>
+                        <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew5})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-yellow-200 flex items-center justify-center '>
+                        <div className='scale-[1.25] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew14})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-indigo-300 flex items-center justify-center '>
+                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew23})` }}></div>
+                    </div>
+                    
+                    <div className='  rounded-2xl h-fit w-fit bg-red-400 flex items-center justify-center '>
+                        <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew16})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-blue-200 flex items-center justify-center '>
+                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew9})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-green-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew24})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-violet-300 flex items-center justify-center '>
-                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew26})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
-                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew6})` }}></div>
-                    </div>
-                    <div className='  rounded-sm h-fit w-fit bg-blue-400 flex items-center justify-center '>
+                   
+                    <div className='  rounded-2xl h-fit w-fit bg-blue-400 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew8})` }}></div>
+                    </div>   <div className='  rounded-2xl h-fit w-fit bg-yellow-200 flex items-center justify-center '>
+                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew3})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew28})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-emerald-500 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-lime-200 flex items-center justify-center '>
+                        <div className='scale-[1.1]  h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew12})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-emerald-500 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew11})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-yellow-950 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-orange-300 flex items-center justify-center '>
+                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew4})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-yellow-950 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew29})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew30})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#edc0cb] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#edc0cb] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew31})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#a9e3fc] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#a9e3fc] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew32})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#c6b4fa] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#c6b4fa] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew33})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#d0ffcc] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#d0ffcc] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew34})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#ad41b5] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-blue-400 flex items-center justify-center '>
+                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew1})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#ad41b5] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew35})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#fc6293] flex items-center justify-center '>
-                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew36})` }}></div>
+                  <div className='  rounded-2xl h-fit w-fit bg-teal-500 flex items-center justify-center '>
+                        <div className='scale-[1.2] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew15})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-violet-300 flex items-center justify-center '>
+                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew26})` }}></div>
+                    </div>
+                    <div className='  rounded-2xl h-fit w-fit bg-orange-300 flex items-center justify-center '>
+                        <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew6})` }}></div>
                     </div>
                 </div>
             </div>
             {/* Row 3 - hidden on dekstop */}
             <div className='md:hidden h-fit w-screen overflow-hidden px-4 bg-zinc-50 flex justify-center'>
                 <div className='text3 flex w-full flex justify-center mb-0 md:mb-6 gap-2 md:gap-4 '>
-                    <div className='  rounded-sm h-fit w-fit bg-indigo-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-indigo-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew23})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-teal-500 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-teal-500 flex items-center justify-center '>
                         <div className='scale-[1.2] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew15})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-red-400 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-red-400 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew16})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-600 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-600 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew17})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-amber-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-amber-200 flex items-center justify-center '>
                         <div className='scale-[.9] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew18})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew19})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-cyan-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-cyan-200 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew21})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-blue-400 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-blue-400 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew8})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew28})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-emerald-500 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-emerald-500 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew11})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-yellow-950 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-yellow-950 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew29})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-sky-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-sky-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew30})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#edc0cb] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#edc0cb] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew31})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#a9e3fc] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#a9e3fc] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew32})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#c6b4fa] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#c6b4fa] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew33})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#d0ffcc] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#d0ffcc] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew34})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#ad41b5] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#ad41b5] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew35})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-[#fc6293] flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-[#fc6293] flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew36})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-blue-400 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-blue-400 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew1})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-emerald-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-emerald-300 flex items-center justify-center '>
                         <div className='scale-[1.1] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew2})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-yellow-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-yellow-200 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew3})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-lime-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-lime-200 flex items-center justify-center '>
                         <div className='scale-[1.1]  h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew12})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-orange-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew22})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-violet-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-violet-300 flex items-center justify-center '>
                         <div className='scale-[1.2] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew20})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-rose-400 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-rose-400 flex items-center justify-center '>
                         <div className=' h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew10})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-indigo-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-indigo-300 flex items-center justify-center '>
                         <div className='md:scale-[1.25] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew7})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-cyan-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-cyan-200 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew13})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-amber-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-amber-200 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew27})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-zinc-800 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-zinc-800 flex items-center justify-center '>
                         <div className='scale-[] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew5})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-yellow-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-yellow-200 flex items-center justify-center '>
                         <div className='scale-[1.25] h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew14})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-orange-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew4})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-blue-200 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-blue-200 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew9})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-indigo-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-indigo-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew25})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-green-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-green-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew24})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-violet-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-violet-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew26})` }}></div>
                     </div>
-                    <div className='  rounded-sm h-fit w-fit bg-orange-300 flex items-center justify-center '>
+                    <div className='  rounded-2xl h-fit w-fit bg-orange-300 flex items-center justify-center '>
                         <div className='h-44 w-44  md:h-64 md:w-64 bg-center bg-cover '  style={{ backgroundImage:`url(${sew6})` }}></div>
                     </div>
                 </div>

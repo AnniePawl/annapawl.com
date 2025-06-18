@@ -3,12 +3,12 @@
 $cup-height: 60px;
 $cup-width: 58px;
 $bg-clr:#eaf3ff;
-$cup-clr: #9aeddb;
+$cup-clr: #9adeed;
 $cup-clr2:#d1fff5;
 $steam-clr:rgb(255, 158, 252);
-$teabag-clr:rgb(121, 145, 233);
-$cup-border-clr:#738f9c;
-$cup-border: 2.5px solid #738f9c;
+$teabag-clr:rgb(255, 141, 128);
+$cup-border-clr:#4890b4;
+$cup-border: 2.5px solid #4890b4;
 
 
 .teacup {
@@ -45,7 +45,6 @@ $cup-border: 2.5px solid #738f9c;
        
         }
       }
-
       .steam{
         z-index:-1;
         position:absolute;
@@ -56,9 +55,6 @@ $cup-border: 2.5px solid #738f9c;
       }
 
       @keyframes steam {
-        0%{
-
-        }
         50%{
             transform: translateY(-95px) translateX(4px);
         }

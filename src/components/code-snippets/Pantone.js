@@ -46,14 +46,14 @@ export default function Pantone(){
 
     return(
         <div>
-            <div class="color-card md:scale-[1.2]" id="colorCard">
-                <div class="color-card__top flex items-center justify-center" id="displayColor" onClick={changeColor}>
-                    <p class='text-[9px] text-zinc-50 tracking-wider'>click me </p>
+            <div className="color-card md:scale-[1.2]" id="colorCard">
+                <div className="color-card__top flex items-center justify-center" id="displayColor" onClick={changeColor}>
+                    <p className='text-[9px] text-zinc-50 tracking-wider'>click me </p>
                 </div>
-                <div class="color-card__bottom">
+                <div className="color-card__bottom">
                     <p id="hexNum">#ecd26b</p>
-                    <div class="copy" onClick={copyCode}></div>
-                    <span class="tooltip">copy hex</span>
+                    <div className="copy" onClick={copyCode}></div>
+                    <span className="tooltip">copy hex</span>
                 </div>
             </div>
         </div>

@@ -9,16 +9,16 @@ function DesktopNav() {
     <div >
 
 
-    {/* <div class='ml-48 rotate-12 hover:animate-spin transition-all  h-16 w-16 bg-cover bg-center font-bold uppercase text-[9px] text-center leading-3 flex items-center justify-center tracking-wider'  style={{ backgroundImage:`url(${blob})` }}>About<br/> Me</div> */}
+    {/* <div className='ml-48 rotate-12 hover:animate-spin transition-all  h-16 w-16 bg-cover bg-center font-bold uppercase text-[9px] text-center leading-3 flex items-center justify-center tracking-wider'  style={{ backgroundImage:`url(${blob})` }}>About<br/> Me</div> */}
 
-      <div class='hover:scale-[.95] transition-all ml-48 shadow-md h-16 w-16 bg-blue-200 rounded-full flex items-center justify-center'>
-        <span class='rotate-6 text-center !text-zinc-800 font-bold uppercase  leading-3 text-[10px]'>About<br/> Me</span>
+      <div className='hover:scale-[.95] transition-all ml-48 shadow-md h-16 w-16 bg-blue-200 rounded-full flex items-center justify-center'>
+        <span className='rotate-6 text-center !text-zinc-800 font-bold uppercase  leading-3 text-[10px]'>About<br/> Me</span>
       </div>
       
       
       
       
-      {/* <p class='text-sm text-zinc-800 '><span class='!text-zinc-800 text-sm font-[600] font-montserrat'>General Nerdery: </span> <Link class='underline' to="/dwc">CSS Art, </Link> Roller Skating, <Link class='underline' to="/embroidery">Embroidery</Link>,  DIY Projects, </p>
+      {/* <p className='text-sm text-zinc-800 '><span className='!text-zinc-800 text-sm font-[600] font-montserrat'>General Nerdery: </span> <Link className='underline' to="/dwc">CSS Art, </Link> Roller Skating, <Link className='underline' to="/embroidery">Embroidery</Link>,  DIY Projects, </p>
        */}
     
      
@@ -37,7 +37,7 @@ function DesktopNav() {
         , podcasts, going down rabbit holes 🐰
         
        <Link to="/codesnippets">
-        <p class='tracking-wide'>Mini Coding Projects</p>
+        <p className='tracking-wide'>Mini Coding Projects</p>
       </Link> */}
     </div>
   );

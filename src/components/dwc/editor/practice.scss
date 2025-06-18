@@ -2,7 +2,7 @@
 
 $practice-bkgd-clr: #fffefa;
 $editor-black: #292929;
-$heading-clr: #cff6ff;
+$heading-clr: #d6f1ff;
 
 @mixin center-flex {
   display: flex;
@@ -20,6 +20,9 @@ $heading-clr: #cff6ff;
 .workspace {
   width: 75vw;
   align-self: center;
+  @media (max-width: 500px) {
+    width:93vw;
+  }
 }
 
 .practice-heading {

@@ -8,7 +8,7 @@ import Modal from "../modal/Modal";
 function DesktopHome() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="DesktopHome-container" id="home">
+    <div className="DesktopHome-container invert-wrapper" id="home">
       <div
         className="info-button"
         onClick={(e) => {

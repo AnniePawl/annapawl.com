@@ -1,15 +1,20 @@
 @import '../../universal-styles.scss';
 
 $frame-clr:#5796e9;
-$frame-clr2:#bbffd2;
-$frame-clr3:#7cb5ff;
-$frame-clr4:$black;
-$sphere-clr:#fcff9e;
-$sphere-clr2:#ffe366;
-
+$frame-clr2:#bdffd3;
+$frame-clr4:#4372d1;
+$base-clr:rgb(163, 174, 255);
+$sphere-clr:#fcffaa;
+$sphere-clr2:#ffe056;
 $frame-height:100px;
 $frame-width: 150px;
 
+.newtonsCradle {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
 .tablet-newtonsCradle-container {
 	transform: scale(.7) translateY(-165px);
@@ -23,22 +28,9 @@ $frame-width: 150px;
 
 	}	
 	&:hover>.frame> div:last-child {
-		animation: swing2 2s 1.5s infinite;
+		animation: swing2 2s infinite;
 	}
 }
-
-@keyframes swing1{
-50%{
-		transform: rotate(15deg) translateY(-13px) translateX(-20px);
-	}
-	
-}
-
-	@keyframes swing2{
-	50%{
-			transform: rotate(-15deg) translateY(-13px) translateX(20px);
-		}
-		}
 
 
 
@@ -49,7 +41,7 @@ $frame-width: 150px;
 	height:$frame-height;
 	width: $frame-width;
 	border-radius:10px 10px 0 0 ;
-	box-shadow:0 0 0 2px $frame-clr, 0 0 0 8px $frame-clr2, 0 0 0 10px $frame-clr;
+	box-shadow:0 0 0 3px $frame-clr, 0 0 0 8px $frame-clr2, 0 0 0 11px $frame-clr;
 	
 	&::before, &::after{
 		content:"";
@@ -74,7 +66,7 @@ $frame-width: 150px;
 .sphere {
 	height:$frame-width *.15;
 	width:$frame-width *.15;
-	border:2px solid $frame-clr4;
+	border:2.5px solid $frame-clr4;
 	background-image:linear-gradient(to right,$sphere-clr 0 50%, $sphere-clr2 0 100%);
 	border-radius: 50%;
 	transform: translateY(-15px);
@@ -95,21 +87,37 @@ $frame-width: 150px;
 	height:$frame-height*.15;
 	width: $frame-width * 1.35;
 	border-radius: 4px 4px 0 0 ;
-	background-image:linear-gradient(#7ab1fd 0 70%, $frame-clr4 70%);
+	background-image:linear-gradient($base-clr 0 70%, $frame-clr4 70%);
 	&::before {
-		// display: flex;
-		// width:$frame-width*.5;
-		// content:"Newton's Cradle";
-		// font-size:8px;
-		// color:$frame-clr;
-		// border:2px solid $frame-clr2;
-		// background-color: white;
 	}
 }
 
-.newtonsCradle {
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+@keyframes swing1 {
+  0% {
+    transform: rotate(0deg) translateY(-15px) translateX(0);
+  }
+  25% {
+    transform: rotate(20deg) translateY(-13px) translateX(-25px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(-15px) translateX(0);
+  }
+  100% {
+    transform: rotate(0deg) translateY(-15px) translateX(0);
+  }
+}
+
+@keyframes swing2 {
+  0% {
+    transform: rotate(0deg) translateY(-15px) translateX(0);
+  }
+  50% {
+    transform: rotate(0deg) translateY(-15px) translateX(0);
+  }
+  75% {
+    transform: rotate(-20deg) translateY(-13px) translateX(25px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(-15px) translateX(0);
+  }
 }

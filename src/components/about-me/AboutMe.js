@@ -13,9 +13,9 @@ export default function AboutMe(){
       setBkgdClr(`hsl(${rangeVal}, 100%, 96%`);
     }, [rangeVal]);
     return(
-        <div class='h-[100vh] w-screen bg-cover flex items-center flex-col' style={{ backgroundColor: `${bkgdClr}` }}>
+        <div className='h-[100vh] w-screen bg-cover flex items-center flex-col' style={{ backgroundColor: `${bkgdClr}` }}>
             {/* Color Slider  */}
-            <div class='absolute top-5 right-5 h-fit w-[250px]' id="code-snippets" > 
+            <div className='absolute top-5 right-5 h-fit w-[250px]' id="code-snippets" > 
             {/* <a className="mr-4 contact__codepen-icon scale-[.6] absolute bottom-3 right-0" href="https://codepen.io/annampawl" target="blank"><Codepen/></a> */}
                 <input
                     className="colorSlider w-full max-w-6xl px-4 "
@@ -28,13 +28,13 @@ export default function AboutMe(){
              </div>
 
 
-            <div class='w-full max-w-7xl pt-10'>
-                <h1 class='rainbow text-zinc-700 uppercase font-thin text-5xl tracking-tight'>About Me</h1>
+            <div className='w-full max-w-7xl pt-10'>
+                <h1 className='rainbow text-zinc-700 uppercase font-thin text-5xl tracking-tight'>About Me</h1>
                 <p>Hi! Welcome to my little corner of the internet. I'm a front end
         engineer bridging the gap between development and design. I like making
         satisfying little experiences with code. The web should be fun ✨</p>
             </div> 
-            {/* <img src={headshot} class='w-96 absolute bottom-0 left-20'></img> */}
+            {/* <img src={headshot} className='w-96 absolute bottom-0 left-20'></img> */}
 
         </div>
 

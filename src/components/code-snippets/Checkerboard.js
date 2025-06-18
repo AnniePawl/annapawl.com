@@ -4,14 +4,14 @@ import './checkerboard.scss'
 
 export default function Checkerboard(){
     return(
-        <div class='py-16'>
-            <div class="checkerboards"> 
-            <div class="checkerboard"></div>
-            <div class="checkerboard"></div>
-            <div class="checkerboard"></div>
-            <div class="checkerboard"></div>
-            <div class="checkerboard"></div>
-            <div class="checkerboard"></div>
+        <div className='py-16'>
+            <div className="checkerboards"> 
+            <div className="checkerboard"></div>
+            <div className="checkerboard"></div>
+            <div className="checkerboard"></div>
+            <div className="checkerboard"></div>
+            <div className="checkerboard"></div>
+            <div className="checkerboard"></div>
             </div>
         </div>
     )
