@@ -23,19 +23,22 @@ function Mobile() {
         }}
       />
       <div className="mobile__shelves-container">
-        <div
-          className=" mobile__info-btn"
-          onClick={(e) => {
-            setOpen(true);
-          }}
-        >
-          <InfoIcon />
+
+        <div class='relative w-full h-full'>
+          <div
+            className="mobile__info-btn absolute top-4 right-4"
+            onClick={(e) => {
+              setOpen(true);
+            }}
+          >
+            <InfoIcon class=' h-6 w-6 ' />
+          </div>
+          <MobileShelves />
         </div>
-        <MobileShelves />
       </div>
-      <MobileCodeSnippets />
+      {/* <MobileCodeSnippets />
       <MobileEmbroidery />
-      <MobileWriting />
+      <MobileWriting /> */}
       <MobileFooter />
     </div>
   );

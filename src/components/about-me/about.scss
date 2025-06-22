@@ -4,7 +4,7 @@
 $about-bkgd: #fafafa;
 // $about-bkgd:#fdf7a1ad;
 
-$hover-clr:#5796e9;
+$hover-clr: #5796e9;
 $desktop-h1-clr: $black;
 $mobile-h1-clr: $black;
 $font-clr: #1f1f1f;
@@ -32,109 +32,102 @@ $mobile-line-height: 20px;
 // margins
 $margin-top: 45px;
 
+h1.title {
+  color: #414141;
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+}
+
 // SHARED STYLES
 .desktop__about,
-.tablet__about,
-.mobile__about {
-  // border: $test-border;
-	cursor: default;
+.tablet__about {
   overflow: hidden;
   background-color: $about-bkgd;
   font-family: $font;
   color: $font-clr;
-  > h1 {
-    font-family: $font;
-    color: $desktop-h1-clr;
+
+  >h1 {
+    font-family: "Montserrat", sans-serif;
     font-weight: 800;
+    color: $desktop-h1-clr;
+  }
+
+  span:hover {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='8' fill='%23ff654a'/></svg>") 16 16, auto;
   }
 }
 
 // Mobile-specific styles
 .mobile__about {
-	 span {
-		text-decoration: underline;
-		// color:#5796e9;
-		// text-decoration-color: #5796e9;
-	}
-  // border: $test-border;
+  font-family: $font;
+  color: $font-clr;
+  height: 415px !important;
+
+  span {
+    text-decoration: underline;
+  }
+
   display: flex;
-  padding-top: 10%;
-  padding-left: 11%;
-  padding-right: 11%;
-  padding-bottom: 5%;
-  // margin-right: 12px;
   flex-direction: column;
   height: $mobile-about-height;
   line-height: $mobile-line-height;
-  // border: $test-border;
-  justify-content: space-evenly;
   font-size: $mobile-font-size;
+
   h1 {
+    font-family: "Montserrat", sans-serif;
     font-size: $mobile-h1-size;
     color: $mobile-h1-clr;
-    font-weight: 800;
-    line-height: $mobile-line-height + 3px;
+    font-weight: 900 !important;
+    line-height: $mobile-line-height
   }
 }
 
 // Home Icon
 .desktop__about__icon {
-// @include center-flex;
-// 	border-radius: 50%;
-// 	height:10px;
-// 	width:10px;
-// 	background-image: repeating-conic-gradient(white 0 5%, $desktop-h1-clr 5% 11%);
-//  position: absolute;
-//  top:20px;
-//  left:25px;
+  // @include center-flex;
+  // 	border-radius: 50%;
+  // 	height:10px;
+  // 	width:10px;
+  // 	background-image: repeating-conic-gradient(white 0 5%, $desktop-h1-clr 5% 11%);
+  //  position: absolute;
+  //  top:20px;
+  //  left:25px;
 }
 
-.desktop__about__icon:hover {
-	// height:40px;
-	// width:40px;
 
-}
-
-.desktop__about__icon  svg:hover {
-	& .cls-2 {
-		fill: $hover-clr;
-	}
+.desktop__about__icon svg:hover {
+  & .cls-2 {
+    fill: $hover-clr;
+  }
 }
 
-.desktop-nav  a{
-	text-decoration: none;
+.desktop-nav a {
+  text-decoration: none;
 }
-.desktop-nav  a:active{
-//  color:palegoldenrod;
-}
+
+
 .desktop-nav p {
-	// border:$test-border;
-	color:$desktop-h1-clr;
-	font-weight: 600;
-	font-size: 14px ;
+  // border:$test-border;
+  color: $desktop-h1-clr;
+  font-weight: 600;
+  font-size: 14px;
 
-	&:hover{
-		color:$hover-clr;
-	}
+  &:hover {
+    color: $hover-clr;
+  }
 }
+
 // Desktop-specific styles
 .desktop__about {
-   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='8' fill='%235796e9'/></svg>") 16 16, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='8' fill='%235796e9'/></svg>") 16 16, auto;
 
-	position:fixed;
-  display: flex;
-  flex-direction: column;
-  // justify-content: space-evenly;
-  height: $desktop-about-height;
+  // height: $desktop-about-height;
   width: $desktop-about-width;
   line-height: $desktop-line-height;
   font-size: $desktop-font-size;
-  padding: 4%;
-  > h1 {
-    // font-size: $desktop-h1-size;
-    // line-height: $desktop-line-height + 10px;
-  }
+  padding: 3.5%;
 }
+
 // Tablet-specific styles
 .tablet__about {
   height: $tablet-about-height;
@@ -143,30 +136,33 @@ $margin-top: 45px;
 
 // Links
 a {
-	text-decoration: none;
-	
+  text-decoration: none;
+
   color: $font-clr;
+
   &:visited {
     color: $font-clr;
   }
+
   &:hover {
     color: $link-hover-clr;
   }
 }
 
-.desktop__about > ul,
-.mobile__about > ul,
-.tablet__about > div > ul {
-
+.desktop__about>ul,
+.mobile__about>ul,
+.tablet__about>div>ul {
 
   line-height: 22px;
   font-size: 13px;
   padding: 0;
-  & > li {
+
+  &>li {
     font-weight: 600;
     list-style: none;
   }
-  & > li > a {
+
+  &>li>a {
     text-decoration: none;
   }
 }
@@ -174,4 +170,5 @@ a {
 // Mobile social icons
 .mobile__contact {
   transform: scale(0.75) translateX(-20vw);
+  position: relative;
 }

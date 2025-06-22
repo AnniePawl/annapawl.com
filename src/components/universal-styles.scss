@@ -3,9 +3,7 @@
 @import url("https://use.typekit.net/zps1qux.css");
 @import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
 
-body{
-  // font-variation-settings: "wdth" 100;
-}
+
 *,
 *::after,
 *::before {
@@ -14,12 +12,9 @@ body{
 }
 
 .invert-wrapper {
-  filter: invert(1) hue-rotate(360deg) contrast(1) saturate(2);
+  filter: invert(1) hue-rotate(160deg) contrast(1) saturate(2);
 }
 
-.invert-wrapper2 {
-  filter: invert(1) hue-rotate(290deg) contrast(1) saturate(2);
-}
 
 @mixin center-flex {
   display: flex;

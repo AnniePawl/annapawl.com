@@ -30,7 +30,6 @@ p.hide {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  // background-color: $background-color;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px, rgba(0, 0, 0, 0.1) 0px 0px 15px;
 }
 
@@ -59,6 +58,7 @@ p.hide {
   .btn{
     font-size:10px;
   }
+
   p {
     font-size: 13px;
     line-height: 21px;
@@ -78,9 +78,7 @@ p.hide {
     &:visited {
       color: $modal-font-clr;
     }
-    &:hover {
-      // color: $modal-hover-clr;
-    }
+
   }
 }
 
@@ -88,7 +86,7 @@ p.hide {
 .tablet__modal {
   width: 100vw;
   > .modal {
-    height: 250px;
+    height: fit-content;
     width: 355px;
 		> .modal__content {
   
@@ -101,23 +99,20 @@ p.hide {
 
 // Mobile Specific Styles
 .mobile__modal {
-  top:60vh;
+  top:415px;
   height: 120.5vh;
   width: 100vw;
 
   > .modal {
     top: 3.4vh;
     right: 25px;
-    height:145px;
-    width: 265px;
+    height:fit-content;
+    width: 315px;
     > .modal__content {
       p {
-        line-height: 20px;
+        line-height: 18px;
 				font-size: 11px;
       }
-			a {
-				// color: $modal-hover-clr;
-			}
     }
     > .modal__button {
 			position: absolute;

@@ -7,6 +7,7 @@ $clock-clr4:#292929;
 $clock-clr5:#5796e9;
 $clock-height:55px;
 $clock-width:110px;
+$btn-clr:#ff8d80;
 
 
 .clock {
@@ -39,7 +40,7 @@ $clock-width:110px;
     content:"";
     position:absolute;
     height:$clock-height/  15;
-    background-image:linear-gradient(to right, $clock-clr5 0 40%, transparent 0 60%,  $clock-clr5 0 100%);
+    background-image:linear-gradient(to right, $btn-clr 0 40%, transparent 0 60%,  $btn-clr 0 100%);
     width:$clock-height/ 2;
     transform:translateY(-$clock-height/1.88) translateX(-$clock-height/2);
   }

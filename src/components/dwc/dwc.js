@@ -10,33 +10,34 @@ import circleSnippet from '../../assets/dwc/circle-snippet.jpeg'
 import cssRule from '../../assets/dwc/css-rule.jpeg'
 import Practice from './editor/Practice';
 
-export default function DWC(){
-    return(
+export default function DWC() {
+    return (
 
         <div className='w-screen flex flex-col justify-center items-center bg-white'>
-            <a href="https://codepen.io/annampawl" target='_blank' className=" h-fit w-fit absolute md:fixed top-4 md:top-5 right-6" >
-                <Codepen class='h-6 w-6 md:w-8 md:h-8 transition-all' />
-            </a>
-            <div className='w-full pt-4 md:pt-5 px-4 md:px-6 flex justify-between '>
+
+            <div className='w-full pt-3 md:pt-5 px-3 md:px-6 flex justify-between '>
                 <Link to="/">
-                    <div className='scale-[.9]'><StarIcon /></div>
+                    <div className='scale-[.7] md:scale-[.9]'><StarIcon /></div>
                 </Link>
-                <div className=''>
+                <a href="https://codepen.io/annampawl" target='_blank' className="xl:fixed xl:top-6 xl:right-6" >
+                    <Codepen class='h-5 w-5 md:w-7 md:h-7 transition-all' />
+                </a>
+                {/* <div className='hidden '>
                     <HashLink className='z-100 opacity-0' smooth to="/dwc/#practice">
                         <div className=' z-100 bg-lime-200 border-2 border-blue-300 shadow-sm hover:bg-lime-300 hover:text-black rounded-full px-4 py-2 text-xs font-bold uppercase '>Try it out!</div>
                     </HashLink>
-                </div>
+                </div> */}
             </div>
             <div className='h-fit w-screen overflow-hidden px-4 flex justify-center mt-4 md:mt-0  mb-0 md:-mb-2'>
                 <h1 className='uppercase font-black text-zinc-800 text-lg md:text-xl font-[900] tracking-[3.5px] md:tracking-[6.5px]'>Drawing with Code</h1>
             </div>
-            <ShapesGrid/>
+            <ShapesGrid />
             <div className='flex flex-col w-full max-w-5xl px-4 lg:px-0'>
                 <h1 className='font-black text-blue-300 text-base md:text-lg uppercase tracking-[2px] md:tracking-[4px] pb-2'>What is drawing with code?</h1>
                 <p className='text-sm md:text-base tracking-wide text-zinc-600'>CSS art lies at the intersection of vector illustration and front-end development. It involves manipulating &lt;div&gt; HTML elements with CSS to render shapes in the browser. These shapes are customized by assigning values to various properties like height, border-radius, box-shadow and background-color. With countless CSS properties to work with, it’s possible to create intricate pieces without a vector illustration software like Illustrator.</p>
             </div>
             {/* Cirlce Snippet */}
-            <div className='my-5 md:my-10 w-full max-w-3xl h-36 w-44 md:w-full md:h-56 md:w-full bg-center bg-cover '  style={{ backgroundImage:`url(${circleSnippet})` }}></div>
+            <div className='my-5 md:my-10 w-full max-w-3xl h-36 w-44 md:w-full md:h-56 md:w-full bg-center bg-cover ' style={{ backgroundImage: `url(${circleSnippet})` }}></div>
             <div className='flex flex-col w-full max-w-5xl px-4 lg:px-0 mb-10'>
                 <h1 className='font-black text-blue-300 text-base md:text-lg uppercase tracking-[2px] md:tracking-[4px] pb-2'>It's all about the <span className='font-mono lowercase'> &lt;div&gt;</span> </h1>
                 <p className='text-sm md:text-base tracking-wide text-zinc-600'>The &lt;div&gt;element is the building block of every pure CSS composition. A div is simply an empty container, often used to house other elements and create structure on a web page. It does not affect content or layout unless it’s styled with CSS or manipulated with scripts, making it extremely versatile. Take a look at the example below. Let’s break down the HTML portion of CSS art.</p>
@@ -59,7 +60,7 @@ export default function DWC(){
                     <p className='mb-5 text-sm md:text-base tracking-wide text-zinc-600'>Opt for class selectors when creating CSS art. As your digital creations become more complex, you will find it helpful to reuse the same class on several elements. Moreover, applying multiple classes to a single element will give you even more artistic control over it. Assigning custom classes is especially essential to CSS art because the “drawing” process entails styling divs, which are otherwise indistinguishable from one another.</p>
                 </div>
                 {/* css rule */}
-                <div className='self-center mt-5 md:my-0 w-full max-w-3xl h-[8rem]  md:h-56 w-full bg-center bg-cover' style={{ backgroundImage:`url(${cssRule})` }}></div>
+                <div className='self-center mt-5 md:my-0 w-full max-w-3xl h-[8rem]  md:h-56 w-full bg-center bg-cover' style={{ backgroundImage: `url(${cssRule})` }}></div>
                 <div className='flex flex-col w-full max-w-5xl  pt-10'>
                     <h1 className='font-black text-blue-300 text-base md:text-lg uppercase tracking-[2px] md:tracking-[4px] pb-2'>Beginner's CSS Toolkit</h1>
                     <p className='mb-5 text-sm md:text-base tracking-wide text-zinc-600'>There is a lot you can accomplish with the basics. Start small, and add new CSS properties to your toolkit as you grow. Consider the subcomponents of your graphic, then simplify. For example, apply a solidbackground-color before playing with gradient, and experiment with border-radius before using clip-path to generate custom shapes. Try a flat version of your design before transforming it into a 3D edition. Below is a short list of CSS properties to help you get started.</p>
@@ -86,11 +87,11 @@ export default function DWC(){
                     <h1 className='font-black text-blue-300 text-base md:text-xl uppercase text-zinc-800 tracking-[2px] pb-2 text-center'>Try it out</h1>
                     <p className='text-center text-sm md:text-base tracking-wide text-zinc-600'>Mess around with the CSS in the code editor below to see how you can manipulate the output.</p>
                 </div>
-                <Practice/>
-                <ToTop bgColor='#56a7fccc'/>
+                <Practice />
+                <ToTop bgColor='#56a7fccc' />
             </div>
         </div>
-        
+
     )
 }
 

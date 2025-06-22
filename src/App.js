@@ -24,7 +24,6 @@ function App() {
           <Router>
         <Routes>
             <Route path="/" element={<Main />}></Route>
-            {/* Graphic Design */}
             <Route path="/dwc" element={<DWC/>} />
             <Route path="/about" element={<AboutMe/>} />
             <Route path="/embroidery" element={<Embroidery/>} />
