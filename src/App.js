@@ -5,7 +5,7 @@ import Home2 from './components/home/Home2'
 import AboutMe from "./components/about-me/AboutMe";
 import DWC from "./components/dwc/dwc";
 import Embroidery from "./components/embroidery/Embroidery";
-import CodeSnippets from "./components/code-snippets/CodeSnippets";
+import CodeSnippets2 from "./components/code-snippets/CodeSnippets2";
 import NewHome from "./NewHome";
 import FoodBlog from "./components/food-blog/FoodBlog";
 import "./app.scss";
@@ -24,11 +24,10 @@ function App() {
           <Router>
         <Routes>
             <Route path="/" element={<Main />}></Route>
-            {/* Graphic Design */}
             <Route path="/dwc" element={<DWC/>} />
             <Route path="/about" element={<AboutMe/>} />
             <Route path="/embroidery" element={<Embroidery/>} />
-            <Route path="/codesnippets" element={<CodeSnippets/>} />
+            <Route path="/codesnippets" element={<CodeSnippets2/>} />
             <Route path="/foodblog" element={<FoodBlog/>} />
         </Routes>
     </Router>

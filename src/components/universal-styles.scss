@@ -3,9 +3,7 @@
 @import url("https://use.typekit.net/zps1qux.css");
 @import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
 
-body{
-  // font-variation-settings: "wdth" 100;
-}
+
 *,
 *::after,
 *::before {
@@ -14,12 +12,9 @@ body{
 }
 
 .invert-wrapper {
-  filter: invert(1) hue-rotate(360deg) contrast(1) saturate(2);
+  filter: invert(1) hue-rotate(160deg) contrast(1) saturate(2);
 }
 
-.invert-wrapper2 {
-  filter: invert(1) hue-rotate(290deg) contrast(1) saturate(2);
-}
 
 @mixin center-flex {
   display: flex;
@@ -136,6 +131,12 @@ $font: "Montserrat", sans-serif;
 	.mobile-writing-container__pencil {
 		transform: rotate(220deg) translateX(135px) translateY(-170px) scale(.65);
 	}
+  .mobile-teacup-container {
+    transform: scale(.8)  translateY(-74px);
+  }
+    .mobile-newtonsCradle-container {
+    transform: scale(.8)  translateY();
+  }
 }
 
 @media screen and (max-width: 321px) {

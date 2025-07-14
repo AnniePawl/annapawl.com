@@ -8,23 +8,16 @@ $bracket-clr: #f1dbc1;
 $bracket-clr2: #7ab1fd;
 $shelf-shadow-clr: #a6cefc;
 
-// $t-shelf-clr: #af9893;
-// $t-shelf-clr2: #7c6767;
-// $t-bracket-clr: #414141;
-// $t-bracket-clr2: #636363;
-// $t-shelf-shadow-clr: #f52323;
-
 // Measurements
 $shelf-height: 15px;
 $desktop-shelf-width: 63vw;
 $tablet-shelf-width: 80vw;
-$mobile-shelves-height: 1100px;
+$mobile-shelves-height: 1200px;
 $mobile-shelf-width: 85vw;
 $desktop-shelves-width: 70vw;
 
 // Shelf styles (desktop default)
 .shelf {
-	// border:$test-border;
   height: $shelf-height;
   width: $desktop-shelf-width;
   display: flex;
@@ -32,15 +25,14 @@ $desktop-shelves-width: 70vw;
   justify-content: space-around;
   box-shadow: 0 10px 15px -2px $shelf-shadow-clr;
   border-radius: 2px;
+
   // Bracket Styles
   &::before,
   &::after {
     content: "";
     margin-top: 15px;
-    background-image: linear-gradient(
-      $bracket-clr 0 70%,
-      $bracket-clr2 70% 100%
-    );
+    background-image: linear-gradient($bracket-clr 0 70%,
+        $bracket-clr2 70% 100%);
     height: 20px;
     width: 12px;
     border-bottom-right-radius: 2px;
@@ -56,6 +48,7 @@ $desktop-shelves-width: 70vw;
   @include center-flex();
   flex-direction: column;
   justify-content: space-evenly;
+
   .shelf-contents {
     width: $desktop-shelf-width;
     display: flex;
@@ -65,27 +58,20 @@ $desktop-shelves-width: 70vw;
 }
 
 // Desktop / Tablet specific styles
-
 .desktop-shelves,
 .tablet-shelves {
- cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='8' fill='%235796e9'/></svg>") 16 16, auto;
-
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='8' fill='%23ff654a'/></svg>") 16 16, auto;
   height: 120vh;
-	transform: scale(.9); 
+  transform: scale(.9);
   // border: $test-border;
   min-height: 780px;
 }
 
-.desktop-shelves{
-	transform: scale(.9); 
-	// cursor: url("../../../assets/star-icon.svg"), auto;
-}
-
 .tablet-shelves {
-	// width: $tablet-shelves-width;
   .shelf {
     width: $tablet-shelf-width;
   }
+
   .shelf-contents {
     width: $tablet-shelf-width;
   }
@@ -93,17 +79,19 @@ $desktop-shelves-width: 70vw;
 
 // Mobile Shelves
 .mobile-shelves {
-	position:relative;
-	z-index: 0;
-	transform: scale(.93) translateY(-50px);
+  position: relative;
+  z-index: 0;
+  transform: scale(.92);
   // border: 2px solid orange;
   height: $mobile-shelves-height;
   @include center-flex();
   flex-direction: column;
   justify-content: space-evenly;
+
   .mobile-shelf {
     width: $mobile-shelf-width;
   }
+
   .mobile-shelf-contents {
     width: $mobile-shelf-width;
     position: absolute;
@@ -114,14 +102,13 @@ $desktop-shelves-width: 70vw;
 
 
 // Star cursor on item hover 
-.desktop-dessert-container:hover, 
-.desktop-books2-container:hover, 
-.desktop-radio-container:hover, 
-.desktop-pens-container:hover, 
-.desktop-laptop-container:hover, 
-.desktop-sewing-container:hover, 
+.desktop-dessert-container:hover,
+.desktop-books2-container:hover,
+.desktop-radio-container:hover,
+.desktop-pens-container:hover,
+.desktop-laptop-container:hover,
+.desktop-sewing-container:hover,
 .desktop-books-container:hover {
-		// cursor: url("../../../assets/star-cursor.svg"), auto;
+  // cursor: url("../../../assets/star-cursor.svg"), auto;
 
 }
-

@@ -20,7 +20,7 @@ const toggleInvert = () => {
 };
 
   return (
-    <div className="absolute bottom-5 right-6 z-50" onClick={toggleInvert}>
+    <div className="fixed top-4 left-4 z-50" onClick={toggleInvert}>
       <div
         className={`w-12 h-7 flex items-center px-1 rounded-full cursor-pointer transition-colors duration-300 shadow-inner ${
           isInverted ? "bg-[#7ab1fd]" : "bg-[#7ab1fd]"

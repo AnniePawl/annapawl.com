@@ -13,7 +13,7 @@ $contact-clr2: #fd85bd;
 }
 
 .desktop__shelves-container {
-   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='8' fill='%235796e9'/></svg>") 16 16, auto;
+   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='8' fill='%23ff654a'/></svg>") 16 16, auto;
 	display: relative;
 	right:0;
   height: 100vh;
@@ -34,6 +34,10 @@ $contact-clr2: #fd85bd;
     fill: $contact-clr;
     animation: info-spin 0.5s;
   }
+}
+
+.info-text{
+  display: none !important;
 }
 
 @keyframes info-spin {

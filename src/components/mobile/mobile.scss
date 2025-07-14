@@ -9,25 +9,13 @@
 }
 
 .mobile__footer {
-	height:8vh;
+	height:7vh;
   @include center-flex;
 	color:$black;
-  font-size: 14px;
+  font-size: 13px;
 	span {
-		color: #5796e9;
+		color: #ff6464;
 	}
 }
 
 
-.mobile__info-btn {
-  position: absolute;
-	z-index: 1;
-  transform: scale(0.9);
-  right: 15px;
-  top: 62vh;
-  &:hover > svg {
-    fill: #5796e9;
-    animation: info-spin 0.5s;
-		cursor: pointer;
-  }
-}

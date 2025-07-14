@@ -239,31 +239,31 @@ $heart: #a6ffbe;
 .shapebox-11:hover,
 .shapebox-12:hover {
   background-color: $bkgd-hover-color;
-  // transition: background-color 1s ease;
+  // //transition: background-color 1s ease;
 }
 .shapebox-1:hover,
 .shapebox-2:hover,
 .shapebox-5:hover,
 .shapebox-8:hover,
 .shapebox-9:hover {
-  // transition: background-color 1s ease;
+  // //transition: background-color 1s ease;
   .circle,
   .square,
   .oval,
   .parallelogram,
   .rectangle {
     background-color: $shape-hover-color;
-    // transition: background-color 1s ease;
+    // //transition: background-color 1s ease;
   }
 }
 .shapebox-3:hover {
-  transition: background-color 1s ease;
+  //transition: background-color 1s ease;
   .triangle {
     border-bottom: 5em solid $shape-hover-color;
   }
 }
 .shapebox-4:hover {
-  transition: background-color 1s ease;
+  //transition: background-color 1s ease;
   .pentagon {
     border-color: $shape-hover-color transparent;
   }
@@ -272,13 +272,13 @@ $heart: #a6ffbe;
   }
 }
 .shapebox-6:hover {
-  transition: background-color 1s ease;
+  //transition: background-color 1s ease;
   .trapezoid {
     border-bottom: 80px solid $shape-hover-color;
   }
 }
 .shapebox-7:hover {
-  transition: background-color 1s ease;
+  //transition: background-color 1s ease;
   .octagon {
     background-color: $shape-hover-color;
   }
@@ -294,7 +294,7 @@ $heart: #a6ffbe;
   }
 }
 .shapebox-10:hover {
-  transition: background-color 1s ease;
+  //transition: background-color 1s ease;
   .hexagon {
     background-color: $shape-hover-color;
   }
@@ -306,7 +306,7 @@ $heart: #a6ffbe;
   }
 }
 .shapebox-11:hover {
-  transition: background-color 1s ease;
+  //transition: background-color 1s ease;
   .star {
     border-bottom: 70px solid $shape-hover-color;
   }
@@ -318,7 +318,7 @@ $heart: #a6ffbe;
   }
 }
 .shapebox-12:hover {
-  transition: background-color 1s ease;
+  //transition: background-color 1s ease;
   .heart,
   .heart::before,
   .heart:after {

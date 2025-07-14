@@ -12,7 +12,7 @@ $laptop-clr3: #5796e9;
 $screen-clr: #bfc8ff;
 $screen-clr2: #aebcf2;
 $terminal-clr: #1111114f;
-$terminal-clr2: #b5f1ff;
+$terminal-clr2: #fdcfff;
 
 // Measurements
 $terminal-height: 95px;
@@ -54,16 +54,16 @@ $keyboard-width: 230px;
   width: $laptop-width;
   border-radius: 5px 5px 0 0;
   background-color: $laptop-clr;
-  box-shadow: 0 0 0 1.5px $black, 0 0 0 6px $laptop-clr2, 0 0 10px black, 0 0 0 7px $laptop-clr3;
+  box-shadow: 0 0 0 1.5px $black, 0 0 0 6px $laptop-clr2, 0 0 10px black, 0 0 0 8px $laptop-clr3;
   z-index: 0;
   // Keyboard
   &::before {
     height: $keyboard-height;
     width: $keyboard-width;
     border-radius: 2px;
-		border-top:1px solid $laptop-clr3;
-		border-left:1px solid $laptop-clr3;
-		border-right:1px solid $laptop-clr3;
+		border-top:2px solid $laptop-clr3;
+		border-left:2px solid $laptop-clr3;
+		border-right:2px solid $laptop-clr3;
     border-bottom: 3px solid $black;
     content: "";
     position: absolute;

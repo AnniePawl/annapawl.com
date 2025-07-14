@@ -17,7 +17,7 @@ $frosting-clr: rgb(255, 149, 141);
 $stand-clr: #5899f4;
 $stand-clr2: #5899f4;
 $spiral-clr: #ffffff;
-$spiral-clr2: #7ab1fd;
+$spiral-clr2: #ffea61b4;
 $glass-outline: 2px solid #ffffff;
 $glass-clr: radial-gradient(transparent 0 55%, #ffffffb6);
 $stand-border: 1px solid #93c0ff;
@@ -186,18 +186,29 @@ $stand-border: 1px solid #93c0ff;
   height: $cake-height * 4.7;
   width: $cake-height * 4.7;
   z-index: 1;
-  background: radial-gradient(transparent, $wall-clr 65%),
+  background: 
+  radial-gradient(transparent, transparent 65%),
     conic-gradient(
-      $spiral-clr 0 10%,
-      $spiral-clr2 0 20%,
-      $spiral-clr 0 30%,
-      $spiral-clr2 0 40%,
-      $spiral-clr 0 50%,
-      $spiral-clr2 0 60%,
-      $spiral-clr 0 70%,
-      $spiral-clr2 0 80%,
-      $spiral-clr 0 90%,
-      $spiral-clr2 0 100%
+      transparent 0% 5%,
+    $spiral-clr2 5% 10%,
+    transparent 10% 15%,
+    $spiral-clr2 15% 20%,
+    transparent 20% 25%,
+    $spiral-clr2 25% 30%,
+    transparent 30% 35%,
+    $spiral-clr2 35% 40%,
+    transparent 40% 45%,
+    $spiral-clr2 45% 50%,
+    transparent 50% 55%,
+    $spiral-clr2 55% 60%,
+    transparent 60% 65%,
+    $spiral-clr2 65% 70%,
+    transparent 70% 75%,
+    $spiral-clr2 75% 80%,
+    transparent 80% 85%,
+    $spiral-clr2 85% 90%,
+    transparent 90% 95%,
+    $spiral-clr2 95% 100%
     );
 }
 

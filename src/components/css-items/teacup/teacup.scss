@@ -2,60 +2,84 @@
 
 $cup-height: 60px;
 $cup-width: 58px;
-$bg-clr:#eaf3ff;
+$bg-clr: #eaf3ff;
 $cup-clr: #9adeed;
-$cup-clr2:#d1fff5;
-$steam-clr:rgb(255, 158, 252);
-$teabag-clr:rgb(255, 141, 128);
-$cup-border-clr:#4890b4;
+$cup-clr2: #d1fff5;
+$steam-clr: rgb(255, 158, 252);
+$teabag-clr: rgb(255, 141, 128);
+$cup-border-clr: #4890b4;
 $cup-border: 2.5px solid #4890b4;
 
 
 .teacup {
-    &:hover + .steam{
-        animation:steam 1.5s infinite;
-      }
-        height: $cup-height;
-        width: $cup-width;
-        position:relative;
-        border: $cup-border;
-        // z-index:5;
-        border-radius: 0 0 18px 18px;
-        background-image: linear-gradient(to right, $cup-clr 0 50%, $cup-clr2 50%);
-        // rim 
-        &::before {
-          content:"";
-          position:absolute;
-          z-index:-1;
-          transform: translateY(6px) translateX(40px);
-          height:37px;
-          width:34px;
-          border-radius:50%;
-          border:2.5px solid $cup-border-clr;
-          background-image: radial-gradient($bg-clr 0% 40%, $cup-border-clr 40% 50%,  $cup-clr2 50%);
-        }
-        //teabag
-        &::after {
-          content:"";
-          position:absolute;
-          height:35px;
-          width:20px;
-          transform: translateY(0px) translateX(10px);
-          background-image:linear-gradient(to right, transparent 0 43%, $teabag-clr 43% 55%, transparent 55%), linear-gradient(to bottom, transparent 0 40%, $teabag-clr 40%);
-       
-        }
-      }
-      .steam{
-        z-index:-1;
-        position:absolute;
-        height:60px;
-        width:50px;
-        transform:translateY(-70px) translateX(4px);
-        background-image: linear-gradient(to bottom, $bg-clr , transparent), linear-gradient(to right, $steam-clr 0% 10% , transparent 10% 20%, $steam-clr  20% 30%, transparent 30% 40% , $steam-clr 40% 50%, transparent 50% 60%, $steam-clr 60% 70%, transparent 70% 80%, $steam-clr 80% 90%, transparent 90% 100%);
-      }
+  &:hover+.steam {
+    animation: steam 2s ease-in-out;
+  }
 
-      @keyframes steam {
-        50%{
-            transform: translateY(-95px) translateX(4px);
-        }
-      }
+  height: $cup-height;
+  width: $cup-width;
+  position:relative;
+  border: $cup-border;
+  // z-index:5;
+  border-radius: 0 0 18px 18px;
+  background-image: linear-gradient(to right, $cup-clr 0 50%, $cup-clr2 50%);
+
+  // rim 
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transform: translateY(6px) translateX(40px);
+    height: 37px;
+    width: 34px;
+    border-radius: 50%;
+    border: 2.5px solid $cup-border-clr;
+    background-image: radial-gradient($bg-clr 0% 40%, $cup-border-clr 40% 50%, $cup-clr2 50%);
+  }
+
+  //teabag
+  &::after {
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 20px;
+    transform: translateY(0px) translateX(10px);
+    background-image: linear-gradient(to right, transparent 0 43%, $teabag-clr 43% 55%, transparent 55%), linear-gradient(to bottom, transparent 0 40%, $teabag-clr 40%);
+
+  }
+}
+
+.steam {
+  z-index: -1;
+  position: absolute;
+  height: 60px;
+  width: 48px;
+  transform: translateY(-75px) translateX(4px);
+  background:
+    linear-gradient(to bottom, $bg-clr, transparent),
+    repeating-radial-gradient(circle at 25% 30%,
+      $steam-clr 0px,
+      $steam-clr 4px,
+      transparent 5px,
+      transparent 10px),
+    repeating-radial-gradient(circle at 75% 50%,
+      $steam-clr 0px,
+      $steam-clr 4px,
+      transparent 5px,
+      transparent 10px);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 1;
+}
+
+@keyframes steam {
+  50% {
+    transform: translateY(-95px) translateX(4px);
+  }
+}
+
+
+.mobile-teacup-container {
+  transform: scale(0.95) translateY(-91px);
+  // border: $test-border;
+}
