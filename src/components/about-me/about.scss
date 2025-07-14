@@ -28,7 +28,7 @@ $tablet-font-size: 14px;
 $mobile-font-size: 12px;
 // line height
 $desktop-line-height: 25px;
-$mobile-line-height: 20px;
+$mobile-line-height: 19px;
 // margins
 $margin-top: 45px;
 
@@ -61,7 +61,7 @@ h1.title {
 .mobile__about {
   font-family: $font;
   color: $font-clr;
-  height: 415px !important;
+  height: 450px !important;
 
   span {
     text-decoration: underline;
@@ -82,6 +82,11 @@ h1.title {
   }
 }
 
+h1.mobile{
+  font-weight:800 !important;
+  line-height: 21px;
+}
+
 // Home Icon
 .desktop__about__icon {
   // @include center-flex;
@@ -94,7 +99,6 @@ h1.title {
   //  left:25px;
 }
 
-
 .desktop__about__icon svg:hover {
   & .cls-2 {
     fill: $hover-clr;
@@ -104,7 +108,6 @@ h1.title {
 .desktop-nav a {
   text-decoration: none;
 }
-
 
 .desktop-nav p {
   // border:$test-border;
@@ -165,6 +168,10 @@ a {
   &>li>a {
     text-decoration: none;
   }
+}
+
+.mobile__about > p {
+  line-height: $mobile-line-height;
 }
 
 // Mobile social icons

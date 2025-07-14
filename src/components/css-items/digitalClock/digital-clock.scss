@@ -7,7 +7,7 @@ $clock-clr4:#292929;
 $clock-clr5:#5796e9;
 $clock-height:55px;
 $clock-width:110px;
-$btn-clr:#ff8d80;
+$btn-clr:#ff92e2;
 
 
 .clock {
@@ -15,6 +15,12 @@ $btn-clr:#ff8d80;
   &:hover{
     animation:alarm .1s infinite;
   }
+
+  // Mobile animations (start automatically)
+//  animation:alarm-mobile 1s infinite;
+
+
+
   height:$clock-height;
   width:$clock-width;
 	border:2px solid $clock-clr5;
@@ -62,6 +68,14 @@ $btn-clr:#ff8d80;
         } 
   }
   
+}
+@keyframes alarm-mobile{
+  35%{
+    transform: translateY(-61px) rotate(10deg) scale(.93)
+}
+ 65%{
+    transform: translateY(-61px) rotate(-10deg) scale(.93)
+  }
 }
 
 @keyframes alarm {

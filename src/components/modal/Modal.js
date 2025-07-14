@@ -8,7 +8,7 @@ export default function Modal({ isOpen, onClose, cn }) {
   if (!isOpen) return null;
   return reactDom.createPortal(
     <div className={`modal-overlay ${cn}`} onClick={onClose}>
-      <div className="modal bg-[#ffed8d] p-6 lg:p-10 max-w-sm">
+      <div className="modal bg-[#ffed8d] border-2 border-[#b0ffa9] py-10 px-6 lg:p-10 max-w-sm">
         <button className="modal__button scale-[.9] md:scale-[1] z-[1000]" onClick={onClose}>
           X
         </button>
@@ -26,8 +26,8 @@ export default function Modal({ isOpen, onClose, cn }) {
           </p>
 
           <div className='flex items-center'>
-            <Link to="/dwc"> <p className='hover:scale-[.98] transition-all btn md:tracking-wide font-medium uppercase w-fit py-[1.5px] px-3 shadow-sm rounded-full bg-[#b0d3ff] font-[700] mr-3  text-xs md:text-base'>More on css art</p></Link>
-            <a href='https://codepen.io/annampawl' target='blank' className='flex hover:scale-[.98] transition-all py-[1px] btn md:tracking-wide font-medium uppercase w-fit px-3 shadow-sm rounded-full bg-[#b0d3ff] font-[700] text-xs md:text-base flex items-center'>source code <Codepen className='h-4 w-4 ml-2' /></a>
+            <Link to="/dwc"> <p className='hover:scale-[.98] transition-all btn md:tracking-wide font-medium uppercase w-fit py-[1.5px] px-3 shadow-sm rounded-full bg-[#b0c4ff] font-[700] mr-3  !text-[10px] md:text-base border-2 border-[#b0ffa9]'>More on css art</p></Link>
+            <a href='https://codepen.io/annampawl' target='blank' className='flex hover:scale-[.98] transition-all py-[3px] md:py-[1px] btn md:tracking-wide font-medium uppercase w-fit px-3 shadow-sm rounded-full !text-[10px] md:text-base border-2 border-[#b0ffa9] bg-[#b0c4ff] font-[700] md:text-base flex items-center'>source code <Codepen className='h-4 w-4 ml-2' /></a>
           </div>
         </div>
       </div>

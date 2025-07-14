@@ -5,7 +5,7 @@ $overlay-clr: #aed0ff9d;
 $background-color: #ffe9f1;
 $modal-font-clr: #65a5ff;
 $modal-font-clr: #252525;
-$modal-hover-clr: #2279eb;
+$modal-hover-clr: #7a87ff;
 $modal-btn-clr: #212121;
 $modal-btn-clr2:#b0d3ff;
 
@@ -99,7 +99,7 @@ p.hide {
 
 // Mobile Specific Styles
 .mobile__modal {
-  top:415px;
+  top:450px;
   height: 120.5vh;
   width: 100vw;
 
@@ -119,7 +119,8 @@ p.hide {
 			z-index: 2;
       background-color: $modal-btn-clr;
       color: $modal-btn-clr2;
-			top: -12px;
+			top: -15px;
+      right:-12px;
     }
   }
 }

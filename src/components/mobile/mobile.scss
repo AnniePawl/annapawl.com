@@ -9,12 +9,12 @@
 }
 
 .mobile__footer {
-	height:8vh;
+	height:7vh;
   @include center-flex;
 	color:$black;
-  font-size: 14px;
+  font-size: 13px;
 	span {
-		color: #5796e9;
+		color: #ff6464;
 	}
 }
 

@@ -8,10 +8,10 @@ function MobileAbout() {
   return (
     <div className="mobile__about flex justify-between pt-16 pb-10 px-10">
   
-       <h1 className='pb-6'>
+       <h1 className='pb-6 mobile'>
         Anna <br/>Pawl
       </h1>
-      <p>
+      <p className='text-[11.2px]'>
         Hi! Welcome to my little corner of the internet. I’m a software engineer that appreciates delightful UX and a designer who sees creativity in code. I specialize in ensuring that aesthetic concepts translate seamlessly into functional interfaces. I bridge development and design to craft intuitive, engaging digital experiences. ✨
         <br />
         <br />
